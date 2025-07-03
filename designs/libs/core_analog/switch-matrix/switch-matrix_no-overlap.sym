@@ -1,0 +1,23 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @@IN @VSS @VDD @@CLKA @@CLKB @symname"
+template="name=x1 VSS=VSS VDD=VDD"
+extra="VSS VDD"
+
+}
+V {}
+S {}
+E {}
+L 4 -60 0 -40 0 {}
+L 4 40 -10 60 -10 {}
+L 4 40 10 60 10 {}
+B 5 -62.5 -2.5 -57.5 2.5 {name=IN dir=in}
+B 5 57.5 -12.5 62.5 -7.5 {name=CLKA dir=out}
+B 5 57.5 7.5 62.5 12.5 {name=CLKB dir=out}
+P 4 5 40 -40 -40 -40 -40 40 40 40 40 -40 {}
+T {@symname} -33 -56 0 0 0.2 0.2 {}
+T {@name} -25 48 0 0 0.2 0.2 {}
+T {IN} -35 -4 0 0 0.2 0.2 {}
+T {CLKA} 35 -14 0 1 0.2 0.2 {}
+T {CLKB} 35 6 0 1 0.2 0.2 {}

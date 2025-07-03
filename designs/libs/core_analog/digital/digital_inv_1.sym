@@ -1,0 +1,22 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @@A @VDD @VSS @@Y @symname"
+template="name=x1 VSS=VSS VDD=VDD"
+extra="VSS VDD"
+}
+V {}
+S {}
+E {}
+L 4 -40 0 -20 0 {}
+L 4 34 0 40 0 {}
+L 4 -20 -20 -20 20 {}
+L 4 -20 -20 20 0 {}
+L 4 -20 20 20 0 {}
+B 5 -42.5 -2.5 -37.5 2.5 {name=A sig_type=std_logic dir=in}
+B 5 37.5 -2.5 42.5 2.5 {name=Y sig_type=std_logic dir=out}
+A 4 27 0 7.071067811865476 135 360 {}
+T {@symname} -30.5 -36 0 0 0.2 0.2 {}
+T {@name} -5 18 0 0 0.2 0.2 {}
+T {A} -35 -14 0 0 0.2 0.2 {}
+T {Y} 25 -14 0 1 0.2 0.2 {}

@@ -1,6 +1,8 @@
 [![](https://img.shields.io/badge/Technology-CMOS%20180nm-blue.svg)](.) [![](https://img.shields.io/badge/Type-Analog%20Mixed--Signal-lightgrey.svg)](.) [![](https://img.shields.io/badge/Status-Pre--Layout-brightgreen.svg)](.)
 
-# SSCS Chipathon 2025 - MOSbius Track LNA (Low Noise Anomaly) Team Proposal
+# Mixed-Signal MOSbius Architecture For Emulate Analog and Digital Block Together
+
+## SSCS Chipathon 2025 - MOSbius Track LNA (Low Noise Anomaly) Team Proposal
 
 This repository contains the design proposal for Chipathon 2025 MOSbius track. MOSbius is incredible approach for transistor level learning and direct simulation from sechematic design. Our design will propose several sub-circuit :
 
@@ -14,7 +16,7 @@ This repository contains the design proposal for Chipathon 2025 MOSbius track. M
 - 4x NMOS Common-Source (1x NMOS M=1 Strength and 3x NMOS M=4 Strength)
 - 1x PMOS-input OTA
 - 1x NMOS-input OTA
-
+- Digital Logic Element Block Emulation
 ---
 
 ## Project Overview
@@ -27,23 +29,23 @@ The general chip spesification:
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
 | **Technology** | Global Foundry 180nm | - |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 
 Switch matrix spesification:
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **Transmission Gate Ron** | 50 - 100 | Ohm |
 
 PMOS body connected to VDD :
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **W** | 3 | um |
 | **L** | 0.5 | um |
 | **M** | 16 | unit |
@@ -52,8 +54,8 @@ PMOS body connected to PIN :
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **W** | 3 | um |
 | **L** | 0.5 | um |
 | **M** | 16 | unit |
@@ -62,8 +64,8 @@ NMOS body connected to VSS :
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **W** | 1 | um |
 | **L** | 0.5 | um |
 | **M** | 16 | unit |
@@ -72,8 +74,8 @@ NMOS body connected to PIN :
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **W** | 1 | um |
 | **L** | 0.5 | um |
 | **M** | 16 | unit |
@@ -82,8 +84,8 @@ PMOS current mirror :
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **I min** | 100 | uA |
 | **I max** | 200 | uA |
 
@@ -91,8 +93,8 @@ NMOS current mirror :
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **I min** | 10 | uA |
 | **I max** | 100 | uA |
 
@@ -100,13 +102,14 @@ OTA PMOS-input :
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Supply Voltage** | 3.3 | V |
-| **Input Voltage Range** | 0 - 3.3 | V |
+| **Supply Voltage** | 5 | V |
+| **Input Voltage Range** | 0 - 5 | V |
 | **I** | 10 - 100 | uA |
 | **GBW** | 1 Meg | Mhz |
 | **OL Gain** | 50 | dB |
 
 ## Pin Map Details
+
 
 
 | Pin | Module | Port | Side |
@@ -179,6 +182,8 @@ OTA PMOS-input :
 | **66** | PMOS Current Mirror | 2x | |
 | **67** | PMOS Current Mirror | 1x | |
 | **68** | PMOS Current Mirror | Ref | |
+
+## How to Test
 
 
 ## Member and Role

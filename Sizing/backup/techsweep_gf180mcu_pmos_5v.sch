@@ -55,14 +55,14 @@ C {devices/code_shown.sym} 0 -1010 0 0 {name=NGSPICE_CTRL only_toplevel=true
 value="
 .option sparse
 .temp 27
-.param wx=5u lx=0.3u vbx=0
+.param wx=5u lx=0.7u vbx=0
 .noise v(n) vg lin 1 1 1 1
 .control
 option numdgt=3
 set wr_singlescale
 set wr_vecnames
 
-compose l_vec  values 0.3u 0.4u 0.5u 1u 5u 10u
+compose l_vec  values 0.7u 1u 2u 5u 7u 10u
 compose vg_vec start= 0 stop=5.01  step=0.05
 compose vd_vec start= 0 stop=5.01  step=0.05
 compose vb_vec values 0 0.4 0.8 1.2
@@ -77,7 +77,7 @@ foreach var1 $&l_vec
       foreach var4 $&vb_vec
         alter vsb $var4
 	run 
-	wrdata techsweep_gf180mcu_pmos_05v0.txt noise1.all
+	wrdata /foss/designs/sscs-chipathon2025-LNA/Sizing/backup/techsweep_gf180mcu_pmos_06v0.txt noise1.all
 	destroy all
 	set appendwrite
 	unset set wr_vecnames
@@ -88,13 +88,13 @@ end
 
 set appendwrite=0
 
-alterparam lx=0.3u
+alterparam lx=0.7u
 alterparam vbx=0
 reset
 op
 *showmod
 show
-write techsweep_gf180mcu_pmos_05v0.raw
+write techsweep_gf180mcu_pmos_06v0.raw
 .endc
 "}
 C {devices/ngspice_get_value.sym} 1020 -300 0 1 {name=r1 node=@m.xm1.m0[gds]
@@ -138,7 +138,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
 C {devices/title.sym} 160 -30 0 0 {name=l5 author="(c) 2025 H. Pretl, Apache-2.0 license"}
-C {symbols/pfet_05v0.sym} 560 -170 0 0 {name=M1
+C {symbols/pfet_06v0.sym} 560 -170 0 0 {name=M1
 L=\{lx\}
 W=\{wx\}
 nf=1
@@ -149,6 +149,6 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_05v0
+model=pfet_06v0
 spiceprefix=X
 }

@@ -12,8 +12,8 @@ ypos2=11.07838
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.0014322185
+x2=0.0019376609
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,8 +47,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.0014322185
+x2=0.0019376609
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -57,7 +57,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=2
+hilight_wave=3
 digital=0
 rainbow=1
 color="4 5 6 7 8"
@@ -67,15 +67,15 @@ out[2]
 out[1]
 out[0]"}
 B 2 2300 -850 3100 -450 {flags=graph,private_cursor
-y1=-1.1069216
-y2=5.8472771
+y1=2.4933769
+y2=2.5333217
 ypos1=-1.3503642
 ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.0014322185
+x2=0.0019376609
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -91,15 +91,15 @@ color="4 5"
 node="vip
 vin"}
 B 2 2300 -440 3100 -40 {flags=graph,private_cursor
-y1=-1.1069216
-y2=5.8472771
+y1=-1.1069215
+y2=5.8472769
 ypos1=-1.3503642
 ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.0014322185
+x2=0.0019376609
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -115,6 +115,8 @@ color=11
 node=out[1]}
 P 4 5 20 -1040 20 -520 940 -520 940 -1040 20 -1040 {}
 P 4 5 980 -1040 980 -20 1460 -20 1460 -1040 980 -1040 {}
+T {5T-OTA} 20 -1090 0 0 0.7 0.7 {}
+T {SWITCH MATRIX AND 4 BUS} 980 -1090 0 0 0.7 0.7 {}
 N 540 -950 740 -950 {lab=IN[0]}
 N 500 -980 500 -950 {lab=VDD}
 N 780 -980 780 -950 {lab=VDD}
@@ -146,7 +148,7 @@ value="
 C {vsource.sym} 40 -430 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 40 -400 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} 40 -460 0 0 {name=p9 lab=VSS}
-C {vsource.sym} 60 -870 0 0 {name=V3 value="SIN(2.5 2.5 10k)" savecurrent=false}
+C {vsource.sym} 60 -870 0 0 {name=V3 value="SIN(2.5 2.5m 10k)" savecurrent=false}
 C {lab_wire.sym} 60 -840 2 0 {name=p10 lab=VSS}
 C {lab_wire.sym} 60 -900 0 0 {name=p11 lab=VIP}
 C {code_shown.sym} 10 -220 0 0 {name=s1 only_toplevel=false value="
@@ -183,10 +185,10 @@ C {lab_wire.sym} 320 -400 2 0 {name=p8 lab=VSS}
 C {lab_wire.sym} 320 -460 0 0 {name=p15 lab=RSTN}
 C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -280 0 0 {name=x1}
 C {symbols/pfet_06v0.sym} 760 -950 0 0 {name=M1
-L=0.55u
-W=0.30u
+L=2u
+W=2.5u
 nf=1
-m=6
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -197,10 +199,10 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet_06v0.sym} 520 -950 0 1 {name=M2
-L=0.55u
-W=0.30u
+L=2u
+W=2.5u
 nf=1
-m=6
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -211,10 +213,10 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet_06v0.sym} 480 -770 0 0 {name=M3
-L=0.70u
-W=0.30u
+L=2u
+W=2.5u
 nf=1
-m=16
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -225,10 +227,10 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet_06v0.sym} 800 -770 0 1 {name=M4
-L=0.70u
-W=0.30u
+L=2u
+W=2.5u
 nf=1
-m=16
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -239,10 +241,10 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet_06v0.sym} 620 -600 0 0 {name=M5
-L=0.70u
-W=0.30u
+L=2u
+W=1u
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -253,10 +255,10 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet_06v0.sym} 300 -600 0 1 {name=M6
-L=0.70u
-W=0.30u
+L=2u
+W=5u
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -321,7 +323,7 @@ C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_t
 C {lab_wire.sym} 640 -740 2 1 {name=p71 lab=IN[4]}
 C {lab_wire.sym} 640 -630 0 1 {name=p72 lab=IN[5]}
 C {isource.sym} 280 -790 0 0 {name=I0 value=100u}
-C {vsource.sym} 60 -730 0 0 {name=V7 value="SIN(2.5 -2.5 10k)" savecurrent=false}
+C {vsource.sym} 60 -730 0 0 {name=V7 value="SIN(2.5 -2.5m 10k)" savecurrent=false}
 C {lab_wire.sym} 60 -700 2 0 {name=p73 lab=VSS}
 C {lab_wire.sym} 60 -760 0 0 {name=p74 lab=VIN}
 C {lab_wire.sym} 460 -770 0 0 {name=p75 lab=VIP}

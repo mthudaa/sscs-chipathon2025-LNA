@@ -1,247 +1,121 @@
-# IIC-OSIC-TOOLS Analog Design Project Template (GlobalFoundries 180nm)
+# 🚀 SSCS Chipathon 2025 - MOSbius Track: LNA Team
 
-This repository is a project template for the IIC-OSIC-TOOLS (https://github.com/iic-jku/IIC-OSIC-TOOLS) analog design workflow for the SSCS 2025 Chipathon, preconfigured for the GlobalFoundries 180nm PDK (gf180mcuD).
+<p align="center">
+  <img src="https://img.shields.io/badge/Chipathon-2025-blueviolet?style=for-the-badge" alt="Chipathon 2025"/>
+  <img src="https://img.shields.io/badge/Track-MOSbius-blue?style=for-the-badge" alt="MOSbius Track"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"/>
+</p>
 
-## What's Included
+> **Welcome to the LNA (Low Noise Anomaly) Team Repository!**
+>
+> This repository contains our design proposal and project files for the **MOSbius track** of the SSCS Chipathon 2025. MOSbius offers an incredible approach for transistor-level learning and direct simulation from schematic designs. Our goal is to connect analog and digital circuits on a single chip to facilitate both education and direct measurement.
 
-When you use this template, you get:
+---
 
-- **Pre-configured Docker environment** with IIC-OSIC-TOOLS and GlobalFoundries 180nm PDK
-- **Cross-platform scripts** for launching the containerized design environment
-- **Example analog design** (5-Transistor OTA) with proper library structure and testbench
-- **Library organization standards** with validation scripts
-- **VNC and web-based GUI access** for design tools like Xschem, Magic, and KLayout
+## 📝 Chipathon Proposal
 
-## Prerequisites
+For a detailed description of our project idea, objectives, and team members, please see our complete proposal.
 
-Before you begin, you'll need to install the following software:
+➡️ **[Read our Full Chipathon Proposal](docs/our_proposal.md)**
+
+---
+
+## 🛠️ Prerequisites
+
+Before you begin, you'll need to install the following software to get your environment set up.
 
 ### 1. GitHub Desktop
 
-- **Download**: [GitHub Desktop](https://desktop.github.com/)
-- Available for Windows, macOS, and Linux
-- Provides a user-friendly graphical interface for Git operations
+A user-friendly graphical interface for Git. This is perfect if you're not comfortable with the command line.
 
-You don't have to know how to use the git command. Although learning it helps you understand how the version control works. If you are an experienced user, feel free to manage your repository from CLI.
+- **Download**: **[GitHub Desktop Official Site](https://desktop.github.com/)**
+- **Platforms**: Windows, macOS, Linux
 
-### 2. Docker Desktop
+> **Note:** While learning the `git` command line is helpful for understanding version control, it's not required for this project. Experienced users are free to use the CLI.
 
-Docker is a lightweight, container-based alternative to virtual machines that ensures consistent development and deployment environments across different platforms by packaging applications with all their dependencies. Docker Desktop is its graphical user interface (GUI). 
+### 2. Docker Desktop 🐳
 
-**Download and Installation:**
-- **Windows**: [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)
-- **macOS**: [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/)
-- **Linux**: [Docker Desktop for Linux](https://docs.docker.com/desktop/install/linux-install/) or [Docker Engine](https://docs.docker.com/engine/install/)
+We use Docker to create a consistent and lightweight development environment for everyone on the team. It packages all our tools and dependencies into a "container," so you don't have to worry about manual installation headaches.
 
-**System Requirements:**
-- **Windows**: Windows 10/11 with WSL2 enabled
-- **macOS**: macOS 10.15 or newer
-- **Linux**: 64-bit distribution with kernel 3.10+
+- **Download**:
+  - **[Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)**
+  - **[Docker Desktop for macOS](https://docs.docker.com/desktop/install/mac-install/)**
+  - **[Docker Desktop for Linux](https://docs.docker.com/desktop/install/linux-install/)**
 
-In this project we will be using the IIC-OSIC-TOOLS docker (https://github.com/iic-jku/IIC-OSIC-TOOLS) to setup our development environments.
+<details>
+<summary><strong>Click to see System Requirements</strong></summary>
 
-## Getting Started
+- **Windows**: Windows 10/11 with WSL2 enabled.
+- **macOS**: Version 10.15 or newer.
+- **Linux**: A 64-bit distribution with kernel version 3.10 or higher.
+</details>
 
-### Step 1: Create Your Project Repository
+> In this project, we use the **[IIC-OSIC-TOOLS](https://github.com/iic-jku/IIC-OSIC-TOOLS)** Docker image, which comes pre-loaded with the open-source EDA tools we need.
 
-#### Use GitHub Template
+---
 
-This repository is set up as a GitHub template. Using the template feature gives you a clean project without the template's commit history.
+## ▶️ Getting Started
 
-1. Visit the template repository: [https://github.com/Jianxun/iic-osic-tools-project-template/](https://github.com/Jianxun/iic-osic-tools-project-template/)
-2. Click the green **"Use this template"** button
-3. Select **"Create a new repository"**
-4. Fill in your repository details:
-   - Repository name (e.g., `my-analog-design-project`)
-   - Description (optional)
-   - Choose public or private
-5. Click **"Create repository"**
+To launch the development environment, simply run the appropriate script for your operating system:
 
-![GitHub "Use this template" button](docs/screenshots/using_github_template.png)
+-   **Windows**: Double-click `start_vnc.bat`
+-   **macOS / Linux**: Run `./start_vnc.sh` in your terminal
 
-**Clone your new repository using GitHub Desktop:**
-1. Open GitHub Desktop
-2. Click "Clone a repository from the Internet"
-3. Select your newly created repository
-4. Choose your local directory and click "Clone"
+These scripts will start the Docker container and provide you with access to the tools.
 
-![GitHub Desktop clone dialog](docs/screenshots/clone_your_repo.png)
+---
 
-### Step 2: Launch the Docker Container
+## 📂 Project Directory Structure
 
-The project includes platform-specific scripts to launch the Docker container with the IIC-OSIC-TOOLS environment. Before running the following scripts, make sure your Docker Desktop is running.
+Our project is organized to work seamlessly with the Docker container. The `designs` folder in this repository is special—it's directly linked (mounted) to the `/foss/designs` directory inside the container.
 
-#### For Mac/Unix/Linux Systems:
-Open a terminal, navigate to you repository, and use the following command:
-```bash
-./start_chipathon_vnc.sh
-```
+> **⚠️ Important:** Always keep your design files inside the `designs` folder. Any files saved elsewhere will be lost when the Docker container is restarted.
 
-#### For Windows Systems:
-
-**Open Command Prompt or PowerShell** navigate to you repository, and use the following command:
-
-
-```cmd
-.\start_chipathon_vnc.bat
-```
-If you are familiar with git bash, feel free to use `start_chipathon_vnc.sh`.
-
-This will take a while to pull the latest IIC-OSIC-TOOLS image. Have a coffee.
-
-![Screenshot placeholder: Terminal showing container startup messages](docs/screenshots/docker_pull.png)
-
-### Step 3: Access the Design Environment
-
-Once the container is running, you have two options to access the design environment:
-
-#### Option A: VNC Client (Recommended for better performance)
-1. Download a VNC client:
-   - **Windows**: [TigerVNC](https://tigervnc.org) 
-   - **macOS**: [TigerVNC](https://tigervnc.org)  or built-in Screen Sharing
-   - **Linux**: `vncviewer` (install via package manager)
-
-2. Connect to: `localhost:5901`
-3. Enter password: `abc123`
-
-
-#### Option B: Web Browser (noVNC)
-1. Open your web browser
-2. Navigate to: `http://localhost`
-3. Enter password: `abc123`
-4. Click "Connect"
-
-
-### Step 4: Open a Terminal
-
-Once you're in the VNC session:
-1. Right-click on the desktop
-2. Select "Terminal Emulator" (or similar option)
-3. You should automatically be in the `/foss/designs` directory
-
-![Desktop context menu with Terminal Emulator option](docs/screenshots/open_a_terminal.png)
-
-### Step 5: Project Directory Structure
-
-The `/foss/designs` directory inside the Docker container is mounted from the `designs` folder in this repository.
-
-**Important:** Keep all your design files within the `designs` folder to ensure they persist when the Docker container is restarted.
-
-```
+```plaintext
 project-root/
-├── designs/              # Your design files (mounted in container as /foss/designs)
-│   ├── libs/            # Design libraries
+├── designs/             # Your design files (persists after restarts)
+│   ├── libs/            # Design & testbench libraries
 │   ├── simulations/     # Simulation results
 │   └── setup_pdk.sh     # PDK setup script
-├── start_vnc.sh         # Container launch script (Unix/Linux/Mac)
-├── start_vnc.bat        # Container launch script (Windows)
+├── start_vnc.sh         # ▶️ Container launch script (macOS/Linux)
+├── start_vnc.bat        # ▶️ Container launch script (Windows)
 └── README.md            # This file
 ```
 
-### Step 6: Setup PDK Environment
+---
 
-Run the following command inside the terminal within the VNC session to set up the GlobalFoundries 180nm PDK:
+## 📚 Library Structure Conventions
 
-```bash
-source setup_pdk.sh
-```
-
-![Terminal showing PDK setup completion](docs/screenshots/setup_pdk.png)
-
-### Step 7: Launch Design Tools
-
-Launch Xschem for schematic design:
-```bash
-xschem
-```
-
-You should see the Xschem GUI with available devices from `gf180mcu` and their testbenches.
-
-![Xschem interface with PDK libraries loaded](docs/screenshots/start_xschem.png)
-
-## Troubleshooting
-
-### Common Issues:
-
-**Docker container fails to start:**
-- Ensure Docker Desktop is running
-- Check if ports 5901 and 80 are not in use by other applications
-- On Windows, ensure WSL2 is properly configured
-
-**Cannot connect via VNC:**
-- Verify the container is running: `docker ps`
-- Check firewall settings
-- Try connecting to `127.0.0.1:5901` instead of `localhost:5901`
-
-**Permission issues on Linux:**
-- Add your user to the docker group: `sudo usermod -aG docker $USER`
-- Log out and log back in
-
-### Getting Help:
-
-If you encounter issues:
-1. Check the container logs: `docker logs <container-name>`
-2. Restart the container: Stop and run the launch script again
-3. Create an issue in the repository for persistent problems
-
-
-## Library Structure Conventions
-
-The project follows specific naming conventions for organizing design libraries under `/designs/libs/`:
+To keep our project organized and avoid conflicts, we follow specific naming conventions for our design libraries located in `/designs/libs/`.
 
 ### Directory Structure
-```
+```plaintext
 /designs/libs/
-├── core_*/          # Design libraries (core functionality)
-├── tb_*/            # Testbench libraries
-└── ...
+├── 📂 core_/          # Libraries for core circuit implementations
+└── 📂 tb_/            # Libraries for testbenches and verification
 ```
 
-### Naming Conventions
-- **`core_*`**: Design libraries containing your core circuit implementations
-- **`tb_*`**: Testbench libraries containing simulation and verification setups
+### Naming Rules
+
+-   **`core_*`**: Use this prefix for libraries containing your main circuit designs (e.g., `core_amplifier`, `core_mixer`).
+-   **`tb_*`**: Use this prefix for libraries containing testbenches used for simulation (e.g., `tb_amplifier_gain`, `tb_mixer_linearity`).
 
 ### File Organization
-Within each library directory:
-- Each cell should have its own subdirectory: `/designs/libs/library_name/cell_name/`
-- Files within a cell directory should be prefixed with the cell name (e.g., `cell_name.sch`, `cell_name.sym`)
-- **Exception**: Testbench directories (starting with `tb_`) are exempt from the file naming prefix requirement
 
-### Validation
-Use the provided sanity check script to validate your library structure:
+-   Each cell must have its own subdirectory: `/designs/libs/library_name/cell_name/`.
+-   Files inside a cell directory should be prefixed with the cell's name (e.g., `cell_name.sch`, `cell_name.sym`).
+-   **Exception**: Testbench libraries (`tb_*`) do not need to follow the file naming prefix rule, giving you more flexibility.
+
+### ✅ Validation
+
+Before committing your changes, please run the sanity check script to ensure your library structure is correct.
+
 ```bash
+# Navigate to the CI directory inside the designs folder
 cd designs/CI
+
+# Run the check
 ./library_check.sh
 ```
 
-This script verifies:
-- Proper directory hierarchy (no files at inappropriate levels)
-- Correct file naming conventions for design libraries
-- Exempts testbench libraries from strict naming requirements
-
-
-## Example Design: 5-Transistor Single Stage OTA
-
-This project includes a reference design to demonstrate the library structure and design flow:
-
-### Libraries
-- **Design**: 5-Transistor Single Stage Operational Transconductance Amplifier (OTA)
-- **Library Location**: `core_analog`
-- **Testbench Location**: `tb_analog`
-
-
-### Usage
-1. **Design Files**: Navigate to `/designs/libs/core_analog/` to find the schematics and symbols of the OTA cell and parameterized unit transistor cells.
-2. **Testbench**: Use the verification setups in `/designs/libs/tb_analog/` to simulate and characterize the design.
-3. **Validation**: Run the library check to ensure proper file organization:
-   ```bash
-   cd designs/CI
-   ./library_check.sh
-   ```
-
-This example demonstrates the proper use of the library naming conventions (`core_*` for design libraries, `tb_*` for testbenches) and serves as a starting point for developing your own analog circuits.
-
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This script will verify that your directories and files follow the established conventions, helping us maintain a clean and error-free repository.

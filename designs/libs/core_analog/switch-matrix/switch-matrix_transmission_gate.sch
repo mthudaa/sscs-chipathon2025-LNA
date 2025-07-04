@@ -27,7 +27,7 @@ C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_inv_4.sym} 27
 C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_inv_4.sym} 270 -150 0 0 {name=x2}
 C {symbols/nfet_06v0.sym} 430 -260 0 0 {name=M3
 L=0.70u
-W=7.00u
+W=3.70u
 nf=1
 m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -40,8 +40,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet_06v0.sym} 430 -160 0 0 {name=M2
-L=0.55u
-W=9.00u
+L=0.70u
+W=5.00u
 nf=1
 m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

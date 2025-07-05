@@ -12,8 +12,8 @@ ypos2=11.07838
 divy=5
 subdivy=1
 unity=1
-x1=0.0014322185
-x2=0.0019376609
+x1=0
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,8 +47,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0.0014322185
-x2=0.0019376609
+x1=0
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -57,25 +57,24 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=3
+hilight_wave=1
 digital=0
 rainbow=1
-color="4 5 6 7 8"
-node="in
-out[3]
+color="4 5 6 7"
+node="out[3]
 out[2]
 out[1]
 out[0]"}
 B 2 2300 -850 3100 -450 {flags=graph,private_cursor
-y1=2.4933769
-y2=2.5333217
+y1=2.4925862
+y2=2.5132594
 ypos1=-1.3503642
 ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0.0014322185
-x2=0.0019376609
+x1=0
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -98,8 +97,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0.0014322185
-x2=0.0019376609
+x1=0
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -344,3 +343,10 @@ C {lab_wire.sym} 1040 -840 0 0 {name=p80 lab=D[2]}
 C {lab_wire.sym} 1260 -840 0 0 {name=p82 lab=D[3]}
 C {lab_wire.sym} 1040 -720 0 0 {name=p84 lab=D[4]}
 C {lab_wire.sym} 1260 -720 0 0 {name=p86 lab=D[5]}
+C {capa-2.sym} 620 -130 0 0 {name=C1[3:0]
+m=1
+value=200f
+footprint=1206
+device=polarized_capacitor}
+C {lab_wire.sym} 620 -100 2 0 {name=p19 lab=VSS}
+C {lab_wire.sym} 620 -160 0 1 {name=p20 lab=OUT[3:0]}

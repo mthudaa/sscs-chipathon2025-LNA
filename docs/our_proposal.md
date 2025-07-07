@@ -29,7 +29,7 @@ The Field Programmable Mixed-Signal Array (FPMA) design consists of three main b
 The Analog Block contains numerous individual PFETs and NFETs to provide high flexibility for creating unique schematics. The Logic Element Block is designed as a simple, FPGA-like architecture, enabling the emulation of digital designs alongside analog circuits within the same schematic.
 Here the block diagram :
 
-
+![Chip Diagram](mixed-signal-mosbius-diagram.png)
 
 ## Key Specifications
 
@@ -88,18 +88,6 @@ Digital Logic Element Block Specification
 
 *Note: "TBD" values will be finalized after simulation and synthesis.*
 
-### Block Diagram Example
-
-```
-+-----------------------------+
-|  Logic Element Block        |
-|  +-----+  +-----+  +-----+  |
-|  | LE0 |  | LE1 |  | LE2 |  |
-|  +-----+  +-----+  +-----+  |
-|         ...                 |
-+-----------------------------+
-```
-
 ### Description
 
 Each logic element (LE) is configurable to implement basic combinational logic functions. The block supports serial configuration and can be integrated with the analog bus for mixed-signal experiments.
@@ -157,15 +145,15 @@ Refer to the package pinout, our design will implement switch matrix with 16 bus
 ## Schedule & Timeline
 ```mermaid
 timeline
-    title 10-Week Animated Project Timeline
-    2025-01-01 : 🏁 Project kickoff, requirements review, initial planning
-    2025-01-08 : 🗺️ Architecture definition, block diagram finalization
-    2025-01-15 : 🔬 Analog block schematic design (current mirrors, OTAs)
-    2025-01-22 : 💻 Digital logic element and switch controller design
-    2025-01-29 : 🔗 Integration of analog and digital blocks, schematic review
-    2025-02-05 : 🗂️ Layout planning, pin mapping, and floorplanning
-    2025-02-12 : 🧩 Block-level layout (analog, digital, switch matrix)
-    2025-02-19 : 🏗️ Top-level layout, DRC/LVS checks
-    2025-02-26 : 📦 Tapeout preparation, documentation, and review
-    2025-03-05 : ✅ Final documentation, test plan, and project wrap-up
+    title 10-Week Project Timeline
+    2025-07-11 : 🏁 Project kickoff, requirements review, initial planning
+    2025-07-18 : 🗺️ Architecture definition, block diagram finalization
+    2025-07-25 : 🔬 Analog block schematic design (current mirrors, OTAs)
+    2025-08-01 : 💻 Digital logic element and switch controller design
+    2025-08-08 : 🔗 Integration of analog and digital blocks, schematic review
+    2025-08-15 : 🗂️ Layout planning, pin mapping, and floorplanning
+    2025-08-22 : 🧩 Block-level layout (analog, digital, switch matrix)
+    2025-08-29 : 🏗️ Top-level layout, DRC/LVS checks
+    2025-09-05 : 📦 Tapeout preparation, documentation, and review
+    2025-09-12 : ✅ Final documentation, test plan, and project wrap-up
 ```

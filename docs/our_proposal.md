@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/Technology-CMOS%20180nm-blue.svg)](.) [![](https://img.shields.io/badge/Type-Analog%20Mixed--Signal-lightgrey.svg)](.) [![](https://img.shields.io/badge/Status-Pre--Layout-brightgreen.svg)](.)
+[![](https://img.shields.io/badge/Technology-gf180mcu-blue.svg)](.) [![](https://img.shields.io/badge/Type-Analog%20Mixed--Signal-lightgrey.svg)](.) [![](https://img.shields.io/badge/Status-Pre--Layout-brightgreen.svg)](.)
 
 # A Mixed-Signal MOSbius Architecture for Emulating Analog and Digital Blocks: The Field Programmable Mixed-Signal Array (FPMA)
 
@@ -77,7 +77,7 @@ Digital Logic Element Block Specification
 | **Supply Voltage**  | 5                          | V                    |
 | **Number of Elements** | 4                        |                      |
 | **Configurable Functions** | AND, OR, XOR, NOT, NAND, NOR | Per element      |
-| **Input Pins per Element** | 2–4                  |                      |
+| **Input Pins per Element** | 2–6                  |                      |
 | **Output Pins per Element** | 1                   |                      |
 | **Max Toggle Frequency** | TBD                    | MHz                  |
 | **Input Logic Level (VIH/VIL)** | 0.7×VDD / 0.3×VDD | V                  |
@@ -87,10 +87,6 @@ Digital Logic Element Block Specification
 | **Testability**     | Scan/Bypass Supported      |                      |
 
 *Note: "TBD" values will be finalized after simulation and synthesis.*
-
-### Description
-
-Each logic element (LE) is configurable to implement basic combinational logic functions. The block supports serial configuration and can be integrated with the analog bus for mixed-signal experiments.
 
 ## Pin Map Details
 Refer to the package pinout, our design will implement switch matrix with 16 buses. every bus connected to with internal pin and external pin (port that will be connected to circuit outside the chip).
@@ -204,6 +200,20 @@ Refer to the package pinout, our design will implement switch matrix with 16 bus
 | **68** | Digital Block | Digital_IO[5] |
 | **69** | Digital Block | Digital_IO[6] |
 | **70** | Digital Block | Digital_IO[7] |
+
+## Mock Testbench
+
+### Creating 5T-OTA using individual block with Switch Matrix
+
+The OTA design was created using individual block (Differential pair, Current Mirror, and single NFET) also connected using switch matrix.
+
+![analog-mock-test](analog.png)
+
+### Creating NAND Gate using individual FET with Switch Matrix
+
+The NAND gate was created using individual FET (PFET and NFET) also connected using switch matrix.
+
+![digital-mock-test](digital.png)
 
 ## How to Test
 

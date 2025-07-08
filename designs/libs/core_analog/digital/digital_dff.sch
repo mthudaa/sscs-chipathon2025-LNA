@@ -46,9 +46,9 @@ C {lab_wire.sym} 370 -20 0 0 {name=p38 lab=RSTN}
 C {lab_wire.sym} 370 -180 0 0 {name=p3 lab=CLK}
 C {lab_wire.sym} 570 -160 0 0 {name=p8 lab=RSTN}
 C {ipin.sym} 100 -120 0 0 {name=p5 lab=RSTN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand2_1.sym} 430 -510 0 0 {name=x1}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand2_1.sym} 630 -380 0 0 {name=x3}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 430 -230 0 0 {name=x2}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 430 -20 0 0 {name=x4}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 430 120 0 0 {name=x5}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 630 -20 0 0 {name=x6}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand2_1.sym} 430 -510 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand2_1.sym} 630 -380 0 0 {name=x3 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 630 -20 0 0 {name=x2 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 430 -230 0 0 {name=x4 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 430 -20 0 0 {name=x5 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_nand3_1.sym} 430 120 0 0 {name=x6 VSS=VSS VDD=VDD}

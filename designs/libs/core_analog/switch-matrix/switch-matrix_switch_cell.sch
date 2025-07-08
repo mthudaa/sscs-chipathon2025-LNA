@@ -27,11 +27,11 @@ C {lab_wire.sym} 480 -80 0 1 {name=p24 lab=SW
 }
 C {lab_wire.sym} 280 -450 0 0 {name=p25 lab=SW
 }
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_transmission_gate.sym} 430 -420 0 0 {name=x1}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_and2_1.sym} 420 -80 0 0 {name=x3}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_dff.sym} 410 -290 0 0 {name=x2}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_and2_1.sym} 420 -180 0 0 {name=x4}
 C {lab_wire.sym} 360 -190 0 0 {name=p28 lab=CLK1}
 C {lab_wire.sym} 360 -170 0 0 {name=p29 lab=CLK2}
 C {lab_wire.sym} 480 -180 0 1 {name=p30 lab=CLK}
 C {ipin.sym} 120 -360 0 0 {name=p31 lab=CLK2}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_and2_1.sym} 420 -180 0 0 {name=x3 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_and2_1.sym} 420 -80 0 0 {name=x4 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_dff.sym} 410 -290 0 0 {name=x2 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_transmission_gate.sym} 430 -420 0 0 {name=x1}

@@ -23,8 +23,6 @@ C {lab_pin.sym} 310 -250 0 1 {name=p24 lab=SWP}
 C {lab_pin.sym} 230 -250 0 0 {name=p25 lab=SW}
 C {lab_pin.sym} 310 -150 0 1 {name=p22 lab=SWN}
 C {lab_pin.sym} 230 -150 0 0 {name=p15 lab=SWP}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_inv_4.sym} 270 -250 0 0 {name=x1}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_inv_4.sym} 270 -150 0 0 {name=x2}
 C {symbols/nfet_06v0.sym} 430 -260 0 0 {name=M3
 L=0.70u
 W=3.70u
@@ -53,3 +51,5 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_inv_4.sym} 270 -250 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/digital/digital_inv_4.sym} 270 -150 0 0 {name=x2 VSS=VSS VDD=VDD}

@@ -33,11 +33,6 @@ C {lab_wire.sym} 1920 -190 0 1 {name=p32 lab=IN[0]}
 C {lab_wire.sym} 1920 -170 0 1 {name=p33 lab=OUT[0]}
 C {noconn.sym} 1920 -250 0 1 {name=l1}
 C {ipin.sym} 100 -80 0 0 {name=p37 lab=EN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 450 -210 0 0 {name=x5}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 890 -210 0 0 {name=x1}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1330 -210 0 0 {name=x2}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1770 -210 0 0 {name=x3}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_no-overlap.sym} 360 -60 0 0 {name=x4}
 C {lab_wire.sym} 300 -60 0 0 {name=p40 lab=CLK}
 C {lab_wire.sym} 420 -70 0 1 {name=p41 lab=CLK1}
 C {lab_wire.sym} 420 -50 0 1 {name=p42 lab=CLK2}
@@ -57,3 +52,8 @@ C {lab_wire.sym} 1620 -230 0 0 {name=p43 lab=CLK1}
 C {lab_wire.sym} 1620 -210 0 0 {name=p44 lab=CLK2}
 C {lab_wire.sym} 1620 -190 0 0 {name=p45 lab=RSTN}
 C {lab_wire.sym} 1620 -170 0 0 {name=p46 lab=EN}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 450 -210 0 0 {name=x1}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 890 -210 0 0 {name=x2}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1330 -210 0 0 {name=x3}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1770 -210 0 0 {name=x5}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_no-overlap.sym} 360 -60 0 0 {name=x4 VSS=VSS VDD=VDD}

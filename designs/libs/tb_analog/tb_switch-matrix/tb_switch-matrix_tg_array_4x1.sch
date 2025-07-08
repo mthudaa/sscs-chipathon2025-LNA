@@ -182,7 +182,6 @@ C {lab_wire.sym} 1050 -250 0 0 {name=p7 lab=EN}
 C {vsource.sym} 320 -430 0 0 {name=V6 value="PULSE(5 0 1n 0 0 800u 1600u 1)" savecurrent=false}
 C {lab_wire.sym} 320 -400 2 0 {name=p8 lab=VSS}
 C {lab_wire.sym} 320 -460 0 0 {name=p15 lab=RSTN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -280 0 0 {name=x1}
 C {symbols/pfet_06v0.sym} 760 -950 0 0 {name=M1
 L=2u
 W=2.5u
@@ -275,7 +274,6 @@ C {lab_wire.sym} 1050 -410 0 0 {name=p28 lab=D[2]}
 C {lab_wire.sym} 1050 -370 0 0 {name=p29 lab=RSTN}
 C {lab_wire.sym} 1050 -390 0 0 {name=p30 lab=CLK}
 C {lab_wire.sym} 1050 -350 0 0 {name=p31 lab=EN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -380 0 0 {name=x2}
 C {lab_wire.sym} 1350 -510 0 1 {name=p32 lab=VDD}
 C {lab_wire.sym} 1350 -490 0 1 {name=p33 lab=VSS}
 C {lab_wire.sym} 1350 -470 0 1 {name=p34 lab=IN[1]}
@@ -284,7 +282,6 @@ C {lab_wire.sym} 1050 -510 0 0 {name=p36 lab=D[1]}
 C {lab_wire.sym} 1050 -470 0 0 {name=p37 lab=RSTN}
 C {lab_wire.sym} 1050 -490 0 0 {name=p38 lab=CLK}
 C {lab_wire.sym} 1050 -450 0 0 {name=p39 lab=EN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -480 0 0 {name=x3}
 C {lab_wire.sym} 1350 -610 0 1 {name=p40 lab=VDD}
 C {lab_wire.sym} 1350 -590 0 1 {name=p41 lab=VSS}
 C {lab_wire.sym} 1350 -570 0 1 {name=p42 lab=IN[0]}
@@ -293,7 +290,6 @@ C {lab_wire.sym} 1050 -610 0 0 {name=p44 lab=D[0]}
 C {lab_wire.sym} 1050 -570 0 0 {name=p45 lab=RSTN}
 C {lab_wire.sym} 1050 -590 0 0 {name=p46 lab=CLK}
 C {lab_wire.sym} 1050 -550 0 0 {name=p47 lab=EN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -580 0 0 {name=x4}
 C {lab_wire.sym} 1350 -210 0 1 {name=p48 lab=VDD}
 C {lab_wire.sym} 1350 -190 0 1 {name=p49 lab=VSS}
 C {lab_wire.sym} 1350 -170 0 1 {name=p50 lab=IN[4]}
@@ -302,7 +298,6 @@ C {lab_wire.sym} 1050 -210 0 0 {name=p52 lab=D[4]}
 C {lab_wire.sym} 1050 -170 0 0 {name=p53 lab=RSTN}
 C {lab_wire.sym} 1050 -190 0 0 {name=p54 lab=CLK}
 C {lab_wire.sym} 1050 -150 0 0 {name=p55 lab=EN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -180 0 0 {name=x5}
 C {lab_wire.sym} 460 -570 2 0 {name=p56 lab=VSS}
 C {lab_wire.sym} 650 -770 2 0 {name=p57 lab=VSS}
 C {lab_wire.sym} 640 -980 0 0 {name=p58 lab=VDD}
@@ -318,7 +313,6 @@ C {lab_wire.sym} 1050 -110 0 0 {name=p67 lab=D[5]}
 C {lab_wire.sym} 1050 -70 0 0 {name=p68 lab=RSTN}
 C {lab_wire.sym} 1050 -90 0 0 {name=p69 lab=CLK}
 C {lab_wire.sym} 1050 -50 0 0 {name=p70 lab=EN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -80 0 0 {name=x6}
 C {lab_wire.sym} 640 -740 2 1 {name=p71 lab=IN[4]}
 C {lab_wire.sym} 640 -630 0 1 {name=p72 lab=IN[5]}
 C {isource.sym} 280 -790 0 0 {name=I0 value=100u}
@@ -350,3 +344,9 @@ footprint=1206
 device=polarized_capacitor}
 C {lab_wire.sym} 620 -100 2 0 {name=p19 lab=VSS}
 C {lab_wire.sym} 620 -160 0 1 {name=p20 lab=OUT[3:0]}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -580 0 0 {name=x1}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -480 0 0 {name=x2}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -380 0 0 {name=x3}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -280 0 0 {name=x4}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -180 0 0 {name=x5}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_tg_array_4x1.sym} 1200 -80 0 0 {name=x6}

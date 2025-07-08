@@ -31,13 +31,13 @@ digital=1
 y2=5}
 B 2 2100 -600 2900 -200 {flags=graph
 y1=0
-ypos1=0.0083617495
-ypos2=6.4103066
+ypos1=-0.26975423
+ypos2=9.5628197
 divy=5
 subdivy=1
 unity=1
-x1=0.00062444255
-x2=0.0022728887
+x1=-0.00011735824
+x2=0.001531088
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -187,7 +187,7 @@ C {lab_wire.sym} 1340 -840 0 0 {name=p84 lab=D[4]}
 C {lab_wire.sym} 1340 -720 0 0 {name=p86 lab=D[5]}
 C {capa-2.sym} 620 -130 0 0 {name=C1[3:0]
 m=1
-value=800f
+value=80f
 footprint=1206
 device=polarized_capacitor}
 C {lab_wire.sym} 620 -100 2 0 {name=p19 lab=VSS}

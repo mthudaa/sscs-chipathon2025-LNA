@@ -1,6 +1,6 @@
 [![](https://img.shields.io/badge/Technology-CMOS%20180nm-blue.svg)](.) [![](https://img.shields.io/badge/Type-Analog%20Mixed--Signal-lightgrey.svg)](.) [![](https://img.shields.io/badge/Status-Pre--Layout-brightgreen.svg)](.)
 
-# Mixed-Signal MOSbius Architecture For Emulate Analog and Digital Block Together Called Field Programmable Mixed-Signal Array (FPMA)
+# A Mixed-Signal MOSbius Architecture for Emulating Analog and Digital Blocks: The Field Programmable Mixed-Signal Array (FPMA)
 
 ## SSCS Chipathon 2025 - MOSbius Track LNA (Low Noise Anomaly) Team Proposal
 
@@ -20,7 +20,7 @@ Our design will propose several sub-circuit :
 - 4x NMOS Common-Source (1x NMOS M=1 Strength and 3x NMOS M=4 Strength)
 - 1x PMOS-input OTA
 - 1x NMOS-input OTA
-- 4x Digital Logic Element Block Emulation
+- 16x Digital Logic Element Block Emulation
 ---
 
 ## Project Overview and Block Diagram
@@ -37,7 +37,7 @@ The general chip spesification:
 
 | Parameter | Typical | Unit |
 | :--- | :---: | :---: |
-| **Technology** | Global Foundry 180nm | - |
+| **Technology** | gf180mcuD | - |
 | **Supply Voltage** | 5 | V |
 | **Input Voltage Range** | 0 - 5 | V |
 
@@ -129,6 +129,81 @@ Refer to the package pinout, our design will implement switch matrix with 16 bus
 | **Analog GPIO** | Analog Bus | Analog_IO[13] | |
 | **Analog GPIO** | Analog Bus | Analog_IO[14] | |
 | **Analog GPIO** | Analog Bus | Analog_IO[15] | |
+
+### Internal Pin (Switch Matrix)
+
+| Pin | Module | Port |
+| :--- | :---: | :---: |
+| **1** | SUPPLY | VDD |
+| **2** | PMOS Body Pin | PMOS Bulk |
+| **3** | PMOS Body Pin | Source |
+| **4** | PMOS Body Pin | Gate |
+| **5** | PMOS Body Pin | Drain |
+| **6** | PMOS Body Pin | Source |
+| **7** | PMOS Body Pin | Gate |
+| **8** | PMOS Body Pin | Drain |
+| **9** | PMOS Body VDD | Source |
+| **10** | PMOS Body VDD | Gate |
+| **11** | PMOS Body VDD | Drain |
+| **12** | PMOS Body VDD | Source |
+| **13** | PMOS Body VDD | Gate |
+| **14** | PMOS Body VDD | Drain |
+| **15** | SUPPLY | VSS |
+| **16** | NMOS Current Mirror | Ref |
+| **17** | NMOS Current Mirror | 1x |
+| **18** | NMOS Current Mirror | 2x |
+| **19** | NMOS Current Mirror | 4x |
+| **20** | NMOS Current Mirror | 8x |
+| **21** | NMOS Current Mirror | 16x |
+| **22** | NMOS Common-Source | Gate |
+| **23** | NMOS Common-Source | Drain |
+| **24** | NMOS Common-Source | Gate |
+| **25** | NMOS Common-Source | Drain |
+| **26** | NMOS Common-Source | Gate |
+| **27** | NMOS Common-Source | Drain |
+| **28** | NMOS Common-Source | Gate |
+| **29** | NMOS Common-Source | Drain |
+| **30** | N-OTA | VIP |
+| **31** | N-OTA | VIN |
+| **32** | N-OTA | OUT |
+| **33** | NMOS Body VSS | Drain |
+| **34** | NMOS Body VSS | Gate |
+| **35** | NMOS Body VSS | Source |
+| **36** | NMOS Body VSS | Drain |
+| **37** | NMOS Body VSS | Gate |
+| **38** | NMOS Body VSS | Source |
+| **39** | NMOS Body Pin | Drain |
+| **40** | NMOS Body Pin | Gate |
+| **41** | NMOS Body Pin | Source |
+| **42** | NMOS Body Pin | Drain |
+| **43** | NMOS Body Pin | Gate |
+| **44** | NMOS Body Pin | Source |
+| **45** | NMOS Body Pin | NMOS Bulk |
+| **46** | P-OTA | OUT |
+| **47** | P-OTA | VIN |
+| **48** | P-OTA | VIP |
+| **49** | PMOS Common-Source | Drain |
+| **50** | PMOS Common-Source | Gate |
+| **51** | PMOS Common-Source | Drain |
+| **52** | PMOS Common-Source | Gate |
+| **53** | PMOS Common-Source | Drain |
+| **54** | PMOS Common-Source | Gate |
+| **55** | PMOS Common-Source | Drain |
+| **56** | PMOS Common-Source | Gate |
+| **57** | PMOS Current Mirror | 16x |
+| **58** | PMOS Current Mirror | 8x |
+| **59** | PMOS Current Mirror | 4x |
+| **60** | PMOS Current Mirror | 2x |
+| **61** | PMOS Current Mirror | 1x |
+| **62** | PMOS Current Mirror | Ref |
+| **63** | Digital Block | Digital_IO[0] |
+| **64** | Digital Block | Digital_IO[1] |
+| **65** | Digital Block | Digital_IO[2] |
+| **66** | Digital Block | Digital_IO[3] |
+| **67** | Digital Block | Digital_IO[4] |
+| **68** | Digital Block | Digital_IO[5] |
+| **69** | Digital Block | Digital_IO[6] |
+| **70** | Digital Block | Digital_IO[7] |
 
 ## How to Test
 

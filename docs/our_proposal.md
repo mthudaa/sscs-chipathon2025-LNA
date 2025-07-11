@@ -217,6 +217,7 @@ The NAND gate was created using individual FET (PFET and NFET) also connected us
 
 ## How to Test
 
+![how-to-test](how_to_test.png)
 
 ## Member and Role
 | Name                | Role                                      |

@@ -45,6 +45,14 @@ Here, the architecture of tinyFPGA enables the entire design workflow, from Veri
 
 ![CLB Diagram](clb_schematic_page-0001.jpg)
 
+## tinyFPGA HDL Design testing
+
+### DFF Test Video
+
+Below is a demonstration of the tinyFPGA DFF (D Flip-Flop) testing:
+
+<video src="dff_test.mp4" controls width="600"></video>
+
 ## Key Specifications
 
 The general chip spesification:
@@ -89,7 +97,7 @@ Digital Logic Element Block Specification
 |---------------------|----------------------------|----------------------|
 | **Logic Family**    | CMOS                       |                      |
 | **Supply Voltage**  | 5                          | V                    |
-| **Number of Elements** | 4                        |                      |
+| **Number of Elements** | 9                        |                      |
 | **Configurable Functions** | AND, OR, XOR, NOT, NAND, NOR | Per element      |
 | **Input Pins per Element** | 2–6                  |                      |
 | **Output Pins per Element** | 1                   |                      |
@@ -140,7 +148,7 @@ Refer to the package pinout, our design will implement switch matrix with 16 bus
 | **Analog GPIO** | Analog Bus | Analog_IO[14] | |
 | **Analog GPIO** | Analog Bus | Analog_IO[15] | |
 
-### Internal Pin (Switch Matrix)
+### Internal Pin (Switch Matrix Pins)
 
 | Pin | Module | Port |
 | :--- | :---: | :---: |
@@ -232,6 +240,12 @@ The NAND gate was created using individual FET (PFET and NFET) also connected us
 ## How to Test
 
 ![how-to-test](how_to_test.png)
+
+## How to Program The Mixed-Signal MOSbius
+
+Programming the Mixed-Signal MOSbius is done using Python code. Both digital and analog modules are defined with specific functions. The Python code generates a HEX file, which is then uploaded to the MOSbius chip.
+
+**Details of the programming process will be announced after the chip design is finalized.**
 
 ## Member and Role
 | Name                | Role                                      |

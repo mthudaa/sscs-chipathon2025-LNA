@@ -12,8 +12,8 @@ ypos2=11.07838
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=-0.00033434929
+x2=0.0055363343
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,8 +47,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=-0.00033434929
+x2=0.0055363343
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -73,8 +73,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=-0.00033434929
+x2=0.0055363343
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -97,8 +97,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=-0.00033434929
+x2=0.0055363343
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -147,7 +147,7 @@ value="
 C {vsource.sym} 40 -430 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 40 -400 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} 40 -460 0 0 {name=p9 lab=VSS}
-C {vsource.sym} 60 -870 0 0 {name=V3 value="SIN(2.5 2.5m 10k)" savecurrent=false}
+C {vsource.sym} 60 -870 0 0 {name=V3 value="SIN(2.5 2.5 10k)" savecurrent=false}
 C {lab_wire.sym} 60 -840 2 0 {name=p10 lab=VSS}
 C {lab_wire.sym} 60 -900 0 0 {name=p11 lab=VIP}
 C {code_shown.sym} 10 -220 0 0 {name=s1 only_toplevel=false value="
@@ -316,7 +316,7 @@ C {lab_wire.sym} 1050 -50 0 0 {name=p70 lab=EN}
 C {lab_wire.sym} 640 -740 2 1 {name=p71 lab=IN[4]}
 C {lab_wire.sym} 640 -630 0 1 {name=p72 lab=IN[5]}
 C {isource.sym} 280 -790 0 0 {name=I0 value=100u}
-C {vsource.sym} 60 -730 0 0 {name=V7 value="SIN(2.5 -2.5m 10k)" savecurrent=false}
+C {vsource.sym} 60 -730 0 0 {name=V7 value="SIN(2.5 -2.5 10k)" savecurrent=false}
 C {lab_wire.sym} 60 -700 2 0 {name=p73 lab=VSS}
 C {lab_wire.sym} 60 -760 0 0 {name=p74 lab=VIN}
 C {lab_wire.sym} 460 -770 0 0 {name=p75 lab=VIP}

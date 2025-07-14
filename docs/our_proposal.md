@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/Technology-gf180mcu-blue.svg)](.) [![](https://img.shields.io/badge/Type-Analog%20Mixed--Signal-lightgrey.svg)](.) [![](https://img.shields.io/badge/Status-Pre--Layout-brightgreen.svg)](.)
+[![](https://img.shields.io/badge/Technology-gf180mcu-blue.svg)](.) [![](https://img.shields.io/badge/Type-Analog%20Mixed--Signal-lightgrey.svg)](.) [![](https://img.shields.io/badge/Status-Pre--Layout-brightgreen.svg)](.) [![](https://img.shields.io/badge/tinyFPGA-Tested%20Successfully-blueviolet.svg)](.)
 
 # A Mixed-Signal MOSbius Architecture for Emulating Analog and Digital Blocks: The Field Programmable Mixed-Signal Array (FPMA)
 
@@ -20,16 +20,30 @@ Our design will propose several sub-circuit :
 - 4x NMOS Common-Source (1x NMOS M=1 Strength and 3x NMOS M=4 Strength)
 - 1x PMOS-input OTA
 - 1x NMOS-input OTA
-- 16x Digital Logic Element Block Emulation
+- 9x Digital Logic Element Block Emulation
 ---
 
 ## Project Overview and Block Diagram
 The Field Programmable Mixed-Signal Array (FPMA) design consists of three main blocks: the Analog Block, the Logic Element Block, and the Switch Controller Block. Both the Analog and Logic Element blocks are connected to buses.
 
-The Analog Block contains numerous individual PFETs and NFETs to provide high flexibility for creating unique schematics. The Logic Element Block is designed as a simple, FPGA-like architecture, enabling the emulation of digital designs alongside analog circuits within the same schematic.
-Here the block diagram :
+**A special module in this project is the tinyFPGA. Why integrate the FPGA on the same die as the chip? The answer is to simplify setup and programming. If the FPGA were attached separately from MOSbius, it would increase complexity and require different (and often large) software tools, making the process less straightforward.**
+
+With this approach, the Mixed-Signal MOSbius can be programmed using a Python-based workflow. Python code generates a hex file, which can then be uploaded via the I2C connection to the Mixed-Signal MOSbius. This hex file encapsulates both the digital and analog design configurations.
+
+**Our team is open to collaboration with other teams on this project! ^_^**
+
+The Analog Block contains numerous individual PFETs and NFETs to provide high flexibility for creating unique schematics. The Logic Element Block is designed as a simple, FPGA-like architecture, enabling the emulation of digital designs alongside analog circuits within the same schematic. **All modules will be connected with a 16 Bus × 70 Pin Switch Matrix**.  
+Here is the block diagram:  
 
 ![Chip Diagram](mixed-signal-mosbius-diagram.png)
+
+## TinyFPGA Diagram
+
+![FPGA Diagram](tiny_fpga_schematic_page-0001.jpg)
+
+Here, the architecture of tinyFPGA enables the entire design workflow, from Verilog to GDS, using **Librelane** ([https://librelane.readthedocs.io/en/latest/](https://librelane.readthedocs.io/en/latest/)). This tinyFPGA contains 9 CLBs and **already tested on Xilinx CMOD A7 FPGA**. The detailed CLB diagram is shown below:
+
+![CLB Diagram](clb_schematic_page-0001.jpg)
 
 ## Key Specifications
 

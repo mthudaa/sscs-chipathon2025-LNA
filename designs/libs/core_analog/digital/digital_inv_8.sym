@@ -3,7 +3,7 @@ G {}
 K {type=subcircuit
 format="@name @@A @VDD @VSS @@Y @symname"
 template="name=x1 VSS=VSS VDD=VDD"
-}
+extra="VSS VDD"}
 V {}
 S {}
 E {}

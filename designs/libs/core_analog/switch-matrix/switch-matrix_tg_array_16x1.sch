@@ -54,11 +54,6 @@ C {lab_wire.sym} 1920 -190 0 1 {name=p32 lab=IN[0]}
 C {lab_wire.sym} 1920 -170 0 1 {name=p33 lab=OUT[0]}
 C {noconn.sym} 1920 -250 0 1 {name=l1}
 C {ipin.sym} 100 -80 0 0 {name=p37 lab=EN}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 450 -210 0 0 {name=x5}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 890 -210 0 0 {name=x1}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1330 -210 0 0 {name=x2}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1770 -210 0 0 {name=x3}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_no-overlap.sym} 360 -60 0 0 {name=x4}
 C {lab_wire.sym} 300 -60 0 0 {name=p40 lab=CLK}
 C {lab_wire.sym} 420 -70 0 1 {name=p41 lab=CLK1}
 C {lab_wire.sym} 420 -50 0 1 {name=p42 lab=CLK2}
@@ -94,10 +89,6 @@ C {lab_wire.sym} 1920 -370 0 1 {name=p58 lab=VDD}
 C {lab_wire.sym} 1920 -350 0 1 {name=p59 lab=VSS}
 C {lab_wire.sym} 1920 -330 0 1 {name=p60 lab=IN[4]}
 C {lab_wire.sym} 1920 -310 0 1 {name=p61 lab=OUT[4]}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 450 -350 0 0 {name=x6}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 890 -350 0 0 {name=x7}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1330 -350 0 0 {name=x8}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1770 -350 0 0 {name=x9}
 C {lab_wire.sym} 300 -370 0 0 {name=p62 lab=CLK1}
 C {lab_wire.sym} 300 -350 0 0 {name=p63 lab=CLK2}
 C {lab_wire.sym} 300 -330 0 0 {name=p64 lab=RSTN}
@@ -130,10 +121,6 @@ C {lab_wire.sym} 1920 -510 0 1 {name=p91 lab=VDD}
 C {lab_wire.sym} 1920 -490 0 1 {name=p92 lab=VSS}
 C {lab_wire.sym} 1920 -470 0 1 {name=p93 lab=IN[8]}
 C {lab_wire.sym} 1920 -450 0 1 {name=p94 lab=OUT[8]}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 450 -490 0 0 {name=x10}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 890 -490 0 0 {name=x11}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1330 -490 0 0 {name=x12}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1770 -490 0 0 {name=x13}
 C {lab_wire.sym} 300 -510 0 0 {name=p95 lab=CLK1}
 C {lab_wire.sym} 300 -490 0 0 {name=p96 lab=CLK2}
 C {lab_wire.sym} 300 -470 0 0 {name=p97 lab=RSTN}
@@ -167,10 +154,6 @@ C {lab_wire.sym} 1920 -650 0 1 {name=p124 lab=VDD}
 C {lab_wire.sym} 1920 -630 0 1 {name=p125 lab=VSS}
 C {lab_wire.sym} 1920 -610 0 1 {name=p126 lab=IN[12]}
 C {lab_wire.sym} 1920 -590 0 1 {name=p127 lab=OUT[12]}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 450 -630 0 0 {name=x14}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 890 -630 0 0 {name=x15}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1330 -630 0 0 {name=x16}
-C {sscs-chipathon2025-LNA/designs/libs/core_analog/switch-matrix/switch-matrix_switch_cell.sym} 1770 -630 0 0 {name=x17}
 C {lab_wire.sym} 300 -650 0 0 {name=p128 lab=CLK1}
 C {lab_wire.sym} 300 -630 0 0 {name=p129 lab=CLK2}
 C {lab_wire.sym} 300 -610 0 0 {name=p130 lab=RSTN}
@@ -187,3 +170,20 @@ C {lab_wire.sym} 1620 -650 0 0 {name=p140 lab=CLK1}
 C {lab_wire.sym} 1620 -630 0 0 {name=p141 lab=CLK2}
 C {lab_wire.sym} 1620 -610 0 0 {name=p142 lab=RSTN}
 C {lab_wire.sym} 1620 -590 0 0 {name=p143 lab=EN}
+C {switch-matrix_switch_cell.sym} 450 -630 0 0 {name=x1}
+C {switch-matrix_switch_cell.sym} 890 -630 0 0 {name=x2}
+C {switch-matrix_switch_cell.sym} 1330 -630 0 0 {name=x3}
+C {switch-matrix_switch_cell.sym} 1770 -630 0 0 {name=x4}
+C {switch-matrix_switch_cell.sym} 450 -490 0 0 {name=x5}
+C {switch-matrix_switch_cell.sym} 890 -490 0 0 {name=x6}
+C {switch-matrix_switch_cell.sym} 1330 -490 0 0 {name=x7}
+C {switch-matrix_switch_cell.sym} 1770 -490 0 0 {name=x8}
+C {switch-matrix_switch_cell.sym} 450 -350 0 0 {name=x9}
+C {switch-matrix_switch_cell.sym} 890 -350 0 0 {name=x10}
+C {switch-matrix_switch_cell.sym} 1330 -350 0 0 {name=x11}
+C {switch-matrix_switch_cell.sym} 1770 -350 0 0 {name=x12}
+C {switch-matrix_switch_cell.sym} 450 -210 0 0 {name=x13}
+C {switch-matrix_switch_cell.sym} 890 -210 0 0 {name=x14}
+C {switch-matrix_switch_cell.sym} 1330 -210 0 0 {name=x15}
+C {switch-matrix_switch_cell.sym} 1770 -210 0 0 {name=x16}
+C {switch-matrix_no-overlap.sym} 360 -60 0 0 {name=x17 VSS=VSS VDD=VDD}

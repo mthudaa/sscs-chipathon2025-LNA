@@ -4,10 +4,10 @@ K {}
 V {}
 S {}
 E {}
-C {tg_array_4x1.sym} 470 -120 0 0 {name=x1}
-C {tg_array_4x1.sym} 470 -240 0 0 {name=x2}
-C {tg_array_4x1.sym} 470 -360 0 0 {name=x3}
-C {tg_array_4x1.sym} 470 -480 0 0 {name=x4}
+C {switch-matrix_tg_array_4x1.sym} 470 -120 0 0 {name=x1}
+C {switch-matrix_tg_array_4x1.sym} 470 -240 0 0 {name=x2}
+C {switch-matrix_tg_array_4x1.sym} 470 -360 0 0 {name=x3}
+C {switch-matrix_tg_array_4x1.sym} 470 -480 0 0 {name=x4}
 C {lab_wire.sym} 620 -150 0 1 {name=p1 lab=VDD}
 C {lab_wire.sym} 620 -130 0 1 {name=p2 lab=VSS}
 C {lab_wire.sym} 620 -110 0 1 {name=p3 lab=IN[3:0]}

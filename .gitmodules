@@ -1,0 +1,6 @@
+[submodule "designs/libs/switch_matrix_gf180mcu_9t5v0"]
+	path = designs/libs/switch_matrix_gf180mcu_9t5v0
+	url = https://github.com/mosbiuschip/switch_matrix_gf180mcu_9t5v0.git
+[submodule "designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols"]
+	path = designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols
+	url = https://github.com/peterkinget/gf180mcu_fd_sc_mcu9t5v0_symbols.git

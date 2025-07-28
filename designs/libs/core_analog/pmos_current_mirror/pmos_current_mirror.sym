@@ -1,0 +1,24 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 0 -60 0 -40 {}
+L 4 50 20 50 40 {}
+L 4 -50 20 -50 40 {}
+L 4 -110 -40 -110 20 {}
+L 4 -110 20 110 20 {}
+L 4 110 -40 110 20 {}
+L 4 -110 -40 110 -40 {}
+B 5 -2.5 -62.5 2.5 -57.5 {name=VDD dir=in}
+B 5 47.5 37.5 52.5 42.5 {name=Iout dir=out}
+B 5 -52.5 37.5 -47.5 42.5 {name=Iref dir=in}
+T {PMOS Current Mirror 6V} -93.5 -26 0 0 0.3 0.3 {}
+T {1 : 1} -15 -2 0 0 0.2 0.2 {}
+T {VDD} 5 -64 0 0 0.2 0.2 {}
+T {Iout} 75 26 0 1 0.2 0.2 {}
+T {Iref} -75 26 0 0 0.2 0.2 {}

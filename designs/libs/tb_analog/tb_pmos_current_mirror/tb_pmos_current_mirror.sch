@@ -30,7 +30,7 @@ C {code_shown.sym} 190 -390 0 0 {name=simulation only_toplevel=false value="
 .control
 save all
 
-	dc Iref 0 5u 0.01u
+	dc v1 0 5 0.1 Iref 100u 200u 10u 
 	plot i(Vmeas) i(Vref)
 
 .endc
@@ -41,7 +41,7 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {vsource.sym} -220 30 0 0 {name=V1 value=0 savecurrent=false}
+C {vsource.sym} -220 30 0 0 {name=V1 value=5 savecurrent=false}
 C {gnd.sym} -220 80 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} -220 -90 0 1 {name=p6 sig_type=std_logic lab=v
 }
@@ -49,4 +49,4 @@ C {lab_wire.sym} 190 50 2 0 {name=p7 sig_type=std_logic lab=v
 }
 C {ammeter.sym} -220 -30 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {ammeter.sym} -60 -30 0 1 {name=Vref savecurrent=true spice_ignore=0}
-C {libs/core_analog/current-mirror/pmos_current_mirror.sym} 140 -10 0 0 {name=x1}
+C {libs/core_analog/pmos_current_mirror/pmos_current_mirror.sym} 140 -10 0 0 {name=x1}

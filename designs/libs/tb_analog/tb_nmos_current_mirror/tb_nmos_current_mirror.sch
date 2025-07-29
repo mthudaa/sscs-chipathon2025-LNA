@@ -15,7 +15,7 @@ N -10 -80 -10 -50 {lab=in}
 N 130 -90 130 -50 {lab=out}
 N -130 0 -60 0 {lab=GND}
 C {lab_pin.sym} -330 -150 0 0 {name=p1 sig_type=std_logic lab=in}
-C {isource.sym} -330 10 2 0 {name=Iref value=10u}
+C {isource.sym} -330 10 2 0 {name=Iref value=100u}
 C {gnd.sym} -330 60 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} -250 -150 0 0 {name=p2 sig_type=std_logic lab=out}
 C {gnd.sym} -250 60 0 0 {name=l2 lab=GND}
@@ -27,7 +27,7 @@ C {lab_pin.sym} 130 -90 0 1 {name=p4 sig_type=std_logic lab=out}
 C {code_shown.sym} 190 -400 0 0 {name=simulation only_toplevel=false value="
 .control
 save all
-	dc V1 0 5 0.01 Iref 0 1u 0.125u
+	dc V1 0 5 0.01 Iref 100u 200u 10u
 	plot I(Vout) I(Vin)
 .endc
 "}
@@ -38,4 +38,4 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
 C {gnd.sym} -130 0 0 0 {name=l3 lab=GND}
-C {libs/core_analog/current-mirror/nmos_current_mirror.sym} 60 10 0 0 {name=x1}
+C {libs/core_analog/nmos_current_mirror/nmos_current_mirror.sym} 60 10 0 0 {name=x1}

@@ -34,7 +34,7 @@ C {lab_pin.sym} 520 -110 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 220 -30 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 620 -30 0 1 {name=p7 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 90 0 0 0 {name=p8 sig_type=std_logic lab=VDD}
-C {symbols/pfet_06v0.sym} 350 -30 0 1 {name=M2
+C {symbols/pfet_03v3.sym} 350 -30 0 1 {name=M2
 L=5u
 W=11u
 nf=1
@@ -45,10 +45,10 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_06v0
+model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_06v0.sym} 500 -30 0 0 {name=M1
+C {symbols/pfet_03v3.sym} 500 -30 0 0 {name=M1
 L=5u
 W=11u
 nf=1
@@ -59,10 +59,10 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_06v0
+model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_06v0.sym} 350 110 0 1 {name=M3
+C {symbols/pfet_03v3.sym} 350 110 0 1 {name=M3
 L=5u
 W=11u
 nf=1
@@ -73,10 +73,10 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_06v0
+model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_06v0.sym} 500 110 0 0 {name=M4
+C {symbols/pfet_03v3.sym} 500 110 0 0 {name=M4
 L=5u
 W=11u
 nf=1
@@ -87,7 +87,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_06v0
+model=pfet_03v3
 spiceprefix=X
 }
 C {lab_pin.sym} 220 110 0 0 {name=p9 sig_type=std_logic lab=VDD}

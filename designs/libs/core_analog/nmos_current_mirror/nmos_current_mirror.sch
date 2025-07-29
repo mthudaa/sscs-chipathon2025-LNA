@@ -21,9 +21,9 @@ N -20 0 -20 60 {lab=#net1}
 N -80 -120 -20 -120 {lab=Iref}
 N -20 -120 -20 -60 {lab=Iref}
 N -340 30 -340 100 {lab=Vss}
-C {symbols/nfet_06v0.sym} -60 -60 0 1 {name=M1
 N -170 -60 -120 -60 {lab=#net3}
 N 120 -60 180 -60 {lab=#net4}
+C {symbols/nfet_03v3.sym} -60 -60 0 1 {name=M1
 L=5u
 W=11u
 nf=1
@@ -34,10 +34,10 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_06v0
+model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_06v0.sym} -60 60 0 1 {name=M2
+C {symbols/nfet_03v3.sym} -60 60 0 1 {name=M2
 L=5u
 W=11u
 nf=1
@@ -62,10 +62,10 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_06v0
+model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_06v0.sym} 60 60 0 0 {name=M4
+C {symbols/nfet_03v3.sym} 60 60 0 0 {name=M4
 L=5u
 W=11u
 nf=1
@@ -76,7 +76,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_06v0
+model=nfet_03v3
 spiceprefix=X
 }
 C {ipin.sym} -340 100 3 0 {name=p1 lab=Vss}

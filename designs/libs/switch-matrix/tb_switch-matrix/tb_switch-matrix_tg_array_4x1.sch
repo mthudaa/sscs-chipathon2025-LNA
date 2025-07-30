@@ -12,8 +12,8 @@ ypos2=4.3472259
 divy=5
 subdivy=1
 unity=1
-x1=5.1858808e-05
-x2=8.9617937e-05
+x1=-0.00010136346
+x2=0.00072490491
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -32,15 +32,15 @@ clock
 clk1
 clk2"}
 B 2 1800 -960 2600 -560 {flags=graph,private_cursor
-y1=-3.888601
-y2=3.0655977
+y1=-2.4089995
+y2=4.3953167
 ypos1=-1.3503642
 ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=5.1858808e-05
-x2=8.9617937e-05
+x1=-0.00010136346
+x2=0.00072490491
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -58,15 +58,15 @@ out[2]
 out[1]
 out[0]"}
 B 2 2620 -960 3420 -560 {flags=graph,private_cursor
-y1=-6.9681875
-y2=10.615655
+y1=-0.52291022
+y2=4.0865886
 ypos1=-1.3503642
 ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=5.1858808e-05
-x2=8.9617937e-05
+x1=-0.00010136346
+x2=0.00072490491
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -89,8 +89,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=5.1858808e-05
-x2=8.9617937e-05
+x1=-0.00010136346
+x2=0.00072490491
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -104,6 +104,27 @@ digital=0
 rainbow=1
 color=11
 node=out[1]}
+B 2 3430 -960 4230 -560 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=10e-6
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=""
+color=""
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 P 4 5 20 -1040 20 -520 940 -520 940 -1040 20 -1040 {}
 P 4 5 20 -1420 20 -1160 2910 -1160 2910 -1420 20 -1420 {}
 T {5T-OTA} 20 -1090 0 0 0.7 0.7 {}
@@ -167,14 +188,10 @@ C {code_shown.sym} 20 -240 0 0 {name=s1 only_toplevel=false value="
 save all
 run
 plot V(clock)
-write tg_4x1_tb.raw
+write tb_switch-matrix_tg_array_4x1.raw
 quit 0
 .endc
 "}
-C {launcher.sym} 80 -410 0 0 {name=h5
-descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tg_4x1_tb.raw tran"
-}
 C {vsource.sym} 1140 -960 0 0 {name=V5 value=3.3 savecurrent=false}
 C {lab_wire.sym} 1140 -990 0 0 {name=p6 lab=VDD}
 C {lab_wire.sym} 1140 -930 2 0 {name=p14 lab=VSS}
@@ -627,3 +644,7 @@ value="PWL(
 + 49.999999us 0V   50.0us 3.3V
 + 50.999999us 3.3V 51.0us 0V
 + )"}
+C {launcher.sym} 80 -410 0 0 {name=h1
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/tb_switch-matrix_tg_array_4x1.raw tran"
+}

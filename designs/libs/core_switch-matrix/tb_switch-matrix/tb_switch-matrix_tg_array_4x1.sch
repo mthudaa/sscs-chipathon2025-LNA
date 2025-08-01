@@ -7,13 +7,13 @@ E {}
 B 2 1800 -550 2600 -150 {flags=graph,private_cursor
 y1=-1.4938356
 y2=6.761812
-ypos1=0.38265201
-ypos2=4.3472259
+ypos1=0.5808807
+ypos2=4.5454546
 divy=5
 subdivy=1
 unity=1
-x1=-0.00010136346
-x2=0.00072490491
+x1=-1.1442333e-05
+x2=4.3533243e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -39,8 +39,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=-0.00010136346
-x2=0.00072490491
+x1=-1.1442333e-05
+x2=4.3533243e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -65,8 +65,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=-0.00010136346
-x2=0.00072490491
+x1=-1.1442333e-05
+x2=4.3533243e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -89,8 +89,8 @@ ypos2=7.1860114
 divy=5
 subdivy=1
 unity=1
-x1=-0.00010136346
-x2=0.00072490491
+x1=-1.1442333e-05
+x2=4.3533243e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -104,27 +104,6 @@ digital=0
 rainbow=1
 color=11
 node=out[1]}
-B 2 3430 -960 4230 -560 {flags=graph
-y1=0
-y2=2
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=10e-6
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node=""
-color=""
-dataset=-1
-unitx=1
-logx=0
-logy=0
-}
 P 4 5 20 -1040 20 -520 940 -520 940 -1040 20 -1040 {}
 P 4 5 20 -1420 20 -1160 2910 -1160 2910 -1420 20 -1420 {}
 T {5T-OTA} 20 -1090 0 0 0.7 0.7 {}
@@ -325,22 +304,18 @@ C {lab_wire.sym} 1180 -850 0 0 {name=p87 lab=VSSd}
 C {vsource.sym} 1270 -820 0 0 {name=V15 value=3.3 savecurrent=false}
 C {lab_wire.sym} 1270 -850 0 0 {name=p88 lab=VDDd}
 C {lab_wire.sym} 1270 -790 2 0 {name=p89 lab=VSS}
-C {libs/switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 590 -1270 0 0 {name=x1}
 C {lab_wire.sym} 1150 -1270 0 1 {name=p1 lab=VDD}
 C {lab_wire.sym} 1150 -1250 0 1 {name=p2 lab=VSS}
 C {lab_wire.sym} 1150 -1210 0 1 {name=p4 lab=OUT[3:0]}
 C {lab_wire.sym} 850 -1270 0 0 {name=p26 lab=RSTN}
-C {libs/switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1000 -1270 0 0 {name=x2}
 C {lab_wire.sym} 1570 -1270 0 1 {name=p17 lab=VDD}
 C {lab_wire.sym} 1570 -1250 0 1 {name=p21 lab=VSS}
 C {lab_wire.sym} 1570 -1210 0 1 {name=p29 lab=OUT[3:0]}
 C {lab_wire.sym} 1270 -1270 0 0 {name=p31 lab=RSTN}
-C {libs/switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1420 -1270 0 0 {name=x3}
 C {lab_wire.sym} 1980 -1270 0 1 {name=p16 lab=VDD}
 C {lab_wire.sym} 1980 -1250 0 1 {name=p30 lab=VSS}
 C {lab_wire.sym} 1980 -1210 0 1 {name=p37 lab=OUT[3:0]}
 C {lab_wire.sym} 1680 -1270 0 0 {name=p38 lab=RSTN}
-C {libs/switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1830 -1270 0 0 {name=x4}
 C {lab_wire.sym} 2400 -1270 0 1 {name=p40 lab=VDD}
 C {lab_wire.sym} 2400 -1250 0 1 {name=p41 lab=VSS}
 C {lab_wire.sym} 2400 -1210 0 1 {name=p48 lab=OUT[3:0]}
@@ -352,8 +327,6 @@ C {lab_wire.sym} 2510 -1270 0 0 {name=p63 lab=RSTN}
 C {libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 240 -1300 0 0 {name=x7}
 C {lab_wire.sym} 2810 -1330 0 1 {name=p5 lab=Q}
 C {lab_wire.sym} 90 -1310 0 0 {name=p28 lab=clock}
-C {libs/switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2250 -1270 0 0 {name=x5}
-C {libs/switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2660 -1270 0 0 {name=x6}
 C {vsource.sym} 1060 -710 0 0 {name=V4 value="PWL(
 + 0.0s 0V
 + 1.0us 0V
@@ -648,3 +621,9 @@ C {launcher.sym} 80 -410 0 0 {name=h1
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_switch-matrix_tg_array_4x1.raw tran"
 }
+C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 590 -1270 0 0 {name=x1}
+C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1000 -1270 0 0 {name=x2}
+C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1420 -1270 0 0 {name=x3}
+C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1830 -1270 0 0 {name=x4}
+C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2250 -1270 0 0 {name=x5}
+C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2660 -1270 0 0 {name=x6}

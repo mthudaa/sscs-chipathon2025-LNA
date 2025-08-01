@@ -54,7 +54,6 @@ N 2000 -90 2260 -90 {lab=VSS}
 N 2130 -120 2130 -90 {lab=VSS}
 N 1480 -500 1740 -500 {lab=IN[2]}
 N 2000 -500 2240 -500 {lab=IN[45]}
-C {libs/switch-matrix/switch-matrix-16x70/switch-matrix-16x70.sym} 970 -1150 0 0 {name=x1}
 C {lab_wire.sym} 820 -1210 0 0 {name=p1 lab=D}
 C {lab_wire.sym} 820 -1150 0 0 {name=p4 lab=RSTN}
 C {lab_wire.sym} 1120 -1210 0 1 {name=p5 lab=VDD}
@@ -346,3 +345,4 @@ C {lab_wire.sym} 2000 -790 2 0 {name=p43 lab=IN[35]}
 C {lab_wire.sym} 2280 -500 0 1 {name=p44 lab=IN[43]}
 C {ipin.sym} 140 -120 0 0 {name=p45 lab=DIG_IN[3:0]}
 C {opin.sym} 140 -100 0 0 {name=p46 lab=DIG_OUT[3:0]}
+C {libs/core_switch-matrix/switch-matrix-16x70/switch-matrix-16x70.sym} 970 -1150 0 0 {name=x1}

@@ -29,7 +29,7 @@ C {lab_wire.sym} 280 -450 0 0 {name=p25 lab=SW
 C {ipin.sym} 120 -360 0 0 {name=p31 lab=CLK2}
 C {lab_wire.sym} 600 -290 0 0 {name=p7 lab=CLK2}
 C {lab_wire.sym} 780 -290 0 1 {name=p16 lab=Q}
-C {libs/switch-matrix/trans-gate/trans-gate.sym} 430 -420 0 0 {name=x4}
+C {libs/core_switch-matrix/trans-gate/trans-gate.sym} 430 -420 0 0 {name=x4}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 420 -280 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 690 -280 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_1.sym} 410 -180 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }

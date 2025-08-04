@@ -25,7 +25,7 @@ C {lab_pin.sym} 520 0 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 90 0 0 0 {name=p8 sig_type=std_logic lab=VDD}
 C {symbols/pfet_03v3.sym} 350 110 0 1 {name=M3
 L=5u
-W=11u
+W=15.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -39,7 +39,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 500 110 0 0 {name=M4
 L=5u
-W=11u
+W=15.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

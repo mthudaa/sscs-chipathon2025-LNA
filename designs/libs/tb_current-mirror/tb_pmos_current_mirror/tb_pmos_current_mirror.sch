@@ -45,4 +45,4 @@ C {lab_wire.sym} 380 -120 2 0 {name=p7 sig_type=std_logic lab=v
 }
 C {ammeter.sym} -220 -30 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {ammeter.sym} -60 -30 0 1 {name=Vref savecurrent=true spice_ignore=0}
-C {libs/core_current-mirror/pmos_curent_mirror/pmos_current_mirror.sym} 230 -110 0 0 {name=x1}
+C {libs/core_current-mirror/pmos_current_mirror/pmos_current_mirror.sym} 230 -110 0 0 {name=x1}

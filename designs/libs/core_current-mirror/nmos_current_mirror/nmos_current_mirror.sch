@@ -1,0 +1,54 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -80 -150 -80 -90 {lab=Iref}
+N -40 -60 40 -60 {lab=Iref}
+N 80 -150 80 -90 {lab=Iout}
+N -120 -60 -80 -60 {lab=Vss}
+N 80 -60 120 -60 {lab=Vss}
+N -80 -120 -20 -120 {lab=Iref}
+N -20 -120 -20 -60 {lab=Iref}
+N -350 -120 -350 -50 {lab=Vss}
+N -170 -60 -120 -60 {lab=Vss}
+N 120 -60 180 -60 {lab=Vss}
+N -80 -30 -80 20 {lab=Vss}
+N 80 -30 80 20 {lab=Vss}
+C {symbols/nfet_03v3.sym} -60 -60 0 1 {name=M1
+L=5u
+W=11u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 60 -60 0 0 {name=M3
+L=5u
+W=11u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {ipin.sym} -350 -50 3 0 {name=p1 lab=Vss}
+C {ipin.sym} -80 -150 0 0 {name=p5 lab=Iref}
+C {ipin.sym} 80 -150 0 1 {name=p6 lab=Iout}
+C {lab_pin.sym} -350 -120 0 0 {name=p2 sig_type=std_logic lab=Vss}
+C {lab_pin.sym} -80 20 0 0 {name=p4 sig_type=std_logic lab=Vss}
+C {lab_pin.sym} 80 20 0 1 {name=p7 sig_type=std_logic lab=Vss}
+C {lab_pin.sym} -170 -60 0 0 {name=p9 sig_type=std_logic lab=Vss}
+C {lab_pin.sym} 180 -60 0 1 {name=p10 sig_type=std_logic lab=Vss}

@@ -35,4 +35,4 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
 C {gnd.sym} -90 -80 0 0 {name=l3 lab=GND}
-C {libs/core_current-mirror/nmos_curent_mirror/nmos_current_mirror.sym} 110 -100 0 0 {name=x1}
+C {libs/core_current-mirror/nmos_current_mirror/nmos_current_mirror.sym} 110 -100 0 0 {name=x1}

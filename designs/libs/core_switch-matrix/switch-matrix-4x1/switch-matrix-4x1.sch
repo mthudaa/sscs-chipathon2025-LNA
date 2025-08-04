@@ -55,8 +55,8 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 340 -110 0 0 {name=x17 VGND=V
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 420 -110 0 0 {name=x18 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 340 -40 0 0 {name=x19 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 420 -40 0 0 {name=x20 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/switch-matrix/switch-cell/switch-cell.sym} 450 -210 0 0 {name=x13}
-C {libs/switch-matrix/switch-cell/switch-cell.sym} 890 -210 0 0 {name=x14}
-C {libs/switch-matrix/switch-cell/switch-cell.sym} 1330 -210 0 0 {name=x15}
-C {libs/switch-matrix/switch-cell/switch-cell.sym} 1770 -210 0 0 {name=x16}
 C {lab_wire.sym} 1920 -250 0 1 {name=p20 lab=Q}
+C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 450 -210 0 0 {name=x1}
+C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 890 -210 0 0 {name=x2}
+C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1330 -210 0 0 {name=x3}
+C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1770 -210 0 0 {name=x4}

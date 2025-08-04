@@ -25,9 +25,9 @@ C {lab_pin.sym} 310 -150 0 1 {name=p22 lab=SWN}
 C {lab_pin.sym} 230 -150 0 0 {name=p15 lab=SWP}
 C {symbols/nfet_03v3.sym} 430 -260 0 0 {name=M3
 L=0.70u
-W=3.70u
-nf=4
-m=20
+W=24u
+nf=1
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -39,9 +39,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 430 -160 0 0 {name=M2
 L=0.55u
-W=5.00u
-nf=4
-m=20
+W=72u
+nf=1
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -51,5 +51,5 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 270 -250 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 270 -150 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 270 -250 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 270 -150 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }

@@ -10,8 +10,8 @@ N 160 -190 160 -140 {lab=VBIAS}
 N 160 -140 200 -140 {lab=VBIAS}
 N 200 -40 200 -20 {lab=VSS}
 C {symbols/ppolyf_u_3k.sym} 200 -70 0 0 {name=R1
-W=1e-6
-L=1e-6
+W=0.25e-6
+L=13.75e-6
 model=ppolyf_u_3k
 spiceprefix=X
 m=1}
@@ -23,8 +23,8 @@ C {iopin.sym} 40 -140 0 0 {name=p6 lab=VDD}
 C {iopin.sym} 40 -120 0 0 {name=p7 lab=VSS}
 C {iopin.sym} 40 -100 0 0 {name=p8 lab=VBIAS}
 C {symbols/pfet_03v3.sym} 180 -190 0 0 {name=M1
-L=0.28u
-W=0.22u
+L=5u
+W=15.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

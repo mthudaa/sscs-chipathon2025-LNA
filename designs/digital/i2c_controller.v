@@ -123,7 +123,7 @@ module i2c_controller ( inout i2c_sda,
                     end
                 end
                 DATA    : begin
-                    // if I2C bus requesting read
+                    // if I2C bus requesting read...
                     if (i2c_read_write_status == 1'b1) begin
                         if (repetition == 4'd8) begin
                             i2c_sda_driver_enable <= 1'b0;
@@ -135,7 +135,7 @@ module i2c_controller ( inout i2c_sda,
                         addr_in <= addr_in + 1'b1;
                     end
 
-                    // if i2c bus requesting write
+                    // if i2c bus requesting write...
                     else if (i2c_read_write_status == 1'b0) begin
                         if (repetition == 4'd8) begin
                             i2c_sda_driver_enable <= 1'b1;
@@ -153,4 +153,6 @@ module i2c_controller ( inout i2c_sda,
             endcase
         end
     end
+
+    assign i2c_sda = i2c_sda_driver_enable ? 1'b1 : 1'bz;
 endmodule

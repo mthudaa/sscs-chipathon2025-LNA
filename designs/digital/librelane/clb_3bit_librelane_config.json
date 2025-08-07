@@ -1,0 +1,10 @@
+{
+    "DESIGN_NAME": "clb_3bit",
+    "FP_PDN_MULTILAYER": false,
+    "CLOCK_PORT": "clb_clk_in",
+    "CLOCK_PERIOD": 2500,
+    "VERILOG_FILES": [
+        "/home/raditya/Documents/mySpace/Projects/Chipathon_2025/sscs-chipathon2025-LNA/designs/digital/clb_3bit.v"
+    ],
+    "FP_CORE_UTIL": 40
+}

@@ -1,5 +1,3 @@
-`timescale 10ns/1ns
-
 module clb_3bit (   input [2:0] clb_in,
                     input [7:0] lut_data_in,
                     input clb_clk_in,
@@ -9,10 +7,10 @@ module clb_3bit (   input [2:0] clb_in,
                     output clb_out
 );
 
-    wire lut_output_internal;
+    reg lut_output_internal;
     reg ff_output_internal;
 
-    always @(*) begin
+    always @* begin
         case (clb_in)
             3'b000 : lut_output_internal = lut_data_in[0]; 
             3'b001 : lut_output_internal = lut_data_in[1];

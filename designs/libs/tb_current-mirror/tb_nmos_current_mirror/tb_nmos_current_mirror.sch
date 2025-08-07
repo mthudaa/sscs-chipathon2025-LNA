@@ -4,28 +4,14 @@ K {}
 V {}
 S {}
 E {}
-N -330 -160 -330 -120 {lab=in}
-N -330 40 -330 60 {lab=GND}
-N -250 -160 -250 -120 {lab=out}
-N -250 40 -250 60 {lab=GND}
-N -330 -60 -330 -20 {lab=#net1}
-N -250 -60 -250 -20 {lab=#net2}
-N -90 -80 -40 -80 {lab=GND}
-C {lab_pin.sym} -330 -150 0 0 {name=p1 sig_type=std_logic lab=in}
-C {isource.sym} -330 10 2 0 {name=Iref value=10u}
-C {gnd.sym} -330 60 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} -250 -150 0 0 {name=p2 sig_type=std_logic lab=out}
-C {gnd.sym} -250 60 0 0 {name=l2 lab=GND}
-C {vsource.sym} -250 10 0 0 {name=V1 value=3.3 savecurrent=false}
-C {ammeter.sym} -330 -90 2 0 {name=Vin savecurrent=true spice_ignore=0}
-C {ammeter.sym} -250 -90 2 0 {name=Vout savecurrent=true spice_ignore=0}
-C {lab_pin.sym} -40 -120 2 1 {name=p3 sig_type=std_logic lab=in}
-C {lab_pin.sym} -40 -100 0 0 {name=p4 sig_type=std_logic lab=out}
-C {code_shown.sym} 190 -400 0 0 {name=simulation only_toplevel=false value="
+C {code_shown.sym} 180 -390 0 0 {name=simulation only_toplevel=false value="
 .control
 save all
-	dc V1 0 3.3 0.01 Iref 10u 200u 10u
-	plot I(Vout) I(Vin)
+	tran 0.1u 15u 
+	plot I(Vmeas) I(Vmeas1) I(Vmeas2) I(Vmeas3) I(Vmeas4)
+	dc vd 0 3.3 0.1
+	plot I(Vmeas) I(Vmeas1) I(Vmeas2) I(Vmeas3) I(Vmeas4) 
+	plot Vbias
 .endc
 "}
 C {devices/code_shown.sym} -350 -370 0 0 {name=Models only_toplevel=false
@@ -33,6 +19,35 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
 "}
-C {gnd.sym} -90 -80 0 0 {name=l3 lab=GND}
-C {libs/core_current-mirror/nmos_curent_mirror/nmos_current_mirror.sym} 110 -100 0 0 {name=x1}
+C {lab_pin.sym} 240 -120 0 1 {name=p4 lab=VDD}
+C {lab_pin.sym} 240 -100 0 1 {name=p5 lab=VSS}
+C {lab_pin.sym} 240 -80 0 1 {name=p6 lab=VBIAS}
+C {lab_pin.sym} 190 70 1 0 {name=p9 lab=VDD}
+C {vsource.sym} 90 100 0 0 {name=V1 value=0 savecurrent=false}
+C {vsource.sym} 190 100 0 0 {name=Vd value=3.3 savecurrent=false}
+C {lab_pin.sym} 90 70 3 1 {name=p12 lab=VSS}
+C {gnd.sym} 90 130 0 0 {name=l1 lab=GND}
+C {lab_pin.sym} 110 -30 0 1 {name=p1 lab=I2}
+C {lab_pin.sym} 90 -30 0 0 {name=p2 lab=I1}
+C {lab_pin.sym} 170 -30 0 1 {name=p3 lab=I5}
+C {lab_pin.sym} 130 -30 0 1 {name=p7 lab=I3}
+C {lab_pin.sym} 150 -30 0 1 {name=p8 lab=I4}
+C {lab_pin.sym} 530 -140 2 0 {name=p13 lab=I1}
+C {ammeter.sym} 500 -140 3 1 {name=Vmeas savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 470 -140 2 1 {name=p14 lab=VDD}
+C {lab_pin.sym} 530 -50 2 0 {name=p15 lab=I2}
+C {ammeter.sym} 500 -50 3 1 {name=Vmeas1 savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 470 -50 2 1 {name=p16 lab=VDD}
+C {lab_pin.sym} 530 40 2 0 {name=p17 lab=I3}
+C {ammeter.sym} 500 40 3 1 {name=Vmeas2 savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 470 40 2 1 {name=p18 lab=VDD}
+C {lab_pin.sym} 530 130 2 0 {name=p19 lab=I4}
+C {ammeter.sym} 500 130 3 1 {name=Vmeas3 savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 470 130 2 1 {name=p20 lab=VDD}
+C {lab_pin.sym} 530 220 2 0 {name=p21 lab=I5}
+C {ammeter.sym} 500 220 3 1 {name=Vmeas4 savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 470 220 2 1 {name=p22 lab=VDD}
+C {libs/core_current-mirror/nmos_current_mirror/nmos_current_mirror.sym} 110 -100 0 0 {name=x1}
+C {lab_pin.sym} 190 130 1 1 {name=p10 lab=VSS}

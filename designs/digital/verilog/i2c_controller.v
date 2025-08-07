@@ -1,10 +1,9 @@
-`timescale 10ns/1ns
 module i2c_controller ( inout i2c_sda,
                         input i2c_scl,
                         input reset,
                         input [7:0] data_out,
                         output reg [7:0] data_in,
-                        output reg [7:0] addr_in,
+                        output reg [7:0] addr_in
 );
 
     parameter ADDR = 2'b00, REG = 2'b01, DATA = 2'b10;
@@ -58,7 +57,7 @@ module i2c_controller ( inout i2c_sda,
             end
             REG     : begin
                 if (data_buffer < 8'bxxxxxxx && bus_state != IDLE) begin 
-                    next_data_state = ADDR
+                    next_data_state = ADDR;
                     next_data_state = DATA;
                 end 
                 else next_data_state = ADDR;
@@ -130,7 +129,8 @@ module i2c_controller ( inout i2c_sda,
                             master_ack <= i2c_sda;
                         end else begin 
                             repetition <= repetition + 4'd1;
-                            i2c_sda_driver_enable <= data_buffer[4'd7 - repetition];
+                            i2c_sda_driver_enable <= data_out[4'd7 - repetition];
+                            repetition_finish <= 1'b0;
                         end
                         addr_in <= addr_in + 1'b1;
                     end
@@ -144,7 +144,8 @@ module i2c_controller ( inout i2c_sda,
                             repetition <= 4'd0;
                         end else begin 
                             repetition <= repetition + 4'd1;
-                            data_buffer[4'd7 - repetition];
+                            i2c_sda_driver_enable <= 1'b0;
+                            data_buffer[4'd7 - repetition] <= i2c_sda;
                             repetition_finish <= 1'b0;
                         end
                         addr_in <= addr_in + 1'b1;

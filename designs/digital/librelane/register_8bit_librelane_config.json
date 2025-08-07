@@ -1,0 +1,10 @@
+{
+    "DESIGN_NAME": "register_8bit",
+    "FP_PDN_MULTILAYER": false,
+    "CLOCK_PORT": "reg_clk_in",
+    "CLOCK_PERIOD": 2500,
+    "VERILOG_FILES": [
+        "/home/raditya/Documents/mySpace/Projects/Chipathon_2025/sscs-chipathon2025-LNA/designs/digital/register_8bit.v"
+    ],
+    "FP_CORE_UTIL": 40
+}

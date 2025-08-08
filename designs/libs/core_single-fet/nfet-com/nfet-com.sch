@@ -68,20 +68,20 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {lab_wire.sym} 370 -120 0 1 {name=p53 lab=VSS}
-C {lab_wire.sym} 500 -220 0 0 {name=p63 lab=IN[25]}
-C {lab_wire.sym} 540 -190 0 1 {name=p64 lab=IN[24]}
-C {lab_wire.sym} 240 -220 0 1 {name=p65 lab=IN[23]}
-C {lab_wire.sym} 200 -190 0 0 {name=p66 lab=IN[22]}
-C {lab_wire.sym} 500 -100 0 0 {name=p67 lab=IN[29]}
-C {lab_wire.sym} 540 -70 0 1 {name=p68 lab=IN[28]}
-C {lab_wire.sym} 240 -100 0 1 {name=p69 lab=IN[27]}
-C {lab_wire.sym} 200 -70 0 0 {name=p70 lab=IN[26]}
-C {iopin.sym} 120 -220 0 1 {name=p1 lab=IN[22]}
-C {iopin.sym} 120 -200 0 1 {name=p2 lab=IN[23]}
-C {iopin.sym} 120 -180 0 1 {name=p3 lab=IN[24]}
-C {iopin.sym} 120 -160 0 1 {name=p4 lab=IN[25]}
-C {iopin.sym} 120 -140 0 1 {name=p5 lab=IN[26]}
-C {iopin.sym} 120 -120 0 1 {name=p6 lab=IN[27]}
-C {iopin.sym} 120 -100 0 1 {name=p7 lab=IN[28]}
-C {iopin.sym} 120 -80 0 1 {name=p8 lab=IN[29]}
+C {lab_wire.sym} 500 -220 0 0 {name=p63 lab=IN[48]}
+C {lab_wire.sym} 540 -190 0 1 {name=p64 lab=IN[50]}
+C {lab_wire.sym} 240 -220 0 1 {name=p65 lab=IN[44]}
+C {lab_wire.sym} 200 -190 0 0 {name=p66 lab=IN[46]}
+C {lab_wire.sym} 500 -100 0 0 {name=p67 lab=IN[56]}
+C {lab_wire.sym} 540 -70 0 1 {name=p68 lab=IN[58]}
+C {lab_wire.sym} 240 -100 0 1 {name=p69 lab=IN[52]}
+C {lab_wire.sym} 200 -70 0 0 {name=p70 lab=IN[54]}
 C {iopin.sym} 120 -60 0 1 {name=p9 lab=VSS}
+C {iopin.sym} 120 -220 0 1 {name=p1 lab=IN[44]}
+C {iopin.sym} 120 -200 0 1 {name=p2 lab=IN[46]}
+C {iopin.sym} 120 -180 0 1 {name=p3 lab=IN[48]}
+C {iopin.sym} 120 -160 0 1 {name=p4 lab=IN[50]}
+C {iopin.sym} 120 -140 0 1 {name=p5 lab=IN[52]}
+C {iopin.sym} 120 -120 0 1 {name=p6 lab=IN[54]}
+C {iopin.sym} 120 -100 0 1 {name=p7 lab=IN[56]}
+C {iopin.sym} 120 -80 0 1 {name=p8 lab=IN[58]}

@@ -4,35 +4,32 @@ K {}
 V {}
 S {}
 E {}
-C {devices/code_shown.sym} 25 -198.75 0 0 {name=Simulation only_toplevel=false value="
-.control
-
-    save all
-    TRAN 0.2n 12u
-    write tb_swmatrix.raw
-
-.endc
-"}
-C {devices/code_shown.sym} 32.5 -617.5 0 0 {name=Models only_toplevel=false
-format="tcleval( @value )"
-value="
-.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
-C {netlist.sym} 32.5 -502.5 0 0 {name=s1 value="
-.param VDD = 3.3
-
-.global VDDd VSSd
-
-* clock
-abit [ bit_node ]  input_vector
-.model input_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10.txt\\")
-* data
-aclock [ clock_node ] clock_vector
-.model clock_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/libs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_clk.txt\\")
-* convert digital signals to analog
-aconvert [ bit_node clock_node ] [ data clock ] dac_in
-.model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
-"}
-C {libs/core_top-level/top-level/top-level.sym} 310 -930 0 0 {name=x1}
+N 620 -350 740 -350 {lab=#net1}
+N 620 -330 740 -330 {lab=#net2}
+N 620 -310 740 -310 {lab=#net3}
+N 1040 -350 1160 -350 {lab=#net4}
+N 1040 -330 1160 -330 {lab=#net5}
+N 1040 -310 1160 -310 {lab=#net6}
+N 1460 -350 1580 -350 {lab=#net7}
+N 1460 -330 1580 -330 {lab=#net8}
+N 1460 -310 1580 -310 {lab=#net9}
+N 1880 -350 2000 -350 {lab=#net10}
+N 1880 -330 2000 -330 {lab=#net11}
+N 1880 -310 2000 -310 {lab=#net12}
+N 2300 -350 2420 -350 {lab=#net13}
+N 2300 -330 2420 -330 {lab=#net14}
+N 2300 -310 2420 -310 {lab=#net15}
+N 2720 -350 2840 -350 {lab=#net16}
+N 2720 -330 2840 -330 {lab=#net17}
+N 2720 -310 2840 -310 {lab=#net18}
+N 3140 -350 3260 -350 {lab=#net19}
+N 3140 -330 3260 -330 {lab=#net20}
+N 3140 -310 3260 -310 {lab=#net21}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 470 -290 0 0 {name=x1}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 890 -290 0 0 {name=x2}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 1310 -290 0 0 {name=x3}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 1730 -290 0 0 {name=x4}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 2150 -290 0 0 {name=x5}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 2570 -290 0 0 {name=x6}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 2990 -290 0 0 {name=x7}
+C {libs/switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 3410 -290 0 0 {name=x8}

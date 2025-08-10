@@ -9,6 +9,7 @@ C {code_shown.sym} 180 -390 0 0 {name=simulation only_toplevel=false value="
 save all
 	tran 0.1u 15u 
 	plot I(Vmeas) I(Vmeas1) I(Vmeas2) I(Vmeas3) I(Vmeas4)
+	plot Vbias
 	dc vd 0 3.3 0.1
 	plot I(Vmeas) I(Vmeas1) I(Vmeas2) I(Vmeas3) I(Vmeas4) 
 	plot Vbias

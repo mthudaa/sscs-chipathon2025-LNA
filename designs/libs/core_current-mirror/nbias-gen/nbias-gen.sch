@@ -30,9 +30,9 @@ C {lab_wire.sym} 180 -150 0 1 {name=p3 lab=VBIAS}
 C {iopin.sym} 40 -140 0 0 {name=p6 lab=VDD}
 C {iopin.sym} 40 -120 0 0 {name=p7 lab=VSS}
 C {iopin.sym} 40 -100 0 0 {name=p8 lab=VBIAS}
-C {symbols/ppolyf_u_3k.sym} 180 -180 0 0 {name=R2
-W=0.2e-6
-L=13e-6
+C {symbols/ppolyf_u_3k.sym} 180 -180 0 0 {name=R1
+W=1e-6
+L=81e-6
 model=ppolyf_u_3k
 spiceprefix=X
 m=1}

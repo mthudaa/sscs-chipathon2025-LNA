@@ -182,3 +182,5 @@ C {lab_wire.sym} 940 -220 0 0 {name=p120 lab=CLK1_4}
 C {lab_wire.sym} 940 -200 0 0 {name=p121 lab=CLK2_4}
 C {lab_wire.sym} 720 -220 0 1 {name=p133 lab=CLK1_4}
 C {lab_wire.sym} 720 -200 0 1 {name=p134 lab=CLK2_4}
+C {opin.sym} 140 -160 0 0 {name=p13 lab=CLK_1_END}
+C {opin.sym} 140 -140 0 0 {name=p16 lab=CLK_2_END}

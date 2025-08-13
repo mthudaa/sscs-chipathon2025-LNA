@@ -4,10 +4,6 @@ K {}
 V {}
 S {}
 E {}
-N 600 -660 600 -600 {lab=VBIAS}
-N 600 -570 600 -540 {lab=VSS}
-N 560 -620 560 -570 {lab=VBIAS}
-N 560 -620 600 -620 {lab=VBIAS}
 C {lab_pin.sym} 120 -690 0 0 {name=p2 sig_type=std_logic lab=VINN}
 C {lab_pin.sym} 120 -670 0 0 {name=p3 sig_type=std_logic lab=VINP}
 C {lab_pin.sym} 420 -710 0 1 {name=p4 sig_type=std_logic lab=OUT}
@@ -25,7 +21,6 @@ C {lab_pin.sym} 220 -600 0 0 {name=p11 sig_type=std_logic lab=VINN}
 C {lab_pin.sym} 100 -600 0 0 {name=p12 sig_type=std_logic lab=VINP}
 C {gnd.sym} 440 -540 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 440 -600 0 0 {name=p13 sig_type=std_logic lab=VSS}
-C {isource.sym} 600 -690 0 0 {name=I0 value=10u}
 C {devices/code_shown.sym} 30 -210 0 0 {name=NGSPICE only_toplevel=true
 value="
 .control
@@ -37,7 +32,6 @@ plot db(diff_gain)
 write tb_nmos-ota.raw
 .endc
 "}
-C {lab_pin.sym} 600 -720 0 0 {name=p15 sig_type=std_logic lab=VDD}
 C {devices/code_shown.sym} 30 -430 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -50,20 +44,8 @@ value="
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {libs/core_n-ota/nmos-ota/nmos-ota.sym} 270 -690 0 0 {name=x1}
-C {symbols/nfet_03v3.sym} 580 -570 0 0 {name=M1
-L=2u
-W=12.5u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
 C {lab_pin.sym} 120 -710 0 0 {name=p1 lab=VBIAS}
-C {lab_wire.sym} 600 -620 0 1 {name=p6 lab=VBIAS}
-C {lab_pin.sym} 600 -540 0 0 {name=p16 sig_type=std_logic lab=VSS}
+C {libs/core_current-mirror/nbias-gen/nbias-gen.sym} 680 -690 0 0 {name=x2}
+C {lab_wire.sym} 830 -710 0 1 {name=p6 lab=VDD}
+C {lab_wire.sym} 830 -690 0 1 {name=p15 lab=VSS}
+C {lab_wire.sym} 830 -670 0 1 {name=p16 lab=VBIAS}

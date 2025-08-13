@@ -9,12 +9,6 @@ N 200 -160 200 -100 {lab=VBIAS}
 N 160 -190 160 -140 {lab=VBIAS}
 N 160 -140 200 -140 {lab=VBIAS}
 N 200 -40 200 -20 {lab=VSS}
-C {symbols/ppolyf_u_3k.sym} 200 -70 0 0 {name=R1
-W=0.25e-6
-L=13.75e-6
-model=ppolyf_u_3k
-spiceprefix=X
-m=1}
 C {lab_wire.sym} 200 -220 0 1 {name=p1 lab=VDD}
 C {lab_wire.sym} 180 -70 0 0 {name=p2 lab=VSS}
 C {lab_wire.sym} 200 -20 2 0 {name=p4 lab=VSS}
@@ -37,3 +31,9 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 280 -190 0 1 {name=p5 lab=VDD}
+C {symbols/ppolyf_u_3k.sym} 200 -70 0 0 {name=R1
+W=1e-6
+L=81e-6
+model=ppolyf_u_3k
+spiceprefix=X
+m=1}

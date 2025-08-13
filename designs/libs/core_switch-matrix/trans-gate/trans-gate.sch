@@ -25,9 +25,9 @@ C {lab_pin.sym} 310 -150 0 1 {name=p22 lab=SWN}
 C {lab_pin.sym} 230 -150 0 0 {name=p15 lab=SWP}
 C {symbols/nfet_03v3.sym} 430 -260 0 0 {name=M3
 L=0.70u
-W=24u
-nf=1
-m=4
+W=12u
+nf=4
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -39,9 +39,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 430 -160 0 0 {name=M2
 L=0.55u
-W=72u
-nf=1
-m=4
+W=36u
+nf=4
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"

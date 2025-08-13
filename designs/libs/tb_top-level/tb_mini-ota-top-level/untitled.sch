@@ -65,18 +65,6 @@ logy=0
 digital=0
 color=4
 node=vin_px}
-T {The Switch Bit-Stream
-==================
-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0} 1320 -1240 0 0 0.4 0.4 {}
 N 430 -1220 480 -1220 {lab=CLK_PX}
 N 430 -1160 480 -1160 {lab=DATA_PX}
 N 80 -1220 140 -1220 {lab=#net1}
@@ -221,3 +209,25 @@ footprint=1206
 device=resistor
 m=1}
 C {parax_cap.sym} 890 -970 0 0 {name=C6 gnd=0 value=4f m=1}
+C {libs/core_p-ota/pmos-ota/pmos-ota.sym} 1390 -1110 0 0 {name=x3}
+C {libs/core_n-ota/nmos-ota/nmos-ota.sym} 1910 -1110 0 0 {name=x4}
+C {lab_wire.sym} 1240 -1130 0 0 {name=p14 lab=IN[0]}
+C {lab_wire.sym} 1240 -1110 0 0 {name=p15 lab=IN[2]}
+C {lab_wire.sym} 1240 -1090 0 0 {name=p16 lab=IN[4]}
+C {lab_wire.sym} 1540 -1130 0 1 {name=p17 lab=IN[6]}
+C {lab_wire.sym} 1540 -1110 0 1 {name=p33 lab=VDD}
+C {lab_wire.sym} 1540 -1090 0 1 {name=p34 lab=VSS}
+C {lab_wire.sym} 1760 -1130 0 0 {name=p37 lab=IN[1]}
+C {lab_wire.sym} 1760 -1110 0 0 {name=p38 lab=IN[3]}
+C {lab_wire.sym} 1760 -1090 0 0 {name=p39 lab=IN[5]}
+C {lab_wire.sym} 2060 -1130 0 1 {name=p40 lab=IN[7]}
+C {lab_wire.sym} 2060 -1110 0 1 {name=p41 lab=VDD}
+C {lab_wire.sym} 2060 -1090 0 1 {name=p42 lab=VSS}
+C {libs/core_current-mirror/pbias-gen/pbias-gen.sym} 1390 -1210 0 0 {name=x5}
+C {libs/core_current-mirror/nbias-gen/nbias-gen.sym} 1910 -1210 0 0 {name=x6}
+C {lab_wire.sym} 1540 -1230 0 1 {name=p43 lab=VDD}
+C {lab_wire.sym} 1540 -1210 0 1 {name=p44 lab=VSS}
+C {lab_wire.sym} 1540 -1190 0 1 {name=p45 lab=IN[8]}
+C {lab_wire.sym} 2060 -1230 0 1 {name=p46 lab=VDD}
+C {lab_wire.sym} 2060 -1210 0 1 {name=p47 lab=VSS}
+C {lab_wire.sym} 2060 -1190 0 1 {name=p48 lab=IN[9]}

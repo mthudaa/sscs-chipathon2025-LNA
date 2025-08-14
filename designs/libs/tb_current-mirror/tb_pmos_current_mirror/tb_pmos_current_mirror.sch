@@ -14,7 +14,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 "}
-C {libs/core_current-mirror/pmos_current_mirror/pmos_current_mirror.sym} 120 -120 0 0 {name=x1}
+C {core_current-mirror/pmos_current_mirror/pmos_current_mirror.sym} 120 -120 0 0 {name=x1}
 C {lab_pin.sym} 190 -150 0 1 {name=p1 lab=VDD}
 C {lab_pin.sym} 60 -50 0 0 {name=p2 lab=I2}
 C {lab_pin.sym} 40 -50 0 0 {name=p3 lab=I1}

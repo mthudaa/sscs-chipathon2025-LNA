@@ -75,7 +75,7 @@ N 1060 -980 1110 -980 {lab=OUT[1]}
 N 1000 -980 1000 -920 {lab=#net5}
 N 1540 -1190 1640 -1190 {lab=#net6}
 N 1540 -1050 1640 -1050 {lab=#net7}
-C {libs/switch-matrix/switch-matrix-16x10/switch-matrix-16x10.sym} 870 -1120 0 0 {name=x1}
+C {core_switch-matrix/switch-matrix-16x10/switch-matrix-16x10.sym} 870 -1120 0 0 {name=x1}
 C {lab_wire.sym} 720 -1150 0 0 {name=p1 lab=DATA_PX}
 C {lab_wire.sym} 720 -1130 0 0 {name=p2 lab=CLK_PH1}
 C {lab_wire.sym} 720 -1110 0 0 {name=p3 lab=CLK_PH2}
@@ -83,10 +83,10 @@ C {lab_wire.sym} 720 -1090 0 0 {name=p4 lab=RSTN_PX}
 C {lab_wire.sym} 1020 -1150 0 1 {name=p5 lab=VDD}
 C {lab_wire.sym} 1020 -1130 0 1 {name=p6 lab=VSS}
 C {lab_wire.sym} 1020 -1090 0 1 {name=p8 lab=OUT[15:0]}
-C {libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 870 -1210 0 0 {name=x2}
-C {lab_wire.sym} 1020 -1220 0 1 {name=p9 lab=CLK_PH1}
-C {lab_wire.sym} 1020 -1200 0 1 {name=p10 lab=CLK_PH2}
-C {lab_wire.sym} 720 -1220 0 0 {name=p11 lab=CLK_PX}
+C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 870 -1260 0 0 {name=x2}
+C {lab_wire.sym} 1020 -1270 0 1 {name=p9 lab=CLK_PH1}
+C {lab_wire.sym} 1020 -1250 0 1 {name=p10 lab=CLK_PH2}
+C {lab_wire.sym} 720 -1270 0 0 {name=p11 lab=CLK_PX}
 C {devices/code_shown.sym} 125 -508.75 0 0 {name=Simulation only_toplevel=false value="
 .option wnflag=0 bypass=1
 .options method=trap rawfile=binary
@@ -118,10 +118,10 @@ C {netlist.sym} 122.5 -762.5 0 0 {name=s1 value="
 
 * clock
 abit [ bit_node ]  input_vector
-.model input_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/libs/tb_top-level/tb_mini-ota-top-level/data.txt\\")
+.model input_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/tb_top-level/tb_mini-ota-top-level/data.txt\\")
 * data
 aclock [ clock_node ] clock_vector
-.model clock_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/libs/tb_top-level/tb_mini-ota-top-level/data_clk.txt\\")
+.model clock_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/tb_top-level/tb_mini-ota-top-level/data_clk.txt\\")
 * convert digital signals to analog
 aconvert [ bit_node clock_node ] [ data clk ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
@@ -210,8 +210,8 @@ footprint=1206
 device=resistor
 m=1}
 C {parax_cap.sym} 890 -970 0 0 {name=C6 gnd=0 value=4f m=1}
-C {libs/core_p-ota/pmos-ota/pmos-ota.sym} 1790 -1170 0 0 {name=x3}
-C {libs/core_n-ota/nmos-ota/nmos-ota.sym} 1790 -1030 0 0 {name=x4}
+C {core_p-ota/pmos-ota/pmos-ota.sym} 1790 -1170 0 0 {name=x3}
+C {core_n-ota/nmos-ota/nmos-ota.sym} 1790 -1030 0 0 {name=x4}
 C {lab_wire.sym} 1640 -1170 0 0 {name=p15 lab=IN[2]}
 C {lab_wire.sym} 1640 -1150 0 0 {name=p16 lab=IN[4]}
 C {lab_wire.sym} 1940 -1190 0 1 {name=p17 lab=IN[6]}
@@ -222,8 +222,8 @@ C {lab_wire.sym} 1640 -1010 0 0 {name=p39 lab=IN[5]}
 C {lab_wire.sym} 1940 -1050 0 1 {name=p40 lab=IN[7]}
 C {lab_wire.sym} 1940 -1030 0 1 {name=p41 lab=VDD}
 C {lab_wire.sym} 1940 -1010 0 1 {name=p42 lab=VSS}
-C {libs/core_current-mirror/pbias-gen/pbias-gen.sym} 1390 -1210 0 0 {name=x5}
-C {libs/core_current-mirror/nbias-gen/nbias-gen.sym} 1390 -1070 0 0 {name=x6}
+C {core_current-mirror/pbias-gen/pbias-gen.sym} 1390 -1210 0 0 {name=x5}
+C {core_current-mirror/nbias-gen/nbias-gen.sym} 1390 -1070 0 0 {name=x6}
 C {lab_wire.sym} 1540 -1230 0 1 {name=p43 lab=VDD}
 C {lab_wire.sym} 1540 -1210 0 1 {name=p44 lab=VSS}
 C {lab_wire.sym} 1540 -1090 0 1 {name=p46 lab=VDD}
@@ -238,3 +238,5 @@ device=resistor
 m=1}
 C {parax_cap.sym} 1110 -970 0 0 {name=C7 gnd=0 value=4f m=1}
 C {lab_wire.sym} 1020 -1110 0 1 {name=p7 lab=IN[9:0]}
+C {lab_wire.sym} 720 -1220 0 0 {name=p14 lab=VDDd}
+C {lab_wire.sym} 720 -1200 0 0 {name=p37 lab=VSSd}

@@ -67,34 +67,34 @@ N 2360 20 2360 60 {lab=CONFIG_REG[1]}
 N 1880 20 1880 60 {lab=CONFIG_REG[2]}
 N 1400 20 1400 60 {lab=CONFIG_REG[3]}
 N 920 20 920 60 {lab=CONFIG_REG[4]}
-C {libs/core_fpga/AND2_1/AND2_1.sym} 2330 -670 0 0 {name=x3}
-C {libs/core_fpga/OR2_1/OR2_1.sym} 2690 -590 0 0 {name=x6}
-C {libs/core_fpga/AND2_1/AND2_1.sym} 650 -330 0 0 {name=x7}
-C {libs/core_fpga/AND2_1/AND2_1.sym} 650 -110 0 0 {name=x8}
-C {libs/core_fpga/OR2_1/OR2_1.sym} 990 -230 0 0 {name=x9}
-C {libs/core_fpga/AND2_1/AND2_1.sym} 1310 -340 0 0 {name=x10}
-C {libs/core_fpga/OR2_1/OR2_1.sym} 1630 -550 0 0 {name=x11}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2000 -570 0 0 {name=x12 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {core_fpga/AND2_1/AND2_1.sym} 2330 -670 0 0 {name=x3}
+C {core_fpga/OR2_1/OR2_1.sym} 2690 -590 0 0 {name=x6}
+C {core_fpga/AND2_1/AND2_1.sym} 650 -330 0 0 {name=x7}
+C {core_fpga/AND2_1/AND2_1.sym} 650 -110 0 0 {name=x8}
+C {core_fpga/OR2_1/OR2_1.sym} 990 -230 0 0 {name=x9}
+C {core_fpga/AND2_1/AND2_1.sym} 1310 -340 0 0 {name=x10}
+C {core_fpga/OR2_1/OR2_1.sym} 1630 -550 0 0 {name=x11}
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2000 -570 0 0 {name=x12 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 260 -340 0 0 {name=p2 lab=B}
 C {lab_wire.sym} 1160 -350 0 0 {name=p3 lab=A}
 C {lab_wire.sym} 500 -120 0 0 {name=p4 lab=B}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 300 -340 0 0 {name=x13 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/core_fpga/AND2_1/AND2_1.sym} 650 -700 0 0 {name=x17}
-C {libs/core_fpga/AND2_1/AND2_1.sym} 650 -480 0 0 {name=x18}
-C {libs/core_fpga/OR2_1/OR2_1.sym} 990 -600 0 0 {name=x19}
-C {libs/core_fpga/AND2_1/AND2_1.sym} 1310 -710 0 0 {name=x20}
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 300 -340 0 0 {name=x13 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {core_fpga/AND2_1/AND2_1.sym} 650 -700 0 0 {name=x17}
+C {core_fpga/AND2_1/AND2_1.sym} 650 -480 0 0 {name=x18}
+C {core_fpga/OR2_1/OR2_1.sym} 990 -600 0 0 {name=x19}
+C {core_fpga/AND2_1/AND2_1.sym} 1310 -710 0 0 {name=x20}
 C {lab_wire.sym} 500 -490 0 0 {name=p5 lab=B}
 C {lab_wire.sym} 1020 -720 0 0 {name=p6 lab=A}
 C {lab_wire.sym} 260 -710 0 0 {name=p7 lab=B}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 300 -710 0 0 {name=x21 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 1060 -720 0 0 {name=x22 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 300 -710 0 0 {name=x21 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 1060 -720 0 0 {name=x22 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 500 -690 0 0 {name=p8 lab=CONFIG_REG[0]}
 C {lab_wire.sym} 500 -470 0 0 {name=p9 lab=CONFIG_REG[1]}
 C {lab_wire.sym} 500 -320 0 0 {name=p10 lab=CONFIG_REG[2]}
 C {lab_wire.sym} 500 -100 0 0 {name=p11 lab=CONFIG_REG[3]}
 C {lab_wire.sym} 1910 -580 0 0 {name=p12 lab=CLK}
-C {libs/core_fpga/AND2_1/AND2_1.sym} 2330 -480 0 0 {name=x23}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 2000 -680 0 0 {name=x24 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {core_fpga/AND2_1/AND2_1.sym} 2330 -480 0 0 {name=x23}
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 2000 -680 0 0 {name=x24 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 1960 -680 0 0 {name=p13 lab=CONFIG_REG[4]}
 C {lab_wire.sym} 2180 -470 0 0 {name=p14 lab=CONFIG_REG[4]}
 C {lab_wire.sym} 2840 -600 0 1 {name=p1 lab=OUT}
@@ -102,16 +102,16 @@ C {ipin.sym} 180 -160 0 0 {name=p15 lab=A}
 C {ipin.sym} 180 -140 0 0 {name=p16 lab=B}
 C {ipin.sym} 180 -120 0 0 {name=p17 lab=CLK}
 C {opin.sym} 180 -20 0 0 {name=p18 lab=OUT}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 590 70 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 830 70 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1070 70 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1310 70 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1550 70 0 0 {name=x14 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1790 70 0 0 {name=x15 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2030 70 0 0 {name=x16 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2270 70 0 0 {name=x25 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2510 70 0 0 {name=x26 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2750 70 0 0 {name=x27 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 590 70 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 830 70 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1070 70 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1310 70 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1550 70 0 0 {name=x14 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 1790 70 0 0 {name=x15 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2030 70 0 0 {name=x16 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2270 70 0 0 {name=x25 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2510 70 0 0 {name=x26 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 2750 70 0 0 {name=x27 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 500 60 0 0 {name=p20 lab=CLK1}
 C {lab_wire.sym} 740 60 0 0 {name=p21 lab=CLK2}
 C {lab_wire.sym} 980 60 0 0 {name=p22 lab=CLK1}
@@ -129,18 +129,18 @@ C {ipin.sym} 180 -180 0 0 {name=p33 lab=CLK2}
 C {opin.sym} 180 -80 0 0 {name=p34 lab=Q}
 C {ipin.sym} 180 -220 0 0 {name=p35 lab=D}
 C {lab_wire.sym} 2840 20 0 0 {name=p36 lab=CONFIG_REG[0]}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 2880 60 0 0 {name=x28 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 2960 60 0 0 {name=x29 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 2880 60 0 0 {name=x28 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 2960 60 0 0 {name=x29 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 2360 20 0 0 {name=p37 lab=CONFIG_REG[1]}
 C {lab_wire.sym} 1880 20 0 0 {name=p38 lab=CONFIG_REG[2]}
 C {lab_wire.sym} 1400 20 0 0 {name=p39 lab=CONFIG_REG[3]}
 C {lab_wire.sym} 920 20 0 0 {name=p40 lab=CONFIG_REG[4]}
 C {lab_wire.sym} 3000 140 0 1 {name=p19 lab=CLK1_BUFF}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2880 140 0 0 {name=x30 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2960 140 0 0 {name=x31 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2880 140 0 0 {name=x30 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2960 140 0 0 {name=x31 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 3000 220 0 1 {name=p41 lab=CLK2_BUFF}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2880 220 0 0 {name=x32 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2960 220 0 0 {name=x33 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2880 220 0 0 {name=x32 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 2960 220 0 0 {name=x33 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 2840 140 0 0 {name=p42 lab=CLK1}
 C {lab_wire.sym} 2840 220 0 0 {name=p43 lab=CLK2}
 C {opin.sym} 180 -60 0 0 {name=p44 lab=CLK1_BUFF}

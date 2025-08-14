@@ -147,22 +147,22 @@ C {lab_wire.sym} 1180 -610 0 0 {name=p138 lab=RSTN}
 C {lab_wire.sym} 1620 -650 0 0 {name=p140 lab=CLK1}
 C {lab_wire.sym} 1620 -630 0 0 {name=p141 lab=CLK2}
 C {lab_wire.sym} 1620 -610 0 0 {name=p142 lab=RSTN}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 450 -630 0 0 {name=x1}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 890 -630 0 0 {name=x2}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1330 -630 0 0 {name=x3}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1770 -630 0 0 {name=x4}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 450 -490 0 0 {name=x5}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 890 -490 0 0 {name=x6}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1330 -490 0 0 {name=x7}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1770 -490 0 0 {name=x8}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 450 -350 0 0 {name=x9}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 890 -350 0 0 {name=x10}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1330 -350 0 0 {name=x11}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1770 -350 0 0 {name=x12}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 450 -210 0 0 {name=x13}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 890 -210 0 0 {name=x14}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1330 -210 0 0 {name=x15}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1770 -210 0 0 {name=x16}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 450 -630 0 0 {name=x1}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 890 -630 0 0 {name=x2}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1330 -630 0 0 {name=x3}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1770 -630 0 0 {name=x4}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 450 -490 0 0 {name=x5}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 890 -490 0 0 {name=x6}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1330 -490 0 0 {name=x7}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1770 -490 0 0 {name=x8}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 450 -350 0 0 {name=x9}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 890 -350 0 0 {name=x10}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1330 -350 0 0 {name=x11}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1770 -350 0 0 {name=x12}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 450 -210 0 0 {name=x13}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 890 -210 0 0 {name=x14}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1330 -210 0 0 {name=x15}
+C {core_switch-matrix/switch-cell/switch-cell.sym} 1770 -210 0 0 {name=x16}
 C {lab_wire.sym} 320 -100 0 0 {name=p12 lab=CLK_PH1}
 C {lab_wire.sym} 320 -30 0 0 {name=p40 lab=CLK_PH2}
 C {lab_wire.sym} 480 -100 0 1 {name=p41 lab=CLK1}
@@ -173,8 +173,8 @@ C {lab_wire.sym} 1920 -250 0 1 {name=p82 lab=Q}
 C {opin.sym} 100 -280 0 0 {name=p144 lab=Q}
 C {opin.sym} 100 -260 0 0 {name=p145 lab=CLK1}
 C {opin.sym} 100 -240 0 0 {name=p146 lab=CLK2}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 360 -100 0 0 {name=x17 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 440 -100 0 0 {name=x18 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 360 -30 0 0 {name=x19 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 440 -30 0 0 {name=x20 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 360 -100 0 0 {name=x17 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 440 -100 0 0 {name=x18 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 360 -30 0 0 {name=x19 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 440 -30 0 0 {name=x20 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 1920 -490 0 1 {name=p20 lab=VSS}

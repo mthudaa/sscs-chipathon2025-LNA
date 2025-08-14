@@ -68,7 +68,7 @@ C {launcher.sym} 60 -380 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_switch-matrix_no_overlap.raw tran"
 }
-C {libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 610 -140 0 0 {name=x1}
+C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 610 -140 0 0 {name=x1}
 C {vsource.sym} 480 -390 0 0 {name=V1 value=0 savecurrent=false}
 C {gnd.sym} 480 -360 0 0 {name=l2 lab=GND}
 C {lab_wire.sym} 480 -420 0 0 {name=p4 lab=VSSd}

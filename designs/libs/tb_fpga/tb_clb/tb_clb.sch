@@ -30,7 +30,7 @@ sim_type=tran
 digital=1
 y2=3.3}
 N 80 -540 80 -520 {lab=GND}
-C {libs/core_fpga/clb_fpga/clb_fpga.sym} 510 -760 0 0 {name=x1}
+C {core_fpga/clb_fpga/clb_fpga.sym} 510 -760 0 0 {name=x1}
 C {lab_wire.sym} 360 -790 0 0 {name=p1 lab=CONFIG_REG[4:0]}
 C {lab_wire.sym} 360 -770 0 0 {name=p2 lab=A}
 C {lab_wire.sym} 360 -750 0 0 {name=p3 lab=B}

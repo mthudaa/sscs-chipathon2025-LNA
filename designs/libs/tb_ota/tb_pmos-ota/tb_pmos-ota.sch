@@ -52,7 +52,7 @@ value="
 C {lab_pin.sym} 120 -710 0 0 {name=p1 lab=VBIAS}
 C {lab_wire.sym} 600 -620 0 1 {name=p6 lab=VBIAS}
 C {lab_pin.sym} 600 -540 0 0 {name=p16 sig_type=std_logic lab=VSS}
-C {libs/core_p-ota/pmos-ota/pmos-ota.sym} 270 -690 0 0 {name=x1}
+C {core_p-ota/pmos-ota/pmos-ota.sym} 270 -690 0 0 {name=x1}
 C {symbols/pfet_03v3.sym} 580 -680 0 0 {name=M1
 L=2u
 W=12.5u

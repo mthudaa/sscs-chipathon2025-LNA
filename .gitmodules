@@ -4,3 +4,4 @@
 [submodule "designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols"]
 	path = designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols
 	url = https://github.com/peterkinget/gf180mcu_fd_sc_mcu9t5v0_symbols.git
+	branch = pk_updates_20250718

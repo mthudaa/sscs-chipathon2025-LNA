@@ -24,8 +24,8 @@ C {iopin.sym} -530 130 0 0 {name=p1 lab=VDD}
 C {iopin.sym} -530 150 0 0 {name=p2 lab=VSS}
 C {iopin.sym} -530 170 0 0 {name=p3 lab=VBIAS}
 C {symbols/nfet_03v3.sym} -310 60 0 0 {name=M1
-L=5u
-W=15.5u
+L=2u
+W=1.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -61,8 +61,8 @@ C {lab_pin.sym} -10 -130 0 1 {name=p24 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} -10 -110 0 1 {name=p25 sig_type=std_logic lab=VBIAS}
 C {lab_pin.sym} -10 -150 0 1 {name=p26 sig_type=std_logic lab=VDD}
 C {symbols/nfet_03v3.sym} -30 60 0 0 {name=M2
-L=5u
-W=15.5u
+L=2u
+W=1.5u
 nf=1
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -75,10 +75,10 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 260 190 0 0 {name=M3
-L=5u
-W=15.5u
+L=2u
+W=1.5u
 nf=1
-m=5
+m=16
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -89,10 +89,10 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -310 290 0 0 {name=M4
-L=5u
-W=15.5u
+L=2u
+W=1.5u
 nf=1
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -103,10 +103,10 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -30 290 0 0 {name=M5
-L=5u
-W=15.5u
+L=2u
+W=1.5u
 nf=1
-m=4
+m=8
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"

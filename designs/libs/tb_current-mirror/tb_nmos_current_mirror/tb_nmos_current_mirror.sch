@@ -50,5 +50,5 @@ C {lab_pin.sym} 470 130 2 1 {name=p20 lab=VDD}
 C {lab_pin.sym} 530 220 2 0 {name=p21 lab=I5}
 C {ammeter.sym} 500 220 3 1 {name=Vmeas4 savecurrent=true spice_ignore=0}
 C {lab_pin.sym} 470 220 2 1 {name=p22 lab=VDD}
-C {libs/core_current-mirror/nmos_current_mirror/nmos_current_mirror.sym} 110 -100 0 0 {name=x1}
+C {core_current-mirror/nmos_current_mirror/nmos_current_mirror.sym} 110 -100 0 0 {name=x1}
 C {lab_pin.sym} 190 130 1 1 {name=p10 lab=VSS}

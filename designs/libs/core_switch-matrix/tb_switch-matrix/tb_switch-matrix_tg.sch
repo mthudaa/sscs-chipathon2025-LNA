@@ -58,7 +58,7 @@ C {launcher.sym} 470 -90 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_switch-matrix_tg.raw dc"
 }
-C {libs/core_switch-matrix/trans-gate/trans-gate.sym} 470 -440 0 0 {name=x1}
+C {core_switch-matrix/trans-gate/trans-gate.sym} 470 -440 0 0 {name=x1}
 C {devices/code_shown.sym} 10 30 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="

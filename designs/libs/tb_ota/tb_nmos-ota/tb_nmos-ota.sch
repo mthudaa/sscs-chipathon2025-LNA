@@ -4,28 +4,44 @@ K {}
 V {}
 S {}
 E {}
-N 600 -660 600 -600 {lab=VBIAS}
-N 600 -570 600 -540 {lab=VSS}
-N 560 -620 560 -570 {lab=VBIAS}
-N 560 -620 600 -620 {lab=VBIAS}
-C {lab_pin.sym} 120 -690 0 0 {name=p2 sig_type=std_logic lab=VINN}
-C {lab_pin.sym} 120 -670 0 0 {name=p3 sig_type=std_logic lab=VINP}
-C {lab_pin.sym} 420 -710 0 1 {name=p4 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 420 -690 0 1 {name=p5 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 420 -670 0 1 {name=p14 sig_type=std_logic lab=VSS}
-C {vsource.sym} 340 -570 0 0 {name=V1 value=5 savecurrent=false}
-C {vsource.sym} 220 -570 0 0 {name=V2 value="dc 3 ac -1" savecurrent=false}
-C {vsource.sym} 100 -570 0 0 {name=V3 value="dc 3 ac 1" savecurrent=false}
-C {vsource.sym} 440 -570 0 0 {name=V4 value=0 savecurrent=false}
-C {lab_pin.sym} 340 -540 0 0 {name=p7 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 220 -540 0 0 {name=p8 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 100 -540 0 0 {name=p9 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 340 -600 0 0 {name=p10 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 220 -600 0 0 {name=p11 sig_type=std_logic lab=VINN}
-C {lab_pin.sym} 100 -600 0 0 {name=p12 sig_type=std_logic lab=VINP}
-C {gnd.sym} 440 -540 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} 440 -600 0 0 {name=p13 sig_type=std_logic lab=VSS}
-C {isource.sym} 600 -690 0 0 {name=I0 value=10u}
+B 2 1100 -440 1900 -40 {flags=graph
+y1=-0.51
+y2=2.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=8
+unity=1
+x1=0
+x2=10
+divx=5
+subdivx=8
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=1
+logy=1
+sim_type=ac
+color=4
+node=diff_gain}
+C {lab_pin.sym} 150 -530 0 0 {name=p2 sig_type=std_logic lab=VINN}
+C {lab_pin.sym} 150 -510 0 0 {name=p3 sig_type=std_logic lab=VINP}
+C {lab_pin.sym} 450 -550 0 1 {name=p4 sig_type=std_logic lab=OUT}
+C {lab_pin.sym} 450 -530 0 1 {name=p5 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 450 -510 0 1 {name=p14 sig_type=std_logic lab=VSS}
+C {vsource.sym} 960 -410 0 0 {name=V1 value=5 savecurrent=false}
+C {vsource.sym} 690 -410 0 0 {name=V2 value="SINE(1.65 -1.65 10k) dc 3 ac -1" savecurrent=false}
+C {vsource.sym} 690 -320 0 0 {name=V3 value="SINE(1.65 1.65 10k) dc 3 ac 1" savecurrent=false}
+C {vsource.sym} 960 -320 0 0 {name=V4 value=0 savecurrent=false}
+C {lab_pin.sym} 960 -380 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 690 -380 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 690 -290 0 0 {name=p9 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 960 -440 0 0 {name=p10 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 690 -440 0 0 {name=p11 sig_type=std_logic lab=VINN}
+C {lab_pin.sym} 690 -350 0 0 {name=p12 sig_type=std_logic lab=VINP}
+C {gnd.sym} 960 -290 0 0 {name=l1 lab=GND}
+C {lab_pin.sym} 960 -350 0 0 {name=p13 sig_type=std_logic lab=VSS}
 C {devices/code_shown.sym} 30 -210 0 0 {name=NGSPICE only_toplevel=true
 value="
 .control
@@ -34,10 +50,13 @@ ac dec 100 1 10G
 let vdiff = VINP - VINN
 let diff_gain = OUT/vdiff
 plot db(diff_gain)
-write tb_nmos-ota.raw
+write tb_nmos-ota-ac.raw
+reset
+tran 10n 100u
+write tb_nmos-ota-tran.raw
+quit 0
 .endc
 "}
-C {lab_pin.sym} 600 -720 0 0 {name=p15 sig_type=std_logic lab=VDD}
 C {devices/code_shown.sym} 30 -430 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -49,21 +68,17 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {libs/core_n-ota/nmos-ota/nmos-ota.sym} 270 -690 0 0 {name=x1}
-C {symbols/nfet_03v3.sym} 580 -570 0 0 {name=M1
-L=2u
-W=12.5u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
+C {core_n-ota/nmos-ota/nmos-ota.sym} 300 -530 0 0 {name=x1}
+C {lab_pin.sym} 150 -550 0 0 {name=p1 lab=VBIAS}
+C {core_current-mirror/nbias-gen/nbias-gen.sym} 710 -530 0 0 {name=x2}
+C {lab_wire.sym} 860 -550 0 1 {name=p6 lab=VDD}
+C {lab_wire.sym} 860 -530 0 1 {name=p15 lab=VSS}
+C {lab_wire.sym} 860 -510 0 1 {name=p16 lab=VBIAS}
+C {launcher.sym} 660 -150 0 0 {name=h5
+descr="AC SIMULATION" 
+tclcommand="xschem raw_read $netlist_dir/tb_nmos-ota-ac.raw ac"
 }
-C {lab_pin.sym} 120 -710 0 0 {name=p1 lab=VBIAS}
-C {lab_wire.sym} 600 -620 0 1 {name=p6 lab=VBIAS}
-C {lab_pin.sym} 600 -540 0 0 {name=p16 sig_type=std_logic lab=VSS}
+C {launcher.sym} 660 -90 0 0 {name=h1
+descr="TRANSIENT SIMULATION" 
+tclcommand="xschem raw_read $netlist_dir/tb_nmos-ota-tran.raw tran"
+}

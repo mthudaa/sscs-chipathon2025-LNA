@@ -324,7 +324,7 @@ C {lab_wire.sym} 2810 -1270 0 1 {name=p53 lab=VDD}
 C {lab_wire.sym} 2810 -1250 0 1 {name=p54 lab=VSS}
 C {lab_wire.sym} 2810 -1210 0 1 {name=p55 lab=OUT[3:0]}
 C {lab_wire.sym} 2510 -1270 0 0 {name=p63 lab=RSTN}
-C {libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 240 -1300 0 0 {name=x7}
+C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 240 -1300 0 0 {name=x7}
 C {lab_wire.sym} 2810 -1330 0 1 {name=p5 lab=Q}
 C {lab_wire.sym} 90 -1310 0 0 {name=p28 lab=clock}
 C {vsource.sym} 1060 -710 0 0 {name=V4 value="PWL(
@@ -621,9 +621,9 @@ C {launcher.sym} 80 -410 0 0 {name=h1
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_switch-matrix_tg_array_4x1.raw tran"
 }
-C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 590 -1270 0 0 {name=x1}
-C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1000 -1270 0 0 {name=x2}
-C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1420 -1270 0 0 {name=x3}
-C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1830 -1270 0 0 {name=x4}
-C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2250 -1270 0 0 {name=x5}
-C {libs/core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2660 -1270 0 0 {name=x6}
+C {core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 590 -1270 0 0 {name=x1}
+C {core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1000 -1270 0 0 {name=x2}
+C {core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1420 -1270 0 0 {name=x3}
+C {core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 1830 -1270 0 0 {name=x4}
+C {core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2250 -1270 0 0 {name=x5}
+C {core_switch-matrix/switch-matrix-4x1/switch-matrix-4x1.sym} 2660 -1270 0 0 {name=x6}

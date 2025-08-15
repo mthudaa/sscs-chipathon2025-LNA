@@ -68,9 +68,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {core_n-ota/nmos-ota/nmos-ota.sym} 300 -530 0 0 {name=x1}
 C {lab_pin.sym} 150 -550 0 0 {name=p1 lab=VBIAS}
-C {core_current-mirror/nbias-gen/nbias-gen.sym} 710 -530 0 0 {name=x2}
 C {lab_wire.sym} 860 -550 0 1 {name=p6 lab=VDD}
 C {lab_wire.sym} 860 -530 0 1 {name=p15 lab=VSS}
 C {lab_wire.sym} 860 -510 0 1 {name=p16 lab=VBIAS}
@@ -82,3 +80,5 @@ C {launcher.sym} 660 -90 0 0 {name=h1
 descr="TRANSIENT SIMULATION" 
 tclcommand="xschem raw_read $netlist_dir/tb_nmos-ota-tran.raw tran"
 }
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_n-ota/nmos-ota/nmos-ota.sym} 300 -530 0 0 {name=x3}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_current-mirror/nbias-gen/nbias-gen.sym} 710 -530 0 0 {name=x1}

@@ -4,10 +4,6 @@ K {}
 V {}
 S {}
 E {}
-N 600 -710 600 -680 {lab=VDD}
-N 560 -680 560 -620 {lab=VBIAS}
-N 560 -620 600 -620 {lab=VBIAS}
-N 600 -650 600 -600 {lab=VBIAS}
 C {lab_pin.sym} 120 -690 0 0 {name=p2 sig_type=std_logic lab=VINN}
 C {lab_pin.sym} 120 -670 0 0 {name=p3 sig_type=std_logic lab=VINP}
 C {lab_pin.sym} 420 -710 0 1 {name=p4 sig_type=std_logic lab=OUT}
@@ -25,8 +21,7 @@ C {lab_pin.sym} 220 -600 0 0 {name=p11 sig_type=std_logic lab=VINN}
 C {lab_pin.sym} 100 -600 0 0 {name=p12 sig_type=std_logic lab=VINP}
 C {gnd.sym} 440 -540 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 440 -600 0 0 {name=p13 sig_type=std_logic lab=VSS}
-C {isource.sym} 600 -570 0 0 {name=I0 value=10u}
-C {devices/code_shown.sym} 30 -210 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} 630 -470 0 0 {name=NGSPICE only_toplevel=true
 value="
 .control
 save all
@@ -34,10 +29,9 @@ ac dec 100 1 10G
 let vdiff = VINP - VINN
 let diff_gain = OUT/vdiff
 plot db(diff_gain)
-write tb_nmos-ota.raw
+write tb_pmos-ota.raw
 .endc
 "}
-C {lab_pin.sym} 600 -710 0 1 {name=p15 sig_type=std_logic lab=VDD}
 C {devices/code_shown.sym} 30 -430 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -50,20 +44,8 @@ value="
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {lab_pin.sym} 120 -710 0 0 {name=p1 lab=VBIAS}
-C {lab_wire.sym} 600 -620 0 1 {name=p6 lab=VBIAS}
-C {lab_pin.sym} 600 -540 0 0 {name=p16 sig_type=std_logic lab=VSS}
-C {core_p-ota/pmos-ota/pmos-ota.sym} 270 -690 0 0 {name=x1}
-C {symbols/pfet_03v3.sym} 580 -680 0 0 {name=M1
-L=2u
-W=12.5u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=pfet_03v3
-spiceprefix=X
-}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_p-ota/pmos-ota/pmos-ota.sym} 270 -690 0 0 {name=x1}
+C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_current-mirror/pbias-gen/pbias-gen.sym} 690 -690 0 0 {name=x2}
+C {lab_pin.sym} 840 -670 0 1 {name=p6 lab=VBIAS}
+C {lab_pin.sym} 840 -690 0 1 {name=p15 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 840 -710 0 1 {name=p16 sig_type=std_logic lab=VDD}

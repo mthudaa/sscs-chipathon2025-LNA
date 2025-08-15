@@ -1,0 +1,180 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO clb_3bit
+  CLASS BLOCK ;
+  FOREIGN clb_3bit ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 39.420 BY 57.340 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 22.240 15.380 23.840 39.500 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 25.540 15.380 27.140 39.500 ;
+    END
+  END VSS
+  PIN clb_clk_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.675500 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 40.320 4.000 40.880 ;
+    END
+  END clb_clk_in
+  PIN clb_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 36.960 4.000 37.520 ;
+    END
+  END clb_in[0]
+  PIN clb_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 13.440 4.000 14.000 ;
+    END
+  END clb_in[1]
+  PIN clb_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 16.800 4.000 17.360 ;
+    END
+  END clb_in[2]
+  PIN clb_mode_seq
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 35.420 33.600 39.420 34.160 ;
+    END
+  END clb_mode_seq
+  PIN clb_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.986000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 30.240 4.000 30.800 ;
+    END
+  END clb_out
+  PIN lut_data_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 35.420 20.160 39.420 20.720 ;
+    END
+  END lut_data_in[0]
+  PIN lut_data_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 35.420 26.880 39.420 27.440 ;
+    END
+  END lut_data_in[1]
+  PIN lut_data_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 26.880 4.000 27.440 ;
+    END
+  END lut_data_in[2]
+  PIN lut_data_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 23.520 4.000 24.080 ;
+    END
+  END lut_data_in[3]
+  PIN lut_data_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 35.420 23.520 39.420 24.080 ;
+    END
+  END lut_data_in[4]
+  PIN lut_data_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 35.420 30.240 39.420 30.800 ;
+    END
+  END lut_data_in[5]
+  PIN lut_data_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 33.600 4.000 34.160 ;
+    END
+  END lut_data_in[6]
+  PIN lut_data_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 20.160 4.000 20.720 ;
+    END
+  END lut_data_in[7]
+  OBS
+      LAYER Nwell ;
+        RECT 6.290 15.250 32.910 39.630 ;
+      LAYER Metal1 ;
+        RECT 6.720 15.380 32.480 39.500 ;
+      LAYER Metal2 ;
+        RECT 8.540 13.530 30.660 40.790 ;
+      LAYER Metal3 ;
+        RECT 4.300 40.020 35.420 40.740 ;
+        RECT 4.000 37.820 35.420 40.020 ;
+        RECT 4.300 36.660 35.420 37.820 ;
+        RECT 4.000 34.460 35.420 36.660 ;
+        RECT 4.300 33.300 35.120 34.460 ;
+        RECT 4.000 31.100 35.420 33.300 ;
+        RECT 4.300 29.940 35.120 31.100 ;
+        RECT 4.000 27.740 35.420 29.940 ;
+        RECT 4.300 26.580 35.120 27.740 ;
+        RECT 4.000 24.380 35.420 26.580 ;
+        RECT 4.300 23.220 35.120 24.380 ;
+        RECT 4.000 21.020 35.420 23.220 ;
+        RECT 4.300 19.860 35.120 21.020 ;
+        RECT 4.000 17.660 35.420 19.860 ;
+        RECT 4.300 16.500 35.420 17.660 ;
+        RECT 4.000 14.300 35.420 16.500 ;
+        RECT 4.300 13.580 35.420 14.300 ;
+  END
+END clb_3bit
+END LIBRARY
+

@@ -85,19 +85,18 @@ N 80 -1100 140 -1100 {lab=#net3}
 N 430 -1100 480 -1100 {lab=RSTN_PX}
 N 840 -980 890 -980 {lab=VIN_PX}
 N 780 -980 780 -920 {lab=#net4}
-C {switch-matrix/switch-matrix-16x10/switch-matrix-16x10.sym} 870 -1120 0 0 {name=x1}
-C {lab_wire.sym} 720 -1150 0 0 {name=p1 lab=DATA_PX}
-C {lab_wire.sym} 720 -1130 0 0 {name=p2 lab=CLK_PH1}
-C {lab_wire.sym} 720 -1110 0 0 {name=p3 lab=CLK_PH2}
-C {lab_wire.sym} 720 -1090 0 0 {name=p4 lab=RSTN_PX}
-C {lab_wire.sym} 1020 -1150 0 1 {name=p5 lab=VDD}
-C {lab_wire.sym} 1020 -1130 0 1 {name=p6 lab=VSS}
-C {lab_wire.sym} 1020 -1110 0 1 {name=p7 lab=VIN_PX}
-C {lab_wire.sym} 1020 -1090 0 1 {name=p8 lab=OUT[15:0]}
-C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 870 -1210 0 0 {name=x2}
-C {lab_wire.sym} 1020 -1220 0 1 {name=p9 lab=CLK_PH1}
-C {lab_wire.sym} 1020 -1200 0 1 {name=p10 lab=CLK_PH2}
-C {lab_wire.sym} 720 -1220 0 0 {name=p11 lab=CLK_PX}
+C {lab_wire.sym} 710 -1280 0 0 {name=p1 lab=DATA_PX}
+C {lab_wire.sym} 710 -1260 0 0 {name=p2 lab=CLK_PH1}
+C {lab_wire.sym} 710 -1240 0 0 {name=p3 lab=CLK_PH2}
+C {lab_wire.sym} 710 -1220 0 0 {name=p4 lab=RSTN_PX}
+C {lab_wire.sym} 1010 -1280 0 1 {name=p5 lab=VDD}
+C {lab_wire.sym} 1010 -1260 0 1 {name=p6 lab=VSS}
+C {lab_wire.sym} 1010 -1240 0 1 {name=p7 lab=VIN_PX}
+C {lab_wire.sym} 1010 -1220 0 1 {name=p8 lab=OUT[15:0]}
+C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 870 -1130 0 0 {name=x2}
+C {lab_wire.sym} 1020 -1140 0 1 {name=p9 lab=CLK_PH1}
+C {lab_wire.sym} 1020 -1120 0 1 {name=p10 lab=CLK_PH2}
+C {lab_wire.sym} 720 -1140 0 0 {name=p11 lab=CLK_PX}
 C {devices/code_shown.sym} 125 -508.75 0 0 {name=Simulation only_toplevel=false value="
 .option wnflag=0 bypass=1
 .options method=trap rawfile=binary
@@ -221,3 +220,6 @@ footprint=1206
 device=resistor
 m=1}
 C {parax_cap.sym} 890 -970 0 0 {name=C6 gnd=0 value=4f m=1}
+C {libs/core_switch-matrix/switch-matrix-16x10/switch-matrix-16x10.sym} 860 -1250 0 0 {name=x1}
+C {lab_wire.sym} 720 -1090 0 0 {name=p14 lab=VDDd}
+C {lab_wire.sym} 720 -1070 0 0 {name=p15 lab=VSSd}

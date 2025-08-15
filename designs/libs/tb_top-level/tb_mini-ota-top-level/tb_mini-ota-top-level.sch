@@ -30,15 +30,10 @@ out[1]
 out[0]"
 hilight_wave=0}
 B 2 1240 -430 2040 -30 {flags=graph
-y1=-0.52464991
-y2=4.3186638
-ypos1=0.31349514
-ypos2=1.4653655
-divy=5
+ypos1=-0.26047691
+ypos2=2.3873268
 subdivy=1
 unity=1
-x1=2e-11
-x2=0.0002
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -50,7 +45,12 @@ logy=0
 digital=1
 color="4 4"
 node="data_px
-clk_px"}
+clk_px"
+y2=3.3
+y1=0
+divy=5
+x1=2e-11
+x2=0.0002}
 T {The Switch Bit-Stream
 =================
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -4,36 +4,27 @@ K {}
 V {}
 S {}
 E {}
-B 2 1120 -680 1920 -280 {flags=graph
+B 2 1260 -500 2060 -100 {flags=graph
 y1=0
-ypos1=2.1310871
-ypos2=5.3807326
+ypos1=0.17587271
+ypos2=2.7898082
 divy=5
 subdivy=1
 unity=1
-x1=-6.7138393e-07
-x2=8.079023e-06
+x1=1.0587912e-22
+x2=1e-05
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="clk
-a
-b
+in[1]
+in[0]
 out4
 out3
 out2
-out1
-data
-ck
-clk1
-clk2
-x1.config_reg[4]
-x1.config_reg[3]
-x1.config_reg[2]
-x1.config_reg[1]
-x1.config_reg[0]"
-color="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19"
+out1"
+color="4 5 6 7 8 9 10 4"
 dataset=-1
 unitx=1
 logx=0
@@ -43,27 +34,29 @@ digital=1
 y2=3.3}
 T {CLB Register
 ==============================================
-1000,[0/1] => NAND
-0111,[0/1] => OR
+0111,[0/1] => NAND
+1110,[0/1] => OR
 0001,[0/1] => NOR
-1110,[0/1] => AND
+1000,[0/1] => AND
 1001,[0/1] => XNOR
 0110,[0/1] => XOR
 
-NB : [0/1] is MSB stand for [0/1] => [Sequential(FF)/Combinational(ABC)]} 1120 -940 0 0 0.4 0.4 {}
+NB : [0/1] is LSB stand for [0/1] => [Combinational(ABC)/Sequential(FF)]} 1120 -940 0 0 0.4 0.4 {}
+T {AND} 2110 -1120 0 0 0.4 0.4 {}
+T {OR} 1640 -1120 0 0 0.4 0.4 {}
+T {NAND} 1200 -1120 0 0 0.4 0.4 {}
+T {NOR} 760 -1120 0 0 0.4 0.4 {}
 N 100 -800 100 -780 {lab=GND}
-N 940 -1030 1080 -1030 {lab=#net1}
-N 940 -1050 1080 -1050 {lab=#net2}
+N 1820 -1070 2000 -1070 {lab=#net1}
+N 1380 -1070 1520 -1070 {lab=#net2}
 N 940 -1070 1080 -1070 {lab=#net3}
-N 1380 -1070 1520 -1070 {lab=#net4}
-N 1380 -1050 1520 -1050 {lab=#net5}
-N 1380 -1030 1520 -1030 {lab=#net6}
-N 1820 -1070 2000 -1070 {lab=#net7}
+N 940 -1050 1080 -1050 {lab=#net4}
+N 940 -1030 1080 -1030 {lab=#net5}
+N 1380 -1050 1520 -1050 {lab=#net6}
+N 1380 -1030 1520 -1030 {lab=#net7}
 N 1820 -1050 2000 -1050 {lab=#net8}
 N 1820 -1030 2000 -1030 {lab=#net9}
-C {core_fpga/clb_fpga/clb_fpga.sym} 790 -1020 0 0 {name=x1}
 C {devices/code_shown.sym} 35 -518.75 0 0 {name=Simulation only_toplevel=false value="
-.global VDDd VSSd
 * clock
 abit [ bit_node ]  input_vector
 .model input_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/libs/tb_fpga/tb_clb/data.txt\\")
@@ -75,11 +68,10 @@ aconvert [ bit_node clock_node ] [ data ck ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
 
 .control
-
     save all
     TRAN 0.2n 10u
     write tb_clb.raw
-
+    quit
 .endc
 "}
 C {devices/code_shown.sym} 32.5 -657.5 0 0 {name=Models only_toplevel=false
@@ -100,10 +92,10 @@ C {lab_wire.sym} 380 -800 2 0 {name=p19 lab=VSSd}
 C {vsource.sym} 580 -830 0 0 {name=V9 value="pulse(0 3.3 0 0 0 1u 2u)" savecurrent=false}
 C {lab_wire.sym} 580 -800 2 0 {name=p20 lab=VSSd}
 C {lab_wire.sym} 380 -860 0 0 {name=p21 lab=CLK}
-C {lab_wire.sym} 580 -860 0 0 {name=p22 lab=A}
+C {lab_wire.sym} 580 -860 0 0 {name=p22 lab=IN[0]}
 C {vsource.sym} 800 -830 0 0 {name=V10 value="pulse(0 3.3 0 0 0 2u 4u)" savecurrent=false}
 C {lab_wire.sym} 800 -800 2 0 {name=p23 lab=VSSd}
-C {lab_wire.sym} 800 -860 0 0 {name=p24 lab=B}
+C {lab_wire.sym} 800 -860 0 0 {name=p24 lab=IN[1]}
 C {launcher.sym} 100 -720 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_clb.raw tran"
@@ -111,28 +103,11 @@ tclcommand="xschem raw_read $netlist_dir/tb_clb.raw tran"
 C {lab_wire.sym} 640 -1070 0 0 {name=p1 lab=DATA}
 C {lab_wire.sym} 640 -1050 0 0 {name=p2 lab=CLK1}
 C {lab_wire.sym} 640 -1030 0 0 {name=p3 lab=CLK2}
-C {lab_wire.sym} 640 -1010 0 0 {name=p4 lab=A}
-C {lab_wire.sym} 640 -990 0 0 {name=p5 lab=B}
-C {lab_wire.sym} 640 -970 0 0 {name=p25 lab=CLK}
 C {lab_wire.sym} 940 -1010 0 1 {name=p29 lab=OUT4}
-C {core_fpga/clb_fpga/clb_fpga.sym} 1230 -1020 0 0 {name=x2}
-C {lab_wire.sym} 1080 -1010 0 0 {name=p30 lab=A}
-C {lab_wire.sym} 1080 -990 0 0 {name=p31 lab=B}
-C {lab_wire.sym} 1080 -970 0 0 {name=p32 lab=CLK}
+C {lab_wire.sym} 940 -970 0 1 {name=p32 lab=CLK}
 C {lab_wire.sym} 1380 -1010 0 1 {name=p33 lab=OUT3}
-C {core_fpga/clb_fpga/clb_fpga.sym} 1670 -1020 0 0 {name=x3}
-C {lab_wire.sym} 1520 -1010 0 0 {name=p26 lab=A}
-C {lab_wire.sym} 1520 -990 0 0 {name=p27 lab=B}
-C {lab_wire.sym} 1520 -970 0 0 {name=p28 lab=CLK}
 C {lab_wire.sym} 1820 -1010 0 1 {name=p34 lab=OUT2}
-C {core_fpga/clb_fpga/clb_fpga.sym} 2150 -1020 0 0 {name=x4}
-C {lab_wire.sym} 2000 -1010 0 0 {name=p35 lab=A}
-C {lab_wire.sym} 2000 -990 0 0 {name=p36 lab=B}
-C {lab_wire.sym} 2000 -970 0 0 {name=p37 lab=CLK}
 C {lab_wire.sym} 2300 -1010 0 1 {name=p38 lab=OUT1}
-C {lab_wire.sym} 2300 -1070 0 1 {name=p39 lab=Q}
-C {lab_wire.sym} 2300 -1050 0 1 {name=p40 lab=CLK1_BUFF}
-C {lab_wire.sym} 2300 -1030 0 1 {name=p41 lab=CLK2_BUFF}
 C {libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 370 -1040 0 0 {name=x5}
 C {lab_wire.sym} 520 -1050 0 1 {name=p42 lab=CLK1}
 C {lab_wire.sym} 520 -1030 0 1 {name=p43 lab=CLK2}
@@ -140,3 +115,25 @@ C {lab_wire.sym} 220 -1050 0 0 {name=p44 lab=CK}
 C {lab_wire.sym} 220 -1000 0 0 {name=p45 lab=VDDd}
 C {lab_wire.sym} 220 -980 0 0 {name=p46 lab=VSSd}
 C {title.sym} 170 -50 0 0 {name=l3 author="M Taufiqul Huda"}
+C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 790 -1020 0 0 {name=x1}
+C {lab_wire.sym} 940 -990 0 1 {name=p4 lab=IN[1:0]}
+C {lab_wire.sym} 1380 -970 0 1 {name=p12 lab=CLK}
+C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1230 -1020 0 0 {name=x2}
+C {lab_wire.sym} 1380 -990 0 1 {name=p13 lab=IN[1:0]}
+C {lab_wire.sym} 1820 -970 0 1 {name=p14 lab=CLK}
+C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1670 -1020 0 0 {name=x3}
+C {lab_wire.sym} 1820 -990 0 1 {name=p15 lab=IN[1:0]}
+C {lab_wire.sym} 2300 -970 0 1 {name=p18 lab=CLK}
+C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 2150 -1020 0 0 {name=x4}
+C {lab_wire.sym} 2300 -990 0 1 {name=p25 lab=IN[1:0]}
+C {lab_wire.sym} 2300 -1070 0 1 {name=p26 lab=Q}
+C {lab_wire.sym} 640 -1010 0 0 {name=p27 lab=VDDd}
+C {lab_wire.sym} 640 -990 0 0 {name=p28 lab=VSSd}
+C {lab_wire.sym} 1080 -1010 0 0 {name=p30 lab=VDDd}
+C {lab_wire.sym} 1080 -990 0 0 {name=p31 lab=VSSd}
+C {lab_wire.sym} 1520 -1010 0 0 {name=p35 lab=VDDd}
+C {lab_wire.sym} 1520 -990 0 0 {name=p36 lab=VSSd}
+C {lab_wire.sym} 2000 -1010 0 0 {name=p37 lab=VDDd}
+C {lab_wire.sym} 2000 -990 0 0 {name=p39 lab=VSSd}
+C {lab_wire.sym} 2300 -1050 0 1 {name=p5 lab=CLK1_BUFF}
+C {lab_wire.sym} 2300 -1030 0 1 {name=p9 lab=CLK2_BUFF}

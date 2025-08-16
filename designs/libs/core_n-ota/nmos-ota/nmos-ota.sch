@@ -94,7 +94,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 350 -170 0 1 {name=M6
 L=2u
-W=17.5u
+W=25u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -109,7 +109,7 @@ spiceprefix=X
 C {symbols/nfet_03v3.sym} 610 -170 0 0 {name=M7
 L=0.5u
 W=1u
-nf=1
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -156,4 +156,3 @@ C {iopin.sym} 40 -240 0 0 {name=p21 lab=VDD}
 C {iopin.sym} 40 -200 0 0 {name=p22 lab=VSS}
 C {ipin.sym} 60 -400 0 0 {name=p23 lab=VBIAS}
 C {lab_wire.sym} 490 -170 0 0 {name=p1 sig_type=std_logic lab=VBIAS}
-C {lab_wire.sym} 600 -450 0 0 {name=p7 sig_type=std_logic lab=VDD}

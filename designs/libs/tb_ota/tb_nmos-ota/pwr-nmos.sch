@@ -11,7 +11,7 @@ C {lab_pin.sym} 510 -620 0 1 {name=p4 sig_type=std_logic lab=OUT}
 C {lab_pin.sym} 510 -600 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 510 -580 0 1 {name=p14 sig_type=std_logic lab=VSS}
 C {vsource.sym} 1020 -480 0 0 {name=V1 value=3.3 savecurrent=false}
-C {vsource.sym} 750 -480 0 0 {name=V2 value="0" savecurrent=false}
+C {vsource.sym} 750 -480 0 0 {name=V2 value="dc 1.65" savecurrent=false}
 C {vsource.sym} 1020 -390 0 0 {name=V4 value=0 savecurrent=false}
 C {lab_pin.sym} 1020 -450 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 750 -450 0 0 {name=p8 sig_type=std_logic lab=VSS}

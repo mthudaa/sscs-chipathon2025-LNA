@@ -4,31 +4,32 @@ K {}
 V {}
 S {}
 E {}
-N 1160 -380 1160 -370 {lab=VDD}
+N 840 -470 840 -460 {lab=VDD}
 C {lab_pin.sym} 180 -550 0 0 {name=p2 sig_type=std_logic lab=VINN}
 C {lab_pin.sym} 180 -530 0 0 {name=p3 sig_type=std_logic lab=VINP}
 C {lab_pin.sym} 480 -570 0 1 {name=p4 sig_type=std_logic lab=OUT}
 C {lab_pin.sym} 480 -550 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 480 -530 0 1 {name=p14 sig_type=std_logic lab=VSS}
-C {vsource.sym} 1160 -340 0 0 {name=V1 value="DC 3.3" savecurrent=false}
-C {vsource.sym} 720 -430 0 0 {name=V2 value="dc 1.65 ac -1" savecurrent=false}
-C {vsource.sym} 720 -340 0 0 {name=V3 value="dc 1.65 ac 1" savecurrent=false}
-C {vsource.sym} 990 -340 0 0 {name=V4 value="AC 1" savecurrent=false}
-C {lab_pin.sym} 1160 -310 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {vsource.sym} 840 -430 0 0 {name=V1 value="DC 3.3 AC 1" savecurrent=false}
+C {vsource.sym} 720 -430 0 0 {name=V2 value="dc 3 ac -1" savecurrent=false}
+C {vsource.sym} 720 -340 0 0 {name=V3 value="dc 3 ac 1" savecurrent=false}
+C {vsource.sym} 840 -340 0 0 {name=V4 value=0 savecurrent=false}
+C {lab_pin.sym} 840 -400 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 720 -400 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 720 -310 0 0 {name=p9 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 1160 -380 0 0 {name=p10 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 840 -470 0 0 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 720 -460 0 0 {name=p11 sig_type=std_logic lab=VINN}
 C {lab_pin.sym} 720 -370 0 0 {name=p12 sig_type=std_logic lab=VINP}
-C {gnd.sym} 990 -310 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} 990 -370 0 0 {name=p13 sig_type=std_logic lab=VSS}
-C {devices/code_shown.sym} 50 -230 0 0 {name=NGSPICE only_toplevel=true
+C {gnd.sym} 840 -310 0 0 {name=l1 lab=GND}
+C {lab_pin.sym} 840 -370 0 0 {name=p13 sig_type=std_logic lab=VSS}
+C {devices/code_shown.sym} 60 -230 0 0 {name=NGSPICE only_toplevel=true
 value="
 .control
 save all
 ac dec 100 1 10G
 let vdiff = VINP - VINN
 let diff_gain = OUT/vdiff
+let psrr = 1/OUT
 plot db(mag(v(OUT)))
 .endc
 "}

@@ -10,8 +10,8 @@ N 150 -640 170 -640 {lab=VCM}
 C {lab_pin.sym} 470 -660 0 1 {name=p4 sig_type=std_logic lab=OUT}
 C {lab_pin.sym} 470 -640 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 470 -620 0 1 {name=p14 sig_type=std_logic lab=VSS}
-C {vsource.sym} 980 -520 0 0 {name=V1 value=5 savecurrent=false}
-C {vsource.sym} 710 -520 0 0 {name=V2 value="SINE(1.65 -1.65 10k) dc 3 ac -1" savecurrent=false}
+C {vsource.sym} 980 -520 0 0 {name=V1 value=3.3 savecurrent=false}
+C {vsource.sym} 710 -520 0 0 {name=V2 value="dc 1.65 ac -1" savecurrent=false}
 C {vsource.sym} 980 -430 0 0 {name=V4 value=0 savecurrent=false}
 C {lab_pin.sym} 980 -490 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 710 -490 0 0 {name=p8 sig_type=std_logic lab=VSS}

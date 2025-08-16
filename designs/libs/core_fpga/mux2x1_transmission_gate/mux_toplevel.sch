@@ -14,8 +14,6 @@ N 400 -280 440 -280 {lab=vdd}
 N 400 -40 430 -40 {lab=vss}
 N 400 -180 420 -180 {lab=vss}
 N 420 -180 430 -180 {lab=vss}
-N -60 90 -40 90 {lab=vdd}
-N -40 40 -40 90 {lab=vdd}
 N 430 -30 430 10 {lab=vss}
 N 430 -180 430 -170 {lab=vss}
 N 440 -310 440 -280 {lab=vdd}
@@ -49,7 +47,6 @@ N 1170 -150 1180 -150 {lab=vdd}
 N 430 -40 1170 -40 {lab=vss}
 N 1170 -110 1170 -40 {lab=vss}
 N 850 -110 850 -40 {lab=vss}
-N -40 -270 -40 50 {lab=vdd}
 N -40 -280 -40 -270 {lab=vdd}
 N -40 -280 400 -280 {lab=vdd}
 N 430 -170 430 -40 {lab=vss}
@@ -58,14 +55,16 @@ N 450 -280 450 -80 {lab=vdd}
 N -40 150 400 150 {lab=vss}
 N 400 -40 400 150 {lab=vss}
 N 20 110 20 120 {lab=#net1}
+N -40 -270 -40 100 {lab=vdd}
+N -60 100 -40 100 {lab=vdd}
 C {iopin.sym} 440 -310 0 0 {name=p1 lab=vdd}
 C {opin.sym} 1220 -130 0 0 {name=p5 lab=out}
 C {ipin.sym} -410 -230 0 0 {name=p6 lab=input_a}
 C {ipin.sym} -410 -80 0 0 {name=p7 lab=input_b}
 C {ipin.sym} -410 120 0 0 {name=p8 lab=selector}
 C {iopin.sym} 430 10 0 0 {name=p4 lab=vss}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_tg.sym} 250 -210 0 0 {name=x2}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_tg.sym} 250 -60 0 0 {name=x3}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_inverter.sym} -210 120 0 0 {name=x1}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_inverter.sym} 700 -130 0 0 {name=x4}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_inverter.sym} 1020 -130 0 0 {name=x5}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_tg.sym} 250 -210 0 0 {name=x2}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_inverter.sym} -210 120 0 0 {name=x1}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_tg.sym} 250 -60 0 0 {name=x3}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_inverter.sym} 700 -130 0 0 {name=x4}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_inverter.sym} 1020 -130 0 0 {name=x5}

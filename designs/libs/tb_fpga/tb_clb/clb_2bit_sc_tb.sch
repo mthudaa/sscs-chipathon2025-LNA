@@ -11,8 +11,8 @@ ypos2=4.1902486
 divy=5
 subdivy=1
 unity=1
-x1=3.347439e-05
-x2=9.145645e-05
+x1=-4.213949e-06
+x2=5.3768111e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -114,6 +114,8 @@ N 250 30 250 40 {lab=GND}
 N -1180 70 -1180 110 {lab=GND}
 N -1180 110 -1060 110 {lab=GND}
 N -1180 -20 -1180 10 {lab=VDDd}
+N -1290 70 -1290 110 {lab=GND}
+N -1290 110 -1180 110 {lab=GND}
 C {capa.sym} -540 80 0 0 {name=C3
 m=1
 value=5p
@@ -201,5 +203,7 @@ C {vsource.sym} -1180 40 0 0 {name=VGLOBAL value=3.3 savecurrent=false
 lab=VDDd}
 C {lab_pin.sym} -1180 -20 0 0 {name=p8 sig_type=std_logic lab=VDDd
 }
-C {lab_pin.sym} -1180 110 0 0 {name=p9 sig_type=std_logic lab=VSSd
+C {lab_pin.sym} -1290 10 0 0 {name=p9 sig_type=std_logic lab=VSSd
 }
+C {vsource.sym} -1290 40 0 0 {name=VGLOBAL1 value=0 savecurrent=false
+lab=VDDd}

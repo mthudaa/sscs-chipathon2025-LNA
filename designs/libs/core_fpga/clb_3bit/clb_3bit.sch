@@ -4,252 +4,104 @@ K {}
 V {}
 S {}
 E {}
-N 280 -310 330 -310 {lab=vdd}
-N 330 -310 330 50 {lab=vdd}
-N 280 50 330 50 {lab=vdd}
-N 280 -70 330 -70 {lab=vdd}
-N 280 -190 330 -190 {lab=vdd}
-N 280 -270 300 -270 {lab=vss}
-N 300 -270 300 90 {lab=vss}
-N 280 90 300 90 {lab=vss}
-N 280 -30 300 -30 {lab=vss}
-N 280 -150 300 -150 {lab=vss}
-N 280 -290 320 -290 {lab=#net1}
-N 320 -290 380 -290 {lab=#net1}
-N 380 -290 380 -190 {lab=#net1}
-N 380 -190 430 -190 {lab=#net1}
-N 280 -170 430 -170 {lab=#net2}
-N 280 -50 370 -50 {lab=#net3}
-N 370 -70 370 -50 {lab=#net3}
-N 370 -70 430 -70 {lab=#net3}
-N 280 70 390 70 {lab=#net4}
-N 390 -50 390 70 {lab=#net4}
-N 390 -50 430 -50 {lab=#net4}
-N 730 -170 780 -170 {lab=#net5}
-N 780 -170 780 -140 {lab=#net5}
-N 780 -140 830 -140 {lab=#net5}
-N 730 -50 770 -50 {lab=#net6}
-N 770 -120 770 -50 {lab=#net6}
-N 770 -120 830 -120 {lab=#net6}
-N 730 -70 750 -70 {lab=vdd}
-N 750 -190 750 -70 {lab=vdd}
-N 730 -190 750 -190 {lab=vdd}
-N 730 -150 740 -150 {lab=vss}
-N 740 -150 740 -30 {lab=vss}
-N 730 -30 740 -30 {lab=vss}
-N 330 -310 750 -310 {lab=vdd}
-N 750 -310 750 -190 {lab=vdd}
-N 1130 -310 1130 -140 {lab=vdd}
-N 750 -310 1130 -310 {lab=vdd}
-N 300 90 740 90 {lab=vss}
-N 740 -30 740 90 {lab=vss}
-N 740 90 1130 90 {lab=vss}
-N 1130 -100 1130 90 {lab=vss}
-N 1130 -120 1170 -120 {lab=#net7}
-N 1130 -310 1520 -310 {lab=vdd}
-N 1520 -310 1890 -310 {lab=vdd}
-N 1890 -310 1890 -140 {lab=vdd}
-N 1130 90 1510 90 {lab=vss}
-N 1510 90 1520 90 {lab=vss}
-N 1520 90 1890 90 {lab=vss}
-N 1890 -100 1890 90 {lab=vss}
-N -350 350 -90 350 {lab=#net8}
-N -90 80 -90 350 {lab=#net8}
-N -90 70 -90 80 {lab=#net8}
-N -90 70 -20 70 {lab=#net8}
-N -350 220 -110 220 {lab=#net9}
-N -110 50 -110 220 {lab=#net9}
-N -110 50 -20 50 {lab=#net9}
-N -350 90 -130 90 {lab=#net10}
-N -130 -50 -130 90 {lab=#net10}
-N -130 -50 -20 -50 {lab=#net10}
-N -350 -40 -150 -40 {lab=#net11}
-N -150 -70 -150 -40 {lab=#net11}
-N -150 -70 -20 -70 {lab=#net11}
-N -350 -170 -20 -170 {lab=#net12}
-N -350 -300 -160 -300 {lab=#net13}
-N -160 -300 -160 -200 {lab=#net13}
-N -160 -200 -160 -190 {lab=#net13}
-N -160 -190 -20 -190 {lab=#net13}
-N -350 -430 -140 -430 {lab=#net14}
-N -140 -430 -140 -290 {lab=#net14}
-N -140 -290 -20 -290 {lab=#net14}
-N -350 -560 -130 -560 {lab=#net15}
-N -130 -560 -110 -560 {lab=#net15}
-N -110 -560 -110 -320 {lab=#net15}
-N -110 -320 -110 -310 {lab=#net15}
-N -110 -310 -20 -310 {lab=#net15}
-N -290 -560 -290 -490 {lab=#net15}
-N -290 -490 -290 -480 {lab=#net15}
-N -680 -480 -290 -480 {lab=#net15}
-N -680 -480 -680 -410 {lab=#net15}
-N -680 -410 -650 -410 {lab=#net15}
-N -290 -430 -290 -350 {lab=#net14}
-N -680 -350 -290 -350 {lab=#net14}
-N -680 -350 -680 -280 {lab=#net14}
-N -680 -280 -650 -280 {lab=#net14}
-N -290 -300 -290 -220 {lab=#net13}
-N -680 -220 -290 -220 {lab=#net13}
-N -680 -220 -680 -150 {lab=#net13}
-N -680 -150 -650 -150 {lab=#net13}
-N -290 -170 -290 -90 {lab=#net12}
-N -680 -90 -290 -90 {lab=#net12}
-N -680 -90 -680 -20 {lab=#net12}
-N -680 -20 -650 -20 {lab=#net12}
-N -290 -40 -290 40 {lab=#net11}
-N -680 40 -290 40 {lab=#net11}
-N -680 40 -680 110 {lab=#net11}
-N -680 110 -650 110 {lab=#net11}
-N -290 90 -290 170 {lab=#net10}
-N -680 170 -290 170 {lab=#net10}
-N -680 170 -680 240 {lab=#net10}
-N -680 240 -650 240 {lab=#net10}
-N -290 220 -290 300 {lab=#net9}
-N -680 300 -290 300 {lab=#net9}
-N -680 300 -680 370 {lab=#net9}
-N -680 370 -650 370 {lab=#net9}
-N -680 -540 -650 -540 {lab=data_in}
-N -680 -680 -680 -540 {lab=data_in}
-N -740 -680 -680 -680 {lab=data_in}
-N -670 -580 -650 -580 {lab=vdd}
-N -670 -580 -670 -450 {lab=vdd}
-N -670 -450 -650 -450 {lab=vdd}
-N -670 -450 -670 330 {lab=vdd}
-N -670 330 -650 330 {lab=vdd}
-N -660 350 -650 350 {lab=vss}
-N -660 -560 -660 350 {lab=vss}
-N -660 -560 -650 -560 {lab=vss}
-N -660 -430 -650 -430 {lab=vss}
-N -660 -300 -650 -300 {lab=vss}
-N -670 -320 -650 -320 {lab=vdd}
-N -670 -190 -650 -190 {lab=vdd}
-N -660 -170 -650 -170 {lab=vss}
-N -670 -60 -650 -60 {lab=vdd}
-N -660 -40 -650 -40 {lab=vss}
-N -670 70 -650 70 {lab=vdd}
-N -660 90 -650 90 {lab=vss}
-N -670 200 -650 200 {lab=vdd}
-N -660 220 -650 220 {lab=vss}
-N -690 260 -650 260 {lab=clk_in}
-N -690 260 -690 390 {lab=clk_in}
-N -690 390 -650 390 {lab=clk_in}
-N -690 -520 -690 260 {lab=clk_in}
-N -690 -520 -650 -520 {lab=clk_in}
-N -690 -390 -650 -390 {lab=clk_in}
-N -690 -260 -650 -260 {lab=clk_in}
-N -690 -130 -650 -130 {lab=clk_in}
-N -690 0 -650 0 {lab=clk_in}
-N -690 130 -650 130 {lab=clk_in}
-N -690 -660 -690 -520 {lab=clk_in}
-N -740 -660 -690 -660 {lab=clk_in}
-N 330 -610 330 -310 {lab=vdd}
-N -670 -610 330 -610 {lab=vdd}
-N -670 -610 -670 -580 {lab=vdd}
-N 300 90 300 460 {lab=vss}
-N -660 460 300 460 {lab=vss}
-N -660 350 -660 460 {lab=vss}
-N -740 -500 -650 -500 {lab=rst_in}
-N -700 410 -650 410 {lab=rst_in}
-N -700 -500 -700 410 {lab=rst_in}
-N -700 280 -650 280 {lab=rst_in}
-N -700 20 -650 20 {lab=rst_in}
-N -700 -110 -650 -110 {lab=rst_in}
-N -700 -240 -650 -240 {lab=rst_in}
-N -700 -370 -650 -370 {lab=rst_in}
-N 1170 -120 1220 -120 {lab=#net7}
-N 1190 -140 1220 -140 {lab=vss}
-N 1190 -130 1190 90 {lab=vss}
-N 1190 -140 1190 -130 {lab=vss}
-N 1190 -160 1220 -160 {lab=vdd}
-N 1190 -310 1190 -160 {lab=vdd}
-N 1200 -100 1220 -100 {lab=clb_clk_in}
-N 1200 -100 1200 130 {lab=clb_clk_in}
-N 1160 130 1200 130 {lab=clb_clk_in}
-N 1210 -80 1220 -80 {lab=rst_in}
-N 1210 -80 1210 140 {lab=rst_in}
-N 1210 140 1210 150 {lab=rst_in}
-N 1160 150 1210 150 {lab=rst_in}
-N 1520 -140 1550 -140 {lab=#net16}
-N 1550 -140 1550 -120 {lab=#net16}
-N 1550 -120 1590 -120 {lab=#net16}
-N 1170 -220 1170 -120 {lab=#net7}
-N 1170 -220 1570 -220 {lab=#net7}
-N 1570 -220 1570 -140 {lab=#net7}
-N 1570 -140 1590 -140 {lab=#net7}
-N 1560 -100 1590 -100 {lab=#net17}
-N 1560 -100 1560 190 {lab=#net17}
-N 1890 -120 1960 -120 {lab=clb_out}
-N 1560 190 1560 280 {lab=#net17}
-N 1560 280 1560 290 {lab=#net17}
-N 1160 290 1560 290 {lab=#net17}
-N -80 350 790 350 {lab=#net8}
-N 790 310 860 310 {lab=#net8}
-N 790 310 790 350 {lab=#net8}
-N 790 380 800 380 {lab=clk_in}
-N 800 330 800 380 {lab=clk_in}
-N 800 330 860 330 {lab=clk_in}
-N 790 410 810 410 {lab=rst_in}
-N 810 350 810 410 {lab=rst_in}
-N 810 350 860 350 {lab=rst_in}
-N 300 470 300 540 {lab=vss}
-N 300 540 310 540 {lab=vss}
-N 300 460 300 470 {lab=vss}
 N 330 -660 340 -660 {lab=vdd}
-N 330 -660 330 -610 {lab=vdd}
-N 790 270 800 270 {lab=vdd}
-N 800 270 860 270 {lab=vdd}
-N 790 290 800 290 {lab=vss}
-N 800 290 860 290 {lab=vss}
-N -90 350 -80 350 {lab=#net8}
-N -140 150 -30 150 {lab=in_1}
-N -30 90 -30 150 {lab=in_1}
-N -30 90 -20 90 {lab=in_1}
-N 410 160 420 160 {lab=in_2}
-N 420 -30 420 160 {lab=in_2}
-N 420 -30 430 -30 {lab=in_2}
-N 820 -100 830 -100 {lab=in_3}
-N 820 -100 820 160 {lab=in_3}
-N 810 160 820 160 {lab=in_3}
-N -40 -270 -20 -270 {lab=in_1}
-N -40 -270 -40 -150 {lab=in_1}
-N -40 -150 -20 -150 {lab=in_1}
-N -40 -150 -40 90 {lab=in_1}
-N -40 90 -30 90 {lab=in_1}
-N 420 -150 430 -150 {lab=in_2}
-N 420 -150 420 -30 {lab=in_2}
-N -40 -30 -20 -30 {lab=in_1}
-N -700 150 -650 150 {lab=rst_in}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 130 -10 0 0 {name=x1}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 130 110 0 0 {name=x2}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 130 -250 0 0 {name=x3}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 130 -130 0 0 {name=x4}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 580 -10 0 0 {name=x5}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 580 -130 0 0 {name=x6}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 980 -80 0 0 {name=x7}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 -540 0 0 {name=x10}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 -410 0 0 {name=x11}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 -280 0 0 {name=x12}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 -150 0 0 {name=x13}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 -20 0 0 {name=x14}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 110 0 0 {name=x15}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 240 0 0 {name=x16}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} -500 370 0 0 {name=x17}
-C {ipin.sym} -740 -680 0 0 {name=p1 lab=data_in
+N -110 390 -100 390 {lab=in_2}
+N 230 -20 270 -20 {lab=#net2}
+N 270 -20 270 40 {lab=#net2}
+N 270 40 280 40 {lab=#net2}
+N 230 140 270 140 {lab=#net3}
+N 270 60 270 140 {lab=#net3}
+N 270 60 280 60 {lab=#net3}
+N 230 0 240 0 {lab=vss}
+N 240 -0 240 160 {lab=vss}
+N 230 160 240 160 {lab=vss}
+N 230 120 250 120 {lab=vdd}
+N 250 -40 250 120 {lab=vdd}
+N 230 -40 250 -40 {lab=vdd}
+N 250 -40 580 -40 {lab=vdd}
+N 580 -40 580 40 {lab=vdd}
+N 580 -40 1220 -40 {lab=vdd}
+N 1220 -40 1220 20 {lab=vdd}
+N 240 160 1220 160 {lab=vss}
+N 1220 60 1220 160 {lab=vss}
+N 580 80 580 160 {lab=vss}
+N 580 60 640 60 {lab=#net4}
+N 820 40 920 40 {lab=#net5}
+N 610 -0 610 60 {lab=#net4}
+N 610 -0 900 -0 {lab=#net4}
+N 900 -0 900 20 {lab=#net4}
+N 900 20 920 20 {lab=#net4}
+N -90 -0 -90 160 {lab=in_2}
+N -90 160 -70 160 {lab=in_2}
+N -90 160 -90 270 {lab=in_2}
+N -100 390 -90 390 {lab=in_2}
+N 280 80 280 280 {lab=in_3}
+N 240 390 270 390 {lab=in_3}
+N -90 -0 -70 0 {lab=in_2}
+N -160 -40 -70 -40 {lab=#net6}
+N -150 -20 -70 -20 {lab=#net7}
+N -150 -20 -150 40 {lab=#net7}
+N -160 40 -150 40 {lab=#net7}
+N -160 120 -70 120 {lab=#net8}
+N -160 200 -140 200 {lab=#net9}
+N -140 140 -140 200 {lab=#net9}
+N -140 140 -70 140 {lab=#net9}
+N -160 -40 -160 -0 {lab=#net6}
+N -160 0 -160 10 {lab=#net6}
+N -360 10 -160 10 {lab=#net6}
+N -360 10 -360 60 {lab=#net6}
+N -360 60 -340 60 {lab=#net6}
+N -160 40 -160 90 {lab=#net7}
+N -360 90 -160 90 {lab=#net7}
+N -360 90 -360 140 {lab=#net7}
+N -360 140 -340 140 {lab=#net7}
+N -160 120 -160 170 {lab=#net8}
+N -360 170 -160 170 {lab=#net8}
+N -90 270 -90 390 {lab=in_2}
+N -160 200 -160 250 {lab=#net9}
+N -360 250 -160 250 {lab=#net9}
+N -360 170 -360 220 {lab=#net8}
+N -360 220 -340 220 {lab=#net8}
+N -360 250 -360 300 {lab=#net9}
+N -360 300 -340 300 {lab=#net9}
+N 280 280 280 390 {lab=in_3}
+N 270 390 280 390 {lab=in_3}
+N -160 280 910 280 {lab=in_3}
+N 920 60 920 280 {lab=in_3}
+N 910 280 920 280 {lab=in_3}
+N -370 -40 -340 -40 {lab=clk_in}
+N -370 -20 -340 -20 {lab=data_in}
+N 630 -80 640 -80 {lab=clb_clk_in}
+N 640 -80 640 40 {lab=clb_clk_in}
+N -350 -40 -350 40 {lab=clk_in}
+N -350 40 -340 40 {lab=clk_in}
+N -350 40 -350 120 {lab=clk_in}
+N -350 120 -340 120 {lab=clk_in}
+N -350 120 -350 200 {lab=clk_in}
+N -350 200 -340 200 {lab=clk_in}
+N -350 200 -350 280 {lab=clk_in}
+N -350 280 -340 280 {lab=clk_in}
+N 1030 160 1030 420 {lab=vss}
+N 390 -150 390 -40 {lab=vdd}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 430 100 0 0 {name=x5}
+C {ipin.sym} -370 -20 0 0 {name=p1 lab=data_in
 }
-C {ipin.sym} -740 -660 0 0 {name=p2 lab=clk_in}
-C {ipin.sym} -740 -500 0 0 {name=p3 lab=rst_in}
-C {libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 1740 -80 0 0 {name=x18}
-C {ipin.sym} 1160 150 0 0 {name=p4 lab=rst_in}
-C {ipin.sym} 1160 130 0 0 {name=p5 lab=clb_clk_in}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} 1010 310 0 0 {name=x8}
-C {ipin.sym} 790 380 0 0 {name=p7 lab=clk_in}
-C {ipin.sym} 790 410 0 0 {name=p8 lab=rst_in}
+C {ipin.sym} -370 -40 0 0 {name=p2 lab=clk_in}
+C {ipin.sym} 630 -80 0 0 {name=p5 lab=clb_clk_in}
 C {iopin.sym} 340 -660 0 0 {name=p6 lab=vdd}
-C {iopin.sym} 310 540 0 0 {name=p9 lab=vss}
-C {iopin.sym} 790 270 2 0 {name=p10 lab=vdd}
-C {iopin.sym} 790 290 2 0 {name=p11 lab=vss}
+C {iopin.sym} 1030 420 0 0 {name=p9 lab=vss}
+C {iopin.sym} 390 -150 2 0 {name=p10 lab=vdd}
 C {opin.sym} 1960 -120 0 0 {name=p12 lab=clb_out}
-C {ipin.sym} 810 160 0 0 {name=p13 lab=in_3}
-C {ipin.sym} 410 160 0 0 {name=p14 lab=in_2}
-C {ipin.sym} -140 150 0 0 {name=p15 lab=in_1}
-C {libs/core_fpga/d_flip_flop/d_flip_flop_r.sym} 1370 -120 0 0 {name=x9}
+C {ipin.sym} 240 390 0 0 {name=p13 lab=in_3}
+C {ipin.sym} -110 390 0 0 {name=p14 lab=in_2}
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 730 50 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 80 20 0 0 {name=x1}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 80 180 0 0 {name=x2}
+C {sscs-chipathon2025-LNA/designs/libs/core_fpga/mux2x1_transmission_gate/mux_toplevel.sym} 1070 80 0 0 {name=x4}
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} -250 -30 0 0 {name=x6 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} -250 50 0 0 {name=x7 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} -250 50 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} -250 130 0 0 {name=x9 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} -250 210 0 0 {name=x10 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} -250 210 0 0 {name=x11 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} -250 290 0 0 {name=x12 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }

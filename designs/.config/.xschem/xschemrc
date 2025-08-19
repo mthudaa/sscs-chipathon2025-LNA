@@ -2,7 +2,14 @@
 source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
 
 # Set the library path so that xschem doesn't have to be launched at /foss/designs
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(DESIGNS)
+# Config 1
 set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:/foss/designs/sscs-chipathon2025-LNA/designs/libs
-
-# Add standard cell from Prof. Peter Kinget
 set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:/foss/designs/sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols
+
+set netlist_dir "/foss/designs/sscs-chipathon2025-LNA/designs/simulations"
+# Config 2
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:/foss/designs/libs
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:/foss/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols
+
+set netlist_dir "/foss/designs/simulations"

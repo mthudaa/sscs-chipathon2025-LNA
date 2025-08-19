@@ -128,10 +128,10 @@ C {netlist.sym} 122.5 -762.5 0 0 {name=s1 value="
 
 * clock
 abit [ bit_node ]  input_vector
-.model input_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/tb_top-level/tb_mini-top-level/data.txt\\")
+.model input_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/libs/tb_top-level/tb_mini-top-level/data.txt\\")
 * data
 aclock [ clock_node ] clock_vector
-.model clock_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/tb_top-level/tb_mini-top-level/data_clk.txt\\")
+.model clock_vector d_source(input_file=\\"/foss/designs/sscs-chipathon2025-LNA/designs/libs/tb_top-level/tb_mini-top-level/data_clk.txt\\")
 * convert digital signals to analog
 aconvert [ bit_node clock_node ] [ data clk ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)

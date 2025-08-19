@@ -15,9 +15,9 @@ N 540 -200 660 -200 {lab=#net1}
 N 530 -160 660 -160 {lab=#net2}
 C {lab_wire.sym} 660 -120 0 0 {name=p13 lab=IN[0]}
 C {lab_wire.sym} 300 -40 0 0 {name=p14 lab=IN[1]}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 340 -260 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 340 -100 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 700 -180 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 340 -260 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 340 -100 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 700 -180 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 300 -280 0 0 {name=p3 sig_type=std_logic lab=REG[4]}
 C {lab_wire.sym} 300 -240 0 0 {name=p1 sig_type=std_logic lab=REG[3]}
 C {lab_wire.sym} 300 -120 0 0 {name=p2 sig_type=std_logic lab=REG[2]}

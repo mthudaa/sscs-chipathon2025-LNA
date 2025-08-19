@@ -214,10 +214,10 @@ C {lab_wire.sym} 1520 -1350 0 1 {name=p47 lab=VSS}
 C {lab_wire.sym} 1520 -1040 0 1 {name=p34 lab=IN[7]}
 C {lab_wire.sym} 2000 -1040 0 1 {name=p16 lab=IN[11]}
 C {lab_wire.sym} 1520 -1000 0 1 {name=p17 lab=IN[10]}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1370 -1050 0 0 {name=x3}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1370 -1050 0 0 {name=x3}
 C {lab_wire.sym} 1520 -1020 0 1 {name=p33 lab=IN[8:9]}
 C {lab_wire.sym} 2000 -1000 0 1 {name=p37 lab=IN[14]}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1850 -1050 0 0 {name=x5}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1850 -1050 0 0 {name=x5}
 C {lab_wire.sym} 2000 -1020 0 1 {name=p43 lab=IN[12:13]}
 C {lab_wire.sym} 2000 -1100 0 1 {name=p44 lab=Q}
 C {lab_wire.sym} 1220 -1040 0 0 {name=p45 lab=VDDd}
@@ -227,7 +227,7 @@ C {lab_wire.sym} 1700 -1020 0 0 {name=p50 lab=VSSd}
 C {lab_wire.sym} 1220 -1100 0 0 {name=p53 lab=D}
 C {lab_wire.sym} 2000 -1080 0 1 {name=p54 lab=CLK1}
 C {lab_wire.sym} 2000 -1060 0 1 {name=p55 lab=CLK2}
-C {libs/core_switch-matrix/switch-matrix-16x20/switch-matrix-16x20.sym} 870 -1280 0 0 {name=x1}
+C {core_switch-matrix/switch-matrix-16x20/switch-matrix-16x20.sym} 870 -1280 0 0 {name=x1}
 C {lab_wire.sym} 1020 -1240 0 1 {name=p7 lab=IN[19:0]}
 C {symbols/nfet_03v3.sym} 1340 -1210 0 0 {name=M1
 L=2u

@@ -2,7 +2,7 @@
 
 echo 'Reading User Preferences in /foss/designs/.designinit'
 
-cd /foss/designs
+cd /foss/designs/sscs-chipathon2025-LNA/designs
 
 
 export PATH="$DESIGNS/scripts:$PATH"

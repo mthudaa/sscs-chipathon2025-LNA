@@ -108,23 +108,23 @@ C {lab_wire.sym} 940 -970 0 1 {name=p32 lab=CLK}
 C {lab_wire.sym} 1380 -1010 0 1 {name=p33 lab=OUT3}
 C {lab_wire.sym} 1820 -1010 0 1 {name=p34 lab=OUT2}
 C {lab_wire.sym} 2300 -1010 0 1 {name=p38 lab=OUT1}
-C {libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 370 -1040 0 0 {name=x5}
+C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 370 -1040 0 0 {name=x5}
 C {lab_wire.sym} 520 -1050 0 1 {name=p42 lab=CLK1}
 C {lab_wire.sym} 520 -1030 0 1 {name=p43 lab=CLK2}
 C {lab_wire.sym} 220 -1050 0 0 {name=p44 lab=CK}
 C {lab_wire.sym} 220 -1000 0 0 {name=p45 lab=VDDd}
 C {lab_wire.sym} 220 -980 0 0 {name=p46 lab=VSSd}
 C {title.sym} 170 -50 0 0 {name=l3 author="M Taufiqul Huda"}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 790 -1020 0 0 {name=x1}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 790 -1020 0 0 {name=x1}
 C {lab_wire.sym} 940 -990 0 1 {name=p4 lab=IN[1:0]}
 C {lab_wire.sym} 1380 -970 0 1 {name=p12 lab=CLK}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1230 -1020 0 0 {name=x2}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1230 -1020 0 0 {name=x2}
 C {lab_wire.sym} 1380 -990 0 1 {name=p13 lab=IN[1:0]}
 C {lab_wire.sym} 1820 -970 0 1 {name=p14 lab=CLK}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1670 -1020 0 0 {name=x3}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1670 -1020 0 0 {name=x3}
 C {lab_wire.sym} 1820 -990 0 1 {name=p15 lab=IN[1:0]}
 C {lab_wire.sym} 2300 -970 0 1 {name=p18 lab=CLK}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 2150 -1020 0 0 {name=x4}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 2150 -1020 0 0 {name=x4}
 C {lab_wire.sym} 2300 -990 0 1 {name=p25 lab=IN[1:0]}
 C {lab_wire.sym} 2300 -1070 0 1 {name=p26 lab=Q}
 C {lab_wire.sym} 640 -1010 0 0 {name=p27 lab=VDDd}

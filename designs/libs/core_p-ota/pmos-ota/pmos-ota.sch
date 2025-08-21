@@ -14,8 +14,6 @@ N 430 -390 430 -330 {lab=#net3}
 N 310 -260 390 -260 {lab=#net1}
 N 390 -260 390 -250 {lab=#net1}
 N 310 -170 560 -170 {lab=VSS}
-N 240 -300 270 -300 {lab=VINP}
-N 600 -300 640 -300 {lab=VINN}
 N 310 -200 310 -170 {lab=VSS}
 N 560 -200 560 -170 {lab=VSS}
 N 560 -250 620 -250 {lab=#net2}
@@ -33,7 +31,6 @@ N 780 -250 780 -230 {lab=OUT}
 N 780 -280 780 -250 {lab=OUT}
 N 780 -390 780 -340 {lab=OUT}
 N 780 -340 780 -280 {lab=OUT}
-N 740 -300 740 -270 {lab=VSS}
 N 470 -420 740 -420 {lab=VBIAS}
 N 430 -450 430 -420 {lab=VDD}
 C {symbols/pfet_03v3.sym} 580 -300 0 1 {name=M1
@@ -106,8 +103,8 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 240 -300 0 0 {name=p4 sig_type=std_logic lab=VINP}
-C {lab_pin.sym} 640 -300 0 1 {name=p5 sig_type=std_logic lab=VINN}
+C {lab_pin.sym} 270 -300 0 0 {name=p4 sig_type=std_logic lab=VINP}
+C {lab_pin.sym} 600 -300 0 1 {name=p5 sig_type=std_logic lab=VINN}
 C {lab_wire.sym} 440 -170 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 430 -300 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 600 -450 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -141,18 +138,18 @@ spiceprefix=X
 }
 C {lab_pin.sym} 840 -250 0 1 {name=p16 sig_type=std_logic lab=OUT}
 C {symbols/cap_mim_1f0fF.sym} 660 -250 1 0 {name=C1
-W=1e-6
-L=1e-6
+W=5e-6
+L=5e-6
 model=cap_mim_1f0fF
 spiceprefix=X
-m=1}
+m=4}
 C {symbols/ppolyf_u_1k.sym} 740 -250 3 1 {name=R1
-W=1e-6
-L=1e-6
+W=5e-6
+L=5e-6
 model=ppolyf_u_1k
 spiceprefix=X
-m=1}
-C {lab_pin.sym} 740 -300 0 0 {name=p17 sig_type=std_logic lab=VSS}
+m=4}
+C {lab_pin.sym} 740 -270 0 0 {name=p17 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 600 -420 0 0 {name=p2 sig_type=std_logic lab=VBIAS}
 C {ipin.sym} 100 -360 0 0 {name=p18 lab=VINN}
 C {ipin.sym} 100 -320 0 0 {name=p19 lab=VINP}

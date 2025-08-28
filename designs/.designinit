@@ -24,7 +24,7 @@ export PATH="$DESIGNS/scripts:$PATH"
 # Klayout
 # export KLAYOUT_PATH=/foss/designs/klayout_lib:$KLAYOUT_PATH
 
-alias klayout='klayout -rm $DESIGNS/scripts/klayout_lib_manager.py -geometry 1600x900+100+50 -e'
+alias klayout='klayout -rm /foss/designs/sscs-chipathon2025-LNA/designs/scripts/klayout_lib_manager.py -geometry 1600x900+100+50 -e'
 
 mkdir -p ~/.klayout/libraries
 

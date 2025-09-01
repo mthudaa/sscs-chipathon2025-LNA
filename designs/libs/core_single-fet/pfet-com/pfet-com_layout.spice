@@ -1,0 +1,23 @@
+* NGSPICE file created from pfet-com.ext - technology: gf180mcuD
+
+.subckt pfet_06v0_R6Z25Q a_162_n624# a_n162_n668# a_n250_n624# a_52_n668# w_n426_n832#
++ a_n52_n624#
+X0 a_n52_n624# a_n162_n668# a_n250_n624# w_n426_n832# pfet_06v0 ad=1.56p pd=6.52u as=2.64p ps=12.88u w=6u l=0.55u
+X1 a_162_n624# a_52_n668# a_n52_n624# w_n426_n832# pfet_06v0 ad=2.64p pd=12.88u as=1.56p ps=6.52u w=6u l=0.55u
+.ends
+
+.subckt pfet_06v0_ZXY25Q a_162_n624# a_n162_n668# a_n266_n624# w_n640_n832# a_52_n668#
++ a_376_n624# a_n376_n668# a_n464_n624# a_266_n668# a_n52_n624#
+X0 a_376_n624# a_266_n668# a_162_n624# w_n640_n832# pfet_06v0 ad=2.64p pd=12.88u as=1.56p ps=6.52u w=6u l=0.55u
+X1 a_n52_n624# a_n162_n668# a_n266_n624# w_n640_n832# pfet_06v0 ad=1.56p pd=6.52u as=1.56p ps=6.52u w=6u l=0.55u
+X2 a_162_n624# a_52_n668# a_n52_n624# w_n640_n832# pfet_06v0 ad=1.56p pd=6.52u as=1.56p ps=6.52u w=6u l=0.55u
+X3 a_n266_n624# a_n376_n668# a_n464_n624# w_n640_n832# pfet_06v0 ad=1.56p pd=6.52u as=2.64p ps=12.88u w=6u l=0.55u
+.ends
+
+.subckt pfet-com VDD G1 D1 G2 D2 G3 D3 G4 D4
+Xpfet_06v0_R6Z25Q_0 D2 G2 D2 G2 VDD VDD pfet_06v0_R6Z25Q
+XM11 VDD G3 VDD VDD G3 D3 G3 D3 G3 D3 pfet_06v0_ZXY25Q
+XM9 D1 G1 D1 G1 VDD VDD pfet_06v0_R6Z25Q
+Xpfet_06v0_ZXY25Q_0 VDD G4 VDD VDD G4 D4 G4 D4 G4 D4 pfet_06v0_ZXY25Q
+.ends
+

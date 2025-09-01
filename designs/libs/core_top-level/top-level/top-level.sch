@@ -173,11 +173,7 @@ C {lab_wire.sym} 940 -220 0 0 {name=p120 lab=CLK1_4}
 C {lab_wire.sym} 940 -200 0 0 {name=p121 lab=CLK2_4}
 C {lab_wire.sym} 720 -220 0 1 {name=p133 lab=CLK1_4}
 C {lab_wire.sym} 720 -200 0 1 {name=p134 lab=CLK2_4}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -510 0 0 {name=x13}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -510 0 0 {name=x14}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -190 0 0 {name=x15}
 C {lab_wire.sym} 720 -160 0 1 {name=p45 lab=IN[67],IN[69]}
-C {libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -190 0 0 {name=x16}
 C {lab_wire.sym} 420 -1140 0 0 {name=p46 lab=VDDd}
 C {lab_wire.sym} 420 -1120 0 0 {name=p99 lab=VSSd}
 C {lab_wire.sym} 420 -500 0 0 {name=p107 lab=VDDd}
@@ -190,3 +186,7 @@ C {lab_wire.sym} 940 -180 0 0 {name=p137 lab=VDDd}
 C {lab_wire.sym} 940 -160 0 0 {name=p138 lab=VSSd}
 C {iopin.sym} 140 -180 0 0 {name=p139 lab=VDDd}
 C {iopin.sym} 140 -160 0 0 {name=p140 lab=VSSd}
+C {designs/libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -510 0 0 {name=x13}
+C {designs/libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -510 0 0 {name=x14}
+C {designs/libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -190 0 0 {name=x15}
+C {designs/libs/core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -190 0 0 {name=x16}

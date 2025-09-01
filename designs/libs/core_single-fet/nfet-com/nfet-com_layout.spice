@@ -1,0 +1,23 @@
+* NGSPICE file created from nfet-com.ext - technology: gf180mcuD
+
+.subckt nfet_06v0_52FGQA a_n524_n174# a_n296_n174# a_n436_n218# a_n52_n174# a_n192_n218#
++ a_296_n218# a_436_n174# a_n668_n350# a_192_n174# a_52_n218#
+X0 a_436_n174# a_296_n218# a_192_n174# a_n668_n350# nfet_06v0 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=0.7u
+X1 a_192_n174# a_52_n218# a_n52_n174# a_n668_n350# nfet_06v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=0.7u
+X2 a_n52_n174# a_n192_n218# a_n296_n174# a_n668_n350# nfet_06v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=0.7u
+X3 a_n296_n174# a_n436_n218# a_n524_n174# a_n668_n350# nfet_06v0 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=0.7u
+.ends
+
+.subckt nfet_06v0_ZZEGQS a_n424_n350# a_n280_n174# a_n52_n174# a_n192_n218# a_192_n174#
++ a_52_n218#
+X0 a_192_n174# a_52_n218# a_n52_n174# a_n424_n350# nfet_06v0 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=0.7u
+X1 a_n52_n174# a_n192_n218# a_n280_n174# a_n424_n350# nfet_06v0 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=0.7u
+.ends
+
+.subckt nfet-com G1 D1 G2 D2 G3 D3 G4 D4 VSS
+XXM23 D3 VSS G3 D3 G3 G3 D3 VSS VSS G3 nfet_06v0_52FGQA
+Xnfet_06v0_52FGQA_0 D4 VSS G4 D4 G4 G4 D4 VSS VSS G4 nfet_06v0_52FGQA
+Xnfet_06v0_ZZEGQS_0 VSS D2 VSS G2 D2 G2 nfet_06v0_ZZEGQS
+XXM21 VSS D1 VSS G1 D1 G1 nfet_06v0_ZZEGQS
+.ends
+

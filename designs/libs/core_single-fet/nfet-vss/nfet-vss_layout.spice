@@ -1,0 +1,15 @@
+* NGSPICE file created from nfet-vss.ext - technology: gf180mcuD
+
+.subckt nfet_06v0_52FGQA a_n524_n174# a_n296_n174# a_n436_n218# a_n52_n174# a_n192_n218#
++ a_296_n218# a_436_n174# a_n668_n350# a_192_n174# a_52_n218#
+X0 a_436_n174# a_296_n218# a_192_n174# a_n668_n350# nfet_06v0 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=0.7u
+X1 a_192_n174# a_52_n218# a_n52_n174# a_n668_n350# nfet_06v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=0.7u
+X2 a_n52_n174# a_n192_n218# a_n296_n174# a_n668_n350# nfet_06v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=0.7u
+X3 a_n296_n174# a_n436_n218# a_n524_n174# a_n668_n350# nfet_06v0 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=0.7u
+.ends
+
+.subckt nfet-vss VSS G1 D1 S1 G2 D2 S2
+XM13 S1 D1 G1 S1 G1 G1 S1 VSS D1 G1 nfet_06v0_52FGQA
+Xnfet_06v0_52FGQA_0 S2 D2 G2 S2 G2 G2 S2 VSS D2 G2 nfet_06v0_52FGQA
+.ends
+

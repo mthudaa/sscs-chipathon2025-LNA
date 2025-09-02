@@ -16,7 +16,7 @@ T {CLB Register
 NB : [0/1] is LSB stand for [1/0] => [Sequential(FF)/Combinational(ABC)]} 700 -290 0 0 0.4 0.4 {}
 N 940 -400 1080 -400 {lab=#net1}
 C {dffq_1.sym} 850 -390 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 1120 -420 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {mux2_1.sym} 1120 -420 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {core_fpga/LUT/LUT.sym} 430 -370 0 0 {name=x1}
 C {core_fpga/REG_BANK_5B/REG_BANK_5B.sym} 430 -230 0 0 {name=x2}
 C {lab_wire.sym} 280 -400 0 0 {name=p1 lab=VDDd}
@@ -45,10 +45,10 @@ C {iopin.sym} 100 -180 0 0 {name=p25 lab=IN[1:0]}
 C {lab_wire.sym} 280 -340 0 0 {name=p4 lab=IN[1:0]}
 C {iopin.sym} 100 -160 0 0 {name=p26 lab=CLK_CLB}
 C {lab_wire.sym} 280 -380 0 0 {name=p2 lab=VSSd}
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 320 -120 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 400 -120 0 0 {name=x6 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 320 -60 0 0 {name=x7 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 400 -60 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {inv_1.sym} 320 -120 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {inv_1.sym} 400 -120 0 0 {name=x6 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {inv_1.sym} 320 -60 0 0 {name=x7 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {inv_1.sym} 400 -60 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 280 -120 0 0 {name=p27 lab=CLK1}
 C {lab_wire.sym} 280 -60 0 0 {name=p28 lab=CLK2}
 C {lab_wire.sym} 440 -120 0 1 {name=p29 lab=CLK1_BUFF}

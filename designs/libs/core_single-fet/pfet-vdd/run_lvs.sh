@@ -65,7 +65,7 @@ select top cell
 extract path extfiles
 extract all
 ext2spice lvs
-ext2spice -p extfiles -o ${CELL_NAME}_layout.spice
+ext2spice ${CELL_NAME}_layout.spice
 quit -noprompt
 EOF
 

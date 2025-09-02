@@ -1,0 +1,45 @@
+
+Circuit 1 cell pfet_06v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_06v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_06v0 and pfet_06v0 are equivalent.
+Flattening unmatched subcell pfet_06v0_ZXY25Q in circuit pfet-vdd (0)(2 instances)
+
+Class pfet-vdd (0):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: pfet-vdd                        |Circuit 2: pfet-vdd                        
+-------------------------------------------|-------------------------------------------
+pfet_06v0 (8->2)                           |pfet_06v0 (8->2)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pfet-vdd                        |Circuit 2: pfet-vdd                        
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+G2                                         |G2                                         
+G1                                         |G1                                         
+S2                                         |S2                                         
+D2                                         |D2                                         
+S1                                         |S1                                         
+D1                                         |D1                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet-vdd and pfet-vdd are equivalent.
+
+Final result: Circuits match uniquely.
+.

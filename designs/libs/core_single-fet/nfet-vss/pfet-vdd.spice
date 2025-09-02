@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/pfet-vdd/pfet-vdd.sch
+.subckt pfet-vdd VDD S1 G1 D1 S2 G2 D2
+*.PININFO VDD:B S1:B G1:B D1:B S2:B G2:B D2:B
+M1 D1 G1 S1 VDD pfet_06v0 L=0.55u W=6.0u nf=1 m=4
+M2 D2 G2 S2 VDD pfet_06v0 L=0.55u W=6.0u nf=1 m=4
+.ends

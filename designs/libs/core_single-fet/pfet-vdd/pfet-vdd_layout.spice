@@ -1,0 +1,15 @@
+* NGSPICE file created from pfet-vdd.ext - technology: gf180mcuD
+
+.subckt pfet_06v0_ZXY25Q a_162_n624# a_n162_n668# a_n266_n624# w_n640_n832# a_52_n668#
++ a_376_n624# a_n376_n668# a_n464_n624# a_266_n668# a_n52_n624#
+X0 a_376_n624# a_266_n668# a_162_n624# w_n640_n832# pfet_06v0 ad=2.64p pd=12.88u as=1.56p ps=6.52u w=6u l=0.55u
+X1 a_n52_n624# a_n162_n668# a_n266_n624# w_n640_n832# pfet_06v0 ad=1.56p pd=6.52u as=1.56p ps=6.52u w=6u l=0.55u
+X2 a_162_n624# a_52_n668# a_n52_n624# w_n640_n832# pfet_06v0 ad=1.56p pd=6.52u as=1.56p ps=6.52u w=6u l=0.55u
+X3 a_n266_n624# a_n376_n668# a_n464_n624# w_n640_n832# pfet_06v0 ad=1.56p pd=6.52u as=2.64p ps=12.88u w=6u l=0.55u
+.ends
+
+.subckt pfet-vdd VDD G1 D1 S1 G2 D2 S2
+XM1 D1 G1 D1 VDD G1 S1 G1 S1 G1 S1 pfet_06v0_ZXY25Q
+Xpfet_06v0_ZXY25Q_0 D2 G2 D2 VDD G2 S2 G2 S2 G2 S2 pfet_06v0_ZXY25Q
+.ends
+

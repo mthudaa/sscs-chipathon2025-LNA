@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/nfet-pin/nfet-pin.sch
+.subckt nfet-pin B D1 G1 S1 D2 G2 S2
+*.PININFO D1:B B:B G1:B S1:B D2:B G2:B S2:B
+M17 D2 G2 S2 B nfet_06v0 L=0.70u W=1.5u nf=1 m=4
+M18 D1 G1 S1 B nfet_06v0 L=0.70u W=1.5u nf=1 m=4
+.ends

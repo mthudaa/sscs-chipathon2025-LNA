@@ -41,9 +41,9 @@ C {lab_wire.sym} 500 -120 0 0 {name=p27 lab=D2}
 C {lab_wire.sym} 500 -60 2 1 {name=p28 lab=S2}
 C {lab_wire.sym} 540 -90 0 1 {name=p44 lab=G2}
 C {iopin.sym} 140 -140 0 1 {name=p1 lab=D1}
-C {iopin.sym} 140 -160 0 1 {name=p2 lab=B}
-C {iopin.sym} 140 -120 0 1 {name=p3 lab=G1}
-C {iopin.sym} 140 -100 0 1 {name=p4 lab=S1}
-C {iopin.sym} 140 -80 0 1 {name=p5 lab=D2}
-C {iopin.sym} 140 -60 0 1 {name=p6 lab=G2}
+C {iopin.sym} 140 -100 0 1 {name=p2 lab=B}
+C {iopin.sym} 140 -160 0 1 {name=p3 lab=G1}
+C {iopin.sym} 140 -120 0 1 {name=p4 lab=S1}
+C {iopin.sym} 140 -60 0 1 {name=p5 lab=D2}
+C {iopin.sym} 140 -80 0 1 {name=p6 lab=G2}
 C {iopin.sym} 140 -40 0 1 {name=p7 lab=S2}

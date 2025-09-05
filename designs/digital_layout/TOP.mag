@@ -1,0 +1,111 @@
+magic
+tech gf180mcu
+timestamp 1755710378
+<< checkpaint >>
+rect 14 -91 146 53
+<< l34d0 >>
+rect 60 5 69 10
+rect 60 31 69 35
+rect 101 31 110 35
+rect 101 5 110 10
+rect 38 16 40 21
+rect 54 22 56 24
+rect 95 22 97 24
+rect 41 -18 43 -16
+rect 136 22 138 24
+rect 119 19 122 21
+rect 79 19 81 21
+rect 38 -54 40 -51
+rect 117 -12 119 -10
+rect 122 -12 124 -10
+rect 50 -53 52 -52
+rect 54 -48 56 -46
+rect 91 -18 93 -16
+<< metal2 >>
+rect 50 11 70 14
+rect 50 14 52 18
+rect 113 11 138 13
+rect 113 13 115 22
+rect 95 22 115 24
+rect 136 13 138 24
+rect 38 5 75 7
+rect 73 7 75 11
+rect 73 11 110 13
+rect 38 7 40 21
+rect 42 -19 44 -8
+rect 27 -8 44 -6
+rect 27 -6 29 23
+rect 41 -19 44 -16
+rect 54 22 56 53
+rect 127 16 133 19
+rect 127 19 129 51
+rect 136 22 138 51
+rect 119 19 122 51
+rect 79 19 81 51
+rect 86 16 92 19
+rect 86 19 89 51
+rect 20 -15 32 -13
+rect 20 -13 22 51
+rect 38 -54 40 -18
+rect 38 -18 43 -16
+rect 50 -54 52 -27
+rect 50 -27 111 -25
+rect 109 -25 111 -13
+rect 109 -13 124 -10
+rect 32 -58 56 -56
+rect 54 -56 56 -46
+rect 32 -56 34 -34
+rect 14 -34 34 -32
+rect 14 -32 16 51
+rect 91 -18 105 -16
+rect 103 -16 105 -7
+rect 103 -7 143 -5
+rect 141 -5 143 51
+rect 27 -91 29 -47
+<< via1 >>
+rect 50 17 52 18
+rect 68 12 69 13
+rect 109 12 110 13
+rect 38 19 40 21
+rect 55 22 56 24
+rect 95 22 97 24
+rect 136 22 138 24
+rect 27 21 29 23
+rect 27 17 29 19
+rect 27 21 29 23
+rect 41 -18 43 -17
+rect 131 17 133 18
+rect 120 19 121 21
+rect 79 19 81 21
+rect 91 17 92 18
+rect 30 -15 31 -13
+rect 38 -53 40 -52
+rect 118 -12 119 -11
+rect 123 -12 124 -11
+rect 50 -53 52 -52
+rect 55 -48 56 -47
+rect 91 -18 93 -17
+rect 27 -49 29 -47
+rect 27 -53 29 -51
+rect 27 -49 29 -47
+use gf180mcu_fd_sc_mcu9t5v0__mux2_1 gf180mcu_fd_sc_mcu9t5v0__mux2_1_1
+timestamp 1755710378
+transform 1 0 26 0 1 -63
+box -2 -2 39 27
+use gf180mcu_fd_sc_mcu9t5v0__mux2_1 gf180mcu_fd_sc_mcu9t5v0__mux2_1_2
+timestamp 1755710378
+transform 1 0 67 0 1 8
+box -2 -2 39 27
+use gf180mcu_fd_sc_mcu9t5v0__mux2_1 gf180mcu_fd_sc_mcu9t5v0__mux2_1_3
+timestamp 1755710378
+transform 1 0 26 0 1 8
+box -2 -2 39 27
+use gf180mcu_fd_sc_mcu9t5v0__dffrnq_4 gf180mcu_fd_sc_mcu9t5v0__dffrnq_4_1
+timestamp 1755710378
+transform 1 0 26 0 1 -27
+box -2 -2 109 27
+use gf180mcu_fd_sc_mcu9t5v0__mux2_1 gf180mcu_fd_sc_mcu9t5v0__mux2_1_4
+timestamp 1755710378
+transform 1 0 108 0 1 8
+box -2 -2 39 27
+<< end >>

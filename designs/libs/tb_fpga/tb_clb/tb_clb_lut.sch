@@ -74,9 +74,7 @@ N 450 -840 490 -840 {lab=REG[3]}
 N 450 -880 490 -880 {lab=REG[4]}
 C {lab_wire.sym} 910 -450 0 0 {name=p13 lab=in_1}
 C {lab_wire.sym} 540 -450 0 0 {name=p14 lab=in_2}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 770 -860 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 770 -700 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 1130 -780 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 770 -860 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_wire.sym} 450 -880 0 0 {name=p3 sig_type=std_logic lab=REG[4]}
 C {lab_wire.sym} 450 -840 0 0 {name=p1 sig_type=std_logic lab=REG[3]}
 C {lab_wire.sym} 450 -720 0 0 {name=p2 sig_type=std_logic lab=REG[2]}
@@ -213,3 +211,5 @@ footprint=1206
 device=resistor
 m=1}
 C {vsource.sym} 430 -220 0 0 {name=VS value=0 savecurrent=false}
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 770 -700 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {sscs-chipathon2025-LNA/designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/mux2_1.sym} 1130 -780 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }

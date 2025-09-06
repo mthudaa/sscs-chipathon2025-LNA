@@ -9,9 +9,9 @@ C {lab_pin.sym} 120 -670 0 0 {name=p3 sig_type=std_logic lab=VINP}
 C {lab_pin.sym} 420 -710 0 1 {name=p4 sig_type=std_logic lab=OUT}
 C {lab_pin.sym} 420 -690 0 1 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 420 -670 0 1 {name=p14 sig_type=std_logic lab=VSS}
-C {vsource.sym} 340 -570 0 0 {name=V1 value=5 savecurrent=false}
-C {vsource.sym} 220 -570 0 0 {name=V2 value="dc 3 ac -1" savecurrent=false}
-C {vsource.sym} 100 -570 0 0 {name=V3 value="dc 3 ac 1" savecurrent=false}
+C {vsource.sym} 340 -570 0 0 {name=V1 value=3.3 savecurrent=false}
+C {vsource.sym} 220 -570 0 0 {name=V2 value="dc 1.65 ac -1" savecurrent=false}
+C {vsource.sym} 100 -570 0 0 {name=V3 value="dc 1.65 ac 1" savecurrent=false}
 C {vsource.sym} 440 -570 0 0 {name=V4 value=0 savecurrent=false}
 C {lab_pin.sym} 340 -540 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 220 -540 0 0 {name=p8 sig_type=std_logic lab=VSS}
@@ -36,7 +36,7 @@ C {devices/code_shown.sym} 30 -430 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice ss
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical

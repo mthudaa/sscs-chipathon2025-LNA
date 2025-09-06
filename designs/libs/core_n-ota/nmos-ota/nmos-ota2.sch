@@ -146,11 +146,11 @@ C {lab_wire.sym} 490 -490 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 510 -230 0 0 {name=p3 sig_type=std_logic lab=VBIAS}
 C {lab_wire.sym} 350 -330 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 640 -420 0 0 {name=p6 sig_type=std_logic lab=VSS}
-C {ipin.sym} 980 -370 0 0 {name=p7 lab=VN}
-C {ipin.sym} 980 -340 0 0 {name=p8 lab=VP}
-C {iopin.sym} 960 -310 0 0 {name=p9 lab=VDD}
-C {iopin.sym} 960 -280 0 0 {name=p10 lab=VSS}
-C {ipin.sym} 980 -400 0 0 {name=p11 lab=VBIAS}
+C {ipin.sym} 890 -320 0 0 {name=p7 lab=VN}
+C {ipin.sym} 890 -290 0 0 {name=p8 lab=VP}
+C {iopin.sym} 870 -260 0 0 {name=p9 lab=VDD}
+C {iopin.sym} 870 -230 0 0 {name=p10 lab=VSS}
+C {ipin.sym} 890 -350 0 0 {name=p11 lab=VBIAS}
 C {lab_wire.sym} 560 -200 0 0 {name=p12 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 790 -400 0 1 {name=p13 sig_type=std_logic lab=OUT}
-C {opin.sym} 960 -250 0 0 {name=p14 lab=OUT}
+C {opin.sym} 870 -200 0 0 {name=p14 lab=OUT}

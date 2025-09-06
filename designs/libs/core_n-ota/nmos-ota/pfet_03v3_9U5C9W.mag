@@ -1,0 +1,24 @@
+magic
+tech gf180mcuD
+timestamp 1757180450
+<< checkpaint >>
+rect -206 -326 344 156
+<< metal1 >>
+rect 0 0 20 20
+rect 0 -40 20 -20
+rect 0 -80 20 -60
+rect 0 -120 20 -100
+use pfet_03v3_CVLAN8  X0
+timestamp 0
+transform 1 0 69 0 1 -85
+box -75 -41 75 41
+<< labels >>
+flabel metal1 0 0 20 20 0 FreeSans 128 0 0 0 a_n588_n224#
+port 0 nsew
+flabel metal1 0 -40 20 -20 0 FreeSans 128 0 0 0 a_500_n224#
+port 1 nsew
+flabel metal1 0 -80 20 -60 0 FreeSans 128 0 0 0 a_n500_n268#
+port 2 nsew
+flabel metal1 0 -120 20 -100 0 FreeSans 128 0 0 0 w_n750_n386#
+port 3 nsew
+<< end >>

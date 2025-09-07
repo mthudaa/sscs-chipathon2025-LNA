@@ -22,9 +22,9 @@ C {iopin.sym} 120 -300 0 0 {name=p22 lab=OUT}
 C {lab_wire.sym} 350 -200 0 0 {name=p13 lab=RSTN}
 C {ipin.sym} 120 -340 0 0 {name=p15 lab=RSTN}
 C {opin.sym} 120 -460 0 0 {name=p14 lab=Q}
-C {lab_wire.sym} 550 -180 0 1 {name=p24 lab=SW
+C {lab_wire.sym} 680 -180 0 1 {name=p24 lab=SWP
 }
-C {lab_wire.sym} 280 -450 0 0 {name=p25 lab=SW
+C {lab_wire.sym} 280 -450 0 0 {name=p25 lab=SWN
 }
 C {ipin.sym} 120 -360 0 0 {name=p31 lab=CLK2}
 C {lab_wire.sym} 600 -290 0 0 {name=p7 lab=CLK2}
@@ -32,5 +32,11 @@ C {lab_wire.sym} 780 -290 0 1 {name=p16 lab=Q}
 C {core_switch-matrix/trans-gate/trans-gate.sym} 430 -420 0 0 {name=x4}
 C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 420 -280 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {gf180mcu_fd_sc_mcu9t5v0_symbols/dffq_1.sym} 690 -280 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/nand2_1.sym} 410 -180 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 510 -180 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/and2_1.sym} 410 -180 0 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 640 -180 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {lab_wire.sym} 280 -430 0 0 {name=p6 lab=SWP
+}
+C {lab_wire.sym} 600 -180 0 0 {name=p10 lab=SWN
+}
+C {lab_wire.sym} 470 -180 0 1 {name=p12 lab=SWN
+}

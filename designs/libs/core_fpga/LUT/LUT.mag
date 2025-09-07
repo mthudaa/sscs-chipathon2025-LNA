@@ -1,0 +1,17 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1757086680
+use gf180mcu_fd_sc_mcu9t5v0__mux2_1  x1 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform 1 0 0 0 1 0
+box -43 -45 771 549
+use gf180mcu_fd_sc_mcu9t5v0__mux2_1  x2
+timestamp 1749760379
+transform 1 0 728 0 1 0
+box -43 -45 771 549
+use gf180mcu_fd_sc_mcu9t5v0__mux2_1  x4
+timestamp 1749760379
+transform -1 0 728 0 -1 0
+box -43 -45 771 549
+<< end >>

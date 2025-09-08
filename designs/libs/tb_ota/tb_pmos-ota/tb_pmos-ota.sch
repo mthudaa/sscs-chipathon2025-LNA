@@ -25,7 +25,7 @@ C {devices/code_shown.sym} 630 -470 0 0 {name=NGSPICE only_toplevel=true
 value="
 .control
 save all
-ac dec 100 1 10G
+ac dec 100 1 100G
 let vdiff = VINP - VINN
 let diff_gain = OUT/vdiff
 plot db(diff_gain)
@@ -36,7 +36,7 @@ C {devices/code_shown.sym} 30 -430 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice ss
+.lib $::180MCU_MODELS/sm141064.ngspice sf
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical

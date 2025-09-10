@@ -1,0 +1,17 @@
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_n-ota/n-ota-6v/n-ota-6v.sch
+.subckt n-ota-6v OUT VSS VDD VN VP
+*.PININFO VN:I VP:I OUT:O VDD:B VSS:B
+M1 net1 VP net3 VSS nfet_06v0 L=2u W=4u nf=1 m=1
+M2 net2 VN net3 VSS nfet_06v0 L=2u W=4u nf=1 m=1
+M4 net3 net4 VSS VSS nfet_06v0 L=2u W=2u nf=1 m=1
+M3 net2 net1 VDD VDD pfet_06v0 L=2u W=8u nf=1 m=1
+M5 net1 net1 VDD VDD pfet_06v0 L=2u W=8u nf=1 m=1
+M6 OUT net4 VSS VSS nfet_06v0 L=2u W=2u nf=1 m=1
+M7 OUT net2 VDD VDD pfet_06v0 L=2u W=16u nf=1 m=1
+XC1 net5 net2 cap_mim_1f0fF c_width=5e-6 c_length=5e-6 m=1
+XR1 net5 OUT VSS ppolyf_u_1k r_width=5e-6 r_length=5e-6 m=1
+M8 net6 net6 VDD VDD pfet_06v0 L=2u W=2u nf=1 m=1
+M9 net4 net6 VDD VDD pfet_06v0 L=2u W=1u nf=1 m=1
+M10 net4 net4 VSS VSS nfet_06v0 L=2u W=1u nf=1 m=1
+M11 net6 net4 VSS VSS nfet_06v0 L=2u W=2u nf=1 m=1
+.ends

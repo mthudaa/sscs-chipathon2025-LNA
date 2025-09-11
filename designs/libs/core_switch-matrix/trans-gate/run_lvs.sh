@@ -66,7 +66,7 @@ ext2spice lvs
 ext2spice -p extfiles -o ${CELL_NAME}_layout.spice
 quit -noprompt
 EOF
-
+sed -i 's/05v0/06v0/g' ${CELL_NAME}_layout.spice
 #-------------------------------------------
 # Run netgen for LVS
 #-------------------------------------------
@@ -102,6 +102,6 @@ netgen -batch source run_lvs.tcl | tee netgen.log
 # rm -r extfiles
 # rm run_lvs.tcl
 
-echo "Done with LVS!"
+echo "Done with LVS! ^_^"
 exit 0
 

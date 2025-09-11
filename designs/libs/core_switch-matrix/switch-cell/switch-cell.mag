@@ -1,0 +1,181 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757560017
+<< nwell >>
+rect 1702 1153 5962 2294
+<< metal1 >>
+rect 438 2420 6020 2423
+rect -560 2240 6020 2420
+rect 438 2237 6020 2240
+rect -160 2151 -68 2164
+rect 5843 2158 5915 2237
+rect -160 1377 -148 2151
+rect -160 1364 -68 1377
+rect 5843 998 5915 1378
+rect 5226 933 5295 945
+rect 5226 817 5295 878
+rect 5680 938 5739 952
+rect 5680 871 5739 883
+rect 4877 781 4936 793
+rect 4877 710 4936 722
+rect 4659 697 4718 709
+rect 4890 672 4936 710
+rect 4659 622 4718 642
+rect 5226 540 5634 586
+rect 633 320 693 332
+rect 2867 320 2926 332
+rect 633 253 693 265
+rect 2867 253 2926 265
+rect -560 -10 -224 170
+rect 5669 -10 6020 170
+<< via1 >>
+rect -148 1377 -58 2151
+rect 5226 878 5295 933
+rect 5680 883 5739 938
+rect 4877 722 4936 781
+rect 3981 642 4046 697
+rect 4659 642 4718 697
+rect 2202 525 2263 580
+rect -38 407 23 462
+rect 633 265 693 320
+rect 1741 265 1806 320
+rect 2867 265 2926 320
+rect 3981 265 4046 320
+rect -150 30 -58 122
+<< metal2 >>
+rect -160 2151 -45 2153
+rect -160 1377 -150 2151
+rect -58 1377 -45 2151
+rect 1640 2020 1780 2030
+rect 1640 1870 1780 1880
+rect 1640 1640 1780 1650
+rect 1640 1490 1780 1500
+rect -160 1375 -45 1377
+rect 1326 935 1385 1292
+rect 5528 940 5587 1292
+rect 5528 938 5751 940
+rect 1326 933 5307 935
+rect 1326 878 5226 933
+rect 5295 878 5307 933
+rect 5528 883 5680 938
+rect 5739 883 5751 938
+rect 5528 881 5751 883
+rect 1326 876 5307 878
+rect -560 781 6020 817
+rect -560 758 4877 781
+rect 4875 722 4877 758
+rect 4936 758 6020 781
+rect 4936 722 4938 758
+rect 4875 710 4938 722
+rect 3969 697 4730 699
+rect 3969 642 3981 697
+rect 4046 642 4659 697
+rect 4718 642 4730 697
+rect 3969 640 4730 642
+rect -560 580 6020 582
+rect -560 525 2202 580
+rect 2263 525 6020 580
+rect -560 523 6020 525
+rect -560 462 6020 464
+rect -560 407 -38 462
+rect 23 407 6020 462
+rect -560 405 6020 407
+rect -560 320 705 322
+rect -560 265 633 320
+rect 693 265 705 320
+rect -560 263 705 265
+rect 1729 320 2938 322
+rect 1729 265 1741 320
+rect 1806 265 2867 320
+rect 2926 265 2938 320
+rect 1729 263 2938 265
+rect 3969 320 6020 322
+rect 3969 265 3981 320
+rect 4046 265 6020 320
+rect 3969 263 6020 265
+rect -162 122 -46 124
+rect -162 30 -150 122
+rect -58 30 -46 122
+rect -162 28 -46 30
+<< via2 >>
+rect -150 1377 -148 2151
+rect -148 1377 -58 2151
+rect 1640 1880 1780 2020
+rect 1640 1500 1780 1640
+rect -150 30 -58 122
+<< metal3 >>
+rect -150 2151 -58 2161
+rect 1630 1880 1640 2020
+rect 1780 1880 1790 2020
+rect 1630 1500 1640 1640
+rect 1780 1500 1790 1640
+rect -150 122 -58 1377
+rect -150 -10 -58 30
+<< via3 >>
+rect 1640 1880 1780 2020
+rect 1640 1500 1780 1640
+<< metal4 >>
+rect 1640 2020 1780 2030
+rect 1630 1880 1640 2020
+rect 1780 1880 1790 2020
+rect 1640 1870 1780 1880
+rect -560 1640 6019 1668
+rect -560 1500 1640 1640
+rect 1780 1500 6019 1640
+rect -560 1466 6019 1500
+<< via4 >>
+rect 1640 1880 1780 2020
+<< metal5 >>
+rect 1614 2020 1816 2626
+rect 1614 1880 1640 2020
+rect 1780 1880 1816 2020
+rect 1614 -212 1816 1880
+use gf180mcu_fd_sc_mcu9t5v0__and2_1  gf180mcu_fd_sc_mcu9t5v0__and2_1_0 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform 1 0 4524 0 1 80
+box -86 -90 982 1098
+use gf180mcu_fd_sc_mcu9t5v0__endcap  gf180mcu_fd_sc_mcu9t5v0__endcap_0 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform -1 0 -180 0 1 80
+box -586 -90 310 1098
+use gf180mcu_fd_sc_mcu9t5v0__endcap  gf180mcu_fd_sc_mcu9t5v0__endcap_1
+timestamp 1749760379
+transform 1 0 4300 0 1 80
+box -586 -90 310 1098
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_0 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform 1 0 5420 0 1 80
+box -86 -90 534 1098
+use gf180mcu_fd_sc_mcu9t5v0__latq_1  gf180mcu_fd_sc_mcu9t5v0__latq_1_0 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform 1 0 -180 0 1 80
+box -86 -90 2326 1098
+use gf180mcu_fd_sc_mcu9t5v0__latq_1  gf180mcu_fd_sc_mcu9t5v0__latq_1_1
+timestamp 1749760379
+transform 1 0 2060 0 1 80
+box -86 -90 2326 1098
+use trans-gate  trans-gate_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/trans-gate
+timestamp 1757559864
+transform -1 0 4522 0 -1 4234
+box -1440 1940 4639 3012
+<< labels >>
+flabel metal1 -137 2280 -45 2372 0 FreeSans 320 0 0 0 VDD
+port 16 nsew
+flabel metal1 -438 39 -346 131 0 FreeSans 320 0 0 0 VSS
+port 17 nsew
+flabel metal2 -560 758 -501 817 0 FreeSans 320 0 0 0 RSTN
+port 18 nsew
+flabel metal2 -560 405 -501 464 0 FreeSans 320 0 0 0 CLK1
+port 19 nsew
+flabel metal2 -560 523 -501 582 0 FreeSans 320 0 0 0 CLK2
+port 20 nsew
+flabel metal2 -560 263 -501 322 0 FreeSans 320 0 0 0 D
+port 21 nsew
+flabel metal2 5961 263 6020 322 0 FreeSans 320 0 0 0 Q
+port 23 nsew
+flabel metal4 -525 1495 -385 1635 0 FreeSans 320 0 0 0 IN
+port 24 nsew
+flabel metal5 1645 2467 1785 2607 0 FreeSans 320 0 0 0 OUT
+port 26 nsew
+<< end >>

@@ -1,0 +1,1562 @@
+timestamp 1757559719
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use switch-cell switch-cell_1 1 0 6279 0 1 413
+use switch-cell switch-cell_0 1 0 -300 0 1 413
+use switch-cell switch-cell_2 1 0 12858 0 1 413
+use switch-cell switch-cell_3 1 0 19437 0 1 413
+use switch-cell switch-cell_4 1 0 26016 0 1 413
+use switch-cell switch-cell_5 1 0 32595 0 1 413
+use switch-cell switch-cell_8 1 0 39174 0 1 413
+use switch-cell switch-cell_7 1 0 45753 0 1 413
+use switch-cell switch-cell_6 1 0 52332 0 1 413
+use switch-cell switch-cell_9 1 0 58911 0 1 413
+use switch-cell switch-cell_12 1 0 65490 0 1 413
+use switch-cell switch-cell_11 1 0 72069 0 1 413
+use switch-cell switch-cell_10 1 0 78648 0 1 413
+use switch-cell switch-cell_13 1 0 85227 0 1 413
+use switch-cell switch-cell_16 1 0 91806 0 1 413
+use switch-cell switch-cell_15 1 0 98385 0 1 413
+port "OUT[0]" 0 99999 201 100201 403 m5
+port "OUT[1]" 1 93420 201 93622 403 m5
+port "OUT[2]" 2 86841 201 87043 403 m5
+port "OUT[3]" 3 80262 201 80464 403 m5
+port "OUT[4]" 4 73683 201 73885 403 m5
+port "OUT[5]" 5 67104 201 67306 403 m5
+port "OUT[6]" 6 60525 201 60727 403 m5
+port "OUT[7]" 7 53946 201 54148 403 m5
+port "OUT[8]" 8 47367 201 47569 403 m5
+port "OUT[9]" 9 40788 201 40990 403 m5
+port "OUT[10]" 10 34209 201 34411 403 m5
+port "OUT[11]" 11 27630 201 27832 403 m5
+port "OUT[12]" 12 21051 201 21253 403 m5
+port "OUT[13]" 13 14472 201 14674 403 m5
+port "OUT[14]" 14 7893 201 8095 403 m5
+port "OUT[15]" 15 1314 201 1516 403 m5
+port "IN" 22 -860 1879 -658 2081 m4
+port "Q" 24 104346 676 104405 735 m2
+port "D" 21 -860 676 -801 735 m2
+port "CLK1" 20 -860 818 -801 877 m2
+port "CLK2" 19 -860 936 -801 995 m2
+port "RSTN" 18 -860 1171 -801 1230 m2
+port "VSS" 17 -860 403 -680 583 m1
+port "VDD" 16 -860 2653 -680 2833 m1
+node "OUT[0]" 0 128.674 99999 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[1]" 0 128.674 93420 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[2]" 0 128.674 86841 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[3]" 0 128.674 80262 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[4]" 0 128.674 73683 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[5]" 0 128.674 67104 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[6]" 0 128.674 60525 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[7]" 0 128.674 53946 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[8]" 0 128.674 47367 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[9]" 0 128.674 40788 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[10]" 0 128.674 34209 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[11]" 0 128.674 27630 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[12]" 0 128.674 21051 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[13]" 0 128.674 14472 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[14]" 0 128.674 7893 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "OUT[15]" 0 128.674 1314 201 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808
+node "IN" 0 118.059 -860 1879 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40804 808 0 0
+node "Q" 0 40.5984 104346 676 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3481 236 0 0 0 0 0 0
+node "D" 0 29.9857 -860 676 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3481 236 0 0 0 0 0 0
+node "CLK1" 0 22.2805 -860 818 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3481 236 0 0 0 0 0 0
+node "CLK2" 0 23.1208 -860 936 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3481 236 0 0 0 0 0 0
+node "RSTN" 0 32.1204 -860 1171 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3481 236 0 0 0 0 0 0
+node "VSS" 0 165.688 -860 403 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 720 0 0 0 0 0 0 0 0
+node "VDD" 0 165.688 -860 2653 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 720 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VDD" "IN" 3.56064
+cap "RSTN" "VDD" 0.144319
+cap "VSS" "CLK1" 0.613036
+cap "CLK2" "VSS" 0.345083
+cap "CLK2" "CLK1" 25.2975
+cap "VSS" "IN" 1.52512
+cap "RSTN" "VSS" 0.147006
+cap "VSS" "D" 5.96533
+cap "CLK1" "IN" 0.1531
+cap "D" "CLK1" 20.7325
+cap "CLK2" "IN" 0.185688
+cap "RSTN" "CLK2" 12.201
+cap "RSTN" "IN" 0.808887
+cap "D" "IN" 0.123523
+cap "switch-cell_0/RSTN" "switch-cell_0/CLK2" -12.201
+cap "switch-cell_0/RSTN" "switch-cell_0/VSS" -0.147006
+cap "switch-cell_0/VSS" "switch-cell_0/D" -5.96533
+cap "switch-cell_0/IN" "switch-cell_0/VSS" -0.476817
+cap "switch-cell_0/CLK2" "switch-cell_0/VSS" -0.345083
+cap "switch-cell_0/CLK1" "switch-cell_0/D" -20.7325
+cap "switch-cell_0/RSTN" "switch-cell_0/VDD" -0.116176
+cap "switch-cell_0/CLK2" "switch-cell_0/CLK1" -25.2975
+cap "switch-cell_0/CLK1" "switch-cell_0/VSS" -0.613036
+cap "switch-cell_0/IN" "switch-cell_0/RSTN" -0.524564
+cap "switch-cell_1/VSS" "switch-cell_1/CLK1" -7.10543e-15
+cap "switch-cell_1/RSTN" "switch-cell_1/CLK1" 1.77636e-15
+cap "switch-cell_1/RSTN" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 1.35138
+cap "switch-cell_1/RSTN" "switch-cell_1/VSS" 0.103857
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_1/RSTN" 0.130687
+cap "switch-cell_1/D" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.29789
+cap "switch-cell_1/D" "switch-cell_1/RSTN" 0.0489715
+cap "switch-cell_1/CLK1" "switch-cell_1/D" -0.351398
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 5.4443
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" 0.0584041
+cap "switch-cell_1/CLK2" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_1/CLK1" "switch-cell_1/CLK2" -0.428771
+cap "switch-cell_1/IN" "switch-cell_1/RSTN" 4.44089e-16
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.24543
+cap "switch-cell_1/RSTN" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.08214
+cap "switch-cell_1/VDD" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 53.7761
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 52.8346
+cap "switch-cell_1/CLK1" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 2.26948
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/D" 0.15749
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/CLK1" 2.36876
+cap "switch-cell_1/VSS" "switch-cell_1/D" 1.98103
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000449064
+cap "switch-cell_1/VSS" "switch-cell_1/CLK1" -0.0103904
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/CLK2" 0.577374
+cap "switch-cell_1/RSTN" "switch-cell_1/CLK2" -0.206796
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.142166
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/CLK2" 1.51266
+cap "switch-cell_1/VDD" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" -5.68434e-14
+cap "switch-cell_1/VDD" "switch-cell_1/RSTN" -0.00196909
+cap "switch-cell_1/VSS" "switch-cell_1/CLK2" -0.00584886
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/RSTN" 0.91969
+cap "switch-cell_1/VSS" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 1.28101
+cap "switch-cell_1/VSS" "switch-cell_1/RSTN" -0.00249163
+cap "switch-cell_1/VDD" "switch-cell_1/VSS" 0.0471212
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/VSS" 15.838
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.416737
+cap "switch-cell_1/CLK2" "switch-cell_1/VSS" 2.63557
+cap "switch-cell_1/D" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_1/VSS" 4.09207
+cap "switch-cell_1/VSS" "switch-cell_1/VDD" 21.3848
+cap "switch-cell_1/CLK2" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_1/CLK2" "switch-cell_1/CLK1" 0.363291
+cap "switch-cell_1/VSS" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" -2.84217e-14
+cap "switch-cell_1/VSS" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 2.45552
+cap "switch-cell_1/VSS" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.00539663
+cap "switch-cell_1/VSS" "switch-cell_1/CLK1" 3.13041
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 4.75881
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_1/CLK1" 0.342549
+cap "switch-cell_1/VDD" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 1.71286
+cap "switch-cell_1/VDD" "switch-cell_1/CLK1" 1.67061
+cap "switch-cell_1/CLK1" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 2.84217e-14
+cap "switch-cell_1/CLK1" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_1/VSS" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 5.64064
+cap "switch-cell_1/VSS" "switch-cell_1/D" 2.63557
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_1/D" 0.00173134
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_1/CLK1" 0.851958
+cap "switch-cell_1/VDD" "switch-cell_1/D" 0.00857103
+cap "switch-cell_1/VSS" "switch-cell_1/RSTN" 3.86058
+cap "switch-cell_1/VSS" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" 0.00297304
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/CLK1" 1.78747
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 1.35138
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.0974612
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_1/CLK1" -1.42109e-14
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.0224118
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_1/CLK1" -3.55271e-15
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/CLK1" 0.0155537
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_1/Q" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.29789
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_1/CLK1" 3.55271e-15
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.00653202
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.103857
+cap "switch-cell_1/Q" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_1/Q" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -5.68434e-14
+cap "switch-cell_1/CLK1" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.84217e-14
+cap "switch-cell_1/IN" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -1.33227e-15
+cap "switch-cell_1/trans-gate_0/SWP" "switch-cell_1/CLK2" 1.51266
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.85808
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_1/trans-gate_0/SWP" 52.8346
+cap "switch-cell_1/trans-gate_0/VDD" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 53.7761
+cap "switch-cell_1/CLK1" "switch-cell_1/trans-gate_0/SWP" 2.71131
+cap "switch-cell_1/CLK1" "switch-cell_1/trans-gate_0/VDD" 1.67061
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 6.91512
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_1/CLK2" 2.62972
+cap "switch-cell_1/CLK1" "switch-cell_1/Q" -0.351398
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_1/CLK2" -0.206796
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" -2.84217e-14
+cap "switch-cell_1/CLK1" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.12002
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.63469
+cap "switch-cell_1/Q" "switch-cell_1/trans-gate_0/SWP" 0.15749
+cap "switch-cell_1/Q" "switch-cell_1/trans-gate_0/VDD" 5.55112e-17
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.08214
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_1/CLK2" 0.360999
+cap "switch-cell_1/IN" "switch-cell_1/trans-gate_0/VDD" -1.11022e-16
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/CLK2" 0.577374
+cap "switch-cell_1/trans-gate_0/VDD" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_1/trans-gate_0/SWP" 19.9301
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_1/trans-gate_0/SWP" 0.91969
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_1/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_1/CLK1" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.851958
+cap "switch-cell_1/CLK1" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 4.0414
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.14797
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_1/trans-gate_0/SWP" 0.142166
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_1/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_1/CLK2" 1.19988
+cap "switch-cell_1/CLK1" "switch-cell_1/CLK2" -0.0654799
+cap "switch-cell_1/Q" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.61661
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_1/trans-gate_0/SWP" 10.2031
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_1/trans-gate_0/VDD" 1.71286
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_1/CLK1" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_1/trans-gate_0/VDD" -2.84217e-14
+cap "switch-cell_1/IN" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_1/Q" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_2/trans-gate_0/SWN" -2.77556e-17
+cap "switch-cell_1/Q" "switch-cell_2/trans-gate_0/SWN" 1.11022e-16
+cap "switch-cell_1/Q" "switch-cell_1/trans-gate_0/VDD" 0.00857103
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VDD" "switch-cell_2/trans-gate_0/SWN" 1.13687e-13
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1364_532#" "switch-cell_2/trans-gate_0/SWN" 3.55271e-15
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/trans-gate_0/SWN" -3.55271e-15
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_2/trans-gate_0/SWN" 5.55112e-17
+cap "switch-cell_1/Q" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.00173134
+cap "switch-cell_2/CLK1" "switch-cell_2/trans-gate_0/VDD" -2.22045e-16
+cap "switch-cell_2/CLK1" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -3.55271e-15
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 3.92418
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 34.7697
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" 0.0584041
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.416737
+cap "switch-cell_2/CLK2" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.577374
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 5.4443
+cap "switch-cell_2/CLK1" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" -1.42109e-14
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/CLK2" 1.51266
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_2/trans-gate_0/VDD" 1.91121
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_2/Q" 0.29789
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.905871
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 1.35138
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 7.97899
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/trans-gate_0/VDD" -1.13687e-13
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.142166
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/Q" 0.15749
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.103857
+cap "switch-cell_2/CLK1" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 2.26948
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/CLK1" 2.36876
+cap "switch-cell_2/Q" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/CLK1" 0.851958
+cap "switch-cell_2/CLK2" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.62972
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.85808
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/Q" 0.00173134
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.9511
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/Q" 0.00857103
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/IN" -8.88178e-16
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_2/Q" 4.61661
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.321247
+cap "switch-cell_2/CLK2" "switch-cell_2/CLK1" -0.0654799
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/CLK2" 0.360999
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_2/CLK1" 2.84217e-14
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/CLK1" 0.342549
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 4.75881
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/CLK1" 1.67061
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/trans-gate_0/VDD" 1.71286
+cap "switch-cell_2/IN" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 6.01578
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/Q" 0.000824224
+cap "switch-cell_2/Q" "switch-cell_2/CLK1" -0.351398
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_2/CLK1" 3.12002
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_2/CLK1" 0.0527467
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/CLK2" -0.206796
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_2/CLK2" 1.19988
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 2.08214
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 18.0649
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_2/trans-gate_0/VDD" 51.8649
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_2/CLK1" 1.78747
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1364_532#" "switch-cell_3/trans-gate_0/SWN" 3.55271e-15
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VDD" "switch-cell_3/trans-gate_0/SWN" 1.13687e-13
+cap "switch-cell_3/trans-gate_0/SWN" "switch-cell_2/Q" 1.11022e-16
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_3/trans-gate_0/SWN" 1.77636e-15
+cap "switch-cell_3/trans-gate_0/SWN" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" -2.77556e-17
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1020_652#" "switch-cell_3/trans-gate_0/SWN" 7.10543e-15
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_3/Q" 0.29789
+cap "switch-cell_3/CLK1" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -1.42109e-14
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_3/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_3/CLK2" 0.577374
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.24543
+cap "switch-cell_3/Q" "switch-cell_3/trans-gate_0/SWP" 0.15749
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_3/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_3/CLK2" "switch-cell_3/trans-gate_0/SWP" 1.51266
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_3/trans-gate_0/VDD" 53.7761
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_3/trans-gate_0/SWP" 0.91969
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_3/trans-gate_0/SWP" 52.8346
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_3/CLK1" 7.10543e-15
+cap "switch-cell_3/Q" "switch-cell_3/CLK1" -0.351398
+cap "switch-cell_3/Q" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 1.98103
+cap "switch-cell_3/CLK2" "switch-cell_3/CLK1" -0.428771
+cap "switch-cell_3/CLK2" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.00584886
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_3/CLK1" 1.77636e-15
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.101365
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.416737
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_3/trans-gate_0/VDD" -5.68434e-14
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_3/CLK1" 2.26948
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 1.28101
+cap "switch-cell_3/Q" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_3/trans-gate_0/SWP" 0.142166
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_3/trans-gate_0/SWP" 5.4443
+cap "switch-cell_3/CLK2" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_3/CLK2" -0.206796
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 3.43352
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.0471212
+cap "switch-cell_3/trans-gate_0/SWP" "switch-cell_3/CLK1" 2.36876
+cap "switch-cell_3/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 15.838
+cap "switch-cell_3/CLK1" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.0103904
+cap "switch-cell_3/CLK1" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.851958
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 3.86058
+cap "switch-cell_3/CLK1" "switch-cell_3/trans-gate_0/VDD" 1.67061
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 4.09207
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 5.64064
+cap "switch-cell_3/CLK1" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 4.75881
+cap "switch-cell_3/Q" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.00173134
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.240365
+cap "switch-cell_3/Q" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_3/CLK2" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.63557
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.00539663
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_3/CLK1" 0.342549
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1020_652#" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 3.55271e-15
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" 0.00297304
+cap "switch-cell_3/Q" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.63557
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/trans-gate_0/VDD" 21.3848
+cap "switch-cell_3/CLK2" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_3/CLK1" 1.78747
+cap "switch-cell_3/CLK1" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 2.84217e-14
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_3/trans-gate_0/VDD" 1.71286
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/CLK1" 3.13041
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 2.45552
+cap "switch-cell_3/Q" "switch-cell_3/trans-gate_0/VDD" 0.00857103
+cap "switch-cell_3/CLK2" "switch-cell_3/CLK1" 0.363291
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.103857
+cap "switch-cell_4/CLK1" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" -1.42109e-14
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/CLK1" 1.77636e-15
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 1.35138
+cap "switch-cell_4/Q" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 5.68434e-14
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_4/Q" 0.0489715
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_4/CLK1" 3.55271e-15
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_4/CLK1" -3.55271e-15
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.130687
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_4/Q" 0.29789
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.142166
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000449064
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" 0.0584041
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_4/CLK2" 0.360999
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -2.84217e-14
+cap "switch-cell_4/Q" "switch-cell_4/trans-gate_0/VDD" 5.55112e-17
+cap "switch-cell_4/trans-gate_0/VDD" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_4/IN" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 52.8346
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.24543
+cap "switch-cell_4/CLK2" "switch-cell_4/CLK1" -0.0654799
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_4/CLK1" 0.851958
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 3.85808
+cap "switch-cell_4/trans-gate_0/VDD" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 53.7761
+cap "switch-cell_4/IN" "switch-cell_4/trans-gate_0/VDD" -1.11022e-16
+cap "switch-cell_4/CLK2" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.62972
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 10.1609
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/CLK2" 1.51266
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/CLK2" 0.577374
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.416737
+cap "switch-cell_4/Q" "switch-cell_4/CLK1" -0.351398
+cap "switch-cell_4/CLK1" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.12002
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_4/trans-gate_0/VDD" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.00196909
+cap "switch-cell_4/IN" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -4.44089e-16
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_4/CLK1" 0.0527467
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_4/trans-gate_0/VDD" 0.293563
+cap "switch-cell_4/CLK2" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/CLK1" 2.71131
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/CLK1" 4.05696
+cap "switch-cell_4/Q" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.61661
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_4/Q" "switch-cell_4/trans-gate_0/SWP" 0.15749
+cap "switch-cell_4/Q" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" -3.55271e-15
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 19.9301
+cap "switch-cell_4/CLK1" "switch-cell_4/trans-gate_0/VDD" 1.67061
+cap "switch-cell_4/CLK1" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.84217e-14
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 6.92165
+cap "switch-cell_4/CLK2" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_5/trans-gate_0/SWN" -3.55271e-15
+cap "switch-cell_4/Q" "switch-cell_4/trans-gate_0/VDD" 0.00857103
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/trans-gate_0/SWN" 5.55112e-17
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_5/trans-gate_0/SWN" -2.77556e-17
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.0421781
+cap "switch-cell_4/Q" "switch-cell_5/trans-gate_0/SWN" 1.11022e-16
+cap "switch-cell_4/Q" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.00173134
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.00539663
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_5/trans-gate_0/SWN" 1.13687e-13
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_4/trans-gate_0/VDD" 1.4193
+cap "switch-cell_4/Q" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.103857
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_5/Q" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.29789
+cap "switch-cell_5/CLK1" "switch-cell_5/trans-gate_0/SWP" 0.154114
+cap "switch-cell_5/CLK1" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 2.26948
+cap "switch-cell_5/CLK1" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -3.55271e-15
+cap "switch-cell_5/CLK1" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" -1.42109e-14
+cap "switch-cell_5/Q" "switch-cell_5/trans-gate_0/SWP" 0.0122775
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 8.81617
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 3.92418
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_5/CLK2" 0.577374
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_5/CLK1" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -3.55271e-15
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_5/trans-gate_0/SWP" 0.552759
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_5/trans-gate_0/SWP" 0.185345
+cap "switch-cell_5/CLK1" "switch-cell_5/trans-gate_0/VDD" -4.44089e-16
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.905871
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/Q" 0.0489715
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.416737
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 1.35138
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 1.91121
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_5/CLK2" "switch-cell_5/trans-gate_0/SWP" 1.51266
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.142166
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_5/trans-gate_0/VDD" 1.42109e-14
+cap "switch-cell_5/CLK2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 1.19988
+cap "switch-cell_5/Q" "switch-cell_5/trans-gate_0/SWP" 0.145213
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 51.8649
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/CLK1" 3.12002
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 6.01578
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/IN" -4.44089e-16
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 3.85808
+cap "switch-cell_5/CLK2" "switch-cell_5/CLK1" -0.0654799
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_5/CLK1" 1.67061
+cap "switch-cell_5/CLK2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_5/CLK2" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_5/Q" "switch-cell_5/CLK1" -0.351398
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_5/trans-gate_0/VDD" 1.71286
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.00196909
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 44.0184
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" 0.0584041
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/IN" 5.55112e-17
+cap "switch-cell_5/CLK1" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_5/CLK2" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.62972
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_5/IN" -1.11022e-16
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_5/CLK1" 2.5572
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 10.0178
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_5/CLK1" 2.84217e-14
+cap "switch-cell_5/Q" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.61661
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.321247
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 2.45552
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 19.3773
+cap "switch-cell_5/CLK1" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 1.78747
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_5/CLK1" 0.851958
+cap "switch-cell_5/Q" "switch-cell_8/trans-gate_0/SWN" 1.11022e-16
+cap "switch-cell_8/trans-gate_0/SWN" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 3.55271e-15
+cap "switch-cell_5/Q" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1020_652#" "switch-cell_8/trans-gate_0/SWN" 7.10543e-15
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1364_532#" "switch-cell_8/trans-gate_0/SWN" 3.55271e-15
+cap "switch-cell_5/Q" "switch-cell_5/trans-gate_0/VDD" 0.00857103
+cap "switch-cell_8/trans-gate_0/SWN" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VDD" 1.13687e-13
+cap "switch-cell_5/Q" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.00173134
+cap "switch-cell_8/trans-gate_0/SWN" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" -2.77556e-17
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_8/trans-gate_0/VDD" 20.4617
+cap "switch-cell_8/CLK2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 7.97899
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 5.4443
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.0471212
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/CLK1" 2.26948
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 3.92418
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.142166
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_8/CLK1" -3.55271e-15
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.35138
+cap "switch-cell_8/Q" "switch-cell_8/CLK1" -0.351398
+cap "switch-cell_8/Q" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 0.29789
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.905871
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/trans-gate_0/VDD" -5.68434e-14
+cap "switch-cell_8/Q" "switch-cell_8/trans-gate_0/SWP" 0.15749
+cap "switch-cell_8/CLK2" "switch-cell_8/CLK1" -0.428771
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.416737
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" 0.0584041
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.101365
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_8/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/CLK2" 1.51266
+cap "switch-cell_8/Q" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.101107
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_8/CLK2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.00584886
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/CLK1" 2.36876
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 34.7697
+cap "switch-cell_8/CLK2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.577374
+cap "switch-cell_8/Q" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_8/CLK1" -0.0103904
+cap "switch-cell_8/CLK2" "switch-cell_8/CLK1" 0.363291
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/CLK1" 1.78747
+cap "switch-cell_8/Q" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.71772
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/Q" 0.00173134
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 1.71286
+cap "switch-cell_8/Q" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" -3.55271e-15
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.3848
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_8/CLK1" 0.0527467
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_8/trans-gate_0/VDD" 33.3145
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_8/trans-gate_0/SWP" 4.75881
+cap "switch-cell_8/CLK2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.9511
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 6.01578
+cap "switch-cell_8/CLK2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.63557
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_8/trans-gate_0/SWP" 18.0649
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.86058
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.321247
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_8/CLK2" 1.19988
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_8/CLK1" 1.67061
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_8/CLK1" 0.851958
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_8/CLK1" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.13041
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_8/Q" 0.00857103
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/CLK1" 0.342549
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_8/CLK1" 2.84217e-14
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.103857
+cap "switch-cell_7/Q" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.130687
+cap "switch-cell_7/Q" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.29789
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 1.35138
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_7/CLK1" -3.55271e-15
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000449064
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 2.45552
+cap "switch-cell_7/CLK1" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 5.55112e-17
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/CLK1" 1.67061
+cap "switch-cell_7/Q" "switch-cell_7/trans-gate_0/VDD" 1.11022e-16
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_7/CLK1" 2.71131
+cap "switch-cell_7/Q" "switch-cell_7/CLK1" -0.351398
+cap "switch-cell_7/Q" "switch-cell_7/trans-gate_0/SWP" 0.15749
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.293563
+cap "switch-cell_7/CLK2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_7/CLK1" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.851958
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_7/CLK1" 0.0527467
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 10.1609
+cap "switch-cell_7/CLK2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.577374
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 6.92165
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.08214
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 53.7761
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" 0.00297304
+cap "switch-cell_7/CLK1" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" -1.42109e-14
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" -5.68434e-14
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 52.8346
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_7/IN" 4.44089e-16
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_7/trans-gate_0/SWP" 0.142166
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_7/CLK1" 4.05696
+cap "switch-cell_7/CLK2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.62972
+cap "switch-cell_7/Q" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 7.10543e-15
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.416737
+cap "switch-cell_7/CLK2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 3.85808
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_7/CLK2" "switch-cell_7/CLK1" -0.0654799
+cap "switch-cell_7/CLK2" "switch-cell_7/trans-gate_0/SWP" 1.51266
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 19.9301
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_7/CLK1" 3.12002
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" 0.0584041
+cap "switch-cell_7/Q" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.61661
+cap "switch-cell_7/CLK2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.00196909
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.24543
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1020_652#" "switch-cell_6/trans-gate_0/SWN" 1.11022e-16
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_7/Q" 0.000824224
+cap "switch-cell_7/Q" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -2.84217e-14
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_7/Q" "switch-cell_7/trans-gate_0/VDD" 0.00857103
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_7/trans-gate_0/VDD" 1.4193
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_6/trans-gate_0/SWN" 1.13687e-13
+cap "switch-cell_6/trans-gate_0/SWN" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_7/Q" 0.00173134
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.0421781
+cap "switch-cell_7/Q" "switch-cell_6/trans-gate_0/SWN" 1.11022e-16
+cap "switch-cell_6/trans-gate_0/SWN" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" -2.77556e-17
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_6/trans-gate_0/SWN" -3.55271e-15
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/CLK1" 0.0155537
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 1.35138
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.00653202
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.130687
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.0974612
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.0224118
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_6/Q" 2.84217e-14
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_6/trans-gate_0/VDD" 1.91121
+cap "switch-cell_6/CLK1" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -3.55271e-15
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/Q" 0.0489715
+cap "switch-cell_6/CLK1" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" -1.42109e-14
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_6/Q" 0.29789
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.103857
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_6/trans-gate_0/SWP" 0.142166
+cap "switch-cell_6/CLK2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.62972
+cap "switch-cell_6/CLK1" "switch-cell_6/trans-gate_0/SWP" 2.71131
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.63469
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_6/CLK1" 0.851958
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.85808
+cap "switch-cell_6/Q" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.61661
+cap "switch-cell_6/trans-gate_0/VDD" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/CLK1" 4.0414
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_6/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_6/CLK2" "switch-cell_6/trans-gate_0/SWP" 1.51266
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_6/trans-gate_0/SWP" 52.8346
+cap "switch-cell_6/CLK2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_6/IN" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -4.44089e-16
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_6/CLK1" 0.0527467
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/trans-gate_0/SWP" 0.91969
+cap "switch-cell_6/IN" "switch-cell_6/trans-gate_0/VDD" -1.11022e-16
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/CLK2" 0.577374
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 7.10543e-15
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_6/Q" "switch-cell_6/trans-gate_0/SWP" 0.15749
+cap "switch-cell_6/trans-gate_0/VDD" "switch-cell_6/trans-gate_0/SWP" 5.68434e-14
+cap "switch-cell_6/CLK2" "switch-cell_6/CLK1" -0.0654799
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_6/trans-gate_0/VDD" 1.71286
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.14797
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_6/CLK1" 2.84217e-14
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/trans-gate_0/VDD" -2.84217e-14
+cap "switch-cell_6/Q" "switch-cell_6/CLK1" -0.351398
+cap "switch-cell_6/CLK1" "switch-cell_6/trans-gate_0/VDD" 1.67061
+cap "switch-cell_6/CLK2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_6/CLK2" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_6/IN" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_6/trans-gate_0/VDD" 51.8649
+cap "switch-cell_6/trans-gate_0/SWP" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 19.9301
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_6/Q" "switch-cell_6/trans-gate_0/VDD" 5.55112e-17
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 6.91512
+cap "switch-cell_6/CLK1" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.12002
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_6/trans-gate_0/SWP" 10.2031
+cap "switch-cell_9/trans-gate_0/SWN" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VDD" 1.13687e-13
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_9/trans-gate_0/SWN" -2.77556e-17
+cap "switch-cell_9/trans-gate_0/SWN" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" -3.55271e-15
+cap "switch-cell_6/Q" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.00173134
+cap "switch-cell_9/trans-gate_0/SWN" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_6/Q" "switch-cell_9/trans-gate_0/SWN" 1.11022e-16
+cap "switch-cell_9/trans-gate_0/SWN" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1364_532#" 3.55271e-15
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_6/Q" 0.000824224
+cap "switch-cell_6/Q" "switch-cell_6/trans-gate_0/VDD" 0.00857103
+cap "switch-cell_9/Q" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_9/CLK2" 0.577374
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_9/trans-gate_0/SWP" 0.142166
+cap "switch-cell_9/CLK1" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -3.55271e-15
+cap "switch-cell_9/trans-gate_0/SWP" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 7.97899
+cap "switch-cell_9/trans-gate_0/SWP" "switch-cell_9/CLK2" 1.51266
+cap "switch-cell_9/CLK1" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 2.26948
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_9/trans-gate_0/VDD" 20.4617
+cap "switch-cell_9/Q" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 0.29789
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.35138
+cap "switch-cell_9/Q" "switch-cell_9/trans-gate_0/SWP" 0.15749
+cap "switch-cell_9/trans-gate_0/SWP" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_9/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_9/CLK1" "switch-cell_9/trans-gate_0/SWP" 2.36876
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 3.92418
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.416737
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_9/trans-gate_0/VDD" 0.0471212
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.103857
+cap "switch-cell_9/CLK1" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 1.77636e-15
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000449064
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/trans-gate_0/SWP" 5.4443
+cap "switch-cell_9/trans-gate_0/SWP" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 34.7697
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.905871
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.3848
+cap "switch-cell_9/Q" "switch-cell_9/CLK1" -0.351398
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_9/Q" "switch-cell_9/trans-gate_0/SWP" 0.00173134
+cap "switch-cell_9/IN" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -4.996e-16
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_9/CLK1" 0.0527467
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 6.01578
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/CLK1" 1.67061
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.00196909
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_9/CLK2" 1.19988
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_9/trans-gate_0/SWP" 18.0649
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/Q" 0.00857103
+cap "switch-cell_9/CLK1" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 1.78747
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_9/CLK1" 2.84217e-14
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/CLK2" 0.360999
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/CLK1" 0.851958
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/trans-gate_0/SWP" 4.75881
+cap "switch-cell_9/Q" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_9/CLK2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.62972
+cap "switch-cell_9/CLK1" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.12002
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_9/trans-gate_0/SWP" 11.9511
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.85808
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 33.3145
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_9/CLK2" "switch-cell_9/CLK1" -0.0654799
+cap "switch-cell_9/Q" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.61661
+cap "switch-cell_9/CLK2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_9/IN" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_9/trans-gate_0/VDD" 1.71286
+cap "switch-cell_9/CLK1" "switch-cell_9/trans-gate_0/SWP" 0.342549
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.321247
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_12/Q" 0.29789
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 1.35138
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/Q" -5.68434e-14
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.103857
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_12/Q" 0.0489715
+cap "switch-cell_12/CLK2" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.00584886
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_12/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_12/CLK2" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_12/CLK1" "switch-cell_12/CLK2" -0.428771
+cap "switch-cell_12/Q" "switch-cell_12/trans-gate_0/SWP" 0.15749
+cap "switch-cell_12/CLK2" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.577374
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_12/trans-gate_0/SWP" 0.142166
+cap "switch-cell_12/CLK2" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.0471212
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/trans-gate_0/SWP" 15.838
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_12/trans-gate_0/SWP" 5.4443
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_12/trans-gate_0/SWP" 52.8346
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 53.7761
+cap "switch-cell_12/CLK1" "switch-cell_12/trans-gate_0/SWP" 2.36876
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" -5.68434e-14
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/Q" 1.98103
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.00196909
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_12/trans-gate_0/SWP" 0.91969
+cap "switch-cell_12/CLK1" "switch-cell_12/Q" -0.351398
+cap "switch-cell_12/CLK2" "switch-cell_12/trans-gate_0/SWP" 1.51266
+cap "switch-cell_12/CLK1" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.0103904
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 1.28101
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.00249163
+cap "switch-cell_12/CLK1" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 3.55271e-15
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.24543
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.416737
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_12/CLK1" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 2.26948
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 4.09207
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.00539663
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/Q" 2.63557
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.3848
+cap "switch-cell_12/CLK2" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/CLK1" 3.13041
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_12/CLK1" 2.84217e-14
+cap "switch-cell_12/CLK1" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.86058
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 5.64064
+cap "switch-cell_12/CLK1" "switch-cell_12/CLK2" 0.363291
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 4.75881
+cap "switch-cell_12/Q" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.00173134
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" 0.00297304
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 1.71286
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/Q" 0.00857103
+cap "switch-cell_12/CLK1" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.342549
+cap "switch-cell_12/CLK1" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.851958
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/CLK1" 1.67061
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_12/Q" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 2.45552
+cap "switch-cell_12/CLK1" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 1.78747
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/CLK2" 2.63557
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.0224118
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_11/CLK1" -1.42109e-14
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_11/Q" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_11/CLK1" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 3.55271e-15
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_11/CLK1" 0.0155537
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.00653202
+cap "switch-cell_11/Q" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -5.68434e-14
+cap "switch-cell_11/Q" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.29789
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.0974612
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_11/CLK1" -3.55271e-15
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.103857
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 1.35138
+cap "switch-cell_11/CLK1" "switch-cell_11/Q" -0.351398
+cap "switch-cell_11/IN" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_11/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_11/trans-gate_0/SWP" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" -2.84217e-14
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_11/trans-gate_0/VDD" 1.71286
+cap "switch-cell_11/CLK2" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_11/trans-gate_0/SWP" 10.2031
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_11/trans-gate_0/VDD" -2.84217e-14
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/CLK2" 2.62972
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_11/CLK1" 0.851958
+cap "switch-cell_11/CLK1" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 4.0414
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/Q" 4.61661
+cap "switch-cell_11/IN" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -4.44089e-16
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 3.85808
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" -5.68434e-14
+cap "switch-cell_11/CLK1" "switch-cell_11/trans-gate_0/VDD" 1.67061
+cap "switch-cell_11/CLK2" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.206796
+cap "switch-cell_11/CLK1" "switch-cell_11/trans-gate_0/SWP" 2.71131
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.14797
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_11/trans-gate_0/SWP" 0.142166
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_11/CLK2" 0.360999
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 6.91512
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_11/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_11/CLK2" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.577374
+cap "switch-cell_11/IN" "switch-cell_11/trans-gate_0/VDD" -1.11022e-16
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_11/trans-gate_0/VDD" 53.7761
+cap "switch-cell_11/trans-gate_0/SWP" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 52.8346
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/trans-gate_0/VDD" 21.4319
+cap "switch-cell_11/CLK1" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.84217e-14
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/trans-gate_0/SWP" 19.9301
+cap "switch-cell_11/CLK1" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_11/CLK2" "switch-cell_11/trans-gate_0/SWP" 1.51266
+cap "switch-cell_11/CLK1" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.12002
+cap "switch-cell_11/Q" "switch-cell_11/trans-gate_0/VDD" 5.55112e-17
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.63469
+cap "switch-cell_11/trans-gate_0/SWP" "switch-cell_11/Q" 0.15749
+cap "switch-cell_11/CLK1" "switch-cell_11/CLK2" -0.0654799
+cap "switch-cell_10/trans-gate_0/SWN" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" -3.55271e-15
+cap "switch-cell_10/trans-gate_0/SWN" "switch-cell_11/Q" 1.11022e-16
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_11/Q" 0.00173134
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_10/trans-gate_0/SWN" -2.77556e-17
+cap "switch-cell_11/Q" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_11/Q" "switch-cell_11/trans-gate_0/VDD" 0.00857103
+cap "switch-cell_10/trans-gate_0/SWN" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1364_532#" 3.55271e-15
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VDD" "switch-cell_10/trans-gate_0/SWN" 1.13687e-13
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 5.4443
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.416737
+cap "switch-cell_10/Q" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.29789
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 34.7697
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 3.92418
+cap "switch-cell_10/CLK1" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -3.55271e-15
+cap "switch-cell_10/Q" "switch-cell_10/trans-gate_0/SWP" 0.15749
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_10/trans-gate_0/SWP" 0.142166
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000449064
+cap "switch-cell_10/CLK1" "switch-cell_10/trans-gate_0/VDD" -2.22045e-16
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.103857
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_10/CLK1" 2.36876
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_10/CLK1" 2.26948
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 1.35138
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_10/CLK2" 1.51266
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_10/CLK2" 0.577374
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" 0.0584041
+cap "switch-cell_10/Q" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_10/CLK1" -1.42109e-14
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_10/trans-gate_0/SWP" 7.97899
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_10/trans-gate_0/VDD" 1.91121
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.905871
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_10/trans-gate_0/SWP" 18.0649
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_10/CLK1" 0.342549
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 1.71286
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 6.01578
+cap "switch-cell_10/Q" "switch-cell_10/trans-gate_0/SWP" 0.00173134
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_10/CLK1" 2.84217e-14
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_10/CLK2" -0.206796
+cap "switch-cell_10/Q" "switch-cell_10/CLK1" -0.351398
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 3.85808
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 4.75881
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_10/CLK1" 0.851958
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 2.45552
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.00196909
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/CLK2" 2.62972
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.321247
+cap "switch-cell_10/CLK1" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 1.78747
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_10/Q" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000824224
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.08214
+cap "switch-cell_10/CLK1" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.240365
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_10/IN" -1.33227e-15
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.9511
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_10/CLK2" 1.19988
+cap "switch-cell_10/CLK1" "switch-cell_10/CLK2" -0.0654799
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/CLK1" 3.12002
+cap "switch-cell_10/Q" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.61661
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/CLK1" 1.67061
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 51.8649
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/IN" 5.55112e-17
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/Q" 0.00857103
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_10/CLK2" 0.360999
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1364_532#" "switch-cell_13/trans-gate_0/SWN" 3.55271e-15
+cap "switch-cell_10/Q" "switch-cell_13/trans-gate_0/SWN" 1.11022e-16
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VDD" "switch-cell_13/trans-gate_0/SWN" 1.13687e-13
+cap "switch-cell_13/trans-gate_0/SWN" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 1.77636e-15
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_1020_652#" "switch-cell_13/trans-gate_0/SWN" 7.10543e-15
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_13/trans-gate_0/SWN" -2.77556e-17
+cap "switch-cell_13/Q" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" 0.29789
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/CLK2" 0.577374
+cap "switch-cell_13/CLK1" "switch-cell_13/CLK2" -0.428771
+cap "switch-cell_13/Q" "switch-cell_13/trans-gate_0/SWP" 0.15749
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/Q" 0.0489715
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/trans-gate_0/VDD" -5.68434e-14
+cap "switch-cell_13/CLK2" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.00584886
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_13/trans-gate_0/SWP" 5.4443
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.130687
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.0471212
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.000449064
+cap "switch-cell_13/CLK1" "switch-cell_13/trans-gate_0/SWP" 2.36876
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/CLK1" -1.77636e-15
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.24543
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_13/trans-gate_0/SWP" 15.838
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.101365
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_13/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_13/CLK2" "switch-cell_13/trans-gate_0/SWP" 1.51266
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/CLK2" -0.206796
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_13/CLK2" 1.19988
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_13/trans-gate_0/VDD" 53.7761
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/trans-gate_0/SWP" 0.91969
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_13/trans-gate_0/SWP" 0.142166
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_13/trans-gate_0/SWP" 52.8346
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 3.43352
+cap "switch-cell_13/CLK1" "switch-cell_13/Q" -0.351398
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.416737
+cap "switch-cell_13/Q" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 1.98103
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/IN" -4.44089e-16
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/CLK1" 2.26948
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 1.28101
+cap "switch-cell_13/CLK1" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -0.0103904
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00539663
+cap "switch-cell_13/CLK1" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" 0.0527467
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 4.75881
+cap "switch-cell_13/CLK1" "switch-cell_13/CLK2" 0.363291
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 2.84217e-14
+cap "switch-cell_13/CLK2" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.63557
+cap "switch-cell_13/CLK1" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.13041
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 1.71286
+cap "switch-cell_13/Q" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.63557
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.240365
+cap "switch-cell_13/CLK1" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.342549
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_13/Q" 0.00173134
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.09207
+cap "switch-cell_13/CLK1" "switch-cell_13/trans-gate_0/VDD" 1.67061
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.86058
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/Q" 0.00857103
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/CLK1" 1.78747
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.3848
+cap "switch-cell_13/CLK1" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 2.84217e-14
+cap "switch-cell_13/CLK2" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/Q" 0.000824224
+cap "switch-cell_13/CLK1" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.851958
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.64064
+cap "switch-cell_16/Q" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.0489715
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 1.35138
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VNW" "switch-cell_16/Q" 0.29789
+cap "switch-cell_16/CLK1" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" -1.42109e-14
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.130687
+cap "switch-cell_16/CLK1" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -3.55271e-15
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.103857
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/IN" -1.33227e-15
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_16/CLK1" 0.0527467
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 4.24543
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_16/IN" 5.55112e-17
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/Q" 5.55112e-17
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/CLK2" 0.577374
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/trans-gate_0/VDD" -0.00196909
+cap "switch-cell_16/CLK2" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.360999
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 21.4319
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" "switch-cell_16/trans-gate_0/SWP" 0.0584041
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 53.7761
+cap "switch-cell_16/CLK1" "switch-cell_16/Q" -0.351398
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_16/CLK1" 2.71131
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.416737
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_36_201#" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.45552
+cap "switch-cell_16/CLK1" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.12002
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/trans-gate_0/VDD" -5.68434e-14
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_16/Q" 0.15749
+cap "switch-cell_16/CLK1" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.84217e-14
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.293563
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/IN" -1.11022e-16
+cap "switch-cell_16/CLK1" "switch-cell_16/CLK2" -0.0654799
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_16/Q" 4.61661
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 0.91969
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/a_244_201#" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 0.00297304
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 19.9301
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" 0.142166
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 52.8346
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/CLK1" 4.05696
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 3.85808
+cap "switch-cell_16/CLK1" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.851958
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_16/CLK2" 1.51266
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 2.08214
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" -2.84217e-14
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/CLK2" -0.206796
+cap "switch-cell_16/CLK2" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 2.62972
+cap "switch-cell_16/CLK1" "switch-cell_16/trans-gate_0/VDD" 1.67061
+cap "switch-cell_16/CLK2" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" 1.19988
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 10.1609
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 6.92165
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_504_110#" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.000449064
+cap "switch-cell_15/trans-gate_0/SWN" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 5.55112e-17
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.0421781
+cap "switch-cell_15/trans-gate_0/SWN" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_872_652#" -2.77556e-17
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.240365
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 0.00539663
+cap "switch-cell_16/Q" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 0.00173134
+cap "switch-cell_15/trans-gate_0/SWN" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" 1.13687e-13
+cap "switch-cell_15/trans-gate_0/SWN" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" -3.55271e-15
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_36_92#" 1.4193
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "switch-cell_16/Q" 0.000824224
+cap "switch-cell_15/trans-gate_0/SWN" "switch-cell_16/Q" 1.11022e-16
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/Q" 0.00857103
+cap "switch-cell_0/VDD" "switch-cell_0/RSTN" -0.0281426
+cap "switch-cell_0/CLK1" "switch-cell_0/IN" -0.1531
+cap "switch-cell_0/IN" "switch-cell_0/CLK2" -0.185688
+cap "switch-cell_0/IN" "switch-cell_0/D" -0.123523
+cap "switch-cell_0/VSS" "switch-cell_0/IN" -1.0483
+cap "switch-cell_0/IN" "switch-cell_0/VDD" -3.56064
+cap "switch-cell_0/IN" "switch-cell_0/RSTN" -0.284323
+cap "switch-cell_1/CLK1" "switch-cell_0/trans-gate_0/SWP" -2.22045e-16
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/VSS" -2.22045e-16
+cap "switch-cell_0/trans-gate_0/OUT" "switch-cell_1/VDD" 2.84217e-14
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/VDD" 4.54747e-13
+cap "switch-cell_1/IN" "switch-cell_1/VSS" -1.77636e-15
+cap "switch-cell_0/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" "switch-cell_1/VSS" 6.60187
+cap "switch-cell_1/VDD" "switch-cell_1/VSS" 33.6326
+cap "switch-cell_1/IN" "switch-cell_1/VSS" -8.88178e-16
+cap "switch-cell_1/CLK1" "switch-cell_1/IN" -1.11022e-16
+cap "switch-cell_1/VDD" "switch-cell_1/trans-gate_0/SWN" 3.19308
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/VSS" 0.38342
+cap "switch-cell_1/D" "switch-cell_1/IN" -5.55112e-16
+cap "switch-cell_0/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" "switch-cell_1/IN" 6.33123
+cap "switch-cell_1/CLK2" "switch-cell_1/IN" -6.66134e-16
+cap "switch-cell_1/RSTN" "switch-cell_1/VDD" -0.000476993
+cap "switch-cell_1/VDD" "switch-cell_1/IN" 3.59969
+cap "switch-cell_0/trans-gate_0/pfet_06v0_LJSS4L_0/a_n52_n400#" "switch-cell_1/VSS" 5.03079
+cap "switch-cell_1/RSTN" "switch-cell_1/IN" -2.22045e-16
+cap "switch-cell_0/trans-gate_0/SWP" "switch-cell_1/trans-gate_0/SWN" 2.56641
+cap "switch-cell_1/VSS" "switch-cell_0/trans-gate_0/pfet_06v0_LJSS4L_0/a_n1336_n400#" 8.05436
+cap "switch-cell_1/trans-gate_0/SWN" "switch-cell_1/VDD" 3.56075
+cap "switch-cell_1/VSS" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 11.7987
+cap "switch-cell_1/VSS" "switch-cell_1/VDD" 58.1858
+cap "switch-cell_1/VSS" "switch-cell_0/trans-gate_0/pfet_06v0_LJSS4L_0/a_n1122_n400#" 11.9049
+cap "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_1/trans-gate_0/SWN" 2.38727
+cap "switch-cell_1/IN" "switch-cell_1/VSS" 4.44294
+cap "switch-cell_1/trans-gate_0/SWP" "switch-cell_1/trans-gate_0/VDD" 4.54747e-13
+cap "switch-cell_1/CLK1" "switch-cell_1/trans-gate_0/SWP" -2.22045e-16
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_1/trans-gate_0/SWP" -2.22045e-16
+cap "switch-cell_1/IN" "switch-cell_1/trans-gate_0/VDD" 1.42109e-14
+cap "switch-cell_1/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 13.0851
+cap "switch-cell_1/IN" "switch-cell_1/CLK2" -2.22045e-16
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_1/IN" 4.44294
+cap "switch-cell_1/trans-gate_0/VDD" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_1/trans-gate_0/SWP" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 12.1821
+cap "switch-cell_1/CLK1" "switch-cell_1/IN" 6.66134e-16
+cap "switch-cell_1/trans-gate_0/VDD" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 91.8184
+cap "switch-cell_1/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 18.5068
+cap "switch-cell_1/trans-gate_0/VDD" "switch-cell_1/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 7.10543e-15
+cap "switch-cell_1/trans-gate_0/VDD" "switch-cell_1/IN" 3.59969
+cap "switch-cell_1/trans-gate_0/SWP" "switch-cell_2/trans-gate_0/SWN" 3.56266
+cap "switch-cell_1/trans-gate_0/VDD" "switch-cell_2/trans-gate_0/SWN" 4.4043
+cap "switch-cell_1/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_1/IN" 6.33123
+cap "switch-cell_1/Q" "switch-cell_1/trans-gate_0/SWP" 6.93889e-18
+cap "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_2/trans-gate_0/SWN" 1.39102
+cap "switch-cell_2/trans-gate_0/SWN" "switch-cell_1/trans-gate_0/VDD" 2.34952
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/trans-gate_0/SWP" 4.54747e-13
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/OUT" 2.84217e-14
+cap "switch-cell_2/trans-gate_0/IN" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 6.60187
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/trans-gate_0/SWP" 4.54747e-13
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_2/trans-gate_0/OUT" 5.03079
+cap "switch-cell_2/CLK1" "switch-cell_2/trans-gate_0/SWP" -1.11022e-16
+cap "switch-cell_3/trans-gate_0/SWN" "switch-cell_2/trans-gate_0/SWP" 2.56641
+cap "switch-cell_2/trans-gate_0/IN" "switch-cell_2/IN" 6.33123
+cap "switch-cell_2/IN" "switch-cell_2/trans-gate_0/VDD" 1.42109e-14
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_2/trans-gate_0/SWP" 0.38342
+cap "switch-cell_2/trans-gate_0/SWP" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.7987
+cap "switch-cell_3/trans-gate_0/SWN" "switch-cell_2/trans-gate_0/VDD" 6.75382
+cap "switch-cell_2/IN" "switch-cell_2/CLK1" 1.16573e-15
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/IN" 3.59969
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_2/IN" -7.10543e-15
+cap "switch-cell_2/IN" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.44294
+cap "switch-cell_2/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.9049
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/IN" -2.22045e-16
+cap "switch-cell_3/trans-gate_0/SWN" "switch-cell_2/trans-gate_0/SWP" 2.38727
+cap "switch-cell_2/CLK2" "switch-cell_2/IN" 2.22045e-16
+cap "switch-cell_2/trans-gate_0/VDD" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 91.8184
+cap "switch-cell_2/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 8.05436
+cap "switch-cell_2/Q" "switch-cell_2/IN" 3.88578e-16
+cap "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/trans-gate_0/VDD" -0.000476993
+cap "switch-cell_3/trans-gate_0/SWP" "switch-cell_3/trans-gate_0/VDD" 9.09495e-13
+cap "switch-cell_3/trans-gate_0/SWP" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -2.22045e-16
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_3/trans-gate_0/OUT" 2.84217e-14
+cap "switch-cell_4/trans-gate_0/SWN" "switch-cell_3/trans-gate_0/SWP" 2.56641
+cap "switch-cell_3/IN" "switch-cell_3/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" 6.33123
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_3/trans-gate_0/VDD" 33.6326
+cap "switch-cell_3/CLK1" "switch-cell_3/IN" 4.44089e-16
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_3/IN" 3.59969
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_3/IN" 8.88178e-16
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_3/trans-gate_0/SWP" 4.54747e-13
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_4/trans-gate_0/SWN" 3.19308
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_3/trans-gate_0/SWP" 0.38342
+cap "switch-cell_3/Q" "switch-cell_3/IN" -4.44089e-16
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_3/IN" 1.77636e-15
+cap "switch-cell_3/IN" "switch-cell_3/CLK2" -8.88178e-16
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_3/IN" 8.88178e-16
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_3/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" 6.60187
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_3/trans-gate_0/pfet_06v0_LJSS4L_0/a_376_n400#" 5.03079
+cap "switch-cell_3/IN" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.44294
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/trans-gate_0/pfet_06v0_LJSS4L_0/a_n1122_n400#" 11.9049
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 8.05436
+cap "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 11.7987
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 58.1858
+cap "switch-cell_4/trans-gate_0/SWN" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 2.38727
+cap "switch-cell_3/trans-gate_0/VDD" "switch-cell_4/trans-gate_0/SWN" 3.56075
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -2.22045e-16
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/CLK1" -1.11022e-16
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/trans-gate_0/VDD" 9.09495e-13
+cap "switch-cell_4/CLK1" "switch-cell_4/trans-gate_0/SWP" 2.77556e-17
+cap "switch-cell_4/IN" "switch-cell_4/CLK2" -4.44089e-16
+cap "switch-cell_5/trans-gate_0/SWN" "switch-cell_4/trans-gate_0/SWP" 2.56641
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/trans-gate_0/VDD" 91.8184
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/IN" 4.44294
+cap "switch-cell_4/Q" "switch-cell_4/trans-gate_0/SWP" 5.55112e-17
+cap "switch-cell_4/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_4/IN" 6.33123
+cap "switch-cell_4/trans-gate_0/SWP" "switch-cell_4/trans-gate_0/VDD" -1.13687e-13
+cap "switch-cell_4/IN" "switch-cell_4/CLK1" -8.88178e-16
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_4/trans-gate_0/VDD" -0.000476993
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_4/IN" 8.88178e-16
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 13.0851
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" 18.5068
+cap "switch-cell_5/trans-gate_0/SWN" "switch-cell_4/trans-gate_0/VDD" 3.19308
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/trans-gate_0/SWP" 12.1821
+cap "switch-cell_4/IN" "switch-cell_4/trans-gate_0/VDD" 3.59969
+cap "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_5/trans-gate_0/SWN" 2.38727
+cap "switch-cell_4/trans-gate_0/VDD" "switch-cell_5/trans-gate_0/SWN" 3.56075
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_5/trans-gate_0/VDD" 9.09495e-13
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_5/trans-gate_0/SWP" 0.38342
+cap "switch-cell_5/trans-gate_0/SWP" "switch-cell_5/CLK1" -3.33067e-16
+cap "switch-cell_5/trans-gate_0/IN" "switch-cell_5/trans-gate_0/VDD" -2.84217e-14
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_5/trans-gate_0/OUT" 2.84217e-14
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_5/trans-gate_0/OUT" 5.03079
+cap "switch-cell_8/trans-gate_0/SWN" "switch-cell_5/trans-gate_0/SWP" 2.56641
+cap "switch-cell_5/IN" "switch-cell_5/trans-gate_0/VDD" 1.42109e-14
+cap "switch-cell_5/CLK1" "switch-cell_5/IN" -1.33227e-15
+cap "switch-cell_5/Q" "switch-cell_5/IN" -3.33067e-16
+cap "switch-cell_8/trans-gate_0/SWN" "switch-cell_5/trans-gate_0/SWP" 2.38727
+cap "switch-cell_5/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_5/IN" 6.33123
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_8/trans-gate_0/SWN" 6.75382
+cap "switch-cell_5/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 18.5068
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/IN" 6.66134e-16
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/trans-gate_0/VDD" -0.000476993
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 8.05436
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/trans-gate_0/SWP" 11.7987
+cap "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/IN" 4.44294
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_5/IN" 3.59969
+cap "switch-cell_5/trans-gate_0/VDD" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 91.8184
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/trans-gate_0/VDD" 4.54747e-13
+cap "switch-cell_8/trans-gate_0/pfet_06v0_LJSS4L_0/a_376_n400#" "switch-cell_8/trans-gate_0/VDD" 2.84217e-14
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_7/trans-gate_0/SWN" 2.56641
+cap "switch-cell_8/Q" "switch-cell_8/IN" -4.44089e-16
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_8/trans-gate_0/SWP" 0.38342
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_8/trans-gate_0/pfet_06v0_LJSS4L_0/a_376_n400#" 5.03079
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_8/IN" 3.59969
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_8/IN" 1.77636e-15
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_8/trans-gate_0/pfet_06v0_LJSS4L_0/a_590_n400#" 6.60187
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_7/trans-gate_0/SWN" 3.19308
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_8/trans-gate_0/VDD" 33.6326
+cap "switch-cell_8/trans-gate_0/SWP" "switch-cell_8/trans-gate_0/VDD" 4.54747e-13
+cap "switch-cell_8/trans-gate_0/pfet_06v0_LJSS4L_0/a_590_n400#" "switch-cell_8/IN" 6.33123
+cap "switch-cell_8/trans-gate_0/VDD" "switch-cell_7/trans-gate_0/SWN" 3.56075
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_8/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 8.05436
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_8/trans-gate_0/VDD" 58.1858
+cap "switch-cell_7/trans-gate_0/SWN" "switch-cell_8/trans-gate_0/SWP" 2.38727
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_8/trans-gate_0/pfet_06v0_LJSS4L_0/a_n1122_n400#" 11.9049
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_8/IN" 4.44294
+cap "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_8/trans-gate_0/SWP" 11.7987
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/IN" 1.42109e-14
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/trans-gate_0/SWP" 9.09495e-13
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_7/trans-gate_0/SWP" -2.22045e-16
+cap "switch-cell_7/CLK1" "switch-cell_7/trans-gate_0/SWP" -1.11022e-16
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_6/trans-gate_0/SWN" 2.56641
+cap "switch-cell_7/IN" "switch-cell_7/Q" 2.22045e-16
+cap "switch-cell_6/trans-gate_0/SWN" "switch-cell_7/trans-gate_0/VDD" 3.19308
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_7/Q" 2.77556e-17
+cap "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_7/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 13.0851
+cap "switch-cell_7/IN" "switch-cell_7/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" 6.33123
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_7/CLK1" -5.55112e-17
+cap "switch-cell_7/IN" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.44294
+cap "switch-cell_7/IN" "switch-cell_7/trans-gate_0/VDD" 3.59969
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 12.1821
+cap "switch-cell_7/trans-gate_0/SWP" "switch-cell_7/trans-gate_0/VDD" -1.13687e-13
+cap "switch-cell_7/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 18.5068
+cap "switch-cell_7/trans-gate_0/VDD" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 91.8184
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_7/IN" 1.77636e-15
+cap "switch-cell_6/trans-gate_0/SWN" "switch-cell_7/trans-gate_0/VDD" 3.56075
+cap "switch-cell_6/trans-gate_0/SWN" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 2.38727
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_6/trans-gate_0/SWP" -4.44089e-16
+cap "switch-cell_6/IN" "switch-cell_6/trans-gate_0/VDD" 1.42109e-14
+cap "switch-cell_6/CLK1" "switch-cell_6/trans-gate_0/SWP" -2.22045e-16
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_6/trans-gate_0/OUT" 5.03079
+cap "switch-cell_6/trans-gate_0/SWP" "switch-cell_6/trans-gate_0/VDD" 9.09495e-13
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_6/IN" -7.10543e-15
+cap "switch-cell_6/trans-gate_0/VDD" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 91.8184
+cap "switch-cell_6/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 8.05436
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_6/IN" 4.44294
+cap "switch-cell_9/trans-gate_0/SWN" "switch-cell_6/trans-gate_0/VDD" 6.75382
+cap "switch-cell_6/CLK1" "switch-cell_6/IN" -2.22045e-16
+cap "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/trans-gate_0/VDD" -0.000476993
+cap "switch-cell_6/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_6/IN" 6.33123
+cap "switch-cell_6/trans-gate_0/SWP" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 12.1821
+cap "switch-cell_6/Q" "switch-cell_6/IN" -4.44089e-16
+cap "switch-cell_6/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 18.5068
+cap "switch-cell_6/trans-gate_0/SWP" "switch-cell_9/trans-gate_0/SWN" 4.95367
+cap "switch-cell_6/trans-gate_0/SWP" "switch-cell_6/CLK1" 4.33681e-19
+cap "switch-cell_6/CLK2" "switch-cell_6/IN" -4.44089e-16
+cap "switch-cell_6/trans-gate_0/VDD" "switch-cell_6/IN" 3.59969
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/trans-gate_0/SWP" 4.54747e-13
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/IN" 3.59921
+cap "switch-cell_9/trans-gate_0/pfet_06v0_LJSS4L_0/a_590_n400#" "switch-cell_9/IN" 6.33123
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_9/trans-gate_0/OUT" 5.03079
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_9/trans-gate_0/SWP" 0.38342
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/trans-gate_0/OUT" -2.84217e-14
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/trans-gate_0/SWP" 6.82121e-13
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_9/trans-gate_0/VDD" 33.6326
+cap "switch-cell_12/trans-gate_0/SWN" "switch-cell_9/trans-gate_0/SWP" 2.56641
+cap "switch-cell_9/trans-gate_0/pfet_06v0_LJSS4L_0/a_590_n400#" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 6.60187
+cap "switch-cell_12/trans-gate_0/SWN" "switch-cell_9/trans-gate_0/VDD" 3.19308
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_9/trans-gate_0/SWP" 11.7987
+cap "switch-cell_9/CLK2" "switch-cell_9/IN" -6.66134e-16
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_9/IN" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 4.44089e-16
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_9/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 8.05436
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_12/trans-gate_0/SWN" 3.56075
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_9/IN" -7.10543e-15
+cap "switch-cell_9/trans-gate_0/SWP" "switch-cell_12/trans-gate_0/SWN" 2.38727
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/IN" 0.000476875
+cap "switch-cell_9/trans-gate_0/VDD" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 58.1858
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_9/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" 11.9049
+cap "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_9/IN" 4.44294
+cap "switch-cell_9/Q" "switch-cell_9/IN" 1.38778e-16
+cap "switch-cell_9/IN" "switch-cell_9/CLK1" 1.66533e-16
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/trans-gate_0/SWP" 4.54747e-13
+cap "switch-cell_12/trans-gate_0/SWP" "switch-cell_12/CLK1" -2.22045e-16
+cap "switch-cell_12/trans-gate_0/OUT" "switch-cell_12/trans-gate_0/VDD" 2.84217e-14
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/trans-gate_0/SWP" -4.44089e-16
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/IN" -1.77636e-15
+cap "switch-cell_12/IN" "switch-cell_12/CLK1" -4.44089e-16
+cap "switch-cell_12/IN" "switch-cell_12/trans-gate_0/VDD" 3.59969
+cap "switch-cell_12/trans-gate_0/SWP" "switch-cell_11/trans-gate_0/SWN" 2.56641
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" 6.60187
+cap "switch-cell_12/IN" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -8.88178e-16
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/trans-gate_0/SWP" 0.38342
+cap "switch-cell_11/trans-gate_0/SWN" "switch-cell_12/trans-gate_0/VDD" 3.19308
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/trans-gate_0/VDD" 33.6326
+cap "switch-cell_12/CLK2" "switch-cell_12/IN" -8.88178e-16
+cap "switch-cell_12/IN" "switch-cell_12/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" 6.33123
+cap "switch-cell_12/IN" "switch-cell_12/Q" -4.44089e-16
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_12/trans-gate_0/pfet_06v0_LJSS4L_0/a_n52_n400#" 5.03079
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_12/trans-gate_0/VDD" -0.000476993
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.7987
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_11/trans-gate_0/SWN" 2.38727
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/trans-gate_0/pfet_06v0_LJSS4L_0/a_n1336_n400#" 8.05436
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 58.1858
+cap "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/IN" 4.44294
+cap "switch-cell_12/trans-gate_0/pfet_06v0_LJSS4L_0/a_n1122_n400#" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.9049
+cap "switch-cell_12/trans-gate_0/VDD" "switch-cell_11/trans-gate_0/SWN" 3.56075
+cap "switch-cell_11/trans-gate_0/SWP" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -4.44089e-16
+cap "switch-cell_11/trans-gate_0/SWP" "switch-cell_11/trans-gate_0/VDD" 9.09495e-13
+cap "switch-cell_11/trans-gate_0/SWP" "switch-cell_11/CLK1" -2.22045e-16
+cap "switch-cell_11/trans-gate_0/OUT" "switch-cell_11/trans-gate_0/VDD" 2.84217e-14
+cap "switch-cell_11/CLK2" "switch-cell_11/IN" 2.22045e-16
+cap "switch-cell_11/IN" "switch-cell_11/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" 6.33123
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_11/trans-gate_0/VDD" -0.000476993
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" 13.0851
+cap "switch-cell_11/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" "switch-cell_11/trans-gate_0/VDD" -7.10543e-15
+cap "switch-cell_11/Q" "switch-cell_11/trans-gate_0/SWP" 6.93889e-18
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" 18.5068
+cap "switch-cell_11/CLK1" "switch-cell_11/trans-gate_0/SWP" 1.38778e-17
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/IN" 4.44294
+cap "switch-cell_11/IN" "switch-cell_11/trans-gate_0/VDD" 3.59969
+cap "switch-cell_10/trans-gate_0/SWN" "switch-cell_11/trans-gate_0/VDD" 4.4043
+cap "switch-cell_11/trans-gate_0/SWP" "switch-cell_10/trans-gate_0/SWN" 3.56266
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_11/IN" 8.88178e-16
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/trans-gate_0/VDD" 91.8184
+cap "switch-cell_11/Q" "switch-cell_11/IN" -2.22045e-16
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/trans-gate_0/SWP" 12.1821
+cap "switch-cell_10/trans-gate_0/SWN" "switch-cell_11/trans-gate_0/VDD" 2.34952
+cap "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_10/trans-gate_0/SWN" 1.39102
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/OUT" 2.84217e-14
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/trans-gate_0/SWP" 4.54747e-13
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_10/trans-gate_0/VDD" 4.54747e-13
+cap "switch-cell_10/CLK1" "switch-cell_10/trans-gate_0/SWP" -1.11022e-16
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_10/trans-gate_0/IN" 6.60187
+cap "switch-cell_13/trans-gate_0/SWN" "switch-cell_10/trans-gate_0/SWP" 2.56641
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_10/trans-gate_0/SWP" 0.38342
+cap "switch-cell_10/IN" "switch-cell_10/trans-gate_0/IN" 6.33123
+cap "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_10/trans-gate_0/OUT" 5.03079
+cap "switch-cell_10/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.9049
+cap "switch-cell_13/trans-gate_0/SWN" "switch-cell_10/trans-gate_0/SWP" 2.38727
+cap "switch-cell_10/IN" "switch-cell_10/Q" -5.55112e-16
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 91.8184
+cap "switch-cell_13/trans-gate_0/SWN" "switch-cell_10/trans-gate_0/VDD" 6.75382
+cap "switch-cell_10/IN" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.44294
+cap "switch-cell_10/trans-gate_0/VDD" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_10/IN" "switch-cell_10/CLK2" -3.33067e-16
+cap "switch-cell_10/IN" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 4.44089e-16
+cap "switch-cell_10/IN" "switch-cell_10/trans-gate_0/VDD" 3.59969
+cap "switch-cell_10/IN" "switch-cell_10/CLK1" 1.22125e-15
+cap "switch-cell_10/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 8.05436
+cap "switch-cell_10/IN" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" -7.10543e-15
+cap "switch-cell_10/trans-gate_0/SWP" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.7987
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/trans-gate_0/SWP" 9.09495e-13
+cap "switch-cell_13/trans-gate_0/SWP" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -2.22045e-16
+cap "switch-cell_13/trans-gate_0/SWP" "switch-cell_16/trans-gate_0/SWN" 2.56641
+cap "switch-cell_13/trans-gate_0/SWP" "switch-cell_13/trans-gate_0/VDD" 4.54747e-13
+cap "switch-cell_13/IN" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 2.66454e-15
+cap "switch-cell_13/trans-gate_0/SWP" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 0.38342
+cap "switch-cell_13/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" "switch-cell_13/IN" 6.33123
+cap "switch-cell_13/IN" "switch-cell_13/trans-gate_0/VDD" 3.59969
+cap "switch-cell_13/IN" "switch-cell_13/CLK1" -4.44089e-16
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_16/trans-gate_0/SWN" 3.19308
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/trans-gate_0/pfet_06v0_LJSS4L_0/a_376_n400#" 2.84217e-14
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_13/trans-gate_0/pfet_06v0_LJSS4L_0/a_376_n400#" 5.03079
+cap "switch-cell_13/IN" "switch-cell_13/CLK2" -4.44089e-16
+cap "switch-cell_13/trans-gate_0/pfet_06v0_LJSS4L_0/a_162_n400#" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 6.60187
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" 33.6326
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_13/IN" -7.10543e-15
+cap "switch-cell_13/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 8.05436
+cap "switch-cell_13/trans-gate_0/pfet_06v0_LJSS4L_0/a_n1122_n400#" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.9049
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_16/trans-gate_0/SWN" 2.38727
+cap "switch-cell_13/IN" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.44294
+cap "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 11.7987
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_16/trans-gate_0/SWN" 3.56075
+cap "switch-cell_13/trans-gate_0/VDD" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 58.1858
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_16/CLK1" -1.11022e-16
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_16/IN" -1.77636e-15
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/IN" 1.42109e-14
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_16/trans-gate_0/VDD" 9.09495e-13
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/trans-gate_0/OUT" 2.84217e-14
+cap "switch-cell_16/CLK1" "switch-cell_16/IN" -6.66134e-16
+cap "switch-cell_16/CLK1" "switch-cell_16/trans-gate_0/SWP" 2.77556e-17
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 91.8184
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_15/trans-gate_0/SWN" 3.19308
+cap "switch-cell_16/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 18.5068
+cap "switch-cell_16/IN" "switch-cell_16/trans-gate_0/VDD" 3.59969
+cap "switch-cell_16/trans-gate_0/pfet_06v0_LJSS4L_0/a_n908_n400#" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 13.0851
+cap "switch-cell_16/trans-gate_0/pfet_06v0_LJSS4L_0/a_n694_n400#" "switch-cell_16/IN" 6.33123
+cap "switch-cell_16/IN" "switch-cell_16/CLK2" -4.44089e-16
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_0/VDD" "switch-cell_16/IN" -7.10543e-15
+cap "switch-cell_16/IN" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" 4.44089e-16
+cap "switch-cell_16/trans-gate_0/VDD" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -0.000476993
+cap "switch-cell_16/Q" "switch-cell_16/trans-gate_0/SWP" 2.77556e-17
+cap "switch-cell_16/IN" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" 4.44294
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_16/trans-gate_0/SWP" 12.1821
+cap "switch-cell_16/trans-gate_0/SWP" "switch-cell_15/trans-gate_0/SWN" 2.56641
+cap "switch-cell_15/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VNW" "switch-cell_15/OUT" 4.44089e-16
+cap "switch-cell_15/trans-gate_0/SWN" "switch-cell_16/trans-gate_0/VDD" 3.56075
+cap "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "switch-cell_15/trans-gate_0/SWN" 2.38727
+merge "switch-cell_15/IN" "switch-cell_16/IN" -1004.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -6868 0 0
+merge "switch-cell_16/IN" "switch-cell_13/IN"
+merge "switch-cell_13/IN" "switch-cell_10/trans-gate_0/IN"
+merge "switch-cell_10/trans-gate_0/IN" "switch-cell_10/IN"
+merge "switch-cell_10/IN" "switch-cell_11/IN"
+merge "switch-cell_11/IN" "switch-cell_12/IN"
+merge "switch-cell_12/IN" "switch-cell_9/trans-gate_0/IN"
+merge "switch-cell_9/trans-gate_0/IN" "switch-cell_9/IN"
+merge "switch-cell_9/IN" "switch-cell_6/IN"
+merge "switch-cell_6/IN" "switch-cell_7/IN"
+merge "switch-cell_7/IN" "switch-cell_8/trans-gate_0/IN"
+merge "switch-cell_8/trans-gate_0/IN" "switch-cell_8/IN"
+merge "switch-cell_8/IN" "switch-cell_5/IN"
+merge "switch-cell_5/IN" "switch-cell_4/IN"
+merge "switch-cell_4/IN" "switch-cell_3/IN"
+merge "switch-cell_3/IN" "switch-cell_2/trans-gate_0/IN"
+merge "switch-cell_2/trans-gate_0/IN" "switch-cell_2/IN"
+merge "switch-cell_2/IN" "switch-cell_0/IN"
+merge "switch-cell_0/IN" "switch-cell_1/IN"
+merge "switch-cell_1/IN" "IN"
+merge "switch-cell_10/D" "switch-cell_11/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_6/D" "switch-cell_7/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_3/VSS" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_13/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_15/VSUBS" "switch-cell_16/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "switch-cell_16/VSUBS" "switch-cell_13/VSUBS"
+merge "switch-cell_13/VSUBS" "switch-cell_10/VSUBS"
+merge "switch-cell_10/VSUBS" "switch-cell_11/VSUBS"
+merge "switch-cell_11/VSUBS" "switch-cell_12/VSUBS"
+merge "switch-cell_12/VSUBS" "switch-cell_9/VSUBS"
+merge "switch-cell_9/VSUBS" "switch-cell_6/VSUBS"
+merge "switch-cell_6/VSUBS" "switch-cell_7/VSUBS"
+merge "switch-cell_7/VSUBS" "switch-cell_8/VSUBS"
+merge "switch-cell_8/VSUBS" "switch-cell_5/VSUBS"
+merge "switch-cell_5/VSUBS" "switch-cell_4/VSUBS"
+merge "switch-cell_4/VSUBS" "switch-cell_3/VSUBS"
+merge "switch-cell_3/VSUBS" "switch-cell_2/VSUBS"
+merge "switch-cell_2/VSUBS" "switch-cell_1/VSUBS"
+merge "switch-cell_1/VSUBS" "switch-cell_0/VSUBS"
+merge "switch-cell_0/VSUBS" "VSUBS"
+merge "switch-cell_10/OUT" "OUT[3]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_15/RSTN" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -21.2657 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_16/RSTN"
+merge "switch-cell_16/RSTN" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_12/RSTN" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -21.2657 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_9/RSTN"
+merge "switch-cell_9/RSTN" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_6/RSTN"
+merge "switch-cell_6/RSTN" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_7/RSTN"
+merge "switch-cell_7/RSTN" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_8/RSTN"
+merge "switch-cell_8/RSTN" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_5/RSTN"
+merge "switch-cell_5/RSTN" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_4/RSTN"
+merge "switch-cell_4/RSTN" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_5/VDD" "switch-cell_4/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_5/VSS" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_4/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_15/CLK2" "switch-cell_16/CLK2" -295.571 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -885 -1800 0 0 0 0 0 0
+merge "switch-cell_16/CLK2" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_13/CLK2"
+merge "switch-cell_13/CLK2" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_10/CLK2"
+merge "switch-cell_10/CLK2" "switch-cell_11/CLK2"
+merge "switch-cell_11/CLK2" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_12/CLK2"
+merge "switch-cell_12/CLK2" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_9/CLK2"
+merge "switch-cell_9/CLK2" "switch-cell_6/CLK2"
+merge "switch-cell_6/CLK2" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_7/CLK2"
+merge "switch-cell_7/CLK2" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_8/CLK2"
+merge "switch-cell_8/CLK2" "switch-cell_5/CLK2"
+merge "switch-cell_5/CLK2" "switch-cell_4/CLK2"
+merge "switch-cell_4/CLK2" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_3/CLK2"
+merge "switch-cell_3/CLK2" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_2/CLK2"
+merge "switch-cell_2/CLK2" "switch-cell_0/CLK2"
+merge "switch-cell_0/CLK2" "CLK2"
+merge "CLK2" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E"
+merge "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/E" "switch-cell_1/CLK2"
+merge "switch-cell_12/VDD" "switch-cell_9/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_1/OUT" "OUT[14]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_15/CLK1" "switch-cell_16/CLK1" -407.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4366 -2036 0 0 0 0 0 0
+merge "switch-cell_16/CLK1" "switch-cell_13/CLK1"
+merge "switch-cell_13/CLK1" "switch-cell_10/CLK1"
+merge "switch-cell_10/CLK1" "switch-cell_11/CLK1"
+merge "switch-cell_11/CLK1" "switch-cell_12/CLK1"
+merge "switch-cell_12/CLK1" "switch-cell_9/CLK1"
+merge "switch-cell_9/CLK1" "switch-cell_6/CLK1"
+merge "switch-cell_6/CLK1" "switch-cell_7/CLK1"
+merge "switch-cell_7/CLK1" "switch-cell_8/CLK1"
+merge "switch-cell_8/CLK1" "switch-cell_5/CLK1"
+merge "switch-cell_5/CLK1" "switch-cell_4/CLK1"
+merge "switch-cell_4/CLK1" "switch-cell_3/CLK1"
+merge "switch-cell_3/CLK1" "switch-cell_2/CLK1"
+merge "switch-cell_2/CLK1" "switch-cell_0/CLK1"
+merge "switch-cell_0/CLK1" "switch-cell_1/CLK1"
+merge "switch-cell_1/CLK1" "CLK1"
+merge "switch-cell_8/D" "switch-cell_5/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_15/D" "switch-cell_16/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_13/OUT" "OUT[2]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_8/VSS" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_5/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_7/VDD" "switch-cell_8/trans-gate_0/VDD" -302.114 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 -724 0 0 0 0 0 0 0 0
+merge "switch-cell_8/trans-gate_0/VDD" "switch-cell_8/VDD"
+merge "switch-cell_8/VDD" "switch-cell_5/trans-gate_0/VDD"
+merge "switch-cell_4/OUT" "OUT[11]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_7/VSS" "switch-cell_8/m1_5669_n10#" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_8/m1_5669_n10#" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS"
+merge "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_8/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_15/VSS" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_16/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_16/OUT" "OUT[1]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_13/VDD" "switch-cell_10/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_4/D" "switch-cell_3/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_0/VDD" "VDD" -165.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32400 -720 0 0 0 0 0 0 0 0
+merge "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__endcap_0/VSS" "switch-cell_0/VSS" -165.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32400 -720 0 0 0 0 0 0 0 0
+merge "switch-cell_0/VSS" "VSS"
+merge "switch-cell_0/RSTN" "RSTN" -32.1204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3481 -236 0 0 0 0 0 0
+merge "switch-cell_4/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_3/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_10/VSS" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_7/OUT" "OUT[8]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_3/VDD" "switch-cell_2/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_10/VDD" "switch-cell_11/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_15/Q" "Q" -40.5984 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3481 -236 0 0 0 0 0 0
+merge "switch-cell_6/VDD" "switch-cell_7/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_13/RSTN" "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -21.2657 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_10/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_10/RSTN"
+merge "switch-cell_10/RSTN" "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_11/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_11/RSTN"
+merge "switch-cell_11/RSTN" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_0/trans-gate_0/VDD" "switch-cell_1/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS" "switch-cell_1/VSS"
+merge "switch-cell_2/D" "switch-cell_1/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_11/D" "switch-cell_12/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_3/RSTN" "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" -21.2657 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_2/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_2/RSTN"
+merge "switch-cell_2/RSTN" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2"
+merge "switch-cell_0/gf180mcu_fd_sc_mcu9t5v0__and2_1_0/A2" "switch-cell_1/RSTN"
+merge "switch-cell_4/VDD" "switch-cell_3/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_0/OUT" "OUT[15]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_13/D" "switch-cell_10/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_12/VSS" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_9/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_16/VSS" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_13/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_16/VDD" "switch-cell_13/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_11/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_12/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_12/OUT" "OUT[5]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_8/trans-gate_0/OUT" "switch-cell_8/OUT" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_8/OUT" "OUT[9]"
+merge "switch-cell_3/OUT" "OUT[12]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_0/D" "D" -29.9857 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3481 -236 0 0 0 0 0 0
+merge "switch-cell_7/D" "switch-cell_8/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_6/VSS" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_7/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_15/OUT" "OUT[0]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_9/VSS" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_6/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_6/OUT" "OUT[7]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_9/D" "switch-cell_6/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_2/OUT" "OUT[13]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_15/VDD" "switch-cell_16/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_9/OUT" "OUT[6]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_5/D" "switch-cell_4/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_5/OUT" "OUT[10]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_11/OUT" "OUT[4]" -128.674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40804 -808
+merge "switch-cell_3/D" "switch-cell_2/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_16/D" "switch-cell_13/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_2/VSS" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" -294.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "switch-cell_1/gf180mcu_fd_sc_mcu9t5v0__latq_1_1/VSS"
+merge "switch-cell_9/VDD" "switch-cell_6/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_0/Q" "switch-cell_1/D" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_2/VDD" "switch-cell_1/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0
+merge "switch-cell_12/D" "switch-cell_9/Q" -20.2125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -120 0 0 0 0 0 0
+merge "switch-cell_11/VDD" "switch-cell_12/trans-gate_0/VDD" -165.023 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -362 0 0 0 0 0 0 0 0

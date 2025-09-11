@@ -19,7 +19,8 @@ C {iopin.sym} 80 -230 2 1 {name=p9 lab=VSS}
 C {iopin.sym} 80 -170 2 1 {name=p10 lab=IN}
 C {iopin.sym} 80 -150 2 1 {name=p11 lab=OUT}
 C {ipin.sym} 80 -210 2 1 {name=p12 lab=SWN}
-C {symbols/nfet_03v3.sym} 260 -260 0 0 {name=M3
+C {ipin.sym} 80 -190 2 1 {name=p13 lab=SWP}
+C {symbols/nfet_06v0.sym} 260 -260 0 0 {name=M1
 L=0.70u
 W=8u
 nf=1
@@ -30,10 +31,10 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_03v3
+model=nfet_06v0
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 260 -160 0 0 {name=M2
+C {symbols/pfet_06v0.sym} 260 -160 0 0 {name=M2
 L=0.55u
 W=8u
 nf=1
@@ -44,7 +45,6 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_06v0
 spiceprefix=X
 }
-C {ipin.sym} 80 -190 2 1 {name=p13 lab=SWP}

@@ -41,8 +41,8 @@ C {lab_wire.sym} 820 -1150 0 0 {name=p4 lab=RSTN}
 C {lab_wire.sym} 1120 -1210 0 1 {name=p5 lab=VDD}
 C {lab_wire.sym} 1120 -1190 0 1 {name=p6 lab=VSS}
 C {lab_wire.sym} 1120 -1170 0 1 {name=p7 lab=D1}
-C {lab_wire.sym} 1120 -1110 0 1 {name=p10 lab=VSS,IN[74:1],VDD}
-C {lab_wire.sym} 1120 -1090 0 1 {name=p11 lab=OUT[15:0]}
+C {lab_wire.sym} 1120 -1150 0 1 {name=p10 lab=VSS,IN[74:1],VDD}
+C {lab_wire.sym} 1120 -1130 0 1 {name=p11 lab=OUT[15:0]}
 C {switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 570 -1180 0 0 {name=x2}
 C {lab_wire.sym} 420 -1190 0 0 {name=p12 lab=CLK}
 C {iopin.sym} 140 -220 0 0 {name=p2 lab=VDD}
@@ -51,7 +51,7 @@ C {iopin.sym} 140 -140 0 0 {name=p14 lab=OUT[15:0]}
 C {ipin.sym} 140 -120 0 0 {name=p15 lab=RSTN}
 C {ipin.sym} 140 -80 0 0 {name=p17 lab=D}
 C {ipin.sym} 140 -100 0 0 {name=p18 lab=CLK}
-C {core_switch-matrix/switch-matrix-16x70/switch-matrix-16x70.sym} 970 -1150 0 0 {name=x1}
+C {core_switch-matrix/switch-matrix-16x70/switch-matrix-16x70.sym} 970 -1170 0 0 {name=x1}
 C {core_single-fet/pfet-vdd/pfet-vdd.sym} 1590 -830 0 0 {name=x3}
 C {core_single-fet/nfet-vss/nfet-vss.sym} 2110 -830 0 0 {name=x4}
 C {core_single-fet/pfet-pin/pfet-pin.sym} 1590 -510 0 0 {name=x5}
@@ -91,24 +91,24 @@ C {lab_wire.sym} 1240 -810 0 1 {name=p94 lab=VSS}
 C {lab_wire.sym} 420 -560 0 0 {name=p95 lab=D1}
 C {lab_wire.sym} 420 -540 0 0 {name=p96 lab=CLK1_1}
 C {lab_wire.sym} 420 -520 0 0 {name=p97 lab=CLK2_1}
-C {lab_wire.sym} 720 -480 0 1 {name=p98 lab=IN[59],IN[61]}
-C {lab_wire.sym} 720 -460 0 1 {name=p100 lab=IN[63]}
+C {lab_wire.sym} 720 -520 0 1 {name=p98 lab=IN[59],IN[61]}
+C {lab_wire.sym} 720 -500 0 1 {name=p100 lab=IN[63]}
 C {lab_wire.sym} 720 -560 0 1 {name=p101 lab=D2}
-C {lab_wire.sym} 720 -500 0 1 {name=p102 lab=IN[65]}
+C {lab_wire.sym} 720 -540 0 1 {name=p102 lab=IN[65]}
 C {lab_wire.sym} 940 -560 0 0 {name=p103 lab=D2}
-C {lab_wire.sym} 1240 -480 0 1 {name=p106 lab=IN[60],IN[62]}
-C {lab_wire.sym} 1240 -460 0 1 {name=p108 lab=IN[64]}
+C {lab_wire.sym} 1240 -520 0 1 {name=p106 lab=IN[60],IN[62]}
+C {lab_wire.sym} 1240 -500 0 1 {name=p108 lab=IN[64]}
 C {lab_wire.sym} 1240 -560 0 1 {name=p109 lab=D3}
-C {lab_wire.sym} 1240 -500 0 1 {name=p110 lab=IN[66]}
+C {lab_wire.sym} 1240 -540 0 1 {name=p110 lab=IN[66]}
 C {lab_wire.sym} 420 -240 0 0 {name=p111 lab=D3}
-C {lab_wire.sym} 720 -140 0 1 {name=p116 lab=IN[71]}
+C {lab_wire.sym} 720 -180 0 1 {name=p116 lab=IN[71]}
 C {lab_wire.sym} 720 -240 0 1 {name=p117 lab=D4}
-C {lab_wire.sym} 720 -180 0 1 {name=p118 lab=IN[73]}
+C {lab_wire.sym} 720 -220 0 1 {name=p118 lab=IN[73]}
 C {lab_wire.sym} 940 -240 0 0 {name=p119 lab=D4}
-C {lab_wire.sym} 1240 -160 0 1 {name=p122 lab=IN[68],IN[70]}
-C {lab_wire.sym} 1240 -140 0 1 {name=p124 lab=IN[72]}
+C {lab_wire.sym} 1240 -200 0 1 {name=p122 lab=IN[68],IN[70]}
+C {lab_wire.sym} 1240 -180 0 1 {name=p124 lab=IN[72]}
 C {lab_wire.sym} 1240 -240 0 1 {name=p125 lab=Q}
-C {lab_wire.sym} 1240 -180 0 1 {name=p126 lab=IN[74]}
+C {lab_wire.sym} 1240 -220 0 1 {name=p126 lab=IN[74]}
 C {lab_wire.sym} 420 -850 0 0 {name=p127 lab=P_VBIAS}
 C {lab_wire.sym} 940 -850 0 0 {name=p83 lab=N_VBIAS}
 C {lab_wire.sym} 1740 -890 0 1 {name=p29 lab=VDD}
@@ -157,23 +157,13 @@ C {lab_wire.sym} 2260 -150 0 1 {name=p63 lab=IN[54]}
 C {lab_wire.sym} 2260 -130 0 1 {name=p64 lab=IN[56]}
 C {lab_wire.sym} 2260 -110 0 1 {name=p65 lab=IN[58]}
 C {lab_wire.sym} 2260 -90 0 1 {name=p66 lab=VSS}
-C {lab_wire.sym} 1240 -220 0 1 {name=p89 lab=CLK_1_END}
-C {lab_wire.sym} 1240 -200 0 1 {name=p128 lab=CLK_2_END}
-C {lab_wire.sym} 1120 -1150 0 1 {name=p129 lab=CLK1_1}
-C {lab_wire.sym} 1120 -1130 0 1 {name=p130 lab=CLK2_1}
-C {lab_wire.sym} 1240 -540 0 1 {name=p8 lab=CLK1_3}
-C {lab_wire.sym} 1240 -520 0 1 {name=p9 lab=CLK2_3}
-C {lab_wire.sym} 720 -540 0 1 {name=p104 lab=CLK1_2}
-C {lab_wire.sym} 720 -520 0 1 {name=p105 lab=CLK2_2}
 C {lab_wire.sym} 940 -540 0 0 {name=p131 lab=CLK1_2}
 C {lab_wire.sym} 940 -520 0 0 {name=p132 lab=CLK2_2}
 C {lab_wire.sym} 420 -220 0 0 {name=p112 lab=CLK1_3}
 C {lab_wire.sym} 420 -200 0 0 {name=p113 lab=CLK2_3}
 C {lab_wire.sym} 940 -220 0 0 {name=p120 lab=CLK1_4}
 C {lab_wire.sym} 940 -200 0 0 {name=p121 lab=CLK2_4}
-C {lab_wire.sym} 720 -220 0 1 {name=p133 lab=CLK1_4}
-C {lab_wire.sym} 720 -200 0 1 {name=p134 lab=CLK2_4}
-C {lab_wire.sym} 720 -160 0 1 {name=p45 lab=IN[67],IN[69]}
+C {lab_wire.sym} 720 -200 0 1 {name=p45 lab=IN[67],IN[69]}
 C {lab_wire.sym} 420 -1140 0 0 {name=p46 lab=VDDd}
 C {lab_wire.sym} 420 -1120 0 0 {name=p99 lab=VSSd}
 C {lab_wire.sym} 420 -500 0 0 {name=p107 lab=VDDd}
@@ -186,7 +176,7 @@ C {lab_wire.sym} 940 -180 0 0 {name=p137 lab=VDDd}
 C {lab_wire.sym} 940 -160 0 0 {name=p138 lab=VSSd}
 C {iopin.sym} 140 -180 0 0 {name=p139 lab=VDDd}
 C {iopin.sym} 140 -160 0 0 {name=p140 lab=VSSd}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -510 0 0 {name=x13}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -510 0 0 {name=x14}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -190 0 0 {name=x15}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -190 0 0 {name=x16}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -520 0 0 {name=x13}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -520 0 0 {name=x14}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 570 -200 0 0 {name=x15}
+C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1090 -200 0 0 {name=x16}

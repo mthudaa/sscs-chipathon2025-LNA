@@ -45,13 +45,3 @@ C {iopin.sym} 100 -180 0 0 {name=p25 lab=IN[1:0]}
 C {lab_wire.sym} 280 -340 0 0 {name=p4 lab=IN[1:0]}
 C {iopin.sym} 100 -160 0 0 {name=p26 lab=CLK_CLB}
 C {lab_wire.sym} 280 -380 0 0 {name=p2 lab=VSSd}
-C {inv_1.sym} 320 -120 0 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {inv_1.sym} 400 -120 0 0 {name=x6 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {inv_1.sym} 320 -60 0 0 {name=x7 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {inv_1.sym} 400 -60 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {lab_wire.sym} 280 -120 0 0 {name=p27 lab=CLK1}
-C {lab_wire.sym} 280 -60 0 0 {name=p28 lab=CLK2}
-C {lab_wire.sym} 440 -120 0 1 {name=p29 lab=CLK1_BUFF}
-C {lab_wire.sym} 440 -60 0 1 {name=p30 lab=CLK2_BUFF}
-C {opin.sym} 100 -240 0 0 {name=p31 lab=CLK1_BUFF}
-C {opin.sym} 100 -220 0 0 {name=p32 lab=CLK2_BUFF}

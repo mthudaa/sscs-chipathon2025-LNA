@@ -1,0 +1,83 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757559719
+<< pwell >>
+rect -800 -476 800 476
+<< mvnmos >>
+rect -680 -400 -540 400
+rect -436 -400 -296 400
+rect -192 -400 -52 400
+rect 52 -400 192 400
+rect 296 -400 436 400
+rect 540 -400 680 400
+<< mvndiff >>
+rect -768 387 -680 400
+rect -768 -387 -755 387
+rect -709 -387 -680 387
+rect -768 -400 -680 -387
+rect -540 387 -436 400
+rect -540 -387 -511 387
+rect -465 -387 -436 387
+rect -540 -400 -436 -387
+rect -296 387 -192 400
+rect -296 -387 -267 387
+rect -221 -387 -192 387
+rect -296 -400 -192 -387
+rect -52 387 52 400
+rect -52 -387 -23 387
+rect 23 -387 52 387
+rect -52 -400 52 -387
+rect 192 387 296 400
+rect 192 -387 221 387
+rect 267 -387 296 387
+rect 192 -400 296 -387
+rect 436 387 540 400
+rect 436 -387 465 387
+rect 511 -387 540 387
+rect 436 -400 540 -387
+rect 680 387 768 400
+rect 680 -387 709 387
+rect 755 -387 768 387
+rect 680 -400 768 -387
+<< mvndiffc >>
+rect -755 -387 -709 387
+rect -511 -387 -465 387
+rect -267 -387 -221 387
+rect -23 -387 23 387
+rect 221 -387 267 387
+rect 465 -387 511 387
+rect 709 -387 755 387
+<< polysilicon >>
+rect -680 400 -540 444
+rect -436 400 -296 444
+rect -192 400 -52 444
+rect 52 400 192 444
+rect 296 400 436 444
+rect 540 400 680 444
+rect -680 -444 -540 -400
+rect -436 -444 -296 -400
+rect -192 -444 -52 -400
+rect 52 -444 192 -400
+rect 296 -444 436 -400
+rect 540 -444 680 -400
+<< metal1 >>
+rect -755 387 -709 398
+rect -755 -398 -709 -387
+rect -511 387 -465 398
+rect -511 -398 -465 -387
+rect -267 387 -221 398
+rect -267 -398 -221 -387
+rect -23 387 23 398
+rect -23 -398 23 -387
+rect 221 387 267 398
+rect 221 -398 267 -387
+rect 465 387 511 398
+rect 465 -398 511 -387
+rect 709 387 755 398
+rect 709 -398 755 -387
+<< properties >>
+string gencell nfet_06v0
+string library gf180mcu
+string parameters w 4 l 0.7 m 1 nf 6 diffcov 100 polycov 100 guard 0 glc 1 grc 1 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 1 lmin 0.6 wmin 0.3 class mosfet full_metal 1 compatible {nfet_03v3 nfet_06v0 nfet_06v0_nvt}
+<< end >>

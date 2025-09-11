@@ -1,0 +1,146 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757560186
+<< metal1 >>
+rect -860 2653 -680 2833
+rect -860 403 -680 583
+<< metal2 >>
+rect -860 1171 -801 1230
+rect -860 936 -801 995
+rect -860 818 -801 877
+rect -860 676 -801 735
+rect 104346 676 104405 735
+<< metal4 >>
+rect -860 1879 -658 2081
+<< metal5 >>
+rect 1314 201 1516 403
+rect 7893 201 8095 403
+rect 14472 201 14674 403
+rect 21051 201 21253 403
+rect 27630 201 27832 403
+rect 34209 201 34411 403
+rect 40788 201 40990 403
+rect 47367 201 47569 403
+rect 53946 201 54148 403
+rect 60525 201 60727 403
+rect 67104 201 67306 403
+rect 73683 201 73885 403
+rect 80262 201 80464 403
+rect 86841 201 87043 403
+rect 93420 201 93622 403
+rect 99999 201 100201 403
+use switch-cell  switch-cell_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-cell
+timestamp 1757560017
+transform 1 0 -300 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_1
+timestamp 1757560017
+transform 1 0 6279 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_2
+timestamp 1757560017
+transform 1 0 12858 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_3
+timestamp 1757560017
+transform 1 0 19437 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_4
+timestamp 1757560017
+transform 1 0 26016 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_5
+timestamp 1757560017
+transform 1 0 32595 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_6
+timestamp 1757560017
+transform 1 0 52332 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_7
+timestamp 1757560017
+transform 1 0 45753 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_8
+timestamp 1757560017
+transform 1 0 39174 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_9
+timestamp 1757560017
+transform 1 0 58911 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_10
+timestamp 1757560017
+transform 1 0 78648 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_11
+timestamp 1757560017
+transform 1 0 72069 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_12
+timestamp 1757560017
+transform 1 0 65490 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_13
+timestamp 1757560017
+transform 1 0 85227 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_15
+timestamp 1757560017
+transform 1 0 98385 0 1 413
+box -560 -212 6020 2626
+use switch-cell  switch-cell_16
+timestamp 1757560017
+transform 1 0 91806 0 1 413
+box -560 -212 6020 2626
+<< labels >>
+flabel metal5 99999 201 100201 403 0 FreeSans 400 0 0 0 OUT[0]
+port 0 nsew
+flabel metal5 93420 201 93622 403 0 FreeSans 400 0 0 0 OUT[1]
+port 1 nsew
+flabel metal5 86841 201 87043 403 0 FreeSans 400 0 0 0 OUT[2]
+port 2 nsew
+flabel metal5 80262 201 80464 403 0 FreeSans 400 0 0 0 OUT[3]
+port 3 nsew
+flabel metal5 73683 201 73885 403 0 FreeSans 400 0 0 0 OUT[4]
+port 4 nsew
+flabel metal5 67104 201 67306 403 0 FreeSans 400 0 0 0 OUT[5]
+port 5 nsew
+flabel metal5 60525 201 60727 403 0 FreeSans 400 0 0 0 OUT[6]
+port 6 nsew
+flabel metal5 53946 201 54148 403 0 FreeSans 400 0 0 0 OUT[7]
+port 7 nsew
+flabel metal5 47367 201 47569 403 0 FreeSans 400 0 0 0 OUT[8]
+port 8 nsew
+flabel metal5 40788 201 40990 403 0 FreeSans 400 0 0 0 OUT[9]
+port 9 nsew
+flabel metal5 34209 201 34411 403 0 FreeSans 400 0 0 0 OUT[10]
+port 10 nsew
+flabel metal5 27630 201 27832 403 0 FreeSans 400 0 0 0 OUT[11]
+port 11 nsew
+flabel metal5 21051 201 21253 403 0 FreeSans 400 0 0 0 OUT[12]
+port 12 nsew
+flabel metal5 14472 201 14674 403 0 FreeSans 400 0 0 0 OUT[13]
+port 13 nsew
+flabel metal5 7893 201 8095 403 0 FreeSans 400 0 0 0 OUT[14]
+port 14 nsew
+flabel metal5 1314 201 1516 403 0 FreeSans 400 0 0 0 OUT[15]
+port 15 nsew
+flabel metal1 -860 2653 -680 2833 0 FreeSans 400 0 0 0 VDD
+port 16 nsew
+flabel metal1 -860 403 -680 583 0 FreeSans 400 0 0 0 VSS
+port 17 nsew
+flabel metal2 -860 1171 -801 1230 0 FreeSans 400 0 0 0 RSTN
+port 18 nsew
+flabel metal2 -860 936 -801 995 0 FreeSans 400 0 0 0 CLK2
+port 19 nsew
+flabel metal2 -860 818 -801 877 0 FreeSans 400 0 0 0 CLK1
+port 20 nsew
+flabel metal2 -860 676 -801 735 0 FreeSans 400 0 0 0 D
+port 21 nsew
+flabel metal4 -860 1879 -658 2081 0 FreeSans 400 0 0 0 IN
+port 22 nsew
+flabel metal2 104346 676 104405 735 0 FreeSans 400 0 0 0 Q
+port 24 nsew
+<< end >>

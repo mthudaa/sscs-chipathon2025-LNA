@@ -1,0 +1,397 @@
+
+Circuit 1 cell nfet_06v0 and Circuit 2 cell nfet_06v0 are black boxes.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_06v0                       |Circuit 2: nfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_06v0 and nfet_06v0 are equivalent.
+
+Circuit 1 cell pfet_06v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_06v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_06v0 and pfet_06v0 are equivalent.
+Flattening unmatched subcell nfet_06v0_42FNXL in circuit trans-gate (0)(1 instance)
+Flattening unmatched subcell pfet_06v0_LJSS4L in circuit trans-gate (0)(1 instance)
+
+Class trans-gate (0):  Merged 22 parallel devices.
+Subcircuit summary:
+Circuit 1: trans-gate                      |Circuit 2: trans-gate                      
+-------------------------------------------|-------------------------------------------
+nfet_06v0 (6->1)                           |nfet_06v0 (3->1)                           
+pfet_06v0 (18->1)                          |pfet_06v0 (9->1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: trans-gate                      |Circuit 2: trans-gate                      
+-------------------------------------------|-------------------------------------------
+SWN                                        |SWN                                        
+VSS                                        |VSS                                        
+SWP                                        |SWP                                        
+VDD                                        |VDD                                        
+OUT                                        |OUT                                        
+IN                                         |IN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes trans-gate and trans-gate are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+nfet_06v0 (8)                              |nfet_06v0 (8)                              
+pfet_06v0 (8)                              |pfet_06v0 (8)                              
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+E                                          |E                                          
+D                                          |D                                          
+Q                                          |Q                                          
+VPW                                        |VPW                                        
+VNW                                        |VNW                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1 and gf180mcu_fd_sc_mcu9t5v0__latq_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+pfet_06v0 (1)                              |pfet_06v0 (1)                              
+nfet_06v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
+-------------------------------------------|-------------------------------------------
+pfet_06v0 (3)                              |pfet_06v0 (3)                              
+nfet_06v0 (3)                              |nfet_06v0 (3)                              
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+VSS                                        |VSS                                        
+A2                                         |A2                                         
+Z                                          |Z                                          
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__and2_1 and gf180mcu_fd_sc_mcu9t5v0__and2_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+nfet_06v0 (8)                              |nfet_06v0 (8)                              
+pfet_06v0 (8)                              |pfet_06v0 (8)                              
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+E                                          |E                                          
+D                                          |D                                          
+Q                                          |Q                                          
+VPW                                        |VPW                                        
+VNW                                        |VNW                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1 and gf180mcu_fd_sc_mcu9t5v0__latq_1[[0]] are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
+-------------------------------------------|-------------------------------------------
+pfet_06v0 (3)                              |pfet_06v0 (3)                              
+nfet_06v0 (3)                              |nfet_06v0 (3)                              
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+VSS                                        |VSS                                        
+A2                                         |A2                                         
+Z                                          |Z                                          
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__and2_1 and gf180mcu_fd_sc_mcu9t5v0__and2_1[[0]] are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1[ 
+-------------------------------------------|-------------------------------------------
+pfet_06v0 (1)                              |pfet_06v0 (1)                              
+nfet_06v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1[ 
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1[[0]] are equivalent.
+
+Subcircuit summary:
+Circuit 1: switch-cell                     |Circuit 2: switch-cell                     
+-------------------------------------------|-------------------------------------------
+trans-gate (1)                             |trans-gate (1)                             
+gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        |gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        
+gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
+gf180mcu_fd_sc_mcu9t5v0__and2_1 (1)        |gf180mcu_fd_sc_mcu9t5v0__and2_1 (1)        
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: switch-cell                     |Circuit 2: switch-cell                     
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+IN                                         |IN                                         
+OUT                                        |OUT                                        
+D                                          |D                                          
+CLK1                                       |CLK1                                       
+CLK2                                       |CLK2                                       
+RSTN                                       |RSTN                                       
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes switch-cell and switch-cell are equivalent.
+
+Subcircuit summary:
+Circuit 1: switch-matrix-16x1              |Circuit 2: switch-matrix-16x1              
+-------------------------------------------|-------------------------------------------
+switch-cell (16)                           |switch-cell (16)                           
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 39                         |Number of nets: 39                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: switch-matrix-16x1              |Circuit 2: switch-matrix-16x1              
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+OUT[15]                                    |OUT[15]                                    
+OUT[13]                                    |OUT[13]                                    
+OUT[3]                                     |OUT[3]                                     
+OUT[11]                                    |OUT[11]                                    
+OUT[5]                                     |OUT[5]                                     
+OUT[9]                                     |OUT[9]                                     
+OUT[8]                                     |OUT[8]                                     
+OUT[7]                                     |OUT[7]                                     
+OUT[6]                                     |OUT[6]                                     
+OUT[10]                                    |OUT[10]                                    
+OUT[4]                                     |OUT[4]                                     
+OUT[12]                                    |OUT[12]                                    
+OUT[2]                                     |OUT[2]                                     
+OUT[14]                                    |OUT[14]                                    
+OUT[1]                                     |OUT[1]                                     
+Q                                          |Q                                          
+OUT[0]                                     |OUT[0]                                     
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+CLK1                                       |CLK1                                       
+CLK2                                       |CLK2                                       
+RSTN                                       |RSTN                                       
+IN                                         |IN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes switch-matrix-16x1 and switch-matrix-16x1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: switch-matrix-16x70             |Circuit 2: switch-matrix-16x70             
+-------------------------------------------|-------------------------------------------
+switch-matrix-16x1 (76)                    |switch-matrix-16x1 (76)                    
+Number of devices: 76                      |Number of devices: 76                      
+Number of nets: 174                        |Number of nets: 174                        
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: switch-matrix-16x70             |Circuit 2: switch-matrix-16x70             
+
+---------------------------------------------------------------------------------------
+Net: CLK1                                  |Net: CLK1                                  
+  switch-matrix-16x1/CLK1 = 76             |  switch-matrix-16x1/CLK1 = 8              
+                                           |                                           
+Net: RSTN                                  |Net: RSTN                                  
+  switch-matrix-16x1/RSTN = 76             |  switch-matrix-16x1/RSTN = 76             
+                                           |  switch-matrix-16x1/CLK1 = 68             
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: switch-matrix-16x70             |Circuit 2: switch-matrix-16x70             
+-------------------------------------------|-------------------------------------------
+RSTN                                       |CLK1 **Mismatch**                          
+CLK1                                       |RSTN **Mismatch**                          
+VSS                                        |VSS                                        
+CLK2                                       |CLK2                                       
+VDD                                        |VDD                                        
+Q                                          |Q                                          
+D                                          |D                                          
+(no pin, node is switch-matrix-16x1_60/IN) |IN[75]                                     
+(no pin, node is switch-matrix-16x1_61/IN) |IN[74]                                     
+(no pin, node is switch-matrix-16x1_62/IN) |IN[73]                                     
+(no pin, node is switch-matrix-16x1_63/IN) |IN[72]                                     
+(no pin, node is switch-matrix-16x1_64/IN) |IN[71]                                     
+(no pin, node is switch-matrix-16x1_65/IN) |IN[70]                                     
+(no pin, node is switch-matrix-16x1_66/IN) |IN[69]                                     
+(no pin, node is switch-matrix-16x1_67/IN) |IN[68]                                     
+(no pin, node is switch-matrix-16x1_68/IN) |IN[67]                                     
+(no pin, node is switch-matrix-16x1_69/IN) |IN[66]                                     
+(no pin, node is switch-matrix-16x1_55/IN) |IN[65]                                     
+(no pin, node is switch-matrix-16x1_56/IN) |IN[64]                                     
+(no pin, node is switch-matrix-16x1_57/IN) |IN[63]                                     
+(no pin, node is switch-matrix-16x1_58/IN) |IN[62]                                     
+(no pin, node is switch-matrix-16x1_59/IN) |IN[61]                                     
+(no pin, node is switch-matrix-16x1_54/IN) |IN[60]                                     
+(no pin, node is switch-matrix-16x1_53/IN) |IN[59]                                     
+(no pin, node is switch-matrix-16x1_52/IN) |IN[58]                                     
+(no pin, node is switch-matrix-16x1_51/IN) |IN[57]                                     
+(no pin, node is switch-matrix-16x1_50/IN) |IN[56]                                     
+(no pin, node is switch-matrix-16x1_40/IN) |IN[55]                                     
+(no pin, node is switch-matrix-16x1_41/IN) |IN[54]                                     
+(no pin, node is switch-matrix-16x1_42/IN) |IN[53]                                     
+(no pin, node is switch-matrix-16x1_43/IN) |IN[52]                                     
+(no pin, node is switch-matrix-16x1_44/IN) |IN[51]                                     
+(no pin, node is switch-matrix-16x1_45/IN) |IN[50]                                     
+(no pin, node is switch-matrix-16x1_46/IN) |IN[49]                                     
+(no pin, node is switch-matrix-16x1_47/IN) |IN[48]                                     
+(no pin, node is switch-matrix-16x1_48/IN) |IN[47]                                     
+(no pin, node is switch-matrix-16x1_49/IN) |IN[46]                                     
+(no pin, node is switch-matrix-16x1_35/IN) |IN[45]                                     
+(no pin, node is switch-matrix-16x1_36/IN) |IN[44]                                     
+(no pin, node is switch-matrix-16x1_37/IN) |IN[43]                                     
+(no pin, node is switch-matrix-16x1_38/IN) |IN[42]                                     
+(no pin, node is switch-matrix-16x1_39/IN) |IN[41]                                     
+(no pin, node is switch-matrix-16x1_34/IN) |IN[40]                                     
+(no pin, node is switch-matrix-16x1_33/IN) |IN[39]                                     
+(no pin, node is switch-matrix-16x1_32/IN) |IN[38]                                     
+(no pin, node is switch-matrix-16x1_31/IN) |IN[37]                                     
+(no pin, node is switch-matrix-16x1_30/IN) |IN[36]                                     
+(no pin, node is switch-matrix-16x1_24/IN) |IN[35]                                     
+(no pin, node is switch-matrix-16x1_23/IN) |IN[34]                                     
+(no pin, node is switch-matrix-16x1_22/IN) |IN[33]                                     
+(no pin, node is switch-matrix-16x1_21/IN) |IN[32]                                     
+(no pin, node is switch-matrix-16x1_20/IN) |IN[31]                                     
+(no pin, node is switch-matrix-16x1_25/IN) |IN[30]                                     
+(no pin, node is switch-matrix-16x1_26/IN) |IN[29]                                     
+(no pin, node is switch-matrix-16x1_27/IN) |IN[28]                                     
+(no pin, node is switch-matrix-16x1_28/IN) |IN[27]                                     
+(no pin, node is switch-matrix-16x1_29/IN) |IN[26]                                     
+(no pin, node is switch-matrix-16x1_19/IN) |IN[25]                                     
+(no pin, node is switch-matrix-16x1_18/IN) |IN[24]                                     
+(no pin, node is switch-matrix-16x1_17/IN) |IN[23]                                     
+(no pin, node is switch-matrix-16x1_16/IN) |IN[22]                                     
+(no pin, node is switch-matrix-16x1_15/IN) |IN[21]                                     
+(no pin, node is switch-matrix-16x1_14/IN) |IN[20]                                     
+(no pin, node is switch-matrix-16x1_13/IN) |IN[19]                                     
+(no pin, node is switch-matrix-16x1_12/IN) |IN[18]                                     
+(no pin, node is switch-matrix-16x1_10/IN) |IN[17]                                     
+(no pin, node is switch-matrix-16x1_11/IN) |IN[16]                                     
+(no pin, node is switch-matrix-16x1_5/IN)  |IN[15]                                     
+(no pin, node is switch-matrix-16x1_6/IN)  |IN[14]                                     
+(no pin, node is switch-matrix-16x1_7/IN)  |IN[13]                                     
+(no pin, node is switch-matrix-16x1_8/IN)  |IN[12]                                     
+(no pin, node is switch-matrix-16x1_9/IN)  |IN[11]                                     
+(no pin, node is switch-matrix-16x1_4/IN)  |IN[10]                                     
+(no pin, node is switch-matrix-16x1_3/IN)  |IN[9]                                      
+(no pin, node is switch-matrix-16x1_2/IN)  |IN[8]                                      
+(no pin, node is switch-matrix-16x1_1/IN)  |IN[7]                                      
+(no pin, node is switch-matrix-16x1_0/IN)  |IN[6]                                      
+(no pin, node is switch-matrix-16x1_75/IN) |IN[5]                                      
+(no pin, node is switch-matrix-16x1_74/IN) |IN[4]                                      
+(no pin, node is switch-matrix-16x1_73/IN) |IN[3]                                      
+(no pin, node is switch-matrix-16x1_72/IN) |IN[2]                                      
+(no pin, node is switch-matrix-16x1_71/IN) |IN[1]                                      
+(no pin, node is switch-matrix-16x1_70/IN) |IN[0]                                      
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[15]                                    
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[14]                                    
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[13]                                    
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[12]                                    
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[11]                                    
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[10]                                    
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[9]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[8]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[7]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[6]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[5]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[4]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[3]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[2]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[1]                                     
+(no pin, node is switch-matrix-16x1_9/OUT[ |OUT[0]                                     
+---------------------------------------------------------------------------------------
+Cell pin lists for switch-matrix-16x70 and switch-matrix-16x70 altered to match.
+Device classes switch-matrix-16x70 and switch-matrix-16x70 are equivalent.
+
+Final result: Top level cell failed pin matching.

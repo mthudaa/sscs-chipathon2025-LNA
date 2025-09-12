@@ -1,679 +1,223 @@
-* NGSPICE file created from switch-matrix-16x70.ext - technology: gf180mcuD
-
-.subckt nfet_06v0_42FNXL a_436_n400# a_192_n400# a_n436_n444# a_n768_n400# a_n192_n444#
-+ a_540_n444# a_n296_n400# a_n52_n400# a_680_n400# a_n680_n444# a_n540_n400# a_296_n444#
-+ a_52_n444# VSUBS
-X0 a_436_n400# a_296_n444# a_192_n400# VSUBS nfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.7u
-X1 a_680_n400# a_540_n444# a_436_n400# VSUBS nfet_05v0 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=0.7u
-X2 a_192_n400# a_52_n444# a_n52_n400# VSUBS nfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.7u
-X3 a_n52_n400# a_n192_n444# a_n296_n400# VSUBS nfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.7u
-X4 a_n296_n400# a_n436_n444# a_n540_n400# VSUBS nfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.7u
-X5 a_n540_n400# a_n680_n444# a_n768_n400# VSUBS nfet_05v0 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=0.7u
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-matrix-16x70/switch-matrix-16x70.sch
+.subckt switch-matrix-16x70 D CLK1 CLK2 RSTN VDD VSS Q IN[75] IN[74] IN[73] IN[72] IN[71] IN[70] IN[69] IN[68] IN[67] IN[66]
++ IN[65] IN[64] IN[63] IN[62] IN[61] IN[60] IN[59] IN[58] IN[57] IN[56] IN[55] IN[54] IN[53] IN[52] IN[51] IN[50] IN[49] IN[48] IN[47]
++ IN[46] IN[45] IN[44] IN[43] IN[42] IN[41] IN[40] IN[39] IN[38] IN[37] IN[36] IN[35] IN[34] IN[33] IN[32] IN[31] IN[30] IN[29] IN[28]
++ IN[27] IN[26] IN[25] IN[24] IN[23] IN[22] IN[21] IN[20] IN[19] IN[18] IN[17] IN[16] IN[15] IN[14] IN[13] IN[12] IN[11] IN[10] IN[9]
++ IN[8] IN[7] IN[6] IN[5] IN[4] IN[3] IN[2] IN[1] IN[0] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6]
++ OUT[5] OUT[4] OUT[3] OUT[2] OUT[1] OUT[0]
+*.PININFO VDD:B VSS:B RSTN:I CLK1:I CLK2:I D:I IN[75:0]:B OUT[15:0]:B Q:O
+x1 net1 VDD VSS IN[69] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D0 CLK1 CLK2 RSTN switch-matrix-16x1
+x2 net2 VDD VSS IN[68] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net1 RSTN CLK2 RSTN switch-matrix-16x1
+x3 net3 VDD VSS IN[67] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net2 RSTN CLK2 RSTN switch-matrix-16x1
+x4 net4 VDD VSS IN[66] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net3 RSTN CLK2 RSTN switch-matrix-16x1
+x5 net5 VDD VSS IN[65] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net4 RSTN CLK2 RSTN switch-matrix-16x1
+x6 net6 VDD VSS IN[64] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net5 RSTN CLK2 RSTN switch-matrix-16x1
+x7 net7 VDD VSS IN[63] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net6 RSTN CLK2 RSTN switch-matrix-16x1
+x8 net8 VDD VSS IN[62] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net7 RSTN CLK2 RSTN switch-matrix-16x1
+x9 net9 VDD VSS IN[61] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net8 RSTN CLK2 RSTN switch-matrix-16x1
+x10 D1 VDD VSS IN[60] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net9 RSTN CLK2 RSTN switch-matrix-16x1
+x11 net10 VDD VSS IN[59] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D1 CLK1 CLK2 RSTN switch-matrix-16x1
+x12 net11 VDD VSS IN[58] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net10 RSTN CLK2 RSTN switch-matrix-16x1
+x13 net12 VDD VSS IN[57] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net11 RSTN CLK2 RSTN switch-matrix-16x1
+x14 net13 VDD VSS IN[56] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net12 RSTN CLK2 RSTN switch-matrix-16x1
+x15 net14 VDD VSS IN[55] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net13 RSTN CLK2 RSTN switch-matrix-16x1
+x16 net15 VDD VSS IN[54] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net14 RSTN CLK2 RSTN switch-matrix-16x1
+x17 net16 VDD VSS IN[53] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net15 RSTN CLK2 RSTN switch-matrix-16x1
+x18 net17 VDD VSS IN[52] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net16 RSTN CLK2 RSTN switch-matrix-16x1
+x19 net18 VDD VSS IN[51] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net17 RSTN CLK2 RSTN switch-matrix-16x1
+x20 D2 VDD VSS IN[50] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net18 RSTN CLK2 RSTN switch-matrix-16x1
+x21 net19 VDD VSS IN[49] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D2 CLK1 CLK2 RSTN switch-matrix-16x1
+x22 net20 VDD VSS IN[48] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net19 RSTN CLK2 RSTN switch-matrix-16x1
+x23 net21 VDD VSS IN[47] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net20 RSTN CLK2 RSTN switch-matrix-16x1
+x24 net22 VDD VSS IN[46] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net21 RSTN CLK2 RSTN switch-matrix-16x1
+x25 net23 VDD VSS IN[45] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net22 RSTN CLK2 RSTN switch-matrix-16x1
+x26 net24 VDD VSS IN[44] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net23 RSTN CLK2 RSTN switch-matrix-16x1
+x27 net25 VDD VSS IN[43] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net24 RSTN CLK2 RSTN switch-matrix-16x1
+x28 net26 VDD VSS IN[42] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net25 RSTN CLK2 RSTN switch-matrix-16x1
+x29 net27 VDD VSS IN[41] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net26 RSTN CLK2 RSTN switch-matrix-16x1
+x30 D3 VDD VSS IN[40] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net27 RSTN CLK2 RSTN switch-matrix-16x1
+x31 net28 VDD VSS IN[39] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D3 CLK1 CLK2 RSTN switch-matrix-16x1
+x32 net29 VDD VSS IN[38] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net28 RSTN CLK2 RSTN switch-matrix-16x1
+x33 net30 VDD VSS IN[37] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net29 RSTN CLK2 RSTN switch-matrix-16x1
+x34 net31 VDD VSS IN[36] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net30 RSTN CLK2 RSTN switch-matrix-16x1
+x35 net32 VDD VSS IN[35] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net31 RSTN CLK2 RSTN switch-matrix-16x1
+x36 net33 VDD VSS IN[34] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net32 RSTN CLK2 RSTN switch-matrix-16x1
+x37 net34 VDD VSS IN[33] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net33 RSTN CLK2 RSTN switch-matrix-16x1
+x38 net35 VDD VSS IN[32] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net34 RSTN CLK2 RSTN switch-matrix-16x1
+x39 net36 VDD VSS IN[31] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net35 RSTN CLK2 RSTN switch-matrix-16x1
+x40 D4 VDD VSS IN[30] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net36 RSTN CLK2 RSTN switch-matrix-16x1
+x41 net37 VDD VSS IN[29] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D4 CLK1 CLK2 RSTN switch-matrix-16x1
+x42 net38 VDD VSS IN[28] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net37 RSTN CLK2 RSTN switch-matrix-16x1
+x43 net39 VDD VSS IN[27] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net38 RSTN CLK2 RSTN switch-matrix-16x1
+x44 net40 VDD VSS IN[26] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net39 RSTN CLK2 RSTN switch-matrix-16x1
+x45 net41 VDD VSS IN[25] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net40 RSTN CLK2 RSTN switch-matrix-16x1
+x46 net42 VDD VSS IN[24] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net41 RSTN CLK2 RSTN switch-matrix-16x1
+x47 net43 VDD VSS IN[23] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net42 RSTN CLK2 RSTN switch-matrix-16x1
+x48 net44 VDD VSS IN[22] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net43 RSTN CLK2 RSTN switch-matrix-16x1
+x49 net45 VDD VSS IN[21] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net44 RSTN CLK2 RSTN switch-matrix-16x1
+x50 D5 VDD VSS IN[20] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net45 RSTN CLK2 RSTN switch-matrix-16x1
+x51 net46 VDD VSS IN[19] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D5 CLK1 CLK2 RSTN switch-matrix-16x1
+x52 net47 VDD VSS IN[18] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net46 RSTN CLK2 RSTN switch-matrix-16x1
+x53 net48 VDD VSS IN[17] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net47 RSTN CLK2 RSTN switch-matrix-16x1
+x54 net49 VDD VSS IN[16] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net48 RSTN CLK2 RSTN switch-matrix-16x1
+x55 net50 VDD VSS IN[15] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net49 RSTN CLK2 RSTN switch-matrix-16x1
+x56 net51 VDD VSS IN[14] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net50 RSTN CLK2 RSTN switch-matrix-16x1
+x57 net52 VDD VSS IN[13] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net51 RSTN CLK2 RSTN switch-matrix-16x1
+x58 net53 VDD VSS IN[12] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net52 RSTN CLK2 RSTN switch-matrix-16x1
+x59 net54 VDD VSS IN[11] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net53 RSTN CLK2 RSTN switch-matrix-16x1
+x60 D6 VDD VSS IN[10] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net54 RSTN CLK2 RSTN switch-matrix-16x1
+x61 net55 VDD VSS IN[9] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D6 CLK1 CLK2 RSTN switch-matrix-16x1
+x62 net56 VDD VSS IN[8] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net55 RSTN CLK2 RSTN switch-matrix-16x1
+x63 net57 VDD VSS IN[7] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net56 RSTN CLK2 RSTN switch-matrix-16x1
+x64 net58 VDD VSS IN[6] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net57 RSTN CLK2 RSTN switch-matrix-16x1
+x65 net59 VDD VSS IN[5] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net58 RSTN CLK2 RSTN switch-matrix-16x1
+x66 net60 VDD VSS IN[4] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net59 RSTN CLK2 RSTN switch-matrix-16x1
+x67 net61 VDD VSS IN[3] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net60 RSTN CLK2 RSTN switch-matrix-16x1
+x68 net62 VDD VSS IN[2] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net61 RSTN CLK2 RSTN switch-matrix-16x1
+x69 net63 VDD VSS IN[1] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net62 RSTN CLK2 RSTN switch-matrix-16x1
+x70 Q VDD VSS IN[0] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2] OUT[1]
++ OUT[0] net63 RSTN CLK2 RSTN switch-matrix-16x1
+x75 net64 VDD VSS IN[75] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] D CLK1 CLK2 RSTN switch-matrix-16x1
+x76 net65 VDD VSS IN[74] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net64 RSTN CLK2 RSTN switch-matrix-16x1
+x77 net66 VDD VSS IN[73] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net65 RSTN CLK2 RSTN switch-matrix-16x1
+x78 net67 VDD VSS IN[72] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net66 RSTN CLK2 RSTN switch-matrix-16x1
+x79 net68 VDD VSS IN[71] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net67 RSTN CLK2 RSTN switch-matrix-16x1
+x80 D0 VDD VSS IN[70] OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2]
++ OUT[1] OUT[0] net68 RSTN CLK2 RSTN switch-matrix-16x1
 .ends
 
-.subckt pfet_06v0_LJSS4L a_376_n400# a_1764_n444# a_n590_n444# a_1122_n444# a_n376_n444#
-+ a_908_n444# w_n2048_n530# a_n694_n400# a_480_n444# a_266_n444# a_n1660_n444# a_n1446_n444#
-+ a_1660_n400# a_n52_n400# a_n1764_n400# a_1446_n400# a_804_n400# a_n1122_n400# a_1550_n444#
-+ a_162_n400# a_1336_n444# a_n804_n444# a_694_n444# a_n162_n444# a_n480_n400# a_n908_n400#
-+ a_n1874_n444# a_n266_n400# a_1874_n400# a_n1962_n400# a_52_n444# a_n1232_n444# a_1232_n400#
-+ a_n1550_n400# a_n1018_n444# a_n1336_n400# a_1018_n400# a_590_n400#
-X0 a_376_n400# a_266_n444# a_162_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X1 a_1232_n400# a_1122_n444# a_1018_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X2 a_n694_n400# a_n804_n444# a_n908_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X3 a_n1550_n400# a_n1660_n444# a_n1764_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X4 a_1446_n400# a_1336_n444# a_1232_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X5 a_n908_n400# a_n1018_n444# a_n1122_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X6 a_n52_n400# a_n162_n444# a_n266_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X7 a_162_n400# a_52_n444# a_n52_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X8 a_590_n400# a_480_n444# a_376_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X9 a_n1764_n400# a_n1874_n444# a_n1962_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=0.55u
-X10 a_1018_n400# a_908_n444# a_804_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X11 a_n266_n400# a_n376_n444# a_n480_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X12 a_804_n400# a_694_n444# a_590_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X13 a_1660_n400# a_1550_n444# a_1446_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X14 a_n1122_n400# a_n1232_n444# a_n1336_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X15 a_n480_n400# a_n590_n444# a_n694_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
-X16 a_1874_n400# a_1764_n444# a_1660_n400# w_n2048_n530# pfet_05v0 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=0.55u
-X17 a_n1336_n400# a_n1446_n444# a_n1550_n400# w_n2048_n530# pfet_05v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.55u
+* expanding   symbol:  core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym # of pins=9
+** sym_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sch
+.subckt switch-matrix-16x1 Q VDD VSS IN OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4]
++ OUT[3] OUT[2] OUT[1] OUT[0] D CLK1 CLK2 RSTN
+*.PININFO VDD:B VSS:B IN:B OUT[15:0]:B D:I RSTN:I Q:O CLK1:I CLK2:I
+x1 net10 VDD VSS D CLK1 CLK2 RSTN IN OUT[15] switch-cell
+x2 net11 VDD VSS net10 CLK1 CLK2 RSTN IN OUT[14] switch-cell
+x3 net12 VDD VSS net11 CLK1 CLK2 RSTN IN OUT[13] switch-cell
+x4 net13 VDD VSS net12 CLK1 CLK2 RSTN IN OUT[12] switch-cell
+x5 net7 VDD VSS net13 CLK1 CLK2 RSTN IN OUT[11] switch-cell
+x6 net8 VDD VSS net7 CLK1 CLK2 RSTN IN OUT[10] switch-cell
+x7 net9 VDD VSS net8 CLK1 CLK2 RSTN IN OUT[9] switch-cell
+x8 net14 VDD VSS net9 CLK1 CLK2 RSTN IN OUT[8] switch-cell
+x9 net4 VDD VSS net14 CLK1 CLK2 RSTN IN OUT[7] switch-cell
+x10 net5 VDD VSS net4 CLK1 CLK2 RSTN IN OUT[6] switch-cell
+x11 net6 VDD VSS net5 CLK1 CLK2 RSTN IN OUT[5] switch-cell
+x12 net15 VDD VSS net6 CLK1 CLK2 RSTN IN OUT[4] switch-cell
+x13 net1 VDD VSS net15 CLK1 CLK2 RSTN IN OUT[3] switch-cell
+x14 net2 VDD VSS net1 CLK1 CLK2 RSTN IN OUT[2] switch-cell
+x15 net3 VDD VSS net2 CLK1 CLK2 RSTN IN OUT[1] switch-cell
+x16 Q VDD VSS net3 CLK1 CLK2 RSTN IN OUT[0] switch-cell
 .ends
 
-.subckt trans-gate SWP IN OUT VDD VSS SWN
-Xnfet_06v0_42FNXL_0 IN OUT SWN OUT SWN SWN OUT IN OUT SWN IN SWN SWN VSS nfet_06v0_42FNXL
-Xpfet_06v0_LJSS4L_0 OUT SWP SWP SWP SWP SWP VDD IN SWP SWP SWP SWP OUT OUT OUT IN
-+ OUT IN SWP IN SWP SWP SWP SWP OUT OUT SWP IN IN IN SWP SWP OUT IN SWP OUT IN IN
-+ pfet_06v0_LJSS4L
+
+* expanding   symbol:  core_switch-matrix/switch-cell/switch-cell.sym # of pins=9
+** sym_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-cell/switch-cell.sym
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-cell/switch-cell.sch
+.subckt switch-cell Q VDD VSS D CLK1 CLK2 RSTN IN OUT
+*.PININFO VDD:B VSS:B CLK1:I D:I IN:B OUT:B RSTN:I Q:O CLK2:I
+x4 VDD VSS SWN SWP IN OUT trans-gate
+x1 D CLK1 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+x5 net1 CLK2 Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+x2 Q RSTN SWN VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x3 SWN SWP VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+.include /foss/designs/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
+.include /foss/designs/Chipathon2025_pads/xschem/gf180mcu_fd_io.spice
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+**** end user architecture code
 .ends
 
-.subckt gf180mcu_fd_sc_mcu9t5v0__latq_1 D E Q VDD VNW VPW VSS
-X0 VSS a_1020_652# Q VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
-X1 a_504_110# a_36_92# VDD VNW pfet_05v0 ad=0.44p pd=2.88u as=0.476p ps=2.18u w=1u l=0.5u
-X2 VDD a_1020_652# Q VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
-X3 a_1264_107# a_36_92# a_1020_652# VPW nfet_05v0 ad=0.263p pd=1.49u as=0.182p ps=1.22u w=0.7u l=0.6u
-X4 VSS E a_36_92# VPW nfet_05v0 ad=0.263p pd=1.49u as=0.3476p ps=2.46u w=0.79u l=0.6u
-X5 VSS a_1364_532# a_1264_107# VPW nfet_05v0 ad=0.2054p pd=1.31u as=0.263p ps=1.49u w=0.79u l=0.6u
-X6 VDD E a_36_92# VNW pfet_05v0 ad=0.476p pd=2.18u as=0.6072p ps=3.64u w=1.38u l=0.5u
-X7 VDD a_1364_532# a_1224_652# VNW pfet_05v0 ad=0.3588p pd=1.9u as=0.426p ps=2.08u w=1.38u l=0.5u
-X8 a_872_652# D VDD VNW pfet_05v0 ad=0.12p pd=1.24u as=0.44p ps=2.88u w=1u l=0.5u
-X9 a_1364_532# a_1020_652# VDD VNW pfet_05v0 ad=0.6072p pd=3.64u as=0.3588p ps=1.9u w=1.38u l=0.5u
-X10 a_1020_652# a_504_110# a_872_107# VPW nfet_05v0 ad=0.182p pd=1.22u as=83.99999f ps=0.94u w=0.7u l=0.6u
-X11 a_872_107# D VSS VPW nfet_05v0 ad=83.99999f pd=0.94u as=0.308p ps=2.28u w=0.7u l=0.6u
-X12 a_1020_652# a_36_92# a_872_652# VNW pfet_05v0 ad=0.26p pd=1.52u as=0.12p ps=1.24u w=1u l=0.5u
-X13 a_504_110# a_36_92# VSS VPW nfet_05v0 ad=0.308p pd=2.28u as=0.263p ps=1.49u w=0.7u l=0.6u
-X14 a_1364_532# a_1020_652# VSS VPW nfet_05v0 ad=0.3476p pd=2.46u as=0.2054p ps=1.31u w=0.79u l=0.6u
-X15 a_1224_652# a_504_110# a_1020_652# VNW pfet_05v0 ad=0.426p pd=2.08u as=0.26p ps=1.52u w=1u l=0.5u
-.ends
 
-.subckt gf180mcu_fd_sc_mcu9t5v0__inv_1 I ZN VDD VNW VPW VSS
-X0 ZN I VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
-X1 ZN I VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
-.ends
-
-.subckt gf180mcu_fd_sc_mcu9t5v0__and2_1 A1 A2 Z VDD VNW VPW VSS
-X0 VDD A2 a_36_201# VNW pfet_05v0 ad=0.5054p pd=2.57u as=0.2132p ps=1.34u w=0.82u l=0.5u
-X1 a_244_201# A1 a_36_201# VPW nfet_05v0 ad=0.1056p pd=0.98u as=0.2904p ps=2.2u w=0.66u l=0.6u
-X2 Z a_36_201# VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.3894p ps=2.06u w=1.32u l=0.6u
-X3 Z a_36_201# VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.5054p ps=2.57u w=1.83u l=0.5u
-X4 VSS A2 a_244_201# VPW nfet_05v0 ad=0.3894p pd=2.06u as=0.1056p ps=0.98u w=0.66u l=0.6u
-X5 a_36_201# A1 VDD VNW pfet_05v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.5u
-.ends
-
-.subckt switch-cell VDD CLK1 Q D OUT CLK2 IN RSTN VSS
-Xtrans-gate_0 trans-gate_0/SWP IN OUT VDD VSS trans-gate_0/SWN trans-gate
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_0 D CLK1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/D VDD
-+ VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
-Xgf180mcu_fd_sc_mcu9t5v0__latq_1_1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1/D CLK2 Q VDD
-+ VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
-Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 trans-gate_0/SWN trans-gate_0/SWP VDD VDD VSS VSS
-+ gf180mcu_fd_sc_mcu9t5v0__inv_1
-Xgf180mcu_fd_sc_mcu9t5v0__and2_1_0 Q RSTN trans-gate_0/SWN VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
-.ends
-
-.subckt switch-matrix-16x1 OUT[4] OUT[9] OUT[10] VDD RSTN CLK1 IN Q D OUT[6] OUT[7]
-+ OUT[0] OUT[12] OUT[5] CLK2 OUT[8] OUT[15] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[13]
-+ OUT[3]
-Xswitch-cell_15 VDD CLK1 Q switch-cell_16/Q OUT[0] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_0 VDD CLK1 switch-cell_1/D D OUT[15] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_16 VDD CLK1 switch-cell_16/Q switch-cell_16/D OUT[1] CLK2 IN RSTN VSS
-+ switch-cell
-Xswitch-cell_1 VDD CLK1 switch-cell_2/D switch-cell_1/D OUT[14] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_2 VDD CLK1 switch-cell_3/D switch-cell_2/D OUT[13] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_3 VDD CLK1 switch-cell_4/D switch-cell_3/D OUT[12] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_4 VDD CLK1 switch-cell_5/D switch-cell_4/D OUT[11] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_5 VDD CLK1 switch-cell_8/D switch-cell_5/D OUT[10] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_6 VDD CLK1 switch-cell_9/D switch-cell_7/Q OUT[7] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_7 VDD CLK1 switch-cell_7/Q switch-cell_8/Q OUT[8] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_8 VDD CLK1 switch-cell_8/Q switch-cell_8/D OUT[9] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_9 VDD CLK1 switch-cell_9/Q switch-cell_9/D OUT[6] CLK2 IN RSTN VSS switch-cell
-Xswitch-cell_10 VDD CLK1 switch-cell_13/D switch-cell_11/Q OUT[3] CLK2 IN RSTN VSS
-+ switch-cell
-Xswitch-cell_11 VDD CLK1 switch-cell_11/Q switch-cell_12/Q OUT[4] CLK2 IN RSTN VSS
-+ switch-cell
-Xswitch-cell_13 VDD CLK1 switch-cell_16/D switch-cell_13/D OUT[2] CLK2 IN RSTN VSS
-+ switch-cell
-Xswitch-cell_12 VDD CLK1 switch-cell_12/Q switch-cell_9/Q OUT[5] CLK2 IN RSTN VSS
-+ switch-cell
-.ends
-
-.subckt switch-matrix-16x70
-Xswitch-matrix-16x1_61 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_61/VDD switch-matrix-16x1_61/Q switch-matrix-16x1_61/Q switch-matrix-16x1_61/IN
-+ switch-matrix-16x1_61/Q switch-matrix-16x1_61/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_61/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_60 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_60/VDD switch-matrix-16x1_60/Q switch-matrix-16x1_60/Q switch-matrix-16x1_60/IN
-+ switch-matrix-16x1_60/Q switch-matrix-16x1_60/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_60/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_50 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_50/VDD switch-matrix-16x1_50/Q switch-matrix-16x1_50/Q switch-matrix-16x1_50/IN
-+ switch-matrix-16x1_50/Q switch-matrix-16x1_50/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_50/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_62 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_62/VDD switch-matrix-16x1_62/Q switch-matrix-16x1_62/Q switch-matrix-16x1_62/IN
-+ switch-matrix-16x1_62/Q switch-matrix-16x1_62/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_62/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_51 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_51/VDD switch-matrix-16x1_51/Q switch-matrix-16x1_51/Q switch-matrix-16x1_51/IN
-+ switch-matrix-16x1_51/Q switch-matrix-16x1_51/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_51/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_40 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_40/VDD switch-matrix-16x1_40/Q switch-matrix-16x1_40/Q switch-matrix-16x1_40/IN
-+ switch-matrix-16x1_40/Q switch-matrix-16x1_40/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_40/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_0 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_0/VDD switch-matrix-16x1_0/Q switch-matrix-16x1_0/Q switch-matrix-16x1_0/IN
-+ switch-matrix-16x1_0/Q switch-matrix-16x1_0/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_0/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_63 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_63/VDD switch-matrix-16x1_63/Q switch-matrix-16x1_63/Q switch-matrix-16x1_63/IN
-+ switch-matrix-16x1_63/Q switch-matrix-16x1_63/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_63/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_52 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_52/VDD switch-matrix-16x1_52/Q switch-matrix-16x1_52/Q switch-matrix-16x1_52/IN
-+ switch-matrix-16x1_52/Q switch-matrix-16x1_52/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_52/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_41 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_41/VDD switch-matrix-16x1_41/Q switch-matrix-16x1_41/Q switch-matrix-16x1_41/IN
-+ switch-matrix-16x1_41/Q switch-matrix-16x1_41/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_41/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_30 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_30/VDD switch-matrix-16x1_30/Q switch-matrix-16x1_30/Q switch-matrix-16x1_30/IN
-+ switch-matrix-16x1_30/Q switch-matrix-16x1_30/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_30/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_1 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_1/VDD switch-matrix-16x1_1/Q switch-matrix-16x1_1/Q switch-matrix-16x1_1/IN
-+ switch-matrix-16x1_1/Q switch-matrix-16x1_1/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_1/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_64 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_64/VDD switch-matrix-16x1_64/Q switch-matrix-16x1_64/Q switch-matrix-16x1_64/IN
-+ switch-matrix-16x1_64/Q switch-matrix-16x1_64/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_64/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_53 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_53/VDD switch-matrix-16x1_53/Q switch-matrix-16x1_53/Q switch-matrix-16x1_53/IN
-+ switch-matrix-16x1_53/Q switch-matrix-16x1_53/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_53/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_42 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_42/VDD switch-matrix-16x1_42/Q switch-matrix-16x1_42/Q switch-matrix-16x1_42/IN
-+ switch-matrix-16x1_42/Q switch-matrix-16x1_42/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_42/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_31 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_31/VDD switch-matrix-16x1_31/Q switch-matrix-16x1_31/Q switch-matrix-16x1_31/IN
-+ switch-matrix-16x1_31/Q switch-matrix-16x1_31/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_31/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_20 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_20/VDD switch-matrix-16x1_20/Q switch-matrix-16x1_20/Q switch-matrix-16x1_20/IN
-+ switch-matrix-16x1_20/Q switch-matrix-16x1_20/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_20/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_2 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_2/VDD switch-matrix-16x1_2/Q switch-matrix-16x1_2/Q switch-matrix-16x1_2/IN
-+ switch-matrix-16x1_2/Q switch-matrix-16x1_2/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_2/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_65 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_65/VDD switch-matrix-16x1_65/Q switch-matrix-16x1_65/Q switch-matrix-16x1_65/IN
-+ switch-matrix-16x1_65/Q switch-matrix-16x1_65/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_65/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_54 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_54/VDD switch-matrix-16x1_54/Q switch-matrix-16x1_54/Q switch-matrix-16x1_54/IN
-+ switch-matrix-16x1_54/Q switch-matrix-16x1_54/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_54/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_43 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_43/VDD switch-matrix-16x1_43/Q switch-matrix-16x1_43/Q switch-matrix-16x1_43/IN
-+ switch-matrix-16x1_43/Q switch-matrix-16x1_43/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_43/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_32 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_32/VDD switch-matrix-16x1_32/Q switch-matrix-16x1_32/Q switch-matrix-16x1_32/IN
-+ switch-matrix-16x1_32/Q switch-matrix-16x1_32/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_32/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_21 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_21/VDD switch-matrix-16x1_21/Q switch-matrix-16x1_21/Q switch-matrix-16x1_21/IN
-+ switch-matrix-16x1_21/Q switch-matrix-16x1_21/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_21/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_10 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_10/VDD switch-matrix-16x1_10/Q switch-matrix-16x1_10/Q switch-matrix-16x1_10/IN
-+ switch-matrix-16x1_10/Q switch-matrix-16x1_10/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_10/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_3 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_3/VDD switch-matrix-16x1_3/Q switch-matrix-16x1_3/Q switch-matrix-16x1_3/IN
-+ switch-matrix-16x1_3/Q switch-matrix-16x1_3/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_3/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_66 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_66/VDD switch-matrix-16x1_66/Q switch-matrix-16x1_66/Q switch-matrix-16x1_66/IN
-+ switch-matrix-16x1_66/Q switch-matrix-16x1_66/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_66/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_55 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_55/VDD switch-matrix-16x1_55/Q switch-matrix-16x1_55/Q switch-matrix-16x1_55/IN
-+ switch-matrix-16x1_55/Q switch-matrix-16x1_55/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_55/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_44 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_44/VDD switch-matrix-16x1_44/Q switch-matrix-16x1_44/Q switch-matrix-16x1_44/IN
-+ switch-matrix-16x1_44/Q switch-matrix-16x1_44/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_44/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_33 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_33/VDD switch-matrix-16x1_33/Q switch-matrix-16x1_33/Q switch-matrix-16x1_33/IN
-+ switch-matrix-16x1_33/Q switch-matrix-16x1_33/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_33/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_22 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_22/VDD switch-matrix-16x1_22/Q switch-matrix-16x1_22/Q switch-matrix-16x1_22/IN
-+ switch-matrix-16x1_22/Q switch-matrix-16x1_22/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_22/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_11 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_11/VDD switch-matrix-16x1_11/Q switch-matrix-16x1_11/Q switch-matrix-16x1_11/IN
-+ switch-matrix-16x1_11/Q switch-matrix-16x1_11/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_11/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_5 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_5/VDD switch-matrix-16x1_5/Q switch-matrix-16x1_5/Q switch-matrix-16x1_5/IN
-+ switch-matrix-16x1_5/Q switch-matrix-16x1_5/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_5/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_4 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_4/VDD switch-matrix-16x1_4/Q switch-matrix-16x1_4/Q switch-matrix-16x1_4/IN
-+ switch-matrix-16x1_4/Q switch-matrix-16x1_4/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_4/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_67 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_67/VDD switch-matrix-16x1_67/Q switch-matrix-16x1_67/Q switch-matrix-16x1_67/IN
-+ switch-matrix-16x1_67/Q switch-matrix-16x1_67/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_67/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_56 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_56/VDD switch-matrix-16x1_56/Q switch-matrix-16x1_56/Q switch-matrix-16x1_56/IN
-+ switch-matrix-16x1_56/Q switch-matrix-16x1_56/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_56/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_45 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_45/VDD switch-matrix-16x1_45/Q switch-matrix-16x1_45/Q switch-matrix-16x1_45/IN
-+ switch-matrix-16x1_45/Q switch-matrix-16x1_45/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_45/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_34 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_34/VDD switch-matrix-16x1_34/Q switch-matrix-16x1_34/Q switch-matrix-16x1_34/IN
-+ switch-matrix-16x1_34/Q switch-matrix-16x1_34/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_34/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_23 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_23/VDD switch-matrix-16x1_23/Q switch-matrix-16x1_23/Q switch-matrix-16x1_23/IN
-+ switch-matrix-16x1_23/Q switch-matrix-16x1_23/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_23/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_12 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_12/VDD switch-matrix-16x1_12/Q switch-matrix-16x1_12/Q switch-matrix-16x1_12/IN
-+ switch-matrix-16x1_12/Q switch-matrix-16x1_12/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_12/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_6 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_6/VDD switch-matrix-16x1_6/Q switch-matrix-16x1_6/Q switch-matrix-16x1_6/IN
-+ switch-matrix-16x1_6/Q switch-matrix-16x1_6/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_6/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_68 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_68/VDD switch-matrix-16x1_68/Q switch-matrix-16x1_68/Q switch-matrix-16x1_68/IN
-+ switch-matrix-16x1_68/Q switch-matrix-16x1_68/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_68/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_57 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_57/VDD switch-matrix-16x1_57/Q switch-matrix-16x1_57/Q switch-matrix-16x1_57/IN
-+ switch-matrix-16x1_57/Q switch-matrix-16x1_57/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_57/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_46 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_46/VDD switch-matrix-16x1_46/Q switch-matrix-16x1_46/Q switch-matrix-16x1_46/IN
-+ switch-matrix-16x1_46/Q switch-matrix-16x1_46/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_46/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_35 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_35/VDD switch-matrix-16x1_35/Q switch-matrix-16x1_35/Q switch-matrix-16x1_35/IN
-+ switch-matrix-16x1_35/Q switch-matrix-16x1_35/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_35/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_24 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_24/VDD switch-matrix-16x1_24/Q switch-matrix-16x1_24/Q switch-matrix-16x1_24/IN
-+ switch-matrix-16x1_24/Q switch-matrix-16x1_24/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_24/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_13 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_13/VDD switch-matrix-16x1_13/Q switch-matrix-16x1_13/Q switch-matrix-16x1_13/IN
-+ switch-matrix-16x1_13/Q switch-matrix-16x1_13/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_13/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_7 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_7/VDD switch-matrix-16x1_7/Q switch-matrix-16x1_7/Q switch-matrix-16x1_7/IN
-+ switch-matrix-16x1_7/Q switch-matrix-16x1_7/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_7/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_69 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_69/VDD switch-matrix-16x1_69/Q switch-matrix-16x1_69/Q switch-matrix-16x1_69/IN
-+ switch-matrix-16x1_69/Q switch-matrix-16x1_69/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_69/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_58 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_58/VDD switch-matrix-16x1_58/Q switch-matrix-16x1_58/Q switch-matrix-16x1_58/IN
-+ switch-matrix-16x1_58/Q switch-matrix-16x1_58/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_58/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_59 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_59/VDD switch-matrix-16x1_59/Q switch-matrix-16x1_59/Q switch-matrix-16x1_59/IN
-+ switch-matrix-16x1_59/Q switch-matrix-16x1_59/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_59/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_48 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_48/VDD switch-matrix-16x1_48/Q switch-matrix-16x1_48/Q switch-matrix-16x1_48/IN
-+ switch-matrix-16x1_48/Q switch-matrix-16x1_48/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_48/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_47 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_47/VDD switch-matrix-16x1_47/Q switch-matrix-16x1_47/Q switch-matrix-16x1_47/IN
-+ switch-matrix-16x1_47/Q switch-matrix-16x1_47/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_47/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_36 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_36/VDD switch-matrix-16x1_36/Q switch-matrix-16x1_36/Q switch-matrix-16x1_36/IN
-+ switch-matrix-16x1_36/Q switch-matrix-16x1_36/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_36/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_37 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_37/VDD switch-matrix-16x1_37/Q switch-matrix-16x1_37/Q switch-matrix-16x1_37/IN
-+ switch-matrix-16x1_37/Q switch-matrix-16x1_37/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_37/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_25 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_25/VDD switch-matrix-16x1_25/Q switch-matrix-16x1_25/Q switch-matrix-16x1_25/IN
-+ switch-matrix-16x1_25/Q switch-matrix-16x1_25/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_25/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_26 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_26/VDD switch-matrix-16x1_26/Q switch-matrix-16x1_26/Q switch-matrix-16x1_26/IN
-+ switch-matrix-16x1_26/Q switch-matrix-16x1_26/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_26/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_15 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_15/VDD switch-matrix-16x1_15/Q switch-matrix-16x1_15/Q switch-matrix-16x1_15/IN
-+ switch-matrix-16x1_15/Q switch-matrix-16x1_15/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_15/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_14 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_14/VDD switch-matrix-16x1_14/Q switch-matrix-16x1_14/Q switch-matrix-16x1_14/IN
-+ switch-matrix-16x1_14/Q switch-matrix-16x1_14/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_14/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_8 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_8/VDD switch-matrix-16x1_8/Q switch-matrix-16x1_8/Q switch-matrix-16x1_8/IN
-+ switch-matrix-16x1_8/Q switch-matrix-16x1_8/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_8/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_49 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_49/VDD switch-matrix-16x1_49/Q switch-matrix-16x1_49/Q switch-matrix-16x1_49/IN
-+ switch-matrix-16x1_49/Q switch-matrix-16x1_49/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_49/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_38 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_38/VDD switch-matrix-16x1_38/Q switch-matrix-16x1_38/Q switch-matrix-16x1_38/IN
-+ switch-matrix-16x1_38/Q switch-matrix-16x1_38/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_38/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_27 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_27/VDD switch-matrix-16x1_27/Q switch-matrix-16x1_27/Q switch-matrix-16x1_27/IN
-+ switch-matrix-16x1_27/Q switch-matrix-16x1_27/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_27/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_16 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_16/VDD switch-matrix-16x1_16/Q switch-matrix-16x1_16/Q switch-matrix-16x1_16/IN
-+ switch-matrix-16x1_16/Q switch-matrix-16x1_16/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_16/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_9 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_9/VDD switch-matrix-16x1_9/Q switch-matrix-16x1_9/Q switch-matrix-16x1_9/IN
-+ switch-matrix-16x1_9/Q switch-matrix-16x1_9/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_9/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_39 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_39/VDD switch-matrix-16x1_39/Q switch-matrix-16x1_39/Q switch-matrix-16x1_39/IN
-+ switch-matrix-16x1_39/Q switch-matrix-16x1_39/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_39/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_28 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_28/VDD switch-matrix-16x1_28/Q switch-matrix-16x1_28/Q switch-matrix-16x1_28/IN
-+ switch-matrix-16x1_28/Q switch-matrix-16x1_28/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_28/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_17 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_17/VDD switch-matrix-16x1_17/Q switch-matrix-16x1_17/Q switch-matrix-16x1_17/IN
-+ switch-matrix-16x1_17/Q switch-matrix-16x1_17/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_17/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_29 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_29/VDD switch-matrix-16x1_29/Q switch-matrix-16x1_29/Q switch-matrix-16x1_29/IN
-+ switch-matrix-16x1_29/Q switch-matrix-16x1_29/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_29/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_18 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_18/VDD switch-matrix-16x1_18/Q switch-matrix-16x1_18/Q switch-matrix-16x1_18/IN
-+ switch-matrix-16x1_18/Q switch-matrix-16x1_18/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_18/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
-Xswitch-matrix-16x1_19 switch-matrix-16x1_9/OUT[4] switch-matrix-16x1_9/OUT[9] switch-matrix-16x1_9/OUT[10]
-+ switch-matrix-16x1_19/VDD switch-matrix-16x1_19/Q switch-matrix-16x1_19/Q switch-matrix-16x1_19/IN
-+ switch-matrix-16x1_19/Q switch-matrix-16x1_19/Q switch-matrix-16x1_9/OUT[6] switch-matrix-16x1_9/OUT[7]
-+ switch-matrix-16x1_9/OUT[0] switch-matrix-16x1_9/OUT[12] switch-matrix-16x1_9/OUT[5]
-+ switch-matrix-16x1_19/Q switch-matrix-16x1_9/OUT[8] switch-matrix-16x1_9/OUT[15]
-+ switch-matrix-16x1_9/OUT[1] switch-matrix-16x1_9/OUT[11] switch-matrix-16x1_9/OUT[2]
-+ switch-matrix-16x1_9/OUT[14] VSUBS switch-matrix-16x1_9/OUT[13] switch-matrix-16x1_9/OUT[3]
-+ switch-matrix-16x1
+* expanding   symbol:  core_switch-matrix/trans-gate/trans-gate.sym # of pins=6
+** sym_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/trans-gate/trans-gate.sym
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/trans-gate/trans-gate.sch
+.subckt trans-gate VDD VSS SWN SWP IN OUT
+*.PININFO VDD:B VSS:B IN:B OUT:B SWN:I SWP:I
+M1 IN SWN OUT VSS nfet_06v0 L=0.70u W=8u nf=1 m=3
+M2 IN SWP OUT VDD pfet_06v0 L=0.55u W=8u nf=1 m=9
 .ends
 

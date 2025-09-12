@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1757538261
+timestamp 1757698945
 << metal1 >>
 rect -1590 6610 6980 6630
 rect -1590 6220 7000 6610
@@ -577,51 +577,51 @@ rect -130 1200 3810 1370
 rect -130 1030 -100 1200
 rect -300 1010 -100 1030
 rect 3600 600 3810 1200
-use cap_mim_2p0fF_ZHL43H  cap_mim_2p0fF_ZHL43H_0
+use cap_mim_2p0fF_ZHL43H__0  cap_mim_2p0fF_ZHL43H_0
 timestamp 1757537736
 transform 1 0 4150 0 1 1620
 box -740 -620 740 620
-use nfet_06v0_RPRB9G  M1
+use nfet_06v0_RPRB9G__0  M1
 timestamp 1757537736
 transform 1 0 1674 0 1 276
 box -464 -656 464 656
-use nfet_06v0_RPRB9G  M2
+use nfet_06v0_RPRB9G__0  M2
 timestamp 1757537736
 transform 1 0 2634 0 1 276
 box -464 -656 464 656
-use pfet_06v0_CJMVWK  M3
+use pfet_06v0_CJMVWK__0  M3
 timestamp 1757537736
 transform 1 0 2714 0 1 3466
 box -464 -1056 464 1056
-use nfet_06v0_RPRB9L  M4
+use nfet_06v0_RPRB9L__0  M4
 timestamp 1757537736
 transform 1 0 3664 0 1 76
 box -464 -456 464 456
-use pfet_06v0_CJMVWK  M5
+use pfet_06v0_CJMVWK__0  M5
 timestamp 1757537736
 transform 1 0 1664 0 1 3456
 box -464 -1056 464 1056
-use nfet_06v0_RPRB9L  M6
+use nfet_06v0_RPRB9L__0  M6
 timestamp 1757537736
 transform 1 0 4664 0 1 76
 box -464 -456 464 456
-use pfet_06v0_EQGVWK  M7
+use pfet_06v0_EQGVWK__0  M7
 timestamp 1757537736
 transform 1 0 3874 0 1 4266
 box -464 -1856 464 1856
-use pfet_06v0_JMMVWK  M8
+use pfet_06v0_JMMVWK__0  M8
 timestamp 1757537736
 transform 1 0 -736 0 1 2856
 box -464 -456 464 456
-use pfet_06v0_BDMVWK  M9
+use pfet_06v0_BDMVWK__0  M9
 timestamp 1757537736
 transform 1 0 374 0 1 2766
 box -464 -356 464 356
-use nfet_06v0_JLRB92  M10
+use nfet_06v0_JLRB92__0  M10
 timestamp 1757537736
 transform 1 0 344 0 1 146
 box -464 -356 464 356
-use nfet_06v0_RPRB9L  M11
+use nfet_06v0_RPRB9L__0  M11
 timestamp 1757537736
 transform 1 0 -736 0 1 226
 box -464 -456 464 456
@@ -629,7 +629,7 @@ use cap_mim_1f0fF  XC1
 timestamp 0
 transform 1 0 5892 0 1 -2884
 box 0 0 1 1
-use ppolyf_u_1k_5LKHFB  XR1
+use ppolyf_u_1k_5LKHFB__0  XR1
 timestamp 1757537736
 transform 0 1 5858 -1 0 1636
 box -736 -858 736 858

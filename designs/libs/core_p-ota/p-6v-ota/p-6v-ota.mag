@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1757370035
+timestamp 1757698945
 << metal1 >>
 rect 730 5000 1030 5300
 rect 1910 5000 2210 5300
@@ -614,7 +614,7 @@ use nfet_06v0_RPRB9L  M22
 timestamp 1757370035
 transform 1 0 3324 0 1 -1554
 box -464 -456 464 456
-use cap_mim_1f0fF  XC2
+use cap_mim_1f0fF  XC2 core_n-ota/n-ota-6v
 timestamp 0
 transform 1 0 9332 0 1 -3156
 box 0 0 1 1

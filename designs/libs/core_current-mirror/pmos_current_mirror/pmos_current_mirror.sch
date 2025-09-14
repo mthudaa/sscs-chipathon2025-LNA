@@ -19,7 +19,24 @@ N 600 420 600 460 {lab=I4}
 N 860 110 860 160 {lab=VDD}
 N 860 190 950 190 {lab=VDD}
 N 860 220 860 260 {lab=I5}
-C {libs/core_current-mirror/pbias-gen/pbias-gen.sym} 450 0 0 0 {name=x1}
+C {/foss/designs/libs/core_current-mirror/pbias-gen/pbias-gen.sym} 450 0 0 0 {name=x1v \{xschem version=3.4.7 file_version=1.2\}
+K \{type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+\}
+T \{@symname\} -58.5 -6 0 0 0.3 0.3 \{\}
+T \{@name\} 135 -42 0 0 0.2 0.2 \{\}
+P 4 5 130 -30 -130 -30 -130 30 130 30 130 -30 \{\}
+B 5 147.5 -22.5 152.5 -17.5 \{name=VDD dir=inout\}
+L 7 130 -20 150 -20 \{\}
+T \{VDD\} 125 -24 0 1 0.2 0.2 \{\}
+B 5 147.5 -2.5 152.5 2.5 \{name=VSS dir=inout\}
+L 7 130 0 150 0 \{\}
+T \{VSS\} 125 -4 0 1 0.2 0.2 \{\}
+B 5 147.5 17.5 152.5 22.5 \{name=VBIAS dir=inout\}
+L 7 130 20 150 20 \{\}
+T \{VBIAS\} 125 16 0 1 0.2 0.2 \{\}
+}
 C {symbols/pfet_03v3.sym} 310 190 0 0 {name=M1
 L=2u
 W=6u

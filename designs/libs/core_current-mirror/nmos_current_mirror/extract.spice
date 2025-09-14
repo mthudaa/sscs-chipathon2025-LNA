@@ -1,0 +1,12 @@
+* SPICE3 file created from extract.ext - technology: gf180mcuD
+
+.option scale=5n
+
+X0 VBIAS VBIAS VSS VSUBS nfet_03v3 ad=50.4n pd=0.92m as=50.4n ps=0.92m w=280 l=300
+X1 I5 VBIAS VSS VSUBS nfet_03v3 ad=56n pd=0.96m as=56n ps=0.96m w=280 l=4800
+X2 I1 VBIAS VSS VSUBS nfet_03v3 ad=50.4n pd=0.92m as=50.4n ps=0.92m w=280 l=300
+X3 I4 VBIAS VSS VSUBS nfet_03v3 ad=50.4n pd=0.92m as=50.4n ps=0.92m w=280 l=2380
+X4 I3 VBIAS VSS VSUBS nfet_03v3 ad=56n pd=0.96m as=56n ps=0.96m w=280 l=1200
+X5 I2 VBIAS VSS VSUBS nfet_03v3 ad=50.4n pd=0.92m as=50.4n ps=0.92m w=280 l=600
+C0 VSS VSUBS 3.84404f **FLOATING
+C1 VBIAS VSUBS 19.6142f **FLOATING

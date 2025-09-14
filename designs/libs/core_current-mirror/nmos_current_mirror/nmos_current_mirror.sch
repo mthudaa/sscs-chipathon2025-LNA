@@ -19,7 +19,7 @@ N 280 220 280 270 {lab=VSS}
 N -290 290 -190 290 {lab=VSS}
 N -290 210 -290 260 {lab=I3}
 N -290 320 -290 370 {lab=VSS}
-C {libs/core_current-mirror/nbias-gen/nbias-gen.sym} -160 -130 0 0 {name=x1}
+C {/foss/designs/libs/core_current-mirror/nbias-gen/nbias-gen.sym} -160 -130 0 0 {name=x1}
 C {iopin.sym} -530 130 0 0 {name=p1 lab=VDD}
 C {iopin.sym} -530 150 0 0 {name=p2 lab=VSS}
 C {iopin.sym} -530 170 0 0 {name=p3 lab=VBIAS}

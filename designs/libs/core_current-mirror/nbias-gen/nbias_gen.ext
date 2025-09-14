@@ -1,0 +1,166 @@
+timestamp 1757557216
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_7 1 0 618 0 1 -136
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_6 1 0 1358 0 1 -136
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_5 1 0 2058 0 1 -136
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_4 1 0 2768 0 1 -146
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_3 1 0 2748 0 1 2604
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_2 1 0 2058 0 1 2604
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_1 1 0 1358 0 1 2604
+use ppolyf_s_YY86ER ppolyf_s_YY86ER_0 1 0 678 0 1 2604
+use nfet_03v3_3RQB8F nfet_03v3_3RQB8F_0 1 0 710 0 1 -1950
+node "VSS" 0 219.478 940 -2080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52000 920 0 0 0 0 0 0 0 0
+node "m1_1960_n1100#" 2 579.581 1960 -1100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 1160 80000 2040 0 0 0 0 0 0
+node "m1_540_n1120#" 2 512.521 540 -1120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 1080 83200 2120 0 0 0 0 0 0
+node "m1_1260_760#" 2 474.721 1260 760 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 1160 80000 2040 0 0 0 0 0 0
+node "m1_420_n1820#" 7 1724.29 420 -1820 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50800 1720 273600 8360 0 0 0 0 0 0
+node "VDD" 0 125.553 560 1620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19200 640 0 0 0 0 0 0 0 0
+node "m1_2660_1620#" 2 625.99 2660 1620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 1040 106400 2640 0 0 0 0 0 0
+node "m1_1260_1620#" 2 482.193 1260 1620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 1160 80000 2040 0 0 0 0 0 0
+node "m1_1950_3490#" 2 567.969 1950 3490 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29700 1080 78900 2040 0 0 0 0 0 0
+node "m1_570_3480#" 2 580.3 570 3480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39000 1200 72600 2020 0 0 0 0 0 0
+node "w_2720_1580#" 4000 4.8 2720 1580 nw 1600 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_1260_1620#" "VDD" 8.60015
+cap "VDD" "m1_420_n1820#" 8.88738
+cap "w_2720_1580#" "m1_2660_1620#" 1.28538
+cap "VSS" "m1_540_n1120#" 2.38204
+cap "m1_570_3480#" "m1_1950_3490#" 15.3853
+cap "m1_1260_1620#" "m1_1260_760#" 72.1121
+cap "m1_1260_760#" "m1_420_n1820#" 13.8354
+cap "m1_1960_n1100#" "m1_540_n1120#" 15.3539
+cap "m1_420_n1820#" "m1_540_n1120#" 64.594
+cap "m1_1260_1620#" "m1_2660_1620#" 15.9746
+cap "m1_2660_1620#" "m1_1260_760#" 17.0861
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "nfet_03v3_3RQB8F_0/a_n288_n150#" 3.66336
+cap "ppolyf_s_YY86ER_6/a_n100_n972#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 3.53349
+cap "nfet_03v3_3RQB8F_0/a_n426_n336#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 58.7413
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "nfet_03v3_3RQB8F_0/a_n426_n336#" 4.8231
+cap "ppolyf_s_YY86ER_6/a_n100_n972#" "nfet_03v3_3RQB8F_0/a_n288_n150#" -9.00461
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 53.4786
+cap "ppolyf_s_YY86ER_6/a_n100_n972#" "nfet_03v3_3RQB8F_0/a_n426_n336#" 5.81726
+cap "ppolyf_s_YY86ER_6/a_n100_n972#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 165.19
+cap "ppolyf_s_YY86ER_6/a_n100_n972#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 162.134
+cap "nfet_03v3_3RQB8F_0/a_n426_n336#" "nfet_03v3_3RQB8F_0/a_n288_n150#" 217.168
+cap "ppolyf_s_YY86ER_6/a_n100_n972#" "ppolyf_s_YY86ER_4/a_n100_n972#" -2.69326
+cap "nfet_03v3_3RQB8F_0/a_n288_n150#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 62.8264
+cap "ppolyf_s_YY86ER_4/a_n100_n972#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 3.56239
+cap "ppolyf_s_YY86ER_5/w_n278_n1124#" "ppolyf_s_YY86ER_4/w_n278_n1124#" 61.4743
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_4/w_n278_n1124#" 0.178252
+cap "ppolyf_s_YY86ER_5/w_n278_n1124#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 63.5807
+cap "ppolyf_s_YY86ER_6/a_n100_n972#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 8.09997
+cap "ppolyf_s_YY86ER_4/a_n100_n972#" "ppolyf_s_YY86ER_4/w_n278_n1124#" 153.024
+cap "ppolyf_s_YY86ER_4/a_n100_n972#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 121.494
+cap "ppolyf_s_YY86ER_4/a_n100_n972#" "ppolyf_s_YY86ER_6/a_n100_n972#" -2.48287
+cap "ppolyf_s_YY86ER_4/w_n278_n1124#" "ppolyf_s_YY86ER_4/a_n100_n972#" 11.0914
+cap "ppolyf_s_YY86ER_7/w_n278_n1124#" "nfet_03v3_3RQB8F_0/a_n288_n150#" 60.7631
+cap "ppolyf_s_YY86ER_7/w_n278_n1124#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 228.697
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "nfet_03v3_3RQB8F_0/a_n288_n150#" 16.3996
+cap "ppolyf_s_YY86ER_4/w_n278_n1124#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 260.169
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 272.677
+cap "ppolyf_s_YY86ER_5/a_n100_900#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 2.315
+cap "ppolyf_s_YY86ER_7/a_n100_900#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 173.984
+cap "ppolyf_s_YY86ER_5/a_n100_900#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 3.61939
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 128.003
+cap "ppolyf_s_YY86ER_5/a_n100_900#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 3.16444
+cap "ppolyf_s_YY86ER_3/a_n100_n972#" "ppolyf_s_YY86ER_1/a_n100_n972#" -0.340437
+cap "ppolyf_s_YY86ER_5/a_n100_900#" "ppolyf_s_YY86ER_1/a_n100_n972#" -7.69221
+cap "ppolyf_s_YY86ER_5/a_n100_900#" "ppolyf_s_YY86ER_7/a_n100_900#" -4.91649
+cap "ppolyf_s_YY86ER_0/a_n100_n972#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 1.59148
+cap "ppolyf_s_YY86ER_0/a_n100_n972#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 1.43481
+cap "ppolyf_s_YY86ER_7/w_n278_n1124#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 37.4984
+cap "ppolyf_s_YY86ER_1/w_n278_n1124#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 83.132
+cap "ppolyf_s_YY86ER_0/a_n100_n972#" "ppolyf_s_YY86ER_7/a_n100_900#" -6.34497
+cap "ppolyf_s_YY86ER_0/a_n100_n972#" "ppolyf_s_YY86ER_1/a_n100_n972#" -5.3584
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_7/w_n278_n1124#" 77.6551
+cap "ppolyf_s_YY86ER_7/a_n100_900#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 9.5697
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 4.5463
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 29.2905
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_1/a_n100_n972#" 2.97106
+cap "ppolyf_s_YY86ER_7/a_n100_900#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 6.25196
+cap "ppolyf_s_YY86ER_4/w_n278_n1124#" "ppolyf_s_YY86ER_5/a_n100_900#" 0.165197
+cap "ppolyf_s_YY86ER_5/a_n100_900#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 88.0538
+cap "ppolyf_s_YY86ER_0/a_n100_n972#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 166.188
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_2/w_n278_n1124#" 1.74819
+cap "ppolyf_s_YY86ER_7/a_n100_900#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 0.122619
+cap "ppolyf_s_YY86ER_3/a_n100_n972#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 9.9563
+cap "ppolyf_s_YY86ER_3/w_n278_n1124#" "ppolyf_s_YY86ER_1/a_n100_n972#" 3.66229
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 62.0484
+cap "ppolyf_s_YY86ER_3/w_n278_n1124#" "ppolyf_s_YY86ER_4/w_n278_n1124#" 28.8844
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_5/a_n100_900#" 57.5248
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_3/a_n100_n972#" -5.37608
+cap "ppolyf_s_YY86ER_7/a_n100_900#" "ppolyf_s_YY86ER_5/a_n100_900#" -0.329366
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 4.80917
+cap "ppolyf_s_YY86ER_3/w_n278_n1124#" "ppolyf_s_YY86ER_2/w_n278_n1124#" 79.0043
+cap "ppolyf_s_YY86ER_7/w_n278_n1124#" "ppolyf_s_YY86ER_5/a_n100_900#" 0.12052
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 75.2669
+cap "ppolyf_s_YY86ER_3/a_n100_n972#" "ppolyf_s_YY86ER_4/w_n278_n1124#" 144.769
+cap "ppolyf_s_YY86ER_4/w_n278_n1124#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 87.1195
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 38.8926
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_3/a_n100_n972#" 9.64022
+cap "ppolyf_s_YY86ER_1/w_n278_n1124#" "ppolyf_s_YY86ER_5/a_n100_900#" 1.42952
+cap "ppolyf_s_YY86ER_3/a_n100_n972#" "ppolyf_s_YY86ER_5/a_n100_900#" -6.36021
+cap "ppolyf_s_YY86ER_5/w_n278_n1124#" "ppolyf_s_YY86ER_5/a_n100_900#" 162.338
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_2/w_n278_n1124#" 168.569
+cap "ppolyf_s_YY86ER_1/w_n278_n1124#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 9.60211
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_5/a_n100_900#" -7.64513
+cap "ppolyf_s_YY86ER_6/w_n278_n1124#" "ppolyf_s_YY86ER_5/w_n278_n1124#" 92.4066
+cap "ppolyf_s_YY86ER_3/a_n100_n972#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 1.83036
+cap "ppolyf_s_YY86ER_4/w_n278_n1124#" "ppolyf_s_YY86ER_5/a_n100_900#" 3.50424
+cap "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_6/w_n278_n1124#" 1.52567
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_5/a_n100_900#" 4.56111
+cap "ppolyf_s_YY86ER_3/w_n278_n1124#" "ppolyf_s_YY86ER_3/a_n100_n972#" 160.684
+cap "ppolyf_s_YY86ER_3/a_n100_n972#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 1.87947
+cap "ppolyf_s_YY86ER_3/w_n278_n1124#" "ppolyf_s_YY86ER_4/w_n278_n1124#" 9.55986
+cap "ppolyf_s_YY86ER_4/w_n278_n1124#" "ppolyf_s_YY86ER_3/a_n100_n972#" 10.6161
+cap "ppolyf_s_YY86ER_3/w_n278_n1124#" "ppolyf_s_YY86ER_3/a_n100_n972#" 13.2911
+cap "ppolyf_s_YY86ER_1/w_n278_n1124#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 301.685
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 272.677
+cap "ppolyf_s_YY86ER_3/w_n278_n1124#" "ppolyf_s_YY86ER_2/w_n278_n1124#" 286.448
+cap "ppolyf_s_YY86ER_0/a_n100_900#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 178.02
+cap "ppolyf_s_YY86ER_1/w_n278_n1124#" "ppolyf_s_YY86ER_0/a_n100_900#" 140.49
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_0/a_n100_900#" 3.34229
+cap "ppolyf_s_YY86ER_0/a_n100_900#" "ppolyf_s_YY86ER_2/a_n100_900#" -2.9601
+cap "ppolyf_s_YY86ER_1/w_n278_n1124#" "ppolyf_s_YY86ER_0/w_n278_n1124#" 89.1657
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_3/w_n278_n1124#" 84.7333
+cap "ppolyf_s_YY86ER_2/w_n278_n1124#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 80.7204
+cap "ppolyf_s_YY86ER_1/w_n278_n1124#" "ppolyf_s_YY86ER_0/a_n100_900#" 10.5404
+cap "ppolyf_s_YY86ER_2/a_n100_900#" "ppolyf_s_YY86ER_2/w_n278_n1124#" 168.892
+cap "ppolyf_s_YY86ER_2/a_n100_900#" "ppolyf_s_YY86ER_0/a_n100_900#" -2.97706
+cap "ppolyf_s_YY86ER_2/a_n100_900#" "ppolyf_s_YY86ER_3/w_n278_n1124#" 118.538
+cap "ppolyf_s_YY86ER_2/a_n100_900#" "ppolyf_s_YY86ER_1/w_n278_n1124#" 3.65961
+cap "ppolyf_s_YY86ER_2/a_n100_900#" "ppolyf_s_YY86ER_3/w_n278_n1124#" 4.32768
+merge "ppolyf_s_YY86ER_4/a_n100_n972#" "ppolyf_s_YY86ER_5/a_n100_n972#" -332.739 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17756 -956 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_5/a_n100_n972#" "m1_1960_n1100#"
+merge "ppolyf_s_YY86ER_0/VSUBS" "ppolyf_s_YY86ER_1/VSUBS" -281.49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23660 -1222 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_1/VSUBS" "ppolyf_s_YY86ER_2/VSUBS"
+merge "ppolyf_s_YY86ER_2/VSUBS" "ppolyf_s_YY86ER_3/VSUBS"
+merge "ppolyf_s_YY86ER_3/VSUBS" "nfet_03v3_3RQB8F_0/a_n426_n336#"
+merge "nfet_03v3_3RQB8F_0/a_n426_n336#" "nfet_03v3_3RQB8F_0/a_200_n150#"
+merge "nfet_03v3_3RQB8F_0/a_200_n150#" "VSS"
+merge "VSS" "ppolyf_s_YY86ER_4/VSUBS"
+merge "ppolyf_s_YY86ER_4/VSUBS" "ppolyf_s_YY86ER_5/VSUBS"
+merge "ppolyf_s_YY86ER_5/VSUBS" "ppolyf_s_YY86ER_6/VSUBS"
+merge "ppolyf_s_YY86ER_6/VSUBS" "ppolyf_s_YY86ER_7/VSUBS"
+merge "ppolyf_s_YY86ER_7/VSUBS" "VSUBS"
+merge "ppolyf_s_YY86ER_5/a_n100_900#" "ppolyf_s_YY86ER_6/a_n100_900#" -324.701 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18032 -968 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_6/a_n100_900#" "m1_1260_760#"
+merge "ppolyf_s_YY86ER_7/a_n100_900#" "nfet_03v3_3RQB8F_0/a_n288_n150#" -609.092 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26772 -1440 0 0 0 0 0 0 0 0
+merge "nfet_03v3_3RQB8F_0/a_n288_n150#" "nfet_03v3_3RQB8F_0/a_n200_n242#"
+merge "nfet_03v3_3RQB8F_0/a_n200_n242#" "m1_420_n1820#"
+merge "ppolyf_s_YY86ER_3/w_n278_n1124#" "w_2720_1580#" -270.195 -1600 -200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_2/a_n100_900#" "ppolyf_s_YY86ER_3/a_n100_900#" -318.898 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16756 -930 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_3/a_n100_900#" "m1_1950_3490#"
+merge "ppolyf_s_YY86ER_0/a_n100_n972#" "VDD" -135.215 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9016 -484 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_3/a_n100_n972#" "ppolyf_s_YY86ER_4/a_n100_900#" -295.725 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14720 -824 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_4/a_n100_900#" "m1_2660_1620#"
+merge "ppolyf_s_YY86ER_6/a_n100_n972#" "ppolyf_s_YY86ER_7/a_n100_n972#" -319.29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16376 -896 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_7/a_n100_n972#" "m1_540_n1120#"
+merge "ppolyf_s_YY86ER_0/a_n100_900#" "ppolyf_s_YY86ER_1/a_n100_900#" -346.198 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18032 -968 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_1/a_n100_900#" "m1_570_3480#"
+merge "ppolyf_s_YY86ER_1/a_n100_n972#" "ppolyf_s_YY86ER_2/a_n100_n972#" -333.629 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18032 -968 0 0 0 0 0 0 0 0
+merge "ppolyf_s_YY86ER_2/a_n100_n972#" "m1_1260_1620#"

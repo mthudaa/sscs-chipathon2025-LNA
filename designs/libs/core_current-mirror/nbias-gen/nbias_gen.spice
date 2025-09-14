@@ -1,0 +1,22 @@
+* NGSPICE file created from nbias_gen.ext - technology: gf180mcuD
+
+.subckt ppolyf_s_YY86ER a_n100_900# w_n278_n1124# a_n100_n972#
+X0 a_n100_900# a_n100_n972# w_n278_n1124# ppolyf_s r_width=1u r_length=9u
+.ends
+
+.subckt nfet_03v3_3RQB8F a_n426_n336# a_n288_n150# a_200_n150# a_n200_n242#
+X0 a_200_n150# a_n200_n242# a_n288_n150# a_n426_n336# nfet_03v3 ad=0.66p pd=3.88u as=0.66p ps=3.88u w=1.5u l=2u
+.ends
+
+.subckt nbias_gen
+Xppolyf_s_YY86ER_0 m1_570_3480# ppolyf_s_YY86ER_0/w_n278_n1124# VDD ppolyf_s_YY86ER
+Xppolyf_s_YY86ER_1 m1_570_3480# ppolyf_s_YY86ER_1/w_n278_n1124# m1_1260_1620# ppolyf_s_YY86ER
+Xppolyf_s_YY86ER_2 m1_1950_3490# ppolyf_s_YY86ER_2/w_n278_n1124# m1_1260_1620# ppolyf_s_YY86ER
+Xppolyf_s_YY86ER_3 m1_1950_3490# w_2720_1580# m1_2660_1620# ppolyf_s_YY86ER
+Xppolyf_s_YY86ER_4 m1_2660_1620# ppolyf_s_YY86ER_4/w_n278_n1124# m1_1960_n1100# ppolyf_s_YY86ER
+Xppolyf_s_YY86ER_5 m1_1260_760# ppolyf_s_YY86ER_5/w_n278_n1124# m1_1960_n1100# ppolyf_s_YY86ER
+Xppolyf_s_YY86ER_6 m1_1260_760# ppolyf_s_YY86ER_6/w_n278_n1124# m1_540_n1120# ppolyf_s_YY86ER
+Xppolyf_s_YY86ER_7 m1_420_n1820# ppolyf_s_YY86ER_7/w_n278_n1124# m1_540_n1120# ppolyf_s_YY86ER
+Xnfet_03v3_3RQB8F_0 VSS m1_420_n1820# VSS m1_420_n1820# nfet_03v3_3RQB8F
+.ends
+

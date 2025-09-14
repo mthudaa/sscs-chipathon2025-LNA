@@ -1,0 +1,110 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757845650
+<< nwell >>
+rect 1110 90 1148 160
+rect 2040 10 2140 370
+<< via1 >>
+rect 660 760 790 820
+rect 900 630 1220 690
+rect 1320 650 1380 860
+rect 1740 540 1810 700
+rect 430 20 490 240
+rect 860 -120 912 120
+rect 1440 90 1580 150
+rect 1220 -30 1350 22
+rect 1880 20 1950 240
+rect 2320 -120 2372 120
+rect 2540 90 2730 150
+rect 2834 -30 3037 22
+<< metal2 >>
+rect 630 1040 1580 1120
+rect 630 820 820 1040
+rect 630 760 660 820
+rect 790 760 820 820
+rect 630 750 820 760
+rect 1300 860 1390 880
+rect 880 690 1240 710
+rect 880 630 900 690
+rect 1220 630 1240 690
+rect 880 620 1240 630
+rect 1300 650 1320 860
+rect 1380 650 1390 860
+rect 1300 490 1390 650
+rect 410 370 1390 490
+rect 1490 450 1580 1040
+rect 1730 700 1820 1050
+rect 1730 540 1740 700
+rect 1810 540 1820 700
+rect 1730 520 1820 540
+rect 410 240 510 370
+rect 1490 360 1960 450
+rect 410 20 430 240
+rect 490 20 510 240
+rect 1870 240 1960 360
+rect 410 0 510 20
+rect 850 120 940 160
+rect 850 -120 860 120
+rect 912 -120 940 120
+rect 1427 150 1800 170
+rect 1427 90 1440 150
+rect 1580 90 1800 150
+rect 1427 80 1800 90
+rect 1190 22 1370 40
+rect 1190 -30 1220 22
+rect 1350 -30 1370 22
+rect 1190 -40 1370 -30
+rect 850 -150 940 -120
+rect 1710 -280 1800 80
+rect 1870 20 1880 240
+rect 1950 20 1960 240
+rect 1870 0 1960 20
+rect 2030 220 2750 310
+rect 2030 -280 2120 220
+rect 2310 120 2400 160
+rect 2310 -120 2320 120
+rect 2372 -120 2400 120
+rect 2510 150 2750 220
+rect 2510 90 2540 150
+rect 2730 90 2750 150
+rect 2510 80 2750 90
+rect 2810 22 3060 40
+rect 2810 -30 2834 22
+rect 3037 -30 3060 22
+rect 2810 -40 3060 -30
+rect 2310 -150 2400 -120
+rect 1710 -400 2120 -280
+use gf180mcu_fd_sc_mcu7t5v0__mux2_1  gf180mcu_fd_sc_mcu7t5v0__mux2_1_0 pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1749760379
+transform -1 0 1846 0 -1 1180
+box -86 -86 1542 870
+use gf180mcu_fd_sc_mcu7t5v0__mux2_1  gf180mcu_fd_sc_mcu7t5v0__mux2_1_2
+timestamp 1749760379
+transform 1 0 390 0 1 -389
+box -86 -86 1542 870
+use gf180mcu_fd_sc_mcu7t5v0__mux2_1  gf180mcu_fd_sc_mcu7t5v0__mux2_1_3
+timestamp 1749760379
+transform 1 0 1846 0 1 -389
+box -86 -86 1542 870
+<< labels >>
+flabel metal2 s 2810 -40 3060 40 0 FreeSans 480 0 0 0 REG[4]
+port 2 nsew
+flabel metal2 s 2310 -150 2400 160 0 FreeSans 480 0 0 0 REG[3]
+port 3 nsew
+flabel metal2 s 1190 -40 1370 40 0 FreeSans 480 0 0 0 REG[2]
+port 4 nsew
+flabel metal2 s 850 -150 940 160 0 FreeSans 480 0 0 0 REG[1]
+port 5 nsew
+flabel metal2 s 1710 -400 2120 -280 0 FreeSans 480 0 0 0 IN[1]
+port 6 nsew
+flabel metal2 s 880 620 1240 710 0 FreeSans 480 0 0 0 IN[0]
+port 7 nsew
+flabel metal2 s 1730 520 1820 1050 0 FreeSans 480 0 0 0 LUT_OUT
+port 8 nsew
+flabel metal1 s 389 -449 3302 -329 0 FreeSans 800 0 0 0 VSS
+port 9 nsew
+flabel metal1 s 390 1120 1846 1240 0 FreeSans 800 0 0 0 VSS
+flabel metal1 s 390 335 3302 455 0 FreeSans 800 0 0 0 VDD
+port 10 nsew
+<< end >>

@@ -6,13 +6,13 @@ S {}
 E {}
 B 2 1260 -500 2060 -100 {flags=graph
 y1=0
-ypos1=0.17587271
-ypos2=2.7898082
+ypos1=0.11928164
+ypos2=4.0196288
 divy=5
 subdivy=1
 unity=1
-x1=1.3257729e-05
-x2=6.6857583e-05
+x1=3.0985578e-06
+x2=3.1065789e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -23,15 +23,22 @@ in[0]
 out4
 out3
 out2
-out1"
-color="4 5 6 7 8 9 10 4"
+out1
+clk1
+clk2
+clk1_buff
+clk2_buff
+ck"
+color="4 5 6 7 8 10 10 4 13 8 12 21"
 dataset=-1
 unitx=1
 logx=0
 logy=0
 sim_type=tran
 digital=1
-y2=3.3}
+y2=3.3
+rawfile=$netlist_dir/tb_clb.raw
+autoload=1}
 T {CLB Register
 ==============================================
 0111,[0/1] => NAND
@@ -41,7 +48,7 @@ T {CLB Register
 1001,[0/1] => XNOR
 0110,[0/1] => XOR
 
-NB : [0/1] is LSB stand for [0/1] => [Combinational(ABC)/Sequential(FF)]} 1120 -940 0 0 0.4 0.4 {}
+NB : [0/1] is LSB stand for [0/1] => [Combinational(ABC)/Sequential(FF)]} 1220 -870 0 0 0.4 0.4 {}
 T {AND} 2110 -1120 0 0 0.4 0.4 {}
 T {OR} 1640 -1120 0 0 0.4 0.4 {}
 T {NAND} 1200 -1120 0 0 0.4 0.4 {}
@@ -50,12 +57,12 @@ N 100 -800 100 -780 {lab=GND}
 N 1820 -1070 2000 -1070 {lab=#net1}
 N 1380 -1070 1520 -1070 {lab=#net2}
 N 940 -1070 1080 -1070 {lab=#net3}
-N 940 -1050 1080 -1050 {lab=#net4}
-N 940 -1030 1080 -1030 {lab=#net5}
-N 1380 -1050 1520 -1050 {lab=#net6}
-N 1380 -1030 1520 -1030 {lab=#net7}
-N 1820 -1050 2000 -1050 {lab=#net8}
-N 1820 -1030 2000 -1030 {lab=#net9}
+N 940 -1050 1080 -1050 {lab=CLK1_BUFF}
+N 940 -1030 1080 -1030 {lab=CLK2_BUFF}
+N 1380 -1050 1520 -1050 {lab=#net4}
+N 1380 -1030 1520 -1030 {lab=#net5}
+N 1820 -1050 2000 -1050 {lab=#net6}
+N 1820 -1030 2000 -1030 {lab=#net7}
 C {devices/code_shown.sym} 35 -518.75 0 0 {name=Simulation only_toplevel=false value="
 * clock
 abit [ bit_node ]  input_vector
@@ -78,6 +85,7 @@ C {devices/code_shown.sym} 32.5 -657.5 0 0 {name=Models only_toplevel=false
 format="tcleval( @value )"
 value="
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+.include /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_fpga/clb_2bit/clb_2bit_flatten.spice
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
@@ -115,16 +123,12 @@ C {lab_wire.sym} 220 -1050 0 0 {name=p44 lab=CK}
 C {lab_wire.sym} 220 -1000 0 0 {name=p45 lab=VDDd}
 C {lab_wire.sym} 220 -980 0 0 {name=p46 lab=VSSd}
 C {title.sym} 170 -50 0 0 {name=l3 author="M Taufiqul Huda"}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 790 -1020 0 0 {name=x1}
 C {lab_wire.sym} 940 -990 0 1 {name=p4 lab=IN[1:0]}
 C {lab_wire.sym} 1380 -970 0 1 {name=p12 lab=CLK}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1230 -1020 0 0 {name=x2}
 C {lab_wire.sym} 1380 -990 0 1 {name=p13 lab=IN[1:0]}
 C {lab_wire.sym} 1820 -970 0 1 {name=p14 lab=CLK}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1670 -1020 0 0 {name=x3}
 C {lab_wire.sym} 1820 -990 0 1 {name=p15 lab=IN[1:0]}
 C {lab_wire.sym} 2300 -970 0 1 {name=p18 lab=CLK}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 2150 -1020 0 0 {name=x4}
 C {lab_wire.sym} 2300 -990 0 1 {name=p25 lab=IN[1:0]}
 C {lab_wire.sym} 2300 -1070 0 1 {name=p26 lab=Q}
 C {lab_wire.sym} 640 -1010 0 0 {name=p27 lab=VDDd}
@@ -135,5 +139,9 @@ C {lab_wire.sym} 1520 -1010 0 0 {name=p35 lab=VDDd}
 C {lab_wire.sym} 1520 -990 0 0 {name=p36 lab=VSSd}
 C {lab_wire.sym} 2000 -1010 0 0 {name=p37 lab=VDDd}
 C {lab_wire.sym} 2000 -990 0 0 {name=p39 lab=VSSd}
-C {lab_wire.sym} 2300 -1050 0 1 {name=p5 lab=CLK1_BUFF}
-C {lab_wire.sym} 2300 -1030 0 1 {name=p9 lab=CLK2_BUFF}
+C {lab_wire.sym} 990 -1050 0 1 {name=p5 lab=CLK1_BUFF}
+C {lab_wire.sym} 990 -1030 0 1 {name=p9 lab=CLK2_BUFF}
+C {libs/core_fpga/clb_2bit/clb_2bit_flatten.sym} 790 -1020 0 0 {name=x6}
+C {libs/core_fpga/clb_2bit/clb_2bit_flatten.sym} 1230 -1020 0 0 {name=x1}
+C {libs/core_fpga/clb_2bit/clb_2bit_flatten.sym} 1670 -1020 0 0 {name=x2}
+C {libs/core_fpga/clb_2bit/clb_2bit_flatten.sym} 2150 -1020 0 0 {name=x3}

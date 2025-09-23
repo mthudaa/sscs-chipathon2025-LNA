@@ -1,0 +1,58 @@
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sch
+.subckt switch-matrix-16x1 Q VDD VSS IN OUT[15] OUT[14] OUT[13] OUT[12] OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4]
++ OUT[3] OUT[2] OUT[1] OUT[0] D CLK1 CLK2 RSTN
+*.PININFO VDD:B VSS:B IN:B OUT[15:0]:B D:I RSTN:I Q:O CLK1:I CLK2:I
+x1 net10 VDD VSS D CLK1 CLK2 RSTN IN OUT[15] switch-cell
+x2 net11 VDD VSS net10 CLK1 CLK2 RSTN IN OUT[14] switch-cell
+x3 net12 VDD VSS net11 CLK1 CLK2 RSTN IN OUT[13] switch-cell
+x4 net13 VDD VSS net12 CLK1 CLK2 RSTN IN OUT[12] switch-cell
+x5 net7 VDD VSS net13 CLK1 CLK2 RSTN IN OUT[11] switch-cell
+x6 net8 VDD VSS net7 CLK1 CLK2 RSTN IN OUT[10] switch-cell
+x7 net9 VDD VSS net8 CLK1 CLK2 RSTN IN OUT[9] switch-cell
+x8 net14 VDD VSS net9 CLK1 CLK2 RSTN IN OUT[8] switch-cell
+x9 net4 VDD VSS net14 CLK1 CLK2 RSTN IN OUT[7] switch-cell
+x10 net5 VDD VSS net4 CLK1 CLK2 RSTN IN OUT[6] switch-cell
+x11 net6 VDD VSS net5 CLK1 CLK2 RSTN IN OUT[5] switch-cell
+x12 net15 VDD VSS net6 CLK1 CLK2 RSTN IN OUT[4] switch-cell
+x13 net1 VDD VSS net15 CLK1 CLK2 RSTN IN OUT[3] switch-cell
+x14 net2 VDD VSS net1 CLK1 CLK2 RSTN IN OUT[2] switch-cell
+x15 net3 VDD VSS net2 CLK1 CLK2 RSTN IN OUT[1] switch-cell
+x16 Q VDD VSS net3 CLK1 CLK2 RSTN IN OUT[0] switch-cell
+.ends
+
+* expanding   symbol:  core_switch-matrix/switch-cell/switch-cell.sym # of pins=9
+** sym_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-cell/switch-cell.sym
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-cell/switch-cell.sch
+.subckt switch-cell Q VDD VSS D CLK1 CLK2 RSTN IN OUT
+*.PININFO VDD:B VSS:B CLK1:I D:I IN:B OUT:B RSTN:I Q:O CLK2:I
+x4 VDD VSS SWN SWP IN OUT trans-gate
+x1 D CLK1 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+x5 net1 CLK2 Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+x2 Q RSTN SWN VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x3 SWN SWP VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+.include /foss/designs/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
+.include /foss/designs/Chipathon2025_pads/xschem/gf180mcu_fd_io.spice
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  core_switch-matrix/trans-gate/trans-gate.sym # of pins=6
+** sym_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/trans-gate/trans-gate.sym
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/trans-gate/trans-gate.sch
+.subckt trans-gate VDD VSS SWN SWP IN OUT
+*.PININFO VDD:B VSS:B IN:B OUT:B SWN:I SWP:I
+M1 IN SWN OUT VSS nfet_06v0 L=0.70u W=8u nf=1 m=3
+M2 IN SWP OUT VDD pfet_06v0 L=0.55u W=8u nf=1 m=9
+.ends
+

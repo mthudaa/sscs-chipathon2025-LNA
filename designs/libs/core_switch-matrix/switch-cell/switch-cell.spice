@@ -1,0 +1,33 @@
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-cell/switch-cell.sch
+.subckt switch-cell Q VDD VSS D CLK1 CLK2 RSTN IN OUT
+*.PININFO VDD:B VSS:B CLK1:I D:I IN:B OUT:B RSTN:I Q:O CLK2:I
+x4 VDD VSS SWN SWP IN OUT trans-gate
+x1 D CLK1 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+x5 net1 CLK2 Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__latq_1
+x2 Q RSTN SWN VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x3 SWN SWP VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+.include /foss/designs/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
+.include /foss/designs/Chipathon2025_pads/xschem/gf180mcu_fd_io.spice
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  core_switch-matrix/trans-gate/trans-gate.sym # of pins=6
+** sym_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/trans-gate/trans-gate.sym
+** sch_path: /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/trans-gate/trans-gate.sch
+.subckt trans-gate VDD VSS SWN SWP IN OUT
+*.PININFO VDD:B VSS:B IN:B OUT:B SWN:I SWP:I
+M1 IN SWN OUT VSS nfet_06v0 L=0.70u W=8u nf=1 m=3
+M2 IN SWP OUT VDD pfet_06v0 L=0.55u W=8u nf=1 m=9
+.ends
+

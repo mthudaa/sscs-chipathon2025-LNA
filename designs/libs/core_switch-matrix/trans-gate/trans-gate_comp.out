@@ -1,0 +1,120 @@
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_05v0 are equivalent.
+
+Subcircuit summary:
+Circuit 1: nfet_06v0_QZENGQ                |Circuit 2: nfet_06v0_QZENGQ                
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (3)                              |nfet_05v0 (3)                              
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nfet_06v0_QZENGQ                |Circuit 2: nfet_06v0_QZENGQ                
+-------------------------------------------|-------------------------------------------
+VSUBS                                      |VSUBS                                      
+a_n70_n844#                                |a_n70_n844#                                
+a_n314_n844#                               |a_n314_n844#                               
+a_174_n844#                                |a_174_n844#                                
+a_n402_n800#                               |a_n402_n800#                               
+a_314_n800#                                |a_314_n800#                                
+a_n174_n800#                               |a_n174_n800#                               
+a_70_n800#                                 |a_70_n800#                                 
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_06v0_QZENGQ and nfet_06v0_QZENGQ are equivalent.
+
+Subcircuit summary:
+Circuit 1: pfet_06v0_65Z2WK                |Circuit 2: pfet_06v0_65Z2WK                
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (9)                              |pfet_05v0 (9)                              
+Number of devices: 9                       |Number of devices: 9                       
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pfet_06v0_65Z2WK                |Circuit 2: pfet_06v0_65Z2WK                
+-------------------------------------------|-------------------------------------------
+w_n1085_n930#                              |w_n1085_n930#                              
+a_n999_n800#                               |a_n999_n800#                               
+a_911_n800#                                |a_911_n800#                                
+a_n911_n844#                               |a_n911_n844#                               
+a_801_n844#                                |a_801_n844#                                
+a_587_n844#                                |a_587_n844#                                
+a_n697_n844#                               |a_n697_n844#                               
+a_373_n844#                                |a_373_n844#                                
+a_n483_n844#                               |a_n483_n844#                               
+a_n55_n844#                                |a_n55_n844#                                
+a_n269_n844#                               |a_n269_n844#                               
+a_159_n844#                                |a_159_n844#                                
+a_n801_n800#                               |a_n801_n800#                               
+a_697_n800#                                |a_697_n800#                                
+a_269_n800#                                |a_269_n800#                                
+a_n373_n800#                               |a_n373_n800#                               
+a_n159_n800#                               |a_n159_n800#                               
+a_55_n800#                                 |a_55_n800#                                 
+a_483_n800#                                |a_483_n800#                                
+a_n587_n800#                               |a_n587_n800#                               
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_06v0_65Z2WK and pfet_06v0_65Z2WK are equivalent.
+
+Subcircuit summary:
+Circuit 1: trans-gate                      |Circuit 2: trans-gate                      
+-------------------------------------------|-------------------------------------------
+nfet_06v0_QZENGQ (1)                       |nfet_06v0_QZENGQ (1)                       
+pfet_06v0_65Z2WK (1)                       |pfet_06v0_65Z2WK (1)                       
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: trans-gate                      |Circuit 2: trans-gate                      
+-------------------------------------------|-------------------------------------------
+SWP                                        |SWP                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+OUT                                        |OUT                                        
+IN                                         |IN                                         
+SWN                                        |SWN                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes trans-gate and trans-gate are equivalent.
+
+Final result: Circuits match uniquely.
+.

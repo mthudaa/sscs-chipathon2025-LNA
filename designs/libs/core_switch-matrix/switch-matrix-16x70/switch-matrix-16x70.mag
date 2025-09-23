@@ -1,0 +1,332 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757687932
+<< metal3 >>
+rect 105145 184282 105204 184341
+rect 105406 184245 105608 184447
+rect 105808 184245 106010 184447
+rect 106212 184245 106414 184447
+rect 106621 184250 106818 184447
+rect 107020 184245 107222 184447
+rect 105144 -15711 105203 -15652
+use switch-matrix-16x1  switch-matrix-16x1_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-matrix-16x1
+timestamp 1757686876
+transform -1 0 104343 0 1 -201
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_1
+timestamp 1757686876
+transform -1 0 104343 0 1 2431
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_2
+timestamp 1757686876
+transform -1 0 104343 0 1 5063
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_3
+timestamp 1757686876
+transform -1 0 104343 0 1 7695
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_4
+timestamp 1757686876
+transform -1 0 104343 0 1 10327
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_5
+timestamp 1757686876
+transform -1 0 104343 0 1 23487
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_6
+timestamp 1757686876
+transform -1 0 104343 0 1 20855
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_7
+timestamp 1757686876
+transform -1 0 104343 0 1 18223
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_8
+timestamp 1757686876
+transform -1 0 104343 0 1 15591
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_9
+timestamp 1757686876
+transform -1 0 104343 0 1 12959
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_10
+timestamp 1757686876
+transform -1 0 104343 0 1 28751
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_11
+timestamp 1757686876
+transform -1 0 104343 0 1 26119
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_12
+timestamp 1757686876
+transform -1 0 104343 0 1 31383
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_13
+timestamp 1757686876
+transform -1 0 104343 0 1 34015
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_14
+timestamp 1757686876
+transform -1 0 104343 0 1 36647
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_15
+timestamp 1757686876
+transform -1 0 104343 0 1 39279
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_16
+timestamp 1757686876
+transform -1 0 104343 0 1 41911
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_17
+timestamp 1757686876
+transform -1 0 104343 0 1 44543
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_18
+timestamp 1757686876
+transform -1 0 104343 0 1 47175
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_19
+timestamp 1757686876
+transform -1 0 104343 0 1 49807
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_20
+timestamp 1757686876
+transform -1 0 104344 0 1 65600
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_21
+timestamp 1757686876
+transform -1 0 104344 0 1 68232
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_22
+timestamp 1757686876
+transform -1 0 104344 0 1 70864
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_23
+timestamp 1757686876
+transform -1 0 104344 0 1 73496
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_24
+timestamp 1757686876
+transform -1 0 104344 0 1 76128
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_25
+timestamp 1757686876
+transform -1 0 104344 0 1 62968
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_26
+timestamp 1757686876
+transform -1 0 104344 0 1 60336
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_27
+timestamp 1757686876
+transform -1 0 104344 0 1 57704
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_28
+timestamp 1757686876
+transform -1 0 104344 0 1 55072
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_29
+timestamp 1757686876
+transform -1 0 104344 0 1 52440
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_30
+timestamp 1757686876
+transform -1 0 104344 0 1 78760
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_31
+timestamp 1757686876
+transform -1 0 104344 0 1 81392
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_32
+timestamp 1757686876
+transform -1 0 104344 0 1 84024
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_33
+timestamp 1757686876
+transform -1 0 104344 0 1 86656
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_34
+timestamp 1757686876
+transform -1 0 104344 0 1 89288
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_35
+timestamp 1757686876
+transform -1 0 104344 0 1 102448
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_36
+timestamp 1757686876
+transform -1 0 104344 0 1 99816
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_37
+timestamp 1757686876
+transform -1 0 104344 0 1 97184
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_38
+timestamp 1757686876
+transform -1 0 104344 0 1 94552
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_39
+timestamp 1757686876
+transform -1 0 104344 0 1 91920
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_40
+timestamp 1757686876
+transform -1 0 104344 0 1 128768
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_41
+timestamp 1757686876
+transform -1 0 104344 0 1 126136
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_42
+timestamp 1757686876
+transform -1 0 104344 0 1 123504
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_43
+timestamp 1757686876
+transform -1 0 104344 0 1 120872
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_44
+timestamp 1757686876
+transform -1 0 104344 0 1 118240
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_45
+timestamp 1757686876
+transform -1 0 104344 0 1 115608
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_46
+timestamp 1757686876
+transform -1 0 104344 0 1 112976
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_47
+timestamp 1757686876
+transform -1 0 104344 0 1 110344
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_48
+timestamp 1757686876
+transform -1 0 104344 0 1 107712
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_49
+timestamp 1757686876
+transform -1 0 104344 0 1 105080
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_50
+timestamp 1757686876
+transform -1 0 104344 0 1 131400
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_51
+timestamp 1757686876
+transform -1 0 104344 0 1 134032
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_52
+timestamp 1757686876
+transform -1 0 104344 0 1 136664
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_53
+timestamp 1757686876
+transform -1 0 104344 0 1 139296
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_54
+timestamp 1757686876
+transform -1 0 104344 0 1 141928
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_55
+timestamp 1757686876
+transform -1 0 104344 0 1 155088
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_56
+timestamp 1757686876
+transform -1 0 104344 0 1 152456
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_57
+timestamp 1757686876
+transform -1 0 104344 0 1 149824
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_58
+timestamp 1757686876
+transform -1 0 104344 0 1 147192
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_59
+timestamp 1757686876
+transform -1 0 104344 0 1 144560
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_60
+timestamp 1757686876
+transform -1 0 104344 0 1 181408
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_61
+timestamp 1757686876
+transform -1 0 104344 0 1 178776
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_62
+timestamp 1757686876
+transform -1 0 104344 0 1 176144
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_63
+timestamp 1757686876
+transform -1 0 104344 0 1 173512
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_64
+timestamp 1757686876
+transform -1 0 104344 0 1 170880
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_65
+timestamp 1757686876
+transform -1 0 104344 0 1 168248
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_66
+timestamp 1757686876
+transform -1 0 104344 0 1 165616
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_67
+timestamp 1757686876
+transform -1 0 104344 0 1 162984
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_68
+timestamp 1757686876
+transform -1 0 104344 0 1 160352
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_69
+timestamp 1757686876
+transform -1 0 104344 0 1 157720
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_70
+timestamp 1757686876
+transform -1 0 104343 0 1 -15996
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_71
+timestamp 1757686876
+transform -1 0 104343 0 1 -13364
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_72
+timestamp 1757686876
+transform -1 0 104343 0 1 -10732
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_73
+timestamp 1757686876
+transform -1 0 104343 0 1 -8100
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_74
+timestamp 1757686876
+transform -1 0 104343 0 1 -5468
+box -3080 201 104541 3039
+use switch-matrix-16x1  switch-matrix-16x1_75
+timestamp 1757686876
+transform -1 0 104343 0 1 -2836
+box -3080 201 104541 3039
+<< labels >>
+flabel metal3 107020 184245 107222 184447 0 FreeSans 320 0 0 0 VSS
+port 0 nsew
+flabel metal3 106621 184250 106818 184447 0 FreeSans 320 0 0 0 VDD
+port 1 nsew
+flabel metal3 106212 184245 106414 184447 0 FreeSans 320 0 0 0 RSTN
+port 2 nsew
+flabel metal3 105808 184245 106010 184447 0 FreeSans 320 0 0 0 CLK2
+port 3 nsew
+flabel metal3 105406 184245 105608 184447 0 FreeSans 320 0 0 0 CLK1
+port 4 nsew
+flabel metal3 105145 184282 105204 184341 0 FreeSans 320 0 0 0 D
+port 5 nsew
+flabel metal3 105144 -15711 105203 -15652 0 FreeSans 320 0 0 0 Q
+port 7 nsew
+<< end >>

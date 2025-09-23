@@ -1,0 +1,30 @@
+* NGSPICE file created from trans-gate.ext - technology: gf180mcuD
+
+.subckt nfet_06v0_QZENGQ a_174_n844# a_314_n800# a_70_n800# a_n314_n844# a_n402_n800#
++ a_n70_n844# a_n174_n800# VSUBS
+X0 a_70_n800# a_n70_n844# a_n174_n800# VSUBS nfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.7u
+X1 a_314_n800# a_174_n844# a_70_n800# VSUBS nfet_05v0 ad=3.52p pd=16.88u as=2.08p ps=8.52u w=8u l=0.7u
+X2 a_n174_n800# a_n314_n844# a_n402_n800# VSUBS nfet_05v0 ad=2.08p pd=8.52u as=3.52p ps=16.88u w=8u l=0.7u
+.ends
+
+.subckt pfet_06v0_65Z2WK a_911_n800# a_697_n800# a_n697_n844# a_n911_n844# a_55_n800#
++ a_801_n844# a_587_n844# a_n373_n800# a_n55_n844# a_n159_n800# a_483_n800# a_269_n800#
++ w_n1085_n930# a_n483_n844# a_n999_n800# a_n269_n844# a_n801_n800# a_373_n844# a_n587_n800#
++ a_159_n844#
+X0 a_n801_n800# a_n911_n844# a_n999_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=3.52p ps=16.88u w=8u l=0.55u
+X1 a_483_n800# a_373_n844# a_269_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.55u
+X2 a_n159_n800# a_n269_n844# a_n373_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.55u
+X3 a_697_n800# a_587_n844# a_483_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.55u
+X4 a_911_n800# a_801_n844# a_697_n800# w_n1085_n930# pfet_05v0 ad=3.52p pd=16.88u as=2.08p ps=8.52u w=8u l=0.55u
+X5 a_269_n800# a_159_n844# a_55_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.55u
+X6 a_n373_n800# a_n483_n844# a_n587_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.55u
+X7 a_n587_n800# a_n697_n844# a_n801_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.55u
+X8 a_55_n800# a_n55_n844# a_n159_n800# w_n1085_n930# pfet_05v0 ad=2.08p pd=8.52u as=2.08p ps=8.52u w=8u l=0.55u
+.ends
+
+.subckt trans-gate VDD VSS SWP SWN IN OUT
+Xnfet_06v0_QZENGQ_0 SWN OUT IN SWN IN SWN OUT VSS nfet_06v0_QZENGQ
+Xpfet_06v0_65Z2WK_0 OUT IN SWP SWP OUT SWP SWP OUT SWP IN OUT IN VDD SWP IN SWP OUT
++ SWP IN SWP pfet_06v0_65Z2WK
+.ends
+

@@ -1,0 +1,133 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757698945
+<< isosubstrate >>
+rect 0 232704 240000 240000
+rect 0 225432 247248 232704
+rect 0 210888 240000 225432
+rect 0 203616 247248 210888
+rect 0 189072 240000 203616
+rect 0 181800 247248 189072
+rect 0 167256 240000 181800
+rect 0 159984 247248 167256
+rect 0 145440 240000 159984
+rect 0 138168 247248 145440
+rect 0 123624 240000 138168
+rect 0 116352 247248 123624
+rect 0 101808 240000 116352
+rect 0 94536 247248 101808
+rect 0 79992 240000 94536
+rect 0 72720 247248 79992
+rect 0 58176 240000 72720
+rect 0 50904 247248 58176
+rect 0 36360 240000 50904
+rect 0 29088 247248 36360
+rect 0 14544 240000 29088
+rect 0 7272 247248 14544
+rect 0 0 240000 7272
+<< metal5 >>
+rect 236340 225432 247248 232704
+rect 236340 203616 247248 210888
+rect 236340 181800 247248 189072
+rect 236340 159984 247248 167256
+rect 236340 138168 247248 145440
+rect 236340 116352 247248 123624
+rect 236340 94536 247248 101808
+rect 236340 72720 247248 79992
+rect 236340 50904 247248 58176
+rect 236340 29088 247248 36360
+rect 236340 7272 247248 14544
+rect 7272 -7272 14544 3636
+rect 29088 -7272 36360 3636
+rect 50904 -7272 58176 3636
+rect 72720 -7272 79992 3636
+rect 94536 -7272 101808 3636
+rect 116352 -7272 123624 3636
+rect 138168 -7272 145440 3636
+rect 159984 -7272 167256 3636
+rect 181800 -7272 189072 3636
+rect 203616 -7272 210888 3636
+rect 225432 -7272 232704 3636
+use n-ota-6v  n-ota-6v_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_n-ota/n-ota-6v
+timestamp 1757698945
+transform 1 0 23426 0 1 210136
+box -1610 -2884 7700 6630
+use nfet-com  nfet-com_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/nfet-com
+timestamp 1757698945
+transform 1 0 22536 0 1 176456
+box -720 -1928 740 720
+use nfet-pin  nfet-pin_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/nfet-pin
+timestamp 1757698945
+transform 1 0 21884 0 1 155213
+box -68 -2501 1392 -1075
+use nfet-vss  nfet-vss_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/nfet-vss
+timestamp 1756820864
+transform 1 0 23656 0 1 132956
+box -1840 -2060 -380 -668
+use p-6v-ota  p-6v-ota_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_p-ota/p-6v-ota
+timestamp 1757698945
+transform 1 0 199154 0 1 210408
+box -2810 -3156 9333 5300
+use pfet-com  pfet-com_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/pfet-com
+timestamp 1757698945
+transform 1 0 196924 0 1 181852
+box -580 -7324 760 -1076
+use pfet-pin  pfet-pin_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/pfet-pin
+timestamp 1757698945
+transform 1 0 196412 0 1 156742
+box -68 -4030 1272 -804
+use pfet-vdd  pfet-vdd_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_single-fet/pfet-vdd
+timestamp 1756822781
+transform 1 0 196412 0 1 134892
+box -68 -3996 1272 -804
+use switch-matrix-16x70  switch-matrix-16x70_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-matrix-16x70
+timestamp 1757687932
+transform 1 0 65646 0 1 37611
+box -198 -15795 107424 184447
+<< labels >>
+flabel metal5 7272 -7272 14544 3636 0 FreeSans 9600 0 0 0 IO[0]
+port 0 nsew
+flabel metal5 29088 -7272 36360 3636 0 FreeSans 9600 0 0 0 IO[1]
+port 1 nsew
+flabel metal5 50904 -7272 58176 3636 0 FreeSans 9600 0 0 0 IO[2]
+port 2 nsew
+flabel metal5 72720 -7272 79992 3636 0 FreeSans 9600 0 0 0 IO[3]
+port 3 nsew
+flabel metal5 94536 -7272 101808 3636 0 FreeSans 9600 0 0 0 IO[4]
+port 4 nsew
+flabel metal5 116352 -7272 123624 3636 0 FreeSans 9600 0 0 0 IO[5]
+port 5 nsew
+flabel metal5 138168 -7272 145440 3636 0 FreeSans 9600 0 0 0 IO[6]
+port 6 nsew
+flabel metal5 159984 -7272 167256 3636 0 FreeSans 9600 0 0 0 IO[7]
+port 7 nsew
+flabel metal5 181800 -7272 189072 3636 0 FreeSans 9600 0 0 0 IO[8]
+port 8 nsew
+flabel metal5 203616 -7272 210888 3636 0 FreeSans 9600 0 0 0 IO[9]
+port 9 nsew
+flabel metal5 225432 -7272 232704 3636 0 FreeSans 9600 0 0 0 IO[10]
+port 10 nsew
+flabel metal5 236340 7272 247248 14544 0 FreeSans 9600 0 0 0 VSS
+port 11 nsew
+flabel metal5 236340 29088 247248 36360 0 FreeSans 9600 0 0 0 IO[11]
+port 12 nsew
+flabel metal5 236340 50904 247248 58176 0 FreeSans 9600 0 0 0 IO[12]
+port 13 nsew
+flabel metal5 236340 72720 247248 79992 0 FreeSans 9600 0 0 0 IO[13]
+port 14 nsew
+flabel metal5 236340 94536 247248 101808 0 FreeSans 9600 0 0 0 IO[14]
+port 15 nsew
+flabel metal5 236340 116352 247248 123624 0 FreeSans 9600 0 0 0 IO[15]
+port 16 nsew
+flabel metal5 236340 225432 247248 232704 0 FreeSans 9600 0 0 0 VDD
+port 18 nsew
+flabel metal5 236340 203616 247248 210888 0 FreeSans 9600 0 0 0 RSTN
+port 19 nsew
+flabel metal5 236340 181800 247248 189072 0 FreeSans 9600 0 0 0 CLK
+port 21 nsew
+flabel metal5 236340 159984 247248 167256 0 FreeSans 9600 0 0 0 DATA
+port 22 nsew
+flabel metal5 236340 138168 247248 145440 0 FreeSans 9600 0 0 0 I_BIAS
+port 25 nsew
+<< end >>

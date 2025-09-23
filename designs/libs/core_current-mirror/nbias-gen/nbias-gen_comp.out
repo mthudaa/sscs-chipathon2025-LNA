@@ -1,0 +1,37 @@
+
+Circuit 1 cell nfet_06v0 and Circuit 2 cell nfet_06v0 are black boxes.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_06v0                       |Circuit 2: nfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_06v0 and nfet_06v0 are equivalent.
+Flattening unmatched subcell nfet_06v0_7KPYRP in circuit nbias-gen (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: nbias-gen                       |Circuit 2: nbias-gen                       
+-------------------------------------------|-------------------------------------------
+nfet_06v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nbias-gen                       |Circuit 2: nbias-gen                       
+-------------------------------------------|-------------------------------------------
+IBIAS                                      |IBIAS                                      
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nbias-gen and nbias-gen are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,10 @@
+* NGSPICE file created from nbias-gen.ext - technology: gf180mcuD
+
+.subckt nfet_06v0_7KPYRP a_n200_n218# a_n288_n174# a_200_n174# a_n432_n350#
+X0 a_200_n174# a_n200_n218# a_n288_n174# a_n432_n350# nfet_06v0 ad=0.66p pd=3.88u as=0.66p ps=3.88u w=1.5u l=2u
+.ends
+
+.subckt nbias-gen IBIAS VSS
+XM1 IBIAS VSS IBIAS VSS nfet_06v0_7KPYRP
+.ends
+

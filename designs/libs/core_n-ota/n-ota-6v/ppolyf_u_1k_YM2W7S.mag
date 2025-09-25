@@ -1,0 +1,75 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1758798331
+<< error_p >>
+rect 340 130 660 156
+rect 460 10 660 36
+rect -660 -36 -460 -10
+rect -660 -156 -340 -130
+<< pwell >>
+rect -896 -732 896 732
+<< psubdiff >>
+rect -872 636 872 708
+rect -872 592 -800 636
+rect -872 -592 -859 592
+rect -813 -592 -800 592
+rect 800 592 872 636
+rect -872 -636 -800 -592
+rect 800 -592 813 592
+rect 859 -592 872 592
+rect 800 -636 872 -592
+rect -872 -708 872 -636
+<< psubdiffcont >>
+rect -859 -592 -813 592
+rect 813 -592 859 592
+<< polysilicon >>
+rect 460 483 660 496
+rect 460 437 473 483
+rect 647 437 660 483
+rect 460 374 660 437
+rect -660 23 -460 86
+rect -660 -23 -647 23
+rect -473 -23 -460 23
+rect -660 -36 -460 -23
+rect 460 23 660 36
+rect 460 -23 473 23
+rect 647 -23 660 23
+rect 460 -86 660 -23
+rect -660 -437 -460 -374
+rect -660 -483 -647 -437
+rect -473 -483 -460 -437
+rect -660 -496 -460 -483
+<< polycontact >>
+rect 473 437 647 483
+rect -647 -23 -473 23
+rect 473 -23 647 23
+rect -647 -483 -473 -437
+<< nhighres >>
+rect 460 330 660 374
+rect -660 130 660 330
+rect -660 86 -460 130
+rect 460 -130 660 -86
+rect -660 -330 660 -130
+rect -660 -374 -460 -330
+<< metal1 >>
+rect -859 649 859 695
+rect -859 592 -813 649
+rect 813 592 859 649
+rect 462 437 473 483
+rect 647 437 658 483
+rect -658 -23 -647 23
+rect -473 -23 -462 23
+rect 462 -23 473 23
+rect 647 -23 658 23
+rect -658 -483 -647 -437
+rect -473 -483 -462 -437
+rect -859 -649 -813 -592
+rect 813 -649 859 -592
+rect -859 -695 859 -649
+<< properties >>
+string FIXED_BBOX -836 -672 836 672
+string gencell ppolyf_u_1k
+string library gf180mcu
+string parameters w 1.0 l 1.000 m 2 nx 5 wmin 1.000 lmin 1.000 class resistor rho 1000 val 10.6k dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 1 glc 1 grc 1 gtc 0 gbc 0 roverlap 1 endcov 100 full_metal 1 compatible {ppolyf_u_1k ppolyf_u_1k_6p0}
+<< end >>

@@ -1,0 +1,38 @@
+* NGSPICE file created from n-ota-06v0.ext - technology: gf180mcuD
+
+.subckt ppolyf_u_1k_5LKHFB a_n712_n834# a_n500_500# a_n500_n622#
+X0 a_n500_500# a_n500_n622# a_n712_n834# ppolyf_u_1k r_width=5u r_length=5u
+.ends
+
+.subckt nfet_06v0_RPRB9G a_n432_n624# a_n288_n400# a_n200_n492# a_200_n400#
+X0 a_200_n400# a_n200_n492# a_n288_n400# a_n432_n624# nfet_06v0 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=2u
+.ends
+
+.subckt pfet_06v0_CJMVWK a_n288_n800# a_n200_n892# a_200_n800# w_n464_n1056#
+X0 a_200_n800# a_n200_n892# a_n288_n800# w_n464_n1056# pfet_06v0 ad=3.52p pd=16.88u as=3.52p ps=16.88u w=8u l=2u
+.ends
+
+.subckt nfet_06v0_RPRB9L a_n288_n200# a_n200_n292# a_200_n200# a_n432_n424#
+X0 a_200_n200# a_n200_n292# a_n288_n200# a_n432_n424# nfet_06v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=2u
+.ends
+
+.subckt pfet_06v0_EQGVWK a_200_n1600# a_n288_n1600# a_n200_n1692# w_n464_n1856#
+X0 a_200_n1600# a_n200_n1692# a_n288_n1600# w_n464_n1856# pfet_06v0 ad=7.04p pd=32.88u as=7.04p ps=32.88u w=16u l=2u
+.ends
+
+.subckt cap_mim_2p0fF_ZHL43H m4_n620_n500# m4_n740_n620#
+X0 m4_n620_n500# m4_n740_n620# cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+.ends
+
+.subckt n-ota-06v0 OUT VSS VDD VN VP IBIAS
+XXR1 OUT m1_6210_1510# m1_5190_1500# ppolyf_u_1k_5LKHFB
+XM1 OUT M1/a_n288_n400# m1_1570_570# m1_1820_n110# nfet_06v0_RPRB9G
+XM2 OUT m1_1820_n110# m1_2540_580# M2/a_200_n400# nfet_06v0_RPRB9G
+XM3 m1_1850_3400# m1_1570_2580# m1_2940_3400# w_1200_2400# pfet_06v0_CJMVWK
+XM4 m1_1820_n110# m1_3540_n210# OUT OUT nfet_06v0_RPRB9L
+XM5 m1_1350_3400# m1_1570_2580# m1_1850_3400# w_1200_2400# pfet_06v0_CJMVWK
+XM6 OUT m1_3540_n210# OUT OUT nfet_06v0_RPRB9L
+XM7 OUT m1_1850_3400# m1_3790_5790# w_1200_2400# pfet_06v0_EQGVWK
+Xcap_mim_2p0fF_ZHL43H_0 IBIAS m2_2940_3400# cap_mim_2p0fF_ZHL43H
+.ends
+

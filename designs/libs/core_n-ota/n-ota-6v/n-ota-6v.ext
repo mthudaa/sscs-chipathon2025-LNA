@@ -1,0 +1,107 @@
+timestamp 1758768491
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use cap_mim_2p0fF_ZHL4KH cap_mim_2p0fF_ZHL4KH_0 1 0 14185 0 1 -5416
+use ppolyf_u_1k_MM88ZV XR1 1 0 11865 0 1 -5614
+use nfet_06v0_QPRB9C nfet_06v0_QPRB9C_0 1 0 6496 0 1 -5411
+use nfet_06v0_QPRB9C XM1 1 0 5200 0 1 -5410
+use pfet_06v0_NJMVWK XM7 1 0 10313 0 1 -3901
+use pfet_06v0_6HMVWH XM5 1 0 7001 0 1 -3901
+use pfet_06v0_6HMVWK pfet_06v0_6HMVWK_0 1 0 4697 0 1 -3901
+use nfet_06v0_USR4M3 XM6 1 0 9955 0 1 -6302
+use nfet_06v0_USR4M3 XM4 1 0 5833 0 1 -6320
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "XM1/a_n540_n200#" "XM1/a_n684_n424#" 1.42109e-14
+cap "nfet_06v0_QPRB9C_0/a_n540_n200#" "XM4/a_n200_n292#" 0.526235
+cap "XM1/a_52_n292#" "nfet_06v0_QPRB9C_0/a_n452_n292#" 2.46945
+cap "XM1/a_n684_n424#" "XM4/a_n200_n292#" 3.67331
+cap "XM1/a_52_n292#" "XM4/a_n288_n200#" 0.524572
+cap "nfet_06v0_QPRB9C_0/a_n452_n292#" "XM4/a_200_n200#" 0.526235
+cap "XM1/a_452_n200#" "XM4/a_n200_n292#" 0.524572
+cap "nfet_06v0_QPRB9C_0/a_n452_n292#" "XM1/a_n684_n424#" 2.49806
+cap "XM1/a_52_n292#" "XM1/a_n684_n424#" 2.66868
+cap "XM1/a_52_n292#" "XM4/a_n200_n292#" 0.12478
+cap "XM5/w_n1220_n456#" "XM6/a_n432_n424#" 11.4257
+cap "XM6/a_n200_n292#" "XM6/a_n432_n424#" 0.0586636
+cap "XM6/a_200_n200#" "XR1/a_n660_n666#" 0.0603177
+cap "XM6/a_n288_n200#" "XR1/a_n660_n666#" 0.0271777
+cap "XM6/a_n432_n424#" "XR1/a_n660_n666#" 0.0812999
+cap "XR1/a_n872_n878#" "cap_mim_2p0fF_ZHL4KH_0/m4_n740_n620#" 2.98998
+cap "pfet_06v0_6HMVWK_0/a_n452_n292#" "XM1/a_n684_n424#" 0.35902
+cap "XM1/a_n452_n292#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 0.530981
+cap "XM1/a_n684_n424#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 22.8061
+cap "XM1/a_n452_n292#" "pfet_06v0_6HMVWK_0/a_52_n292#" 1.55251
+cap "pfet_06v0_6HMVWK_0/a_52_n292#" "XM1/a_n684_n424#" 0.0902514
+cap "pfet_06v0_6HMVWK_0/a_556_n292#" "XM1/a_n684_n424#" 0.282113
+cap "nfet_06v0_QPRB9C_0/a_n452_n292#" "XM1/a_n684_n424#" 0.000225715
+cap "XM1/a_n684_n424#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 89.9207
+cap "XM1/a_52_n292#" "pfet_06v0_6HMVWK_0/a_556_n292#" 4.83946
+cap "pfet_06v0_6HMVWK_0/a_52_n292#" "XM1/a_n684_n424#" 0.191862
+cap "nfet_06v0_QPRB9C_0/a_n452_n292#" "XM1/a_52_n292#" 2.46945
+cap "XM1/a_52_n292#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 1.6324
+cap "XM1/a_n452_n292#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 1.10142
+cap "XM1/a_n452_n292#" "pfet_06v0_6HMVWK_0/a_52_n292#" 3.28695
+cap "XM5/a_n956_n292#" "pfet_06v0_6HMVWK_0/a_556_n292#" 2.67282
+cap "XM5/a_n956_n292#" "nfet_06v0_QPRB9C_0/a_n452_n292#" 2.81085
+cap "XM1/a_52_n292#" "XM1/a_n684_n424#" 0.0029343
+cap "XM5/a_n956_n292#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 1.53309
+cap "XM5/a_n956_n292#" "XM1/a_n684_n424#" 0.163207
+cap "pfet_06v0_6HMVWK_0/a_556_n292#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 1.53309
+cap "nfet_06v0_QPRB9C_0/a_n452_n292#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 0.951418
+cap "nfet_06v0_QPRB9C_0/a_n684_n424#" "XM5/a_n452_n292#" 0.281465
+cap "nfet_06v0_QPRB9C_0/a_52_n292#" "XM5/w_n1220_n456#" 1.62856
+cap "XM5/w_n1220_n456#" "nfet_06v0_QPRB9C_0/a_n452_n292#" 0.677137
+cap "nfet_06v0_QPRB9C_0/a_52_n292#" "XM5/a_n452_n292#" 4.83417
+cap "XM5/a_n956_n292#" "nfet_06v0_QPRB9C_0/a_n452_n292#" 2.02333
+cap "XM5/w_n1220_n456#" "XM5/a_n452_n292#" -5.68434e-14
+cap "XM5/w_n1220_n456#" "nfet_06v0_QPRB9C_0/a_n684_n424#" 57.5445
+cap "XM5/a_n956_n292#" "nfet_06v0_QPRB9C_0/a_n684_n424#" 0.118258
+cap "XM5/a_52_n292#" "nfet_06v0_QPRB9C_0/a_n684_n424#" 0.356306
+cap "XM7/w_n2228_n456#" "XM5/a_n556_n200#" -0.000515176
+cap "XM5/a_52_n292#" "XM7/w_n2228_n456#" -0.721053
+cap "XM7/w_n2228_n456#" "XM5/a_n52_n200#" -0.00547166
+cap "XM7/w_n2228_n456#" "XM5/a_556_n292#" -2.19135
+cap "XM7/w_n2228_n456#" "XM5/a_n452_n292#" -0.291123
+cap "XM5/a_556_n292#" "XM7/a_n1964_n292#" 2.67282
+cap "XM7/w_n2228_n456#" "XM5/a_452_n200#" -0.0161322
+cap "XM7/w_n2228_n456#" "XM7/a_n1964_n292#" 1.53309
+cap "XM7/w_n2228_n456#" "XM5/a_956_n200#" -0.84089
+cap "XM7/w_n2228_n456#" "XM6/a_n432_n424#" 11.0325
+cap "XM6/a_n432_n424#" "XM7/w_n2228_n456#" 91.0575
+cap "XM6/a_n432_n424#" "XM7/a_556_n292#" 0.863715
+cap "XM7/a_1060_n292#" "XM6/a_n432_n424#" 0.548463
+cap "XM7/w_n2228_n456#" "XM6/a_n432_n424#" 66.6537
+cap "cap_mim_2p0fF_ZHL4KH_0/m4_n740_n620#" "XR1/a_460_544#" 0.200398
+cap "cap_mim_2p0fF_ZHL4KH_0/m4_n740_n620#" "XM6/a_n432_n424#" 0.881538
+cap "XM7/a_1564_n292#" "XM6/a_n432_n424#" 0.548463
+cap "XM7/a_1964_n200#" "XR1/a_460_544#" 0.108283
+cap "cap_mim_2p0fF_ZHL4KH_0/m4_n620_n500#" "XR1/a_460_544#" 0.706907
+cap "XM7/w_n2228_n456#" "XR1/a_460_544#" 3.55694
+cap "XR1/a_460_544#" "cap_mim_2p0fF_ZHL4KH_0/m4_n740_n620#" 1.14224
+cap "XR1/a_n872_n878#" "cap_mim_2p0fF_ZHL4KH_0/m4_n740_n620#" 3.01331
+cap "XM5/a_n956_n292#" "pfet_06v0_6HMVWK_0/w_n1220_n456#" 1.53309
+cap "XM5/a_n956_n292#" "pfet_06v0_6HMVWK_0/a_556_n292#" 2.67282
+cap "pfet_06v0_6HMVWK_0/w_n1220_n456#" "pfet_06v0_6HMVWK_0/a_556_n292#" 1.53309
+cap "XM7/a_n1964_n292#" "XM7/w_n2228_n456#" 1.53309
+cap "XM7/w_n2228_n456#" "XM5/a_52_n292#" -0.721053
+cap "XM7/a_n1964_n292#" "XM5/a_556_n292#" 2.67282
+cap "XM7/w_n2228_n456#" "XM5/a_556_n292#" -2.19135
+cap "XM5/a_n52_n200#" "XM7/w_n2228_n456#" -0.00547166
+cap "XM7/w_n2228_n456#" "XM5/a_n452_n292#" -0.291123
+cap "XM5/a_n556_n200#" "XM7/w_n2228_n456#" -0.000515176
+cap "XM7/w_n2228_n456#" "XM5/a_956_n200#" -1.77416
+cap "XM7/w_n2228_n456#" "XM5/a_452_n200#" -0.0161322
+merge "cap_mim_2p0fF_ZHL4KH_0/VSUBS" "XR1/a_n872_n878#" -817.622 0 0 0 0 0 0 0 0 0 0 -60984 -1838 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -37766 -1734 0 0 0 0 0 0 0 0
+merge "XR1/a_n872_n878#" "XM6/a_n432_n424#"
+merge "XM6/a_n432_n424#" "XM7/VSUBS"
+merge "XM7/VSUBS" "XM4/a_n432_n424#"
+merge "XM4/a_n432_n424#" "pfet_06v0_6HMVWK_0/VSUBS"
+merge "pfet_06v0_6HMVWK_0/VSUBS" "XM5/VSUBS"
+merge "XM5/VSUBS" "XM1/a_n684_n424#"
+merge "XM1/a_n684_n424#" "nfet_06v0_QPRB9C_0/a_n684_n424#"
+merge "nfet_06v0_QPRB9C_0/a_n684_n424#" "VSUBS"
+merge "pfet_06v0_6HMVWK_0/w_n1220_n456#" "XM7/w_n2228_n456#" -1562.26 -248064 -4192 0 0 0 0 0 0 -122112 -3680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -75624 -3472 0 0 0 0 0 0 0 0
+merge "XM7/w_n2228_n456#" "XM5/w_n1220_n456#"

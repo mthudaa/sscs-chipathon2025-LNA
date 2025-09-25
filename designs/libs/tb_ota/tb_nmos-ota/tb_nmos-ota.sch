@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 1100 -440 1900 -40 {flags=graph
-y1=-1.072
-y2=1.738
+y1=-1.7
+y2=3.4
 ypos1=0
 ypos2=2
 divy=5
@@ -25,11 +25,8 @@ logy=1
 sim_type=ac
 color=4
 node=diff_gain}
-C {lab_pin.sym} 150 -530 0 0 {name=p2 sig_type=std_logic lab=VINN}
-C {lab_pin.sym} 150 -510 0 0 {name=p3 sig_type=std_logic lab=VINP}
-C {lab_pin.sym} 450 -510 0 1 {name=p4 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 450 -550 0 1 {name=p5 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 450 -530 0 1 {name=p14 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 160 -590 0 0 {name=p2 sig_type=std_logic lab=VINN}
+C {lab_pin.sym} 160 -570 0 0 {name=p3 sig_type=std_logic lab=VINP}
 C {vsource.sym} 960 -410 0 0 {name=V1 value=3.3 savecurrent=false}
 C {vsource.sym} 690 -410 0 0 {name=V2 value="ac -1m dc 1.65" savecurrent=false}
 C {vsource.sym} 690 -320 0 0 {name=V3 value="ac 1m dc 1.65" savecurrent=false}
@@ -44,16 +41,22 @@ C {gnd.sym} 960 -290 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 960 -350 0 0 {name=p13 sig_type=std_logic lab=VSS}
 C {devices/code_shown.sym} 30 -210 0 0 {name=NGSPICE only_toplevel=true
 value="
+.option savecurrent
 .control
 save all
+op
+remzerovec
+set altshow
+write tb_nmos-ota.raw
+set appendwrite
 ac dec 100 1 10G
 let vdiff = VINP - VINN
 let diff_gain = OUT/vdiff
 plot db(diff_gain)
-write tb_nmos-ota-ac.raw
+write tb_nmos-ota.raw
 reset
 tran 10n 100u
-write tb_nmos-ota-tran.raw
+write tb_nmos-ota.raw
 .endc
 "}
 C {devices/code_shown.sym} 30 -430 0 0 {name=MODELS2 only_toplevel=true
@@ -67,10 +70,6 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {lab_pin.sym} 150 -550 0 0 {name=p1 lab=VBIAS}
-C {lab_wire.sym} 860 -550 0 1 {name=p6 lab=VDD}
-C {lab_wire.sym} 860 -530 0 1 {name=p15 lab=VSS}
-C {lab_wire.sym} 860 -510 0 1 {name=p16 lab=VBIAS}
 C {launcher.sym} 660 -150 0 0 {name=h5
 descr="AC SIMULATION" 
 tclcommand="xschem raw_read $netlist_dir/tb_nmos-ota-ac.raw ac"
@@ -79,5 +78,14 @@ C {launcher.sym} 660 -90 0 0 {name=h1
 descr="TRANSIENT SIMULATION" 
 tclcommand="xschem raw_read $netlist_dir/tb_nmos-ota-tran.raw tran"
 }
-C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_current-mirror/nbias-gen/nbias-gen.sym} 710 -530 0 0 {name=x1}
-C {nmos-ota2.sym} 300 -530 0 0 {name=x2}
+C {lab_pin.sym} 460 -590 0 1 {name=p17 sig_type=std_logic lab=OUT}
+C {lab_pin.sym} 460 -550 0 1 {name=p18 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 460 -570 0 1 {name=p19 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 160 -550 0 0 {name=p20 lab=VBIAS}
+C {lab_wire.sym} 870 -580 0 1 {name=p21 lab=VSS}
+C {lab_wire.sym} 870 -560 0 1 {name=p22 lab=VBIAS}
+C {sscs-chipathon2025-LNA/designs/libs/core_current-mirror/nbias-gen/nbias-gen.sym} 720 -570 0 0 {name=x3}
+C {core_n-ota/n-ota-6v/n-ota.sym} 310 -570 0 0 {name=x4}
+C {isource.sym} 840 -410 0 0 {name=I0 value=10u}
+C {lab_pin.sym} 840 -440 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 840 -380 2 1 {name=p1 lab=VBIAS}

@@ -21,3 +21,6 @@ T {VN} -125 -24 0 0 0.2 0.2 {}
 B 5 -152.5 -2.5 -147.5 2.5 {name=VP sig_type=std_logic dir=in}
 L 4 -150 0 -130 0 {}
 T {VP} -125 -4 0 0 0.2 0.2 {}
+B 5 -152.5 17.5 -147.5 22.5 {name=IBIAS sig_type=std_logic dir=in}
+L 4 -150 20 -130 20 {}
+T {IBIAS} -125 16 0 0 0.2 0.2 {}

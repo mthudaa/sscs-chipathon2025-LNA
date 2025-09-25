@@ -1,0 +1,39 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1758539304
+<< metal1 >>
+rect 320 -151 422 -149
+rect -48 -195 0 -151
+rect -20 -203 0 -195
+rect 300 -195 422 -151
+rect 300 -203 320 -195
+rect -20 -205 320 -203
+rect -128 -645 -82 -525
+rect 376 -526 422 -195
+rect -180 -647 480 -645
+rect -180 -703 -160 -647
+rect 460 -703 480 -647
+rect -180 -705 480 -703
+<< via1 >>
+rect 0 -203 300 -151
+rect -160 -703 460 -647
+<< metal2 >>
+rect -360 -151 320 -149
+rect -360 -203 0 -151
+rect 300 -203 320 -151
+rect -360 -205 320 -203
+rect -360 -647 480 -645
+rect -360 -703 -160 -647
+rect 460 -703 480 -647
+rect -360 -705 480 -703
+use nfet_06v0_7KPYRP  M1
+timestamp 1758539105
+transform 1 0 147 0 1 -354
+box -464 -382 464 382
+<< labels >>
+flabel metal2 -360 -205 -304 -149 0 FreeSans 320 0 0 0 IBIAS
+port 1 nsew
+flabel metal2 -360 -705 -300 -645 0 FreeSans 320 0 0 0 VSS
+port 3 nsew
+<< end >>

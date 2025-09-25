@@ -1,0 +1,19 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 25/09/2025 11:00
+
+.SUBCKT n-ota
+M$1 \$83 \$23 \$82 \$69 pfet_06v0 L=2U W=8U AS=3.52P AD=3.52P PS=16.88U
++ PD=16.88U
+M$2 \$84 \$23 \$83 \$69 pfet_06v0 L=2U W=8U AS=3.52P AD=3.52P PS=16.88U
++ PD=16.88U
+M$3 OUT \$81 \$83 \$69 pfet_06v0 L=2U W=16U AS=7.04P AD=7.04P PS=32.88U
++ PD=32.88U
+M$4 OUT \$17 \$21 gf180mcu_gnd nfet_06v0 L=2U W=2U AS=0.88P AD=0.88P PS=4.88U
++ PD=4.88U
+M$5 OUT \$17 OUT gf180mcu_gnd nfet_06v0 L=2U W=2U AS=0.88P AD=0.88P PS=4.88U
++ PD=4.88U
+M$6 \$21 \$15 \$20 gf180mcu_gnd nfet_06v0 L=2U W=4U AS=1.76P AD=1.76P PS=8.88U
++ PD=8.88U
+M$7 \$22 \$16 \$21 gf180mcu_gnd nfet_06v0 L=2U W=4U AS=1.76P AD=1.76P PS=8.88U
++ PD=8.88U
+R$8 \$35 \$36 gf180mcu_gnd 1000 ppolyf_u_1k L=5U W=5U
+.ENDS n-ota

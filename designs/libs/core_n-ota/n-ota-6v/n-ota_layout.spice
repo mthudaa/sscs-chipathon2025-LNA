@@ -1,0 +1,38 @@
+* NGSPICE file created from n-ota.ext - technology: gf180mcuD
+
+.subckt pfet_06v0_CA9BXH a_n452_n432# a_n556_n376# w_n1220_n632# a_956_n376# a_52_n432#
++ a_n1044_n376# a_n956_n432# a_556_n432# a_n52_n376# a_452_n376#
+X0 a_n556_n376# a_n956_n432# a_n1044_n376# w_n1220_n632# pfet_06v0 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=2u
+X1 a_n52_n376# a_n452_n432# a_n556_n376# w_n1220_n632# pfet_06v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=2u
+X2 a_452_n376# a_52_n432# a_n52_n376# w_n1220_n632# pfet_06v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=2u
+X3 a_956_n376# a_556_n432# a_452_n376# w_n1220_n632# pfet_06v0 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=2u
+.ends
+
+.subckt cap_mim_2p0fF_BZM3VC m4_n620_n500# m4_n740_n620#
+X0 m4_n620_n500# m4_n740_n620# cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+.ends
+
+.subckt nfet_06v0_9CQTU4 a_52_n468# a_956_n424# a_n1044_n424# a_n956_n468# a_556_n468#
++ a_n52_n424# a_452_n424# a_n452_n468# a_n556_n424# a_n1188_n600#
+X0 a_452_n424# a_52_n468# a_n52_n424# a_n1188_n600# nfet_06v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=2u
+X1 a_956_n424# a_556_n468# a_452_n424# a_n1188_n600# nfet_06v0 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=2u
+X2 a_n556_n424# a_n956_n468# a_n1044_n424# a_n1188_n600# nfet_06v0 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=2u
+X3 a_n52_n424# a_n452_n468# a_n556_n424# a_n1188_n600# nfet_06v0 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=2u
+.ends
+
+.subckt nfet_06v0_UAC3LK a_200_n424# a_n432_n600# a_n200_n468# a_n288_n424#
+X0 a_200_n424# a_n200_n468# a_n288_n424# a_n432_n600# nfet_06v0 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=2u
+.ends
+
+.subckt n-ota OUT VDD VSS IBIAS VN VP
+Xpfet_06v0_CA9BXH_0 m1_1639_1477# m1_1639_1477# VDD VDD m1_1639_1477# VDD m1_1639_1477#
++ m1_1639_1477# VDD m1_2976_431# pfet_06v0_CA9BXH
+Xpfet_06v0_CA9BXH_1 m1_2976_431# VDD VDD OUT m1_2976_431# OUT m1_2976_431# m1_2976_431#
++ OUT VDD pfet_06v0_CA9BXH
+Xcap_mim_2p0fF_BZM3VC_0 OUT m1_2976_431# cap_mim_2p0fF_BZM3VC
+XM2 VN m1_1454_132# m1_1454_132# VP VN m1_1454_132# m1_2976_431# VP m1_1639_1477#
++ VSS nfet_06v0_9CQTU4
+Xnfet_06v0_UAC3LK_0 OUT VSS IBIAS VSS nfet_06v0_UAC3LK
+XM4 m1_1454_132# VSS IBIAS VSS nfet_06v0_UAC3LK
+.ends
+

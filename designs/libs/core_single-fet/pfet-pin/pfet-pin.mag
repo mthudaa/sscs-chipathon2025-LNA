@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1757698945
+timestamp 1758666280
 << metal1 >>
 rect 197 -1027 209 -967
 rect 293 -1027 305 -967
@@ -192,11 +192,11 @@ rect 104 -3820 114 -3760
 rect 174 -3820 542 -3760
 rect 602 -3820 970 -3760
 rect 1030 -3820 1272 -3760
-use pfet_06v0_ZXY25Q__1  M1
+use pfet_06v0_ZXY25Q  M1 pfet-vdd
 timestamp 1756822594
 transform 1 0 572 0 1 -1636
 box -640 -832 640 832
-use pfet_06v0_ZXY25Q__1  pfet_06v0_ZXY25Q_0
+use pfet_06v0_ZXY25Q  pfet_06v0_ZXY25Q_0
 timestamp 1756822594
 transform 1 0 572 0 1 -3198
 box -640 -832 640 832

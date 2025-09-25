@@ -6,8 +6,8 @@ S {}
 E {}
 C {lab_pin.sym} 720 -370 0 0 {name=p3 sig_type=std_logic lab=VCM}
 C {lab_pin.sym} 480 -570 0 1 {name=p4 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 480 -550 0 1 {name=p5 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 480 -530 0 1 {name=p14 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 480 -530 0 1 {name=p5 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 480 -550 0 1 {name=p14 sig_type=std_logic lab=VSS}
 C {vsource.sym} 990 -430 0 0 {name=V1 value=5 savecurrent=false}
 C {vsource.sym} 720 -340 0 0 {name=V3 value="SINE(1.65 1.65 10k) dc 3 ac 1" savecurrent=false}
 C {vsource.sym} 990 -340 0 0 {name=V4 value=0 savecurrent=false}
@@ -38,11 +38,13 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {lab_pin.sym} 180 -570 0 0 {name=p1 lab=VBIAS}
-C {lab_wire.sym} 890 -570 0 1 {name=p6 lab=VDD}
-C {lab_wire.sym} 890 -550 0 1 {name=p15 lab=VSS}
-C {lab_wire.sym} 890 -530 0 1 {name=p16 lab=VBIAS}
-C {/foss/designs/sscs-chipathon2025-LNA/designs/libs/core_current-mirror/nbias-gen/nbias-gen.sym} 740 -550 0 0 {name=x1}
-C {lab_pin.sym} 180 -550 0 0 {name=p2 sig_type=std_logic lab=VCM}
-C {lab_pin.sym} 180 -530 0 0 {name=p8 sig_type=std_logic lab=VCM}
-C {nmos-ota2.sym} 330 -550 0 0 {name=x2}
+C {lab_pin.sym} 180 -530 0 0 {name=p1 lab=VBIAS}
+C {lab_wire.sym} 890 -560 0 1 {name=p15 lab=VSS}
+C {lab_wire.sym} 890 -540 0 1 {name=p16 lab=VBIAS}
+C {sscs-chipathon2025-LNA/designs/libs/core_current-mirror/nbias-gen/nbias-gen.sym} 740 -550 0 0 {name=x1}
+C {lab_pin.sym} 180 -570 0 0 {name=p2 sig_type=std_logic lab=VCM}
+C {lab_pin.sym} 180 -550 0 0 {name=p8 sig_type=std_logic lab=VCM}
+C {sscs-chipathon2025-LNA/designs/libs/core_n-ota/n-ota-6v/n-ota-6v.sym} 330 -550 0 0 {name=x2}
+C {isource.sym} 720 -210 0 0 {name=I0 value=10u}
+C {lab_pin.sym} 720 -240 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 720 -180 2 1 {name=p11 lab=VBIAS}

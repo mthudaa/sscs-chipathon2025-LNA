@@ -73,8 +73,6 @@ N 840 -980 890 -980 {lab=OUT[0]}
 N 780 -980 780 -920 {lab=#net4}
 N 1060 -980 1110 -980 {lab=OUT[1]}
 N 1000 -980 1000 -920 {lab=#net5}
-N 1540 -1190 1640 -1190 {lab=#net6}
-N 1540 -1050 1640 -1050 {lab=#net7}
 C {core_switch-matrix/switch-matrix-16x10/switch-matrix-16x10.sym} 870 -1120 0 0 {name=x1}
 C {lab_wire.sym} 720 -1150 0 0 {name=p1 lab=DATA_PX}
 C {lab_wire.sym} 720 -1130 0 0 {name=p2 lab=CLK_PH1}
@@ -126,7 +124,7 @@ aclock [ clock_node ] clock_vector
 aconvert [ bit_node clock_node ] [ data clk ] dac_in
 .model dac_in dac_bridge (out_low=0V out_high=3.3V t_rise=0.2ns t_fall=0.2ns)
 "}
-C {vsource.sym} 440 -890 0 0 {name=VD value=3.3 savecurrent=false}
+C {vsource.sym} 440 -890 0 0 {name=VD value=6 savecurrent=false}
 C {res.sym} 440 -950 0 0 {name=R1
 value=10
 footprint=1206
@@ -156,7 +154,7 @@ device=resistor
 m=1}
 C {lab_wire.sym} 560 -860 2 1 {name=p23 lab=VSS}
 C {lab_wire.sym} 560 -920 0 1 {name=p24 lab=RSTN}
-C {vsource.sym} 200 -890 0 0 {name=VD1 value=3.3 savecurrent=false}
+C {vsource.sym} 200 -890 0 0 {name=VD1 value=6 savecurrent=false}
 C {res.sym} 200 -950 0 0 {name=R5
 value=10
 footprint=1206
@@ -201,7 +199,7 @@ C {lab_wire.sym} 480 -1160 0 1 {name=p32 lab=DATA_PX}
 C {parax_cap.sym} 480 -1090 0 0 {name=C5 gnd=0 value=4f m=1}
 C {lab_wire.sym} 370 -1100 0 0 {name=p35 lab=RSTN}
 C {lab_wire.sym} 480 -1100 0 1 {name=p36 lab=RSTN_PX}
-C {vsource.sym} 780 -890 0 0 {name=VSINE value="SINE(1.65 1.65 10k)" savecurrent=false}
+C {vsource.sym} 780 -890 0 0 {name=VSINE value="SINE(3 3 10k)" savecurrent=false}
 C {lab_wire.sym} 780 -860 2 1 {name=p12 lab=VSS}
 C {lab_wire.sym} 890 -980 0 1 {name=p13 lab=OUT[0]}
 C {res.sym} 810 -980 3 0 {name=R6
@@ -210,25 +208,17 @@ footprint=1206
 device=resistor
 m=1}
 C {parax_cap.sym} 890 -970 0 0 {name=C6 gnd=0 value=4f m=1}
-C {core_p-ota/pmos-ota/pmos-ota.sym} 1790 -1170 0 0 {name=x3}
-C {core_n-ota/nmos-ota/nmos-ota.sym} 1790 -1030 0 0 {name=x4}
-C {lab_wire.sym} 1640 -1170 0 0 {name=p15 lab=IN[2]}
-C {lab_wire.sym} 1640 -1150 0 0 {name=p16 lab=IN[4]}
+C {lab_wire.sym} 1640 -1190 0 0 {name=p15 lab=IN[2]}
+C {lab_wire.sym} 1640 -1170 0 0 {name=p16 lab=IN[4]}
 C {lab_wire.sym} 1940 -1190 0 1 {name=p17 lab=IN[6]}
-C {lab_wire.sym} 1940 -1170 0 1 {name=p33 lab=VDD}
-C {lab_wire.sym} 1940 -1150 0 1 {name=p34 lab=VSS}
+C {lab_wire.sym} 1940 -1150 0 1 {name=p33 lab=VDD}
+C {lab_wire.sym} 1940 -1170 0 1 {name=p34 lab=VSS}
 C {lab_wire.sym} 1640 -1030 0 0 {name=p38 lab=IN[3]}
 C {lab_wire.sym} 1640 -1010 0 0 {name=p39 lab=IN[5]}
-C {lab_wire.sym} 1940 -1050 0 1 {name=p40 lab=IN[7]}
-C {lab_wire.sym} 1940 -1030 0 1 {name=p41 lab=VDD}
-C {lab_wire.sym} 1940 -1010 0 1 {name=p42 lab=VSS}
-C {core_current-mirror/pbias-gen/pbias-gen.sym} 1390 -1210 0 0 {name=x5}
-C {core_current-mirror/nbias-gen/nbias-gen.sym} 1390 -1070 0 0 {name=x6}
-C {lab_wire.sym} 1540 -1230 0 1 {name=p43 lab=VDD}
-C {lab_wire.sym} 1540 -1210 0 1 {name=p44 lab=VSS}
-C {lab_wire.sym} 1540 -1090 0 1 {name=p46 lab=VDD}
-C {lab_wire.sym} 1540 -1070 0 1 {name=p47 lab=VSS}
-C {vsource.sym} 1000 -890 0 0 {name=VCOS value="SINE(1.65 -1.65 10k)" savecurrent=false}
+C {lab_wire.sym} 1940 -1030 0 1 {name=p40 lab=IN[7]}
+C {lab_wire.sym} 1940 -1010 0 1 {name=p41 lab=VDD}
+C {lab_wire.sym} 1940 -990 0 1 {name=p42 lab=VSS}
+C {vsource.sym} 1000 -890 0 0 {name=VCOS value="SINE(3 -3 10k)" savecurrent=false}
 C {lab_wire.sym} 1000 -860 2 1 {name=p49 lab=VSS}
 C {lab_wire.sym} 1110 -980 0 1 {name=p50 lab=OUT[1]}
 C {res.sym} 1030 -980 3 0 {name=R9
@@ -240,3 +230,5 @@ C {parax_cap.sym} 1110 -970 0 0 {name=C7 gnd=0 value=4f m=1}
 C {lab_wire.sym} 1020 -1110 0 1 {name=p7 lab=IN[9:0]}
 C {lab_wire.sym} 720 -1220 0 0 {name=p14 lab=VDDd}
 C {lab_wire.sym} 720 -1200 0 0 {name=p37 lab=VSSd}
+C {sscs-chipathon2025-LNA/designs/libs/core_n-ota/n-ota-6v/n-ota-6v.sym} 1790 -1170 0 0 {name=x5}
+C {sscs-chipathon2025-LNA/designs/libs/core_p-ota/p-6v-ota/p-6v-ota.sym} 1790 -1010 0 0 {name=x3}

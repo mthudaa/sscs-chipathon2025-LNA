@@ -4,129 +4,65 @@ K {}
 V {}
 S {}
 E {}
-N 580 -390 740 -390 {lab=#net1}
-N 1040 -390 1200 -390 {lab=#net2}
-N 1500 -390 1660 -390 {lab=#net3}
-N 1960 -390 2120 -390 {lab=#net4}
-N 2420 -390 2580 -390 {lab=#net5}
-N 2880 -390 3040 -390 {lab=#net6}
-N 3340 -390 3500 -390 {lab=#net7}
-N 3800 -390 3960 -390 {lab=#net8}
-N 4260 -390 4420 -390 {lab=#net9}
-N 580 -570 740 -570 {lab=#net10}
-N 1040 -570 1200 -570 {lab=#net11}
-N 1500 -570 1660 -570 {lab=#net12}
-N 1960 -570 2120 -570 {lab=#net13}
-N 2420 -570 2580 -570 {lab=#net14}
-N 2880 -570 3040 -570 {lab=#net15}
-N 3340 -570 3500 -570 {lab=#net16}
-N 3800 -570 3960 -570 {lab=#net17}
-N 4260 -570 4420 -570 {lab=#net18}
-N 580 -750 740 -750 {lab=#net19}
-N 1040 -750 1200 -750 {lab=#net20}
-N 1500 -750 1660 -750 {lab=#net21}
-N 1960 -750 2120 -750 {lab=#net22}
-N 2420 -750 2580 -750 {lab=#net23}
-N 2880 -750 3040 -750 {lab=#net24}
-N 3340 -750 3500 -750 {lab=#net25}
-N 3800 -750 3960 -750 {lab=#net26}
-N 4260 -750 4420 -750 {lab=#net27}
-N 580 -930 740 -930 {lab=#net28}
-N 1040 -930 1200 -930 {lab=#net29}
-N 1500 -930 1660 -930 {lab=#net30}
-N 1960 -930 2120 -930 {lab=#net31}
-N 2420 -930 2580 -930 {lab=#net32}
-N 2880 -930 3040 -930 {lab=#net33}
-N 3340 -930 3500 -930 {lab=#net34}
-N 3800 -930 3960 -930 {lab=#net35}
-N 4260 -930 4420 -930 {lab=#net36}
-N 580 -1110 740 -1110 {lab=#net37}
-N 1040 -1110 1200 -1110 {lab=#net38}
-N 1500 -1110 1660 -1110 {lab=#net39}
-N 1960 -1110 2120 -1110 {lab=#net40}
-N 2420 -1110 2580 -1110 {lab=#net41}
-N 2880 -1110 3040 -1110 {lab=#net42}
-N 3340 -1110 3500 -1110 {lab=#net43}
-N 3800 -1110 3960 -1110 {lab=#net44}
-N 4260 -1110 4420 -1110 {lab=#net45}
-N 580 -1290 740 -1290 {lab=#net46}
-N 1040 -1290 1200 -1290 {lab=#net47}
-N 1500 -1290 1660 -1290 {lab=#net48}
-N 1960 -1290 2120 -1290 {lab=#net49}
-N 2420 -1290 2580 -1290 {lab=#net50}
-N 2880 -1290 3040 -1290 {lab=#net51}
-N 3340 -1290 3500 -1290 {lab=#net52}
-N 3800 -1290 3960 -1290 {lab=#net53}
-N 4260 -1290 4420 -1290 {lab=#net54}
-N 580 -1470 740 -1470 {lab=#net55}
-N 1040 -1470 1200 -1470 {lab=#net56}
-N 1500 -1470 1660 -1470 {lab=#net57}
-N 1960 -1470 2120 -1470 {lab=#net58}
-N 2420 -1470 2580 -1470 {lab=#net59}
-N 2880 -1470 3040 -1470 {lab=#net60}
-N 3340 -1470 3500 -1470 {lab=#net61}
-N 3800 -1470 3960 -1470 {lab=#net62}
-N 4260 -1470 4420 -1470 {lab=#net63}
-N 2420 -210 2580 -210 {lab=#net64}
-N 2880 -210 3040 -210 {lab=#net65}
-N 3340 -210 3500 -210 {lab=#net66}
-N 3800 -210 3960 -210 {lab=#net67}
-N 4260 -210 4420 -210 {lab=#net68}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 430 -350 0 0 {name=x1}
-C {lab_wire.sym} 580 -370 0 1 {name=p4 lab=VDD}
-C {lab_wire.sym} 580 -350 0 1 {name=p5 lab=VSS}
-C {lab_wire.sym} 580 -310 0 1 {name=p7 lab=OUT[15:0]}
-C {lab_wire.sym} 280 -390 0 0 {name=p8 lab=D0}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 890 -350 0 0 {name=x2}
-C {lab_wire.sym} 1040 -370 0 1 {name=p15 lab=VDD}
-C {lab_wire.sym} 1040 -350 0 1 {name=p16 lab=VSS}
-C {lab_wire.sym} 1040 -310 0 1 {name=p18 lab=OUT[15:0]}
-C {lab_wire.sym} 740 -370 0 0 {name=p22 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 1350 -350 0 0 {name=x3}
-C {lab_wire.sym} 1500 -370 0 1 {name=p23 lab=VDD}
-C {lab_wire.sym} 1500 -350 0 1 {name=p24 lab=VSS}
-C {lab_wire.sym} 1500 -310 0 1 {name=p26 lab=OUT[15:0]}
-C {lab_wire.sym} 1200 -370 0 0 {name=p30 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 1810 -350 0 0 {name=x4}
-C {lab_wire.sym} 1960 -370 0 1 {name=p34 lab=VDD}
-C {lab_wire.sym} 1960 -350 0 1 {name=p35 lab=VSS}
-C {lab_wire.sym} 1960 -310 0 1 {name=p37 lab=OUT[15:0]}
-C {lab_wire.sym} 1660 -370 0 0 {name=p40 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 2270 -350 0 0 {name=x5}
-C {lab_wire.sym} 2420 -370 0 1 {name=p31 lab=VDD}
-C {lab_wire.sym} 2420 -350 0 1 {name=p41 lab=VSS}
-C {lab_wire.sym} 2420 -310 0 1 {name=p43 lab=OUT[15:0]}
-C {lab_wire.sym} 2120 -370 0 0 {name=p46 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 2730 -350 0 0 {name=x6}
-C {lab_wire.sym} 2880 -370 0 1 {name=p49 lab=VDD}
-C {lab_wire.sym} 2880 -350 0 1 {name=p50 lab=VSS}
-C {lab_wire.sym} 2880 -310 0 1 {name=p52 lab=OUT[15:0]}
-C {lab_wire.sym} 2580 -370 0 0 {name=p55 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 3190 -350 0 0 {name=x7}
-C {lab_wire.sym} 3340 -370 0 1 {name=p58 lab=VDD}
-C {lab_wire.sym} 3340 -350 0 1 {name=p59 lab=VSS}
-C {lab_wire.sym} 3340 -310 0 1 {name=p61 lab=OUT[15:0]}
-C {lab_wire.sym} 3040 -370 0 0 {name=p64 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 3650 -350 0 0 {name=x8}
-C {lab_wire.sym} 3800 -370 0 1 {name=p67 lab=VDD}
-C {lab_wire.sym} 3800 -350 0 1 {name=p68 lab=VSS}
-C {lab_wire.sym} 3800 -310 0 1 {name=p70 lab=OUT[15:0]}
-C {lab_wire.sym} 3500 -370 0 0 {name=p73 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 4110 -350 0 0 {name=x9}
-C {lab_wire.sym} 4260 -370 0 1 {name=p76 lab=VDD}
-C {lab_wire.sym} 4260 -350 0 1 {name=p77 lab=VSS}
-C {lab_wire.sym} 4260 -310 0 1 {name=p79 lab=OUT[15:0]}
-C {lab_wire.sym} 3960 -370 0 0 {name=p82 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 4570 -350 0 0 {name=x10}
-C {lab_wire.sym} 4720 -370 0 1 {name=p85 lab=VDD}
-C {lab_wire.sym} 4720 -350 0 1 {name=p86 lab=VSS}
-C {lab_wire.sym} 4720 -310 0 1 {name=p88 lab=OUT[15:0]}
-C {lab_wire.sym} 4420 -370 0 0 {name=p91 lab=CLK1}
+N 580 -570 740 -570 {lab=#net1}
+N 1040 -570 1200 -570 {lab=#net2}
+N 1500 -570 1660 -570 {lab=#net3}
+N 1960 -570 2120 -570 {lab=#net4}
+N 2420 -570 2580 -570 {lab=#net5}
+N 2880 -570 3040 -570 {lab=#net6}
+N 3340 -570 3500 -570 {lab=#net7}
+N 3800 -570 3960 -570 {lab=#net8}
+N 4260 -570 4420 -570 {lab=#net9}
+N 580 -750 740 -750 {lab=#net10}
+N 1040 -750 1200 -750 {lab=#net11}
+N 1500 -750 1660 -750 {lab=#net12}
+N 1960 -750 2120 -750 {lab=#net13}
+N 2420 -750 2580 -750 {lab=#net14}
+N 2880 -750 3040 -750 {lab=#net15}
+N 3340 -750 3500 -750 {lab=#net16}
+N 3800 -750 3960 -750 {lab=#net17}
+N 4260 -750 4420 -750 {lab=#net18}
+N 580 -930 740 -930 {lab=#net19}
+N 1040 -930 1200 -930 {lab=#net20}
+N 1500 -930 1660 -930 {lab=#net21}
+N 1960 -930 2120 -930 {lab=#net22}
+N 2420 -930 2580 -930 {lab=#net23}
+N 2880 -930 3040 -930 {lab=#net24}
+N 3340 -930 3500 -930 {lab=#net25}
+N 3800 -930 3960 -930 {lab=#net26}
+N 4260 -930 4420 -930 {lab=#net27}
+N 580 -1110 740 -1110 {lab=#net28}
+N 1040 -1110 1200 -1110 {lab=#net29}
+N 1500 -1110 1660 -1110 {lab=#net30}
+N 1960 -1110 2120 -1110 {lab=#net31}
+N 2420 -1110 2580 -1110 {lab=#net32}
+N 2880 -1110 3040 -1110 {lab=#net33}
+N 3340 -1110 3500 -1110 {lab=#net34}
+N 3800 -1110 3960 -1110 {lab=#net35}
+N 4260 -1110 4420 -1110 {lab=#net36}
+N 580 -1290 740 -1290 {lab=#net37}
+N 1040 -1290 1200 -1290 {lab=#net38}
+N 1500 -1290 1660 -1290 {lab=#net39}
+N 1960 -1290 2120 -1290 {lab=#net40}
+N 2420 -1290 2580 -1290 {lab=#net41}
+N 2880 -1290 3040 -1290 {lab=#net42}
+N 3340 -1290 3500 -1290 {lab=#net43}
+N 3800 -1290 3960 -1290 {lab=#net44}
+N 4260 -1290 4420 -1290 {lab=#net45}
+N 580 -1470 740 -1470 {lab=#net46}
+N 1040 -1470 1200 -1470 {lab=#net47}
+N 1500 -1470 1660 -1470 {lab=#net48}
+N 1960 -1470 2120 -1470 {lab=#net49}
+N 2420 -1470 2580 -1470 {lab=#net50}
+N 2880 -1470 3040 -1470 {lab=#net51}
+N 3340 -1470 3500 -1470 {lab=#net52}
+N 3800 -1470 3960 -1470 {lab=#net53}
+N 4260 -1470 4420 -1470 {lab=#net54}
 C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 430 -530 0 0 {name=x11}
 C {lab_wire.sym} 580 -550 0 1 {name=p1 lab=VDD}
 C {lab_wire.sym} 580 -530 0 1 {name=p2 lab=VSS}
 C {lab_wire.sym} 580 -490 0 1 {name=p12 lab=OUT[15:0]}
-C {lab_wire.sym} 280 -570 0 0 {name=p13 lab=D1}
+C {lab_wire.sym} 280 -570 0 0 {name=p13 lab=D}
 C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 890 -530 0 0 {name=x12}
 C {lab_wire.sym} 1040 -550 0 1 {name=p21 lab=VDD}
 C {lab_wire.sym} 1040 -530 0 1 {name=p27 lab=VSS}
@@ -400,7 +336,6 @@ C {lab_wire.sym} 4720 -1450 0 1 {name=p367 lab=VDD}
 C {lab_wire.sym} 4720 -1430 0 1 {name=p368 lab=VSS}
 C {lab_wire.sym} 4720 -1410 0 1 {name=p369 lab=IN[0]}
 C {lab_wire.sym} 4720 -1390 0 1 {name=p370 lab=OUT[15:0]}
-C {lab_wire.sym} 4720 -390 0 1 {name=p372 lab=D1}
 C {lab_wire.sym} 4720 -570 0 1 {name=p375 lab=D2}
 C {lab_wire.sym} 4720 -750 0 1 {name=p378 lab=D3}
 C {lab_wire.sym} 4720 -930 0 1 {name=p381 lab=D4}
@@ -413,7 +348,7 @@ C {ipin.sym} 100 -280 0 0 {name=p395 lab=RSTN}
 C {ipin.sym} 100 -320 0 0 {name=p396 lab=CLK1}
 C {ipin.sym} 100 -300 0 0 {name=p397 lab=CLK2}
 C {ipin.sym} 100 -340 0 0 {name=p398 lab=D}
-C {iopin.sym} 100 -180 0 0 {name=p399 lab=IN[75:0]}
+C {iopin.sym} 100 -180 0 0 {name=p399 lab=IN[59:0]}
 C {iopin.sym} 100 -160 0 0 {name=p400 lab=OUT[15:0]}
 C {opin.sym} 100 -200 0 0 {name=p401 lab=Q}
 C {lab_wire.sym} 580 -1050 0 1 {name=p404 lab=IN[29]}
@@ -453,71 +388,6 @@ C {lab_wire.sym} 3340 -510 0 1 {name=p87 lab=IN[53]}
 C {lab_wire.sym} 3800 -510 0 1 {name=p94 lab=IN[52]}
 C {lab_wire.sym} 4260 -510 0 1 {name=p99 lab=IN[51]}
 C {lab_wire.sym} 4720 -510 0 1 {name=p104 lab=IN[50]}
-C {lab_wire.sym} 580 -330 0 1 {name=p109 lab=IN[69]}
-C {lab_wire.sym} 1040 -330 0 1 {name=p117 lab=IN[68]}
-C {lab_wire.sym} 1500 -330 0 1 {name=p122 lab=IN[67]}
-C {lab_wire.sym} 1960 -330 0 1 {name=p127 lab=IN[66]}
-C {lab_wire.sym} 2420 -330 0 1 {name=p132 lab=IN[65]}
-C {lab_wire.sym} 2880 -330 0 1 {name=p137 lab=IN[64]}
-C {lab_wire.sym} 3340 -330 0 1 {name=p142 lab=IN[63]}
-C {lab_wire.sym} 3800 -330 0 1 {name=p147 lab=IN[62]}
-C {lab_wire.sym} 4260 -330 0 1 {name=p152 lab=IN[61]}
-C {lab_wire.sym} 4720 -330 0 1 {name=p157 lab=IN[60]}
-C {lab_wire.sym} 2120 -210 0 0 {name=p233 lab=D}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 2270 -170 0 0 {name=x75}
-C {lab_wire.sym} 2420 -190 0 1 {name=p423 lab=VDD}
-C {lab_wire.sym} 2420 -170 0 1 {name=p424 lab=VSS}
-C {lab_wire.sym} 2420 -130 0 1 {name=p425 lab=OUT[15:0]}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 2730 -170 0 0 {name=x76}
-C {lab_wire.sym} 2880 -190 0 1 {name=p427 lab=VDD}
-C {lab_wire.sym} 2880 -170 0 1 {name=p428 lab=VSS}
-C {lab_wire.sym} 2880 -130 0 1 {name=p429 lab=OUT[15:0]}
-C {lab_wire.sym} 2580 -190 0 0 {name=p430 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 3190 -170 0 0 {name=x77}
-C {lab_wire.sym} 3340 -190 0 1 {name=p431 lab=VDD}
-C {lab_wire.sym} 3340 -170 0 1 {name=p432 lab=VSS}
-C {lab_wire.sym} 3340 -130 0 1 {name=p433 lab=OUT[15:0]}
-C {lab_wire.sym} 3040 -190 0 0 {name=p434 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 3650 -170 0 0 {name=x78}
-C {lab_wire.sym} 3800 -190 0 1 {name=p435 lab=VDD}
-C {lab_wire.sym} 3800 -170 0 1 {name=p436 lab=VSS}
-C {lab_wire.sym} 3800 -130 0 1 {name=p437 lab=OUT[15:0]}
-C {lab_wire.sym} 3500 -190 0 0 {name=p438 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 4110 -170 0 0 {name=x79}
-C {lab_wire.sym} 4260 -190 0 1 {name=p439 lab=VDD}
-C {lab_wire.sym} 4260 -170 0 1 {name=p440 lab=VSS}
-C {lab_wire.sym} 4260 -130 0 1 {name=p441 lab=OUT[15:0]}
-C {lab_wire.sym} 3960 -190 0 0 {name=p442 lab=CLK1}
-C {core_switch-matrix/switch-matrix-16x1/switch-matrix-16x1.sym} 4570 -170 0 0 {name=x80}
-C {lab_wire.sym} 4720 -190 0 1 {name=p443 lab=VDD}
-C {lab_wire.sym} 4720 -170 0 1 {name=p444 lab=VSS}
-C {lab_wire.sym} 4720 -130 0 1 {name=p445 lab=OUT[15:0]}
-C {lab_wire.sym} 4420 -190 0 0 {name=p446 lab=CLK1}
-C {lab_wire.sym} 4720 -210 0 1 {name=p447 lab=D0}
-C {lab_wire.sym} 2420 -150 0 1 {name=p454 lab=IN[75]}
-C {lab_wire.sym} 2880 -150 0 1 {name=p455 lab=IN[74]}
-C {lab_wire.sym} 3340 -150 0 1 {name=p456 lab=IN[73]}
-C {lab_wire.sym} 3800 -150 0 1 {name=p457 lab=IN[72]}
-C {lab_wire.sym} 4260 -150 0 1 {name=p458 lab=IN[71]}
-C {lab_wire.sym} 4720 -150 0 1 {name=p459 lab=IN[70]}
-C {lab_wire.sym} 740 -350 0 0 {name=p228 lab=CLK2}
-C {lab_wire.sym} 740 -330 0 0 {name=p248 lab=RSTN}
-C {lab_wire.sym} 1200 -350 0 0 {name=p411 lab=CLK2}
-C {lab_wire.sym} 1200 -330 0 0 {name=p412 lab=RSTN}
-C {lab_wire.sym} 1660 -350 0 0 {name=p413 lab=CLK2}
-C {lab_wire.sym} 1660 -330 0 0 {name=p414 lab=RSTN}
-C {lab_wire.sym} 2120 -350 0 0 {name=p415 lab=CLK2}
-C {lab_wire.sym} 2120 -330 0 0 {name=p416 lab=RSTN}
-C {lab_wire.sym} 2580 -350 0 0 {name=p417 lab=CLK2}
-C {lab_wire.sym} 2580 -330 0 0 {name=p418 lab=RSTN}
-C {lab_wire.sym} 3040 -350 0 0 {name=p419 lab=CLK2}
-C {lab_wire.sym} 3040 -330 0 0 {name=p420 lab=RSTN}
-C {lab_wire.sym} 3500 -350 0 0 {name=p421 lab=CLK2}
-C {lab_wire.sym} 3500 -330 0 0 {name=p422 lab=RSTN}
-C {lab_wire.sym} 3960 -350 0 0 {name=p450 lab=CLK2}
-C {lab_wire.sym} 3960 -330 0 0 {name=p451 lab=RSTN}
-C {lab_wire.sym} 4420 -350 0 0 {name=p452 lab=CLK2}
-C {lab_wire.sym} 4420 -330 0 0 {name=p453 lab=RSTN}
 C {lab_wire.sym} 740 -530 0 0 {name=p462 lab=CLK2}
 C {lab_wire.sym} 740 -510 0 0 {name=p463 lab=RSTN}
 C {lab_wire.sym} 1200 -530 0 0 {name=p464 lab=CLK2}
@@ -626,22 +496,6 @@ C {lab_wire.sym} 3960 -1430 0 0 {name=p576 lab=CLK2}
 C {lab_wire.sym} 3960 -1410 0 0 {name=p577 lab=RSTN}
 C {lab_wire.sym} 4420 -1430 0 0 {name=p578 lab=CLK2}
 C {lab_wire.sym} 4420 -1410 0 0 {name=p579 lab=RSTN}
-C {lab_wire.sym} 2580 -170 0 0 {name=p582 lab=CLK2}
-C {lab_wire.sym} 2580 -150 0 0 {name=p583 lab=RSTN}
-C {lab_wire.sym} 3040 -170 0 0 {name=p584 lab=CLK2}
-C {lab_wire.sym} 3040 -150 0 0 {name=p585 lab=RSTN}
-C {lab_wire.sym} 3500 -170 0 0 {name=p586 lab=CLK2}
-C {lab_wire.sym} 3500 -150 0 0 {name=p587 lab=RSTN}
-C {lab_wire.sym} 3960 -170 0 0 {name=p588 lab=CLK2}
-C {lab_wire.sym} 3960 -150 0 0 {name=p589 lab=RSTN}
-C {lab_wire.sym} 4420 -170 0 0 {name=p590 lab=CLK2}
-C {lab_wire.sym} 4420 -150 0 0 {name=p591 lab=RSTN}
-C {lab_wire.sym} 2120 -190 0 0 {name=p9 lab=CLK1}
-C {lab_wire.sym} 2120 -170 0 0 {name=p10 lab=CLK2}
-C {lab_wire.sym} 2120 -150 0 0 {name=p11 lab=RSTN}
-C {lab_wire.sym} 280 -370 0 0 {name=p14 lab=CLK1}
-C {lab_wire.sym} 280 -350 0 0 {name=p19 lab=CLK2}
-C {lab_wire.sym} 280 -330 0 0 {name=p20 lab=RSTN}
 C {lab_wire.sym} 280 -550 0 0 {name=p112 lab=CLK1}
 C {lab_wire.sym} 280 -530 0 0 {name=p113 lab=CLK2}
 C {lab_wire.sym} 280 -510 0 0 {name=p114 lab=RSTN}

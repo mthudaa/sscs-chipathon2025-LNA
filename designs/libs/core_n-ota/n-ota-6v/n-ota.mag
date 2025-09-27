@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758804560
+timestamp 1758910736
 << nwell >>
 rect 1456 1556 3544 2356
 rect 3760 1556 5848 2356
@@ -218,27 +218,27 @@ rect 4360 340 5760 460
 rect 5820 340 5840 460
 rect 4360 319 5840 340
 use cap_mim_2p0fF_BZM3VC  cap_mim_2p0fF_BZM3VC_0
-timestamp 1758800035
+timestamp 1758910736
 transform 0 -1 4348 1 0 553
 box -740 -620 740 620
 use nfet_06v0_9CQTU4  M2
-timestamp 1758804510
+timestamp 1758910736
 transform 1 0 2500 0 1 660
 box -1220 -632 1220 632
 use nfet_06v0_UAC3LK  M4
-timestamp 1758804560
+timestamp 1758910736
 transform 1 0 2248 0 1 -474
 box -464 -632 464 632
 use nfet_06v0_UAC3LK  nfet_06v0_UAC3LK_0
-timestamp 1758804560
+timestamp 1758910736
 transform 1 0 5560 0 1 -474
 box -464 -632 464 632
 use pfet_06v0_CA9BXH  pfet_06v0_CA9BXH_0
-timestamp 1758804510
+timestamp 1758910736
 transform 1 0 2500 0 1 1932
 box -1220 -632 1220 632
 use pfet_06v0_CA9BXH  pfet_06v0_CA9BXH_1
-timestamp 1758804510
+timestamp 1758910736
 transform 1 0 4804 0 1 1932
 box -1220 -632 1220 632
 << labels >>

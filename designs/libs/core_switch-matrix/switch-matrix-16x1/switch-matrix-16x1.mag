@@ -1,23 +1,33 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758737115
+timestamp 1758969740
 << metal1 >>
 rect -2486 2640 -2472 2842
-rect -2274 2833 -2260 2842
-rect -2274 2653 -539 2833
+rect -2274 2836 -2260 2842
+rect -2274 2834 104405 2836
+rect -2274 2655 -640 2834
+rect 104360 2655 104405 2834
+rect -2274 2653 104405 2655
 rect -2274 2640 -2260 2653
 rect -2888 393 -2876 595
 rect -2678 583 -2666 595
 rect -2678 403 -591 583
+rect 104150 403 104672 583
 rect -2678 393 -2666 403
 << via1 >>
 rect -2472 2640 -2274 2842
+rect -640 2655 104360 2834
 rect -2876 393 -2678 595
 << metal2 >>
 rect -2474 2842 -2272 2854
 rect -2474 2640 -2472 2842
 rect -2274 2640 -2272 2842
+rect -680 2834 104672 2836
+rect -680 2655 -640 2834
+rect 104360 2655 104672 2834
+rect -680 2653 104672 2655
+rect 104219 2650 104672 2653
 rect -2474 2628 -2272 2640
 rect -2070 1230 -1868 1240
 rect -1868 1171 -786 1230
@@ -93,68 +103,68 @@ rect 80262 201 80464 403
 rect 86841 201 87043 403
 rect 93420 201 93622 403
 rect 99999 201 100201 403
-use switch-cell  switch-cell_0 switch-cell
-timestamp 1758737115
+use switch-cell  switch-cell_0 /foss/designs/sscs-chipathon2025-LNA/designs/libs/core_switch-matrix/switch-cell
+timestamp 1758914254
 transform 1 0 -300 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_1
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 6279 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_2
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 12858 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_3
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 19437 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_4
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 26016 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_5
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 32595 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_6
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 52332 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_7
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 45753 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_8
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 39174 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_9
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 58911 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_10
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 78648 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_11
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 72069 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_12
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 65490 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_13
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 85227 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_15
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 98385 0 1 413
 box -560 -212 6020 2626
 use switch-cell  switch-cell_16
-timestamp 1758737115
+timestamp 1758914254
 transform 1 0 91806 0 1 413
 box -560 -212 6020 2626
 << labels >>

@@ -1,0 +1,23 @@
+* NGSPICE file created from LUT.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__mux2_1 I0 I1 S Z VDD VNW VPW VSS
+X0 a_896_574# S a_124_24# VNW pfet_06v0 ad=0.1098p pd=1.155u as=0.2379p ps=1.435u w=0.915u l=0.5u
+X1 a_504_82# I1 VSS VPW nfet_06v0 ad=79.2f pd=0.9u as=0.363p ps=2.02u w=0.66u l=0.6u
+X2 a_124_24# S a_504_82# VPW nfet_06v0 ad=0.1716p pd=1.18u as=79.2f ps=0.9u w=0.66u l=0.6u
+X3 VSS a_124_24# Z VPW nfet_06v0 ad=0.363p pd=2.02u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X4 VDD I0 a_896_574# VNW pfet_06v0 ad=0.2379p pd=1.435u as=0.1098p ps=1.155u w=0.915u l=0.5u
+X5 a_592_394# S VSS VPW nfet_06v0 ad=0.2904p pd=2.2u as=0.1716p ps=1.18u w=0.66u l=0.6u
+X6 a_592_394# S VDD VNW pfet_06v0 ad=0.4026p pd=2.71u as=0.2379p ps=1.435u w=0.915u l=0.5u
+X7 a_537_574# I1 VDD VNW pfet_06v0 ad=0.1258p pd=1.19u as=0.62448p ps=2.795u w=0.915u l=0.5u
+X8 VDD a_124_24# Z VNW pfet_06v0 ad=0.62448p pd=2.795u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X9 a_896_82# a_592_394# a_124_24# VPW nfet_06v0 ad=79.2f pd=0.9u as=0.1716p ps=1.18u w=0.66u l=0.6u
+X10 VSS I0 a_896_82# VPW nfet_06v0 ad=0.1716p pd=1.18u as=79.2f ps=0.9u w=0.66u l=0.6u
+X11 a_124_24# a_592_394# a_537_574# VNW pfet_06v0 ad=0.2379p pd=1.435u as=0.1258p ps=1.19u w=0.915u l=0.5u
+.ends
+
+.subckt LUT IN[0] IN[1] REG[1] REG[2] REG[3] REG[4] VDD VSS LUT_OUT
+Xx1 REG[2] REG[1] IN[1] x1/Z VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__mux2_1
+Xx2 REG[4] REG[3] IN[1] x2/Z VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__mux2_1
+Xx4 x2/Z x1/Z IN[0] LUT_OUT VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__mux2_1
+.ends
+

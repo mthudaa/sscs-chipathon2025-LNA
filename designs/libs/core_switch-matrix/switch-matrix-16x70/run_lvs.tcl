@@ -13,7 +13,7 @@ set sclib ${reflibs}/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 set circuit1 [readnet spice switch-matrix-16x70_layout.spice]
 set circuit2 [readnet spice $sclib]
 
-readnet spice switch-matrix-16x70.spice $circuit2
+readnet spice ../../../simulations/switch-matrix-16x70.spice $circuit2
 
 lvs "$circuit1 switch-matrix-16x70" "$circuit2 switch-matrix-16x70" \
         $setupfile switch-matrix-16x70_comp.out

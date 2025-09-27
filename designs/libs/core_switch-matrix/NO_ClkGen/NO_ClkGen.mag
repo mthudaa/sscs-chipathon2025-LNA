@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758525033
+timestamp 1758914254
 << metal1 >>
 rect 3014 1242 4090 1244
 rect 3014 1066 3880 1242
@@ -163,7 +163,7 @@ rect 3466 -1462 3476 -1286
 rect 3674 -1462 3684 -1286
 rect 3474 -1480 3676 -1462
 rect 3878 -1480 4080 -454
-use gf180mcu_fd_sc_mcu9t5v0__endcap  gf180mcu_fd_sc_mcu9t5v0__endcap_0 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+use gf180mcu_fd_sc_mcu9t5v0__endcap  gf180mcu_fd_sc_mcu9t5v0__endcap_0 pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
 timestamp 1749760379
 transform 1 0 -1298 0 1 146
 box -586 -90 310 1098
@@ -179,7 +179,7 @@ use gf180mcu_fd_sc_mcu9t5v0__endcap  gf180mcu_fd_sc_mcu9t5v0__endcap_3
 timestamp 1749760379
 transform 1 0 -1298 0 1 -1374
 box -586 -90 310 1098
-use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_0 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_0 pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
 timestamp 1749760379
 transform 1 0 -514 0 1 146
 box -86 -90 534 1098
@@ -251,7 +251,7 @@ use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_17
 timestamp 1749760379
 transform 1 0 -2194 0 1 -1374
 box -86 -90 534 1098
-use gf180mcu_fd_sc_mcu9t5v0__nand2_1  gf180mcu_fd_sc_mcu9t5v0__nand2_1_0 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+use gf180mcu_fd_sc_mcu9t5v0__nand2_1  gf180mcu_fd_sc_mcu9t5v0__nand2_1_0 pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
 timestamp 1749760379
 transform 1 0 -1074 0 1 146
 box -86 -90 646 1098

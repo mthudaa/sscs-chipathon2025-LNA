@@ -11,8 +11,8 @@ ypos2=2.7898082
 divy=5
 subdivy=1
 unity=1
-x1=1.3257729e-05
-x2=6.6857583e-05
+x1=1e-05
+x2=0.00011
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -71,12 +71,12 @@ aconvert [ bit_node clock_node ] [ data ck ] dac_in
     save all
     TRAN 0.1u 100u
     write tb_clb.raw
-    quit
 .endc
 "}
 C {devices/code_shown.sym} 32.5 -657.5 0 0 {name=Models only_toplevel=false
 format="tcleval( @value )"
 value="
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
@@ -115,16 +115,16 @@ C {lab_wire.sym} 220 -1050 0 0 {name=p44 lab=CK}
 C {lab_wire.sym} 220 -1000 0 0 {name=p45 lab=VDDd}
 C {lab_wire.sym} 220 -980 0 0 {name=p46 lab=VSSd}
 C {title.sym} 170 -50 0 0 {name=l3 author="M Taufiqul Huda"}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 790 -1020 0 0 {name=x1}
+C {core_fpga/clb_2bit/clb_librelane.sym} 790 -1020 0 0 {name=x1}
 C {lab_wire.sym} 940 -990 0 1 {name=p4 lab=IN[1:0]}
 C {lab_wire.sym} 1380 -970 0 1 {name=p12 lab=CLK}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1230 -1020 0 0 {name=x2}
+C {core_fpga/clb_2bit/clb_librelane.sym} 1230 -1020 0 0 {name=x2}
 C {lab_wire.sym} 1380 -990 0 1 {name=p13 lab=IN[1:0]}
 C {lab_wire.sym} 1820 -970 0 1 {name=p14 lab=CLK}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 1670 -1020 0 0 {name=x3}
+C {core_fpga/clb_2bit/clb_librelane.sym} 1670 -1020 0 0 {name=x3}
 C {lab_wire.sym} 1820 -990 0 1 {name=p15 lab=IN[1:0]}
 C {lab_wire.sym} 2300 -970 0 1 {name=p18 lab=CLK}
-C {core_fpga/clb_2bit/clb_2bit_sc.sym} 2150 -1020 0 0 {name=x4}
+C {core_fpga/clb_2bit/clb_librelane.sym} 2150 -1020 0 0 {name=x4}
 C {lab_wire.sym} 2300 -990 0 1 {name=p25 lab=IN[1:0]}
 C {lab_wire.sym} 2300 -1070 0 1 {name=p26 lab=Q}
 C {lab_wire.sym} 640 -1010 0 0 {name=p27 lab=VDDd}

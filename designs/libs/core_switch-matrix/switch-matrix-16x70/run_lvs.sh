@@ -40,7 +40,7 @@ if [ ! -f "${CELL_NAME}.mag" ]; then
     exit 1
 fi
 
-if [ ! -f "${CELL_NAME}.spice" ]; then
+if [ ! -f "../../../simulations/${CELL_NAME}.spice" ]; then
     echo "Error: ${CELL_NAME}.spice not found"
     exit 1
 fi
@@ -87,7 +87,7 @@ set sclib \${reflibs}/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spic
 set circuit1 [readnet spice ${CELL_NAME}_layout.spice]
 set circuit2 [readnet spice \$sclib]
 
-readnet spice $CELL_NAME.spice \$circuit2
+readnet spice ../../../simulations/$CELL_NAME.spice \$circuit2
 
 lvs "\$circuit1 $CELL_NAME" "\$circuit2 $CELL_NAME" \\
         \$setupfile ${CELL_NAME}_comp.out

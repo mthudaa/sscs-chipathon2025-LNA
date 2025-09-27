@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758731167
+timestamp 1758910736
 << nwell >>
 rect -1440 1940 -1319 3000
 rect -931 2942 -821 3000
@@ -366,11 +366,11 @@ rect 3989 2187 4417 2383
 rect 4477 2187 4489 2383
 rect -1018 2185 4489 2187
 use nfet_06v0_42FNXL  nfet_06v0_42FNXL_0
-timestamp 1757559719
+timestamp 1758910736
 transform 1 0 3708 0 1 2470
 box -800 -476 800 476
 use pfet_06v0_LJSS4L  pfet_06v0_LJSS4L_0
-timestamp 1757559864
+timestamp 1758910736
 transform 1 0 729 0 1 2470
 box -2048 -530 2048 530
 << labels >>

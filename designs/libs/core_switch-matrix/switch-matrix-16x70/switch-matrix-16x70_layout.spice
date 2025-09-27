@@ -114,24 +114,16 @@ Xswitch-cell_12 VDD CLK1 switch-cell_12/Q switch-cell_9/Q OUT[5] CLK2 IN RSTN VS
 + switch-cell
 .ends
 
-.subckt switch-matrix-16x70 VSS VDD RSTN CLK2 CLK1 D Q OUT[15] OUT[14] OUT[13] OUT[12]
+.subckt switch-matrix-16x70 VSS VDD RSTN CLK2 CLK1 Q OUT[15] OUT[14] OUT[13] OUT[12]
 + OUT[11] OUT[10] OUT[9] OUT[8] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2] OUT[1] OUT[0]
-+ IN[75] IN[73] IN[72] IN[71] IN[70] IN[69] IN[68] IN[67] IN[66] IN[65] IN[64] IN[63]
-+ IN[62] IN[61] IN[60] IN[59] IN[58] IN[57] IN[56] IN[55] IN[54] IN[53] IN[52] IN[51]
-+ IN[50] IN[49] IN[48] IN[47] IN[46] IN[45] IN[44] IN[43] IN[42] IN[41] IN[40] IN[39]
-+ IN[38] IN[37] IN[36] IN[35] IN[34] IN[33] IN[32] IN[31] IN[30] IN[29] IN[28] IN[27]
-+ IN[26] IN[25] IN[24] IN[23] IN[22] IN[21] IN[20] IN[19] IN[18] IN[17] IN[16] IN[15]
-+ IN[14] IN[13] IN[12] IN[11] IN[10] IN[9] IN[8] IN[7] IN[6] IN[5] IN[4] IN[3] IN[2]
-+ IN[1] IN[0] IN[74]
++ IN[59] IN[58] IN[57] IN[56] IN[55] IN[54] IN[53] IN[52] IN[51] IN[50] IN[49] IN[48]
++ IN[47] IN[46] IN[45] IN[44] IN[43] IN[42] IN[41] IN[40] IN[39] IN[38] IN[37] IN[36]
++ IN[35] IN[34] IN[33] IN[32] IN[31] IN[30] IN[29] IN[28] IN[27] IN[26] IN[25] IN[24]
++ IN[23] IN[22] IN[21] IN[20] IN[19] IN[18] IN[17] IN[16] IN[15] IN[14] IN[13] IN[12]
++ IN[11] IN[10] IN[9] IN[8] IN[7] IN[6] IN[5] IN[4] IN[3] IN[2] IN[1] IN[0] D
 Xswitch-matrix-16x1_70 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[0] Q switch-matrix-16x1_71/Q
 + OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10] OUT[8] OUT[1] OUT[11] OUT[2]
 + OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_60 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[75] switch-matrix-16x1_61/D
-+ D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10] OUT[8] OUT[1] OUT[11]
-+ OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_61 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[74] switch-matrix-16x1_62/D
-+ switch-matrix-16x1_61/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_50 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[56] switch-matrix-16x1_50/Q
 + switch-matrix-16x1_51/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
@@ -140,9 +132,6 @@ Xswitch-matrix-16x1_72 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[2] switch-matrix-1
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_71 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[1] switch-matrix-16x1_71/Q
 + switch-matrix-16x1_72/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_62 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[73] switch-matrix-16x1_63/D
-+ switch-matrix-16x1_62/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_51 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[57] switch-matrix-16x1_51/Q
 + switch-matrix-16x1_52/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
@@ -155,9 +144,6 @@ Xswitch-matrix-16x1_0 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[6] switch-matrix-16
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_73 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[3] switch-matrix-16x1_73/Q
 + switch-matrix-16x1_74/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_63 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[72] switch-matrix-16x1_64/D
-+ switch-matrix-16x1_63/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_52 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[58] switch-matrix-16x1_52/Q
 + switch-matrix-16x1_53/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
@@ -174,12 +160,9 @@ Xswitch-matrix-16x1_1 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[7] switch-matrix-16
 Xswitch-matrix-16x1_74 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[4] switch-matrix-16x1_74/Q
 + switch-matrix-16x1_75/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_64 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[71] switch-matrix-16x1_65/D
-+ switch-matrix-16x1_64/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_53 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[59] switch-matrix-16x1_53/Q
-+ switch-matrix-16x1_54/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
++ D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10] OUT[8] OUT[1] OUT[11]
++ OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_42 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[53] switch-matrix-16x1_43/D
 + switch-matrix-16x1_42/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
@@ -195,12 +178,6 @@ Xswitch-matrix-16x1_2 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[8] switch-matrix-16
 Xswitch-matrix-16x1_75 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[5] switch-matrix-16x1_75/Q
 + switch-matrix-16x1_0/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_65 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[70] switch-matrix-16x1_66/D
-+ switch-matrix-16x1_65/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_54 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[60] switch-matrix-16x1_54/Q
-+ switch-matrix-16x1_59/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_43 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[52] switch-matrix-16x1_44/D
 + switch-matrix-16x1_43/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
@@ -215,12 +192,6 @@ Xswitch-matrix-16x1_10 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[17] switch-matrix-
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_3 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[9] switch-matrix-16x1_3/Q
 + switch-matrix-16x1_4/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_66 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[69] switch-matrix-16x1_67/D
-+ switch-matrix-16x1_66/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_55 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[65] switch-matrix-16x1_56/D
-+ switch-matrix-16x1_69/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_44 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[51] switch-matrix-16x1_45/D
 + switch-matrix-16x1_44/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
@@ -240,12 +211,6 @@ Xswitch-matrix-16x1_5 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[15] switch-matrix-1
 Xswitch-matrix-16x1_4 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[10] switch-matrix-16x1_4/Q
 + switch-matrix-16x1_9/Q OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_67 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[68] switch-matrix-16x1_68/D
-+ switch-matrix-16x1_67/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_56 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[64] switch-matrix-16x1_57/D
-+ switch-matrix-16x1_56/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_45 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[50] switch-matrix-16x1_46/D
 + switch-matrix-16x1_45/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
@@ -261,12 +226,6 @@ Xswitch-matrix-16x1_12 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[18] switch-matrix-
 Xswitch-matrix-16x1_6 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[14] switch-matrix-16x1_7/D
 + switch-matrix-16x1_6/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_68 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[67] switch-matrix-16x1_69/D
-+ switch-matrix-16x1_68/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_57 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[63] switch-matrix-16x1_58/D
-+ switch-matrix-16x1_57/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_46 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[49] switch-matrix-16x1_47/D
 + switch-matrix-16x1_46/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
@@ -281,15 +240,6 @@ Xswitch-matrix-16x1_13 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[19] switch-matrix-
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_7 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[13] switch-matrix-16x1_8/D
 + switch-matrix-16x1_7/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_69 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[66] switch-matrix-16x1_69/Q
-+ switch-matrix-16x1_69/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_58 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[62] switch-matrix-16x1_59/D
-+ switch-matrix-16x1_58/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
-+ OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
-Xswitch-matrix-16x1_59 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[61] switch-matrix-16x1_59/Q
-+ switch-matrix-16x1_59/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]
 + OUT[8] OUT[1] OUT[11] OUT[2] OUT[14] VSS OUT[3] switch-matrix-16x1
 Xswitch-matrix-16x1_47 OUT[4] OUT[9] OUT[13] VDD RSTN CLK1 IN[48] switch-matrix-16x1_48/D
 + switch-matrix-16x1_47/D OUT[6] OUT[7] OUT[0] OUT[12] OUT[5] OUT[15] CLK2 OUT[10]

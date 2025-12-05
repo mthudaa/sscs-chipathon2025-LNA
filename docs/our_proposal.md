@@ -271,3 +271,6 @@ timeline
     2025-09-05 : 📦 Tapeout preparation, documentation, and review
     2025-09-12 : ✅ Final documentation, test plan, and project wrap-up
 ```
+
+Post-Mortem presentation : 
+[Please see it here](https://docs.google.com/presentation/d/138sG9_6nFNde91uJd1VJHh-8p3Jak7Ld7Pb-RK_AmKo/edit?usp=drivesdk)
